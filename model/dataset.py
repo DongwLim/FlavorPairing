@@ -2,8 +2,12 @@ import pandas as pd
 from collections import defaultdict
 import pickle
 import numpy as np
+import random
 
-def liquors_embbed():
+import torch
+from torch.utils.data import Dataset
+
+def liquors_embbed() -> dict[int, list[float]]:
     # 파일 불러오기
     nodes_df = pd.read_csv("./dataset/Hub_Nodes.csv")
     edges_df = pd.read_csv("./dataset/Hub_Edges.csv")
@@ -53,7 +57,7 @@ def liquors_embbed():
     """for liquor_id, vec in list(liquor_avg_embeddings.items())[:5]:
         print(f"liquor_id {liquor_id}: {vec[:5]} ... (총 길이 {len(vec)})")"""
 
-def ingrs_embedd():
+def ingrs_embedd() -> dict[int, list[float]]: 
     # 파일 불러오기
     nodes_df = pd.read_csv("./dataset/Hub_Nodes.csv")
     edges_df = pd.read_csv("./dataset/Hub_Edges.csv")
@@ -69,7 +73,7 @@ def ingrs_embedd():
         src, tgt = row['source'], row['target']
         etype = row['edge_type']
 
-        if etype == 'ingr-fcomp':
+        if etype == 'ingr-fcomp' or etype == 'ingr-dcomp':
             src_type = node_type_map.get(src)
             tgt_type = node_type_map.get(tgt)
 
@@ -92,7 +96,66 @@ def ingrs_embedd():
         if valid_vectors:  # 유효한 벡터가 하나라도 있을 경우 평균 계산
             avg_vector = np.mean(valid_vectors, axis=0)
             ingredient_avg_embeddings[ingredient_id] = avg_vector
+        else:
+            print("비상비상")
 
     return ingredient_avg_embeddings
 
-ingrs_embedd()
+def make_emb():
+    liquor_avg_embeddings = dict(sorted(liquors_embbed().items()))
+    ingredient_avg_embeddings = dict(sorted(ingrs_embedd().items()))
+
+    liquor_key = list(liquor_avg_embeddings.keys())
+    #print(liquor_key)
+    ingredient_key = list(ingredient_avg_embeddings.keys())
+    #print(ingredient_key)
+
+    with open("./model/data/liquor_key.pkl", "wb") as f:
+        pickle.dump(liquor_key, f)
+
+    with open("./model/data/ingredient_key.pkl", "wb") as f:
+        pickle.dump(ingredient_key, f)
+
+    liquor_embedding_tensor = torch.tensor(np.stack(list(liquor_avg_embeddings.values())), dtype=torch.float32)
+    ingredient_embedding_tensor = torch.tensor(np.stack(list(ingredient_avg_embeddings.values())), dtype=torch.float32)
+
+    """print("Liquor Embedding Tensor")
+    print("  - Shape:", liquor_embedding_tensor.shape)
+    print("  - Dtype:", liquor_embedding_tensor.dtype)
+    print("  - Sample:\n", liquor_embedding_tensor[:2])  
+
+    print("\nIngredient Embedding Tensor")
+    print("  - Shape:", ingredient_embedding_tensor.shape)
+    print("  - Dtype:", ingredient_embedding_tensor.dtype)
+    print("  - Sample:\n", ingredient_embedding_tensor[:2])"""
+
+    torch.save(liquor_embedding_tensor, "./model/data/liquor_init_embedding.pt")
+    torch.save(ingredient_embedding_tensor, "./model/data/ingredient_init_embedding.pt")
+
+class InteractionDataset(Dataset):
+    def __init__(self, positive_pairs, num_users, num_items, negative_ratio=1.0):
+        self.samples = []
+        self.num_users = num_users
+        self.num_items = num_items
+
+        # Positive samples
+        for u, i in positive_pairs:
+            self.samples.append((u, i, 1))
+
+        # Negative samples
+        num_neg = int(len(positive_pairs) * negative_ratio)
+        for _ in range(num_neg):
+            u = random.randint(0, num_users - 1)
+            i = random.randint(0, num_items - 1)
+            if (u, i) not in positive_pairs:
+                self.samples.append((u, i, 0))
+
+    def __len__(self):
+        return len(self.samples)
+
+    def __getitem__(self, idx):
+        user, item, label = self.samples[idx]
+        return torch.tensor(user), torch.tensor(item), torch.tensor(label, dtype=torch.float32)
+
+if __name__ == "__main__":
+    make_emb()
