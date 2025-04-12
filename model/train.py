@@ -46,8 +46,11 @@ def train_model(model, train_loader, num_epochs=10, lr=0.001, weight_decay=1e-5)
         torch.save(model.state_dict(), f"./model/checkpoint/epoch_{epoch}.pth")
 
 if __name__ == "__main__":
-    positive_pairs = pd.read_csv("known_good_liquor_ingredient_pairs.csv")
+    positive_pairs = pd.read_csv("Expanded_Compatible_Pairs_by_Recipe.csv")
     positive_pairs = positive_pairs[['liquor_id', 'ingredient_id']]
+
+    negative_pairs = pd.read_csv("Expanded_Incompatible_Pairs_by_Recipe.csv")
+    negative_pairs = negative_pairs[['liquor_id', 'ingredient_id']]
 
     with open("./model/data/ingredient_key.pkl", "rb") as f:
         ingredient_keys = pickle.load(f)
@@ -61,7 +64,10 @@ if __name__ == "__main__":
     positive_pairs['liquor_id'] = positive_pairs['liquor_id'].map(lid_to_idx)
     positive_pairs['ingredient_id'] = positive_pairs['ingredient_id'].map(iid_to_idx)
 
-    train_dataset = InteractionDataset(positive_pairs=positive_pairs, num_users=22, num_items=394)
+    negative_pairs['liquor_id'] = negative_pairs['liquor_id'].map(lid_to_idx)
+    negative_pairs['ingredient_id'] = negative_pairs['ingredient_id'].map(iid_to_idx)
+
+    train_dataset = InteractionDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=22, num_items=394)
     train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True)
 
     liquor_embedding_tensor = torch.load("./model/data/liquor_init_embedding.pt")

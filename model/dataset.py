@@ -135,7 +135,7 @@ def make_emb():
     torch.save(ingredient_embedding_tensor, "./model/data/ingredient_init_embedding.pt")
 
 class InteractionDataset(Dataset):
-    def __init__(self, positive_pairs, num_users, num_items, negative_ratio=1.0):
+    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=1.0):
         self.samples = []
         self.num_users = num_users
         self.num_items = num_items
@@ -143,6 +143,10 @@ class InteractionDataset(Dataset):
         # Positive samples
         for _, row in positive_pairs.iterrows():
             self.samples.append((row['liquor_id'], row['ingredient_id'], 1))
+
+        # Hard negatives
+        for _, row in hard_negatives.iterrows():
+            self.samples.append((row['liquor_id'], row['ingredient_id'], 0))  
 
         # Negative samples
         num_neg = int(len(positive_pairs) * negative_ratio)
@@ -158,6 +162,37 @@ class InteractionDataset(Dataset):
     def __getitem__(self, idx):
         user, item, label = self.samples[idx]
         return torch.tensor(user), torch.tensor(item), torch.tensor(label, dtype=torch.float32)
+    
+class TripletInteractionDataset(Dataset):
+    def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=1.0):
+        self.triplets = []
+        self.positive_pairs = list(positive_pairs)
+        self.positive_set = set(positive_pairs)
+
+        # 일반 랜덤 negative sampling
+        for u, i in self.positive_pairs:
+            for _ in range(int(negative_ratio)):
+                while True:
+                    j = random.randint(0, num_items - 1)
+                    if (u, j) not in self.positive_set:
+                        self.triplets.append((u, i, j))
+                        break
+
+        # 하드 네거티브 추가
+        if hard_negatives is not None:
+            for u, j in hard_negatives:
+                # u와 연결된 실제 positive 중 하나 선택
+                positives_for_u = [i for x, i in self.positive_pairs if x == u]
+                if positives_for_u:
+                    i = random.choice(positives_for_u)
+                    self.triplets.append((u, i, j))  # (anchor, positive, hard negative)
+
+    def __len__(self):
+        return len(self.triplets)
+
+    def __getitem__(self, idx):
+        u, pos, neg = self.triplets[idx]
+        return torch.tensor(u, dtype=torch.long), torch.tensor(pos, dtype=torch.long), torch.tensor(neg, dtype=torch.long)
 
 if __name__ == "__main__":
     make_emb()
