@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class NeuralCF(nn.Module):
-    def __init__(self, num_users, num_items, emb_size=64, hidden_layers=[128, 64, 32], user_init=None, item_init=None):
+    def __init__(self, num_users, num_items, emb_size=128, hidden_layers=[128, 64, 32], user_init=None, item_init=None):
         super(NeuralCF, self).__init__()
         
         # GMF 
@@ -13,6 +13,12 @@ class NeuralCF(nn.Module):
         # MLP 
         self.user_emb_mlp = nn.Embedding(num_users, emb_size)
         self.item_emb_mlp = nn.Embedding(num_items, emb_size)
+
+        nn.init.kaiming_uniform_(self.user_emb_mlp.weight, nonlinearity="relu")
+        nn.init.kaiming_uniform_(self.item_emb_mlp.weight, nonlinearity="relu")
+
+        #nn.init.orthogonal_(self.user_emb_mlp.weight)
+        #nn.init.orthogonal_(self.item_emb_mlp.weight)
 
         if user_init is not None:
             self.user_emb_mlp.weight.data.copy_(user_init)

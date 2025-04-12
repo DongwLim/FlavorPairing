@@ -107,8 +107,10 @@ def make_emb():
 
     liquor_key = list(liquor_avg_embeddings.keys())
     #print(liquor_key)
+    print(len(liquor_key))
     ingredient_key = list(ingredient_avg_embeddings.keys())
     #print(ingredient_key)
+    print(len(ingredient_key))
 
     with open("./model/data/liquor_key.pkl", "wb") as f:
         pickle.dump(liquor_key, f)
@@ -139,8 +141,8 @@ class InteractionDataset(Dataset):
         self.num_items = num_items
 
         # Positive samples
-        for u, i in positive_pairs:
-            self.samples.append((u, i, 1))
+        for _, row in positive_pairs.iterrows():
+            self.samples.append((row['liquor_id'], row['ingredient_id'], 1))
 
         # Negative samples
         num_neg = int(len(positive_pairs) * negative_ratio)
