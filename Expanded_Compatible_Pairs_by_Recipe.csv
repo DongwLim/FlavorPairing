@@ -253,7 +253,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,ingredient_type,origin_ingre
 5558,rum,5192,raisin_bread,other,1682.0,cream_cheese,dessert
 5558,rum,2761,fruit_preserve,other,1682.0,cream_cheese,dessert
 5558,rum,4588,pancake,other,1682.0,cream_cheese,dessert
-5558,rum,5676,scotch_whisky,other,1682.0,cream_cheese,dessert
 5558,rum,6766,waffle,other,1682.0,cream_cheese,dessert
 5558,rum,273,bagel,other,1682.0,cream_cheese,dessert
 5558,rum,3378,ice_cream_cone,dessert,1682.0,cream_cheese,dessert
@@ -451,7 +450,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,ingredient_type,origin_ingre
 159,apple_brandy,5192,raisin_bread,other,1682.0,cream_cheese,dessert
 159,apple_brandy,2761,fruit_preserve,other,1682.0,cream_cheese,dessert
 159,apple_brandy,4588,pancake,other,1682.0,cream_cheese,dessert
-159,apple_brandy,5676,scotch_whisky,other,1682.0,cream_cheese,dessert
 159,apple_brandy,6766,waffle,other,1682.0,cream_cheese,dessert
 159,apple_brandy,273,bagel,other,1682.0,cream_cheese,dessert
 159,apple_brandy,3378,ice_cream_cone,dessert,1682.0,cream_cheese,dessert
@@ -515,7 +513,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,ingredient_type,origin_ingre
 519,blackberry_brandy,5192,raisin_bread,other,1682.0,cream_cheese,dessert
 519,blackberry_brandy,2761,fruit_preserve,other,1682.0,cream_cheese,dessert
 519,blackberry_brandy,4588,pancake,other,1682.0,cream_cheese,dessert
-519,blackberry_brandy,5676,scotch_whisky,other,1682.0,cream_cheese,dessert
 519,blackberry_brandy,6766,waffle,other,1682.0,cream_cheese,dessert
 519,blackberry_brandy,273,bagel,other,1682.0,cream_cheese,dessert
 519,blackberry_brandy,3378,ice_cream_cone,dessert,1682.0,cream_cheese,dessert
@@ -579,7 +576,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,ingredient_type,origin_ingre
 662,brandy,5192,raisin_bread,other,1682.0,cream_cheese,dessert
 662,brandy,2761,fruit_preserve,other,1682.0,cream_cheese,dessert
 662,brandy,4588,pancake,other,1682.0,cream_cheese,dessert
-662,brandy,5676,scotch_whisky,other,1682.0,cream_cheese,dessert
 662,brandy,6766,waffle,other,1682.0,cream_cheese,dessert
 662,brandy,273,bagel,other,1682.0,cream_cheese,dessert
 662,brandy,3378,ice_cream_cone,dessert,1682.0,cream_cheese,dessert
@@ -634,7 +630,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,ingredient_type,origin_ingre
 1112,cherry_brandy,5192,raisin_bread,other,1682.0,cream_cheese,dessert
 1112,cherry_brandy,2761,fruit_preserve,other,1682.0,cream_cheese,dessert
 1112,cherry_brandy,4588,pancake,other,1682.0,cream_cheese,dessert
-1112,cherry_brandy,5676,scotch_whisky,other,1682.0,cream_cheese,dessert
 1112,cherry_brandy,6766,waffle,other,1682.0,cream_cheese,dessert
 1112,cherry_brandy,273,bagel,other,1682.0,cream_cheese,dessert
 1112,cherry_brandy,3378,ice_cream_cone,dessert,1682.0,cream_cheese,dessert
@@ -808,7 +803,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,ingredient_type,origin_ingre
 4702,pear_brandy,5192,raisin_bread,other,1682.0,cream_cheese,dessert
 4702,pear_brandy,2761,fruit_preserve,other,1682.0,cream_cheese,dessert
 4702,pear_brandy,4588,pancake,other,1682.0,cream_cheese,dessert
-4702,pear_brandy,5676,scotch_whisky,other,1682.0,cream_cheese,dessert
 4702,pear_brandy,6766,waffle,other,1682.0,cream_cheese,dessert
 4702,pear_brandy,273,bagel,other,1682.0,cream_cheese,dessert
 4702,pear_brandy,3378,ice_cream_cone,dessert,1682.0,cream_cheese,dessert
@@ -841,7 +835,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,ingredient_type,origin_ingre
 4930,plum_brandy,5192,raisin_bread,other,1682.0,cream_cheese,dessert
 4930,plum_brandy,2761,fruit_preserve,other,1682.0,cream_cheese,dessert
 4930,plum_brandy,4588,pancake,other,1682.0,cream_cheese,dessert
-4930,plum_brandy,5676,scotch_whisky,other,1682.0,cream_cheese,dessert
 4930,plum_brandy,6766,waffle,other,1682.0,cream_cheese,dessert
 4930,plum_brandy,273,bagel,other,1682.0,cream_cheese,dessert
 4930,plum_brandy,3378,ice_cream_cone,dessert,1682.0,cream_cheese,dessert
@@ -912,7 +905,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,ingredient_type,origin_ingre
 1069,champagne,5192,raisin_bread,other,1682.0,cream_cheese,dessert
 1069,champagne,2761,fruit_preserve,other,1682.0,cream_cheese,dessert
 1069,champagne,4588,pancake,other,1682.0,cream_cheese,dessert
-1069,champagne,5676,scotch_whisky,other,1682.0,cream_cheese,dessert
 1069,champagne,6766,waffle,other,1682.0,cream_cheese,dessert
 1069,champagne,273,bagel,other,1682.0,cream_cheese,dessert
 1069,champagne,3378,ice_cream_cone,dessert,1682.0,cream_cheese,dessert

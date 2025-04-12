@@ -106,7 +106,7 @@ def make_emb():
     ingredient_avg_embeddings = dict(sorted(ingrs_embedd().items()))
 
     liquor_key = list(liquor_avg_embeddings.keys())
-    #print(liquor_key)
+    print(liquor_key)
     print(len(liquor_key))
     ingredient_key = list(ingredient_avg_embeddings.keys())
     #print(ingredient_key)
@@ -169,7 +169,7 @@ class TripletInteractionDataset(Dataset):
         self.positive_pairs = list(positive_pairs)
         self.positive_set = set(positive_pairs)
 
-        # 일반 랜덤 negative sampling
+        # Positive samples + Negative samples(random)
         for u, i in self.positive_pairs:
             for _ in range(int(negative_ratio)):
                 while True:
@@ -178,10 +178,9 @@ class TripletInteractionDataset(Dataset):
                         self.triplets.append((u, i, j))
                         break
 
-        # 하드 네거티브 추가
+        # Hard negatives
         if hard_negatives is not None:
             for u, j in hard_negatives:
-                # u와 연결된 실제 positive 중 하나 선택
                 positives_for_u = [i for x, i in self.positive_pairs if x == u]
                 if positives_for_u:
                     i = random.choice(positives_for_u)

@@ -14,18 +14,19 @@ class NeuralCF(nn.Module):
         self.user_emb_mlp = nn.Embedding(num_users, emb_size)
         self.item_emb_mlp = nn.Embedding(num_items, emb_size)
 
+        if user_init is not None:
+            self.user_emb_mlp.weight.data.copy_(user_init.float())
+            self.user_emb_gmf.weight.data.copy_(user_init.float())
+        if item_init is not None:
+            self.item_emb_mlp.weight.data.copy_(item_init.float())
+            self.item_emb_gmf.weight.data.copy_(item_init.float())
+
+
         nn.init.kaiming_uniform_(self.user_emb_mlp.weight, nonlinearity="relu")
         nn.init.kaiming_uniform_(self.item_emb_mlp.weight, nonlinearity="relu")
 
         #nn.init.orthogonal_(self.user_emb_mlp.weight)
         #nn.init.orthogonal_(self.item_emb_mlp.weight)
-
-        if user_init is not None:
-            self.user_emb_mlp.weight.data.copy_(user_init)
-            self.user_emb_gmf.weight.data.copy_(user_init)
-        if item_init is not None:
-            self.item_emb_mlp.weight.data.copy_(item_init)
-            self.item_emb_gmf.weight.data.copy_(item_init)
 
         layers = []
         input_size = emb_size * 2

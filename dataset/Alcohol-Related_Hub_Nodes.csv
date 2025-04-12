@@ -17,6 +17,7 @@ node_id,name,id,node_type,is_hub
 5534,rose_wine,,liquor,hub
 5558,rum,,liquor,hub
 5587,sake,,liquor,hub
+5676,scotch_whisky,,liquor,hub
 6031,sparkling_wine,,liquor,hub
 6763,vodka,,liquor,hub
 6918,white_wine,,liquor,hub

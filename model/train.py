@@ -25,6 +25,10 @@ def train_model(model, train_loader, num_epochs=10, lr=0.001, weight_decay=1e-5)
         total = 0
 
         for user, item, label in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs}"):
+            user = user.long()   
+            item = item.long()   
+            label = label.float()
+
             user, item, label = user.to(device), item.to(device), label.to(device)
 
             optimizer.zero_grad()
@@ -54,12 +58,16 @@ if __name__ == "__main__":
 
     with open("./model/data/ingredient_key.pkl", "rb") as f:
         ingredient_keys = pickle.load(f)
+    #print(len(ingredient_keys))
 
     with open("./model/data/liquor_key.pkl", "rb") as f:
         liquor_keys = pickle.load(f)
+    #print(len(liquor_keys))
 
     iid_to_idx = {item_id: idx for idx, item_id in enumerate(ingredient_keys)}
     lid_to_idx = {item_id: idx for idx, item_id in enumerate(liquor_keys)}
+
+    #print(lid_to_idx)
 
     positive_pairs['liquor_id'] = positive_pairs['liquor_id'].map(lid_to_idx)
     positive_pairs['ingredient_id'] = positive_pairs['ingredient_id'].map(iid_to_idx)
@@ -67,12 +75,15 @@ if __name__ == "__main__":
     negative_pairs['liquor_id'] = negative_pairs['liquor_id'].map(lid_to_idx)
     negative_pairs['ingredient_id'] = negative_pairs['ingredient_id'].map(iid_to_idx)
 
-    train_dataset = InteractionDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=22, num_items=394)
+    train_dataset = InteractionDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=23, num_items=393)
     train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True)
 
     liquor_embedding_tensor = torch.load("./model/data/liquor_init_embedding.pt")
     ingredient_embedding_tensor = torch.load("./model/data/ingredient_init_embedding.pt")
 
-    model = NeuralCF(num_users=22, num_items=394, emb_size=128,user_init=liquor_embedding_tensor, item_init=ingredient_embedding_tensor)
+    #print(liquor_embedding_tensor.shape)
+    #print(ingredient_embedding_tensor.shape)
+
+    model = NeuralCF(num_users=23, num_items=393, emb_size=128, user_init=liquor_embedding_tensor, item_init=ingredient_embedding_tensor)
 
     train_model(model=model, train_loader=train_loader, num_epochs=20)
