@@ -68,6 +68,10 @@ def liquors_embbed() -> dict[int, list[float]]:
 
     # 술 ID별 연결된 compound 리스트 초기화
     liquor_to_compounds = defaultdict(list)
+    
+    for _, row in nodes_df.iterrows():
+        if row['node_type'] == 'liquor':
+            liquor_to_compounds[row['node_id']] = []
 
     # 조건: edge_type == 'ingr-fcomp', 한 쪽이 liquor, 한 쪽이 compound인 경우
     for _, row in edges_df.iterrows():
@@ -109,12 +113,18 @@ def liquors_embbed() -> dict[int, list[float]]:
     liquor_avg_embeddings = {}
 
     for liquor_id, compound_ids in list(liquor_to_compounds.items()):
-        valid_vectors = [embbed_dict[cid] for cid in compound_ids if cid in embbed_dict]
+        if liquor_to_compounds[liquor_id] != []: 
+            valid_vectors = [embbed_dict[cid] for cid in compound_ids if cid in embbed_dict]
 
-        if valid_vectors:  # 유효한 벡터가 하나라도 있을 경우 평균 계산
-            avg_vector = np.mean(valid_vectors, axis=0)
-            liquor_avg_embeddings[liquor_id] = avg_vector
-
+            if valid_vectors:  # 유효한 벡터가 하나라도 있을 경우 평균 계산
+                avg_vector = np.mean(valid_vectors, axis=0)
+                liquor_avg_embeddings[liquor_id] = avg_vector
+        else:
+            # liquor_id에 해당하는 compound_ids가 없을 경우, 랜덤 벡터 생성
+            valid_vectors = [random.random() for _ in range(128)]
+            liquor_avg_embeddings[liquor_id] = valid_vectors
+            #print("Error occurred for liquor_id:", liquor_id)
+                
     return liquor_avg_embeddings
     # 확인용 예시 출력
     """for liquor_id, vec in list(liquor_avg_embeddings.items())[:5]:
@@ -130,6 +140,10 @@ def ingrs_embedd() -> dict[int, list[float]]:
 
     # 음식 ID별 연결된 compound 리스트 초기화
     ingr_to_compounds = defaultdict(list)
+    
+    for _, row in nodes_df.iterrows():
+        if row['node_type'] == 'ingredient':
+            ingr_to_compounds[row['node_id']] = []
 
     # 조건: edge_type == 'ingr-fcomp', 한 쪽이 ingredient, 한 쪽이 compound인 경우
     for _, row in edges_df.iterrows():
@@ -147,22 +161,24 @@ def ingrs_embedd() -> dict[int, list[float]]:
             # tgt가 음식이고 src가 compound인 경우
             elif tgt_type == 'ingredient' and src_type == 'compound':
                 ingr_to_compounds[tgt].append(src)
-
+    
     with open("./dataset/compound_embeddings_filtered.pkl", "rb") as f:
         embbed_dict = pickle.load(f)
 
     ingredient_avg_embeddings = {}
 
     for ingredient_id, compound_ids in list(ingr_to_compounds.items()):
-        valid_vectors = [embbed_dict[cid] for cid in compound_ids if cid in embbed_dict]
+        if ingr_to_compounds[ingredient_id] != []:
+            valid_vectors = [embbed_dict[cid] for cid in compound_ids if cid in embbed_dict]
 
-        if valid_vectors:  # 유효한 벡터가 하나라도 있을 경우 평균 계산
-            avg_vector = np.mean(valid_vectors, axis=0)
-            ingredient_avg_embeddings[ingredient_id] = avg_vector
+            if valid_vectors:  # 유효한 벡터가 하나라도 있을 경우 평균 계산
+                avg_vector = np.mean(valid_vectors, axis=0)
+                ingredient_avg_embeddings[ingredient_id] = avg_vector
         else:
-            #print("비상비상")
-            pass
-        
+            # ingredient_id에 해당하는 compound_ids가 없을 경우, 랜덤 벡터 생성
+            valid_vectors = [random.random() for _ in range(128)]
+            ingredient_avg_embeddings[ingredient_id] = valid_vectors
+            
     return ingredient_avg_embeddings
 
 def make_emb():
@@ -171,10 +187,10 @@ def make_emb():
 
     liquor_key = list(liquor_avg_embeddings.keys())
     print(liquor_key)
-    print(len(liquor_key))
+    print(f"liquor num\t: {len(liquor_key)}")
     ingredient_key = list(ingredient_avg_embeddings.keys())
     #print(ingredient_key)
-    print(len(ingredient_key))
+    print(f"ingredient num\t: {len(ingredient_key)}")
 
     with open("./model/data/liquor_key.pkl", "wb") as f:
         pickle.dump(liquor_key, f)

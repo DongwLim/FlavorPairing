@@ -75,7 +75,7 @@ if __name__ == "__main__":
     negative_pairs['liquor_id'] = negative_pairs['liquor_id'].map(lid_to_idx)
     negative_pairs['ingredient_id'] = negative_pairs['ingredient_id'].map(iid_to_idx)
 
-    train_dataset = InteractionDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=22, num_items=395)
+    train_dataset = InteractionDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=162, num_items=6591)
     train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True)
 
     liquor_embedding_tensor = torch.load("./model/data/liquor_init_embedding.pt")
@@ -84,6 +84,6 @@ if __name__ == "__main__":
     #print(liquor_embedding_tensor.shape)
     #print(ingredient_embedding_tensor.shape)
 
-    model = NeuralCF(num_users=22, num_items=395, emb_size=128, user_init=liquor_embedding_tensor, item_init=ingredient_embedding_tensor)
+    model = NeuralCF(num_users=162, num_items=6491, emb_size=128, user_init=liquor_embedding_tensor, item_init=ingredient_embedding_tensor)
 
     train_model(model=model, train_loader=train_loader, num_epochs=20)
