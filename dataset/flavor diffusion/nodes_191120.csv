@@ -33,8 +33,8 @@ node_id,name,id,node_type,is_hub
 36,9_inch_pie_shell,,ingredient,no_hub
 37,a.1._original_sauce,,ingredient,no_hub
 38,abalone,,ingredient,hub
-39,absinthe,,ingredient,no_hub
-40,absolut_citron_vodka,,ingredient,no_hub
+39,absinthe,,liquor,no_hub
+40,absolut_citron_vodka,,liquor,no_hub
 44,achiote,,ingredient,no_hub
 45,achiote_oil,,ingredient,no_hub
 46,achiote_paste,,ingredient,no_hub
@@ -64,8 +64,8 @@ node_id,name,id,node_type,is_hub
 71,albacore_tuna,,ingredient,hub
 72,albacore_tuna_in_water,,ingredient,no_hub
 73,alcaparrado,,ingredient,no_hub
-74,alcohol,,ingredient,no_hub
-75,ale,,ingredient,no_hub
+74,alcohol,,liquor,no_hub
+75,ale,,liquor,no_hub
 76,aleppo_pepper,,ingredient,no_hub
 77,alfalfa,,ingredient,hub
 78,alfalfa_sprout,,ingredient,no_hub

@@ -3,14 +3,65 @@ from collections import defaultdict
 import pickle
 import numpy as np
 import random
+from tqdm import tqdm
 
 import torch
 from torch.utils.data import Dataset
 
+def preprocess():
+    nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
+    edges_df = pd.read_csv("./dataset/flavor diffusion/edges_191120.csv")
+    
+    liquors_map = []
+    ingredients_map = []
+    compounds_map = []
+    
+    for _, row in nodes_df.iterrows():
+        if row['node_type'] == "liquor":
+            liquors_map.append(row['node_id'])
+        elif row['node_type'] == "ingredient":
+            ingredients_map.append(row['node_id'])
+        elif row['node_type'] == "compound":
+            compounds_map.append(row['node_id'])
+    
+    #print(len(liquors_map))
+    #print(len(ingredients_map))
+    
+    with open("./model/data/liquor_key.pkl", "wb") as f:
+        pickle.dump(liquors_map, f)
+        
+    with open("./model/data/ingredient_key.pkl", "wb") as f:
+        pickle.dump(ingredients_map, f)
+    
+    liqr_liqr = 0
+    liqr_ingr = 0
+    ingr_ingr = 0
+    
+    for idx, row in tqdm(edges_df.iterrows(), desc="Changing Edge Type..."):
+        src, tgt = row['id_1'], row['id_2']
+        etype = row['edge_type']
+        
+        if etype == 'ingr-ingr':
+            if src in liquors_map and tgt in liquors_map:
+                edges_df.at[idx, 'edge_type'] = 'liqr-liqr'
+                liqr_liqr += 1
+            elif (src in liquors_map) ^ (tgt in liquors_map):
+                edges_df.at[idx, 'edge_type'] = 'liqr-ingr'
+                liqr_ingr += 1
+            else:
+                ingr_ingr += 1
+    
+    print(f"Total prev ingr-ingr edges :\t{ingr_ingr + liqr_liqr + liqr_ingr}\nChanged to ...")
+    print(f"liqr-liqr edges :\t{liqr_liqr}")
+    print(f"liqr_ingr edges :\t{liqr_ingr}")
+    print(f"ingr_ingr edges :\t{ingr_ingr}")
+    
+    edges_df.to_csv("./dataset/edges_191120_updated.csv", index=False)
+            
 def liquors_embbed() -> dict[int, list[float]]:
     # 파일 불러오기
-    nodes_df = pd.read_csv("./dataset/Hub_Nodes.csv")
-    edges_df = pd.read_csv("./dataset/Hub_Edges.csv")
+    nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
+    edges_df = pd.read_csv("./dataset/edges_191120_updated.csv")
 
     # 노드 타입 매핑
     node_type_map = dict(zip(nodes_df['node_id'], nodes_df['node_type']))
@@ -20,10 +71,22 @@ def liquors_embbed() -> dict[int, list[float]]:
 
     # 조건: edge_type == 'ingr-fcomp', 한 쪽이 liquor, 한 쪽이 compound인 경우
     for _, row in edges_df.iterrows():
-        src, tgt = row['source'], row['target']
+        src, tgt = row['id_1'], row['id_2']
         etype = row['edge_type']
 
         if etype == 'ingr-fcomp':
+            src_type = node_type_map.get(src)
+            tgt_type = node_type_map.get(tgt)
+
+            # src가 술이고 tgt가 compound인 경우
+            if src_type == 'liquor' and tgt_type == 'compound':
+                liquor_to_compounds[src].append(tgt)
+
+            # tgt가 술이고 src가 compound인 경우
+            elif tgt_type == 'liquor' and src_type == 'compound':
+                liquor_to_compounds[tgt].append(src)
+                
+        if etype == 'ingr-dcomp':
             src_type = node_type_map.get(src)
             tgt_type = node_type_map.get(tgt)
 
@@ -59,8 +122,8 @@ def liquors_embbed() -> dict[int, list[float]]:
 
 def ingrs_embedd() -> dict[int, list[float]]: 
     # 파일 불러오기
-    nodes_df = pd.read_csv("./dataset/Hub_Nodes.csv")
-    edges_df = pd.read_csv("./dataset/Hub_Edges.csv")
+    nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
+    edges_df = pd.read_csv("./dataset/edges_191120_updated.csv")
 
     # 노드 타입 매핑
     node_type_map = dict(zip(nodes_df['node_id'], nodes_df['node_type']))
@@ -70,7 +133,7 @@ def ingrs_embedd() -> dict[int, list[float]]:
 
     # 조건: edge_type == 'ingr-fcomp', 한 쪽이 ingredient, 한 쪽이 compound인 경우
     for _, row in edges_df.iterrows():
-        src, tgt = row['source'], row['target']
+        src, tgt = row['id_1'], row['id_2']
         etype = row['edge_type']
 
         if etype == 'ingr-fcomp' or etype == 'ingr-dcomp':
@@ -97,8 +160,9 @@ def ingrs_embedd() -> dict[int, list[float]]:
             avg_vector = np.mean(valid_vectors, axis=0)
             ingredient_avg_embeddings[ingredient_id] = avg_vector
         else:
-            print("비상비상")
-
+            #print("비상비상")
+            pass
+        
     return ingredient_avg_embeddings
 
 def make_emb():
@@ -121,15 +185,13 @@ def make_emb():
     liquor_embedding_tensor = torch.tensor(np.stack(list(liquor_avg_embeddings.values())), dtype=torch.float32)
     ingredient_embedding_tensor = torch.tensor(np.stack(list(ingredient_avg_embeddings.values())), dtype=torch.float32)
 
-    """print("Liquor Embedding Tensor")
+    print("Liquor Embedding Tensor")
     print("  - Shape:", liquor_embedding_tensor.shape)
-    print("  - Dtype:", liquor_embedding_tensor.dtype)
-    print("  - Sample:\n", liquor_embedding_tensor[:2])  
+    print("  - Dtype:", liquor_embedding_tensor.dtype) 
 
     print("\nIngredient Embedding Tensor")
     print("  - Shape:", ingredient_embedding_tensor.shape)
     print("  - Dtype:", ingredient_embedding_tensor.dtype)
-    print("  - Sample:\n", ingredient_embedding_tensor[:2])"""
 
     torch.save(liquor_embedding_tensor, "./model/data/liquor_init_embedding.pt")
     torch.save(ingredient_embedding_tensor, "./model/data/ingredient_init_embedding.pt")
@@ -194,4 +256,5 @@ class TripletInteractionDataset(Dataset):
         return torch.tensor(u, dtype=torch.long), torch.tensor(pos, dtype=torch.long), torch.tensor(neg, dtype=torch.long)
 
 if __name__ == "__main__":
+    #preprocess()
     make_emb()

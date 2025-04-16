@@ -3,8 +3,25 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class NeuralCF(nn.Module):
-    def __init__(self, num_users, num_items, emb_size=128, hidden_layers=[128, 64, 32], user_init=None, item_init=None):
+    def __init__(self, num_users, num_items, num_nodes=0, num_relations=0, emb_size=128, hidden_layers=[128, 64, 32], user_init=None, item_init=None):
         super(NeuralCF, self).__init__()
+        """_summary_
+            num_users       :   술 노드의 개수
+            num_items       :   음식 노드의 개수
+            num_nodes       :   전체 노드의 개수
+            num_relations   :   관계(edge_type)의 개수
+            emb_size        :   벡터 차원 크기
+            hidden_layer    :   MLP
+            user_init       :   술 초기 임베딩
+            item_init       :   음식 초기 임베딩
+        """
+        """
+            GNN 미구현 
+            CSP_Aggregation 미구현
+        """
+        
+        # GNN
+        
         
         # GMF 
         self.user_emb_gmf = nn.Embedding(num_users, emb_size)
@@ -40,6 +57,9 @@ class NeuralCF(nn.Module):
         self.output_layer = nn.Linear(hidden_layers[-1] + emb_size, 1)
 
     def forward(self, user_indices, item_indices):
+        # GNN
+        
+        
         # GMF
         gmf_user = self.user_emb_gmf(user_indices)
         gmf_item = self.item_emb_gmf(item_indices)
