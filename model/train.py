@@ -75,6 +75,11 @@ if __name__ == "__main__":
     negative_pairs['liquor_id'] = negative_pairs['liquor_id'].map(lid_to_idx)
     negative_pairs['ingredient_id'] = negative_pairs['ingredient_id'].map(iid_to_idx)
 
+    """
+    num_users = 162 # Number of unique liquor IDs
+    num_items = 6491 # Number of unique ingredient IDs
+    """
+    
     train_dataset = InteractionDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=162, num_items=6591)
     train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True)
 
