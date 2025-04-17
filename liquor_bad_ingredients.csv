@@ -1,0 +1,3661 @@
+liquor_id,liquor_name,ingredient_id,ingredient_name,origin
+39,absinthe,5649,sashimi_grade_tuna,생선
+39,absinthe,2363,firm_white_fish,생선
+39,absinthe,6874,white_fish_fillet,생선
+39,absinthe,1222,chili_pepper,매운 음식
+39,absinthe,1223,chili_pepper_flake,매운 음식
+39,absinthe,1962,dried_chili_pepper_flake,매운 음식
+39,absinthe,1997,dried_hot_chili_pepper,매운 음식
+39,absinthe,2000,dried_hot_red_chili_pepper,매운 음식
+39,absinthe,2054,dried_red_chili_pepper,매운 음식
+39,absinthe,2103,dry_chili_pepper,매운 음식
+39,absinthe,2466,fresh_chili_pepper,매운 음식
+39,absinthe,2992,green_chili_pepper,매운 음식
+39,absinthe,3054,ground_ancho_chili_pepper,매운 음식
+39,absinthe,3106,ground_red_chili_pepper,매운 음식
+39,absinthe,3326,hot_chili_pepper,매운 음식
+39,absinthe,3339,hot_green_chili_pepper,매운 음식
+39,absinthe,3355,hot_red_chili_pepper,매운 음식
+39,absinthe,5279,red_chili_pepper,매운 음식
+39,absinthe,5738,serrano_chili_pepper,매운 음식
+39,absinthe,6392,thai_red_chili_pepper,매운 음식
+39,absinthe,508,black_soy_sauce,발효 음식
+39,absinthe,1836,dark_soy_sauce,발효 음식
+39,absinthe,2881,gluten_free_soy_sauce,발효 음식
+39,absinthe,3508,japanese_soy_sauce,발효 음식
+39,absinthe,3574,kikkoman_soy_sauce,발효 음식
+39,absinthe,3826,light_soy_sauce,발효 음식
+39,absinthe,3988,low_sodium_soy_sauce,발효 음식
+39,absinthe,4338,mushroom_soy_sauce,발효 음식
+39,absinthe,5396,reduced_sodium_soy_sauce,발효 음식
+39,absinthe,5997,soy_sauce,발효 음식
+39,absinthe,6277,sweet_soy_sauce,발효 음식
+39,absinthe,6328,tamari_soy_sauce,발효 음식
+39,absinthe,6400,thick_soy_sauce,발효 음식
+39,absinthe,6406,thin_soy_sauce,발효 음식
+40,absolut_citron_vodka,67,ahi_tuna_steak,무거운 육류
+40,absolut_citron_vodka,377,beef_cube_steak,무거운 육류
+40,absolut_citron_vodka,396,beef_round_steak,무거운 육류
+40,absolut_citron_vodka,397,beef_round_tip_steak,무거운 육류
+40,absolut_citron_vodka,404,beef_sirloin_steak,무거운 육류
+40,absolut_citron_vodka,406,beef_steak,무거운 육류
+40,absolut_citron_vodka,414,beef_t_bone_steak,무거운 육류
+40,absolut_citron_vodka,418,beef_tenderloin_steak,무거운 육류
+40,absolut_citron_vodka,421,beef_top_round_steak,무거운 육류
+40,absolut_citron_vodka,422,beefsteak_tomato,무거운 육류
+40,absolut_citron_vodka,527,blade_steak,무거운 육류
+40,absolut_citron_vodka,577,boneless_beef_chuck_steak,무거운 육류
+40,absolut_citron_vodka,580,boneless_beef_round_steak,무거운 육류
+40,absolut_citron_vodka,585,boneless_beef_top_loin_steak,무거운 육류
+40,absolut_citron_vodka,586,boneless_beef_top_round_steak,무거운 육류
+40,absolut_citron_vodka,613,boneless_rib_eye_steak,무거운 육류
+40,absolut_citron_vodka,614,boneless_round_steak,무거운 육류
+40,absolut_citron_vodka,618,boneless_sirloin_steak,무거운 육류
+40,absolut_citron_vodka,631,boneless_veal_steak,무거운 육류
+40,absolut_citron_vodka,647,bottom_round_steak,무거운 육류
+40,absolut_citron_vodka,1350,chuck_steak,무거운 육류
+40,absolut_citron_vodka,1457,cod_steak,무거운 육류
+40,absolut_citron_vodka,1766,cube_steak,무거운 육류
+40,absolut_citron_vodka,2338,filet_mignon_steak,무거운 육류
+40,absolut_citron_vodka,2373,fish_steak,무거운 육류
+40,absolut_citron_vodka,2381,flank_steak,무거운 육류
+40,absolut_citron_vodka,2383,flat_iron_steak,무거운 육류
+40,absolut_citron_vodka,3158,halibut_steak,무거운 육류
+40,absolut_citron_vodka,3167,ham_steak,무거운 육류
+40,absolut_citron_vodka,3175,hanger_steak,무거운 육류
+40,absolut_citron_vodka,3227,heinz_57_steak_sauce,무거운 육류
+40,absolut_citron_vodka,3366,hp_steak_sauce,무거운 육류
+40,absolut_citron_vodka,3653,lamb_steak,무거운 육류
+40,absolut_citron_vodka,3692,lean_flank_steak,무거운 육류
+40,absolut_citron_vodka,3708,lean_round_steak,무거운 육류
+40,absolut_citron_vodka,3710,lean_sirloin_steak,무거운 육류
+40,absolut_citron_vodka,3711,lean_steak,무거운 육류
+40,absolut_citron_vodka,4118,mccormick's_montreal_brand_steak_seasoning,무거운 육류
+40,absolut_citron_vodka,4255,minute_steak,무거운 육류
+40,absolut_citron_vodka,4381,new_york_strip_steak,무거운 육류
+40,absolut_citron_vodka,4973,pork_blade_steak,무거운 육류
+40,absolut_citron_vodka,5010,pork_steak,무거운 육류
+40,absolut_citron_vodka,5020,porterhouse_steak,무거운 육류
+40,absolut_citron_vodka,5427,rib_eye_steak,무거운 육류
+40,absolut_citron_vodka,5551,round_steak,무거운 육류
+40,absolut_citron_vodka,5562,rump_steak,무거운 육류
+40,absolut_citron_vodka,5602,salmon_steak,무거운 육류
+40,absolut_citron_vodka,5761,shark_steak,무거운 육류
+40,absolut_citron_vodka,5769,shell_steak,무거운 육류
+40,absolut_citron_vodka,5827,sirloin_steak,무거운 육류
+40,absolut_citron_vodka,5829,sirloin_tip_steak,무거운 육류
+40,absolut_citron_vodka,5846,skirt_steak,무거운 육류
+40,absolut_citron_vodka,6095,steak,무거운 육류
+40,absolut_citron_vodka,6096,steak_fillet,무거운 육류
+40,absolut_citron_vodka,6097,steak_sauce,무거운 육류
+40,absolut_citron_vodka,6098,steak_seasoning,무거운 육류
+40,absolut_citron_vodka,6099,steak_spice,무거운 육류
+40,absolut_citron_vodka,6101,steak_ums,무거운 육류
+40,absolut_citron_vodka,6158,strip_steak,무거운 육류
+40,absolut_citron_vodka,6302,swordfish_steak,무거운 육류
+40,absolut_citron_vodka,6471,top_round_steak,무거운 육류
+40,absolut_citron_vodka,6472,top_sirloin_steak,무거운 육류
+40,absolut_citron_vodka,6484,tri_tip_steak,무거운 육류
+40,absolut_citron_vodka,6505,tuna_steak,무거운 육류
+40,absolut_citron_vodka,6685,veal_steak,무거운 육류
+40,absolut_citron_vodka,6742,venison_steak,무거운 육류
+40,absolut_citron_vodka,7085,yellowfin_tuna_steak,무거운 육류
+40,absolut_citron_vodka,6006,soybean_paste,발효 음식
+40,absolut_citron_vodka,1824,dark_miso,발효 음식
+40,absolut_citron_vodka,3812,light_miso,발효 음식
+40,absolut_citron_vodka,4264,miso,발효 음식
+40,absolut_citron_vodka,5309,red_miso,발효 음식
+40,absolut_citron_vodka,5783,shiro_miso,발효 음식
+40,absolut_citron_vodka,6887,white_miso,발효 음식
+40,absolut_citron_vodka,7065,yellow_miso,발효 음식
+40,absolut_citron_vodka,643,bottled_hot_pepper_sauce,매운 음식
+40,absolut_citron_vodka,1998,dried_hot_pepper,매운 음식
+40,absolut_citron_vodka,3008,green_hot_pepper_sauce,매운 음식
+40,absolut_citron_vodka,3347,hot_pepper,매운 음식
+40,absolut_citron_vodka,3348,hot_pepper_flake,매운 음식
+40,absolut_citron_vodka,3349,hot_pepper_jelly,매운 음식
+40,absolut_citron_vodka,3350,hot_pepper_oil,매운 음식
+40,absolut_citron_vodka,3351,hot_pepper_paste,매운 음식
+40,absolut_citron_vodka,3352,hot_pepper_sauce,매운 음식
+40,absolut_citron_vodka,3879,liquid_hot_pepper_sauce,매운 음식
+40,absolut_citron_vodka,5298,red_hot_pepper,매운 음식
+40,absolut_citron_vodka,5299,red_hot_pepper_sauce,매운 음식
+75,ale,5649,sashimi_grade_tuna,섬세한 해산물
+75,ale,2394,flounder,섬세한 해산물
+75,ale,2395,flounder_fillet,섬세한 해산물
+100,almond_liqueur,237,baby_clam,해산물
+100,almond_liqueur,641,bottled_clam_juice,해산물
+100,almond_liqueur,907,canned_clam,해산물
+100,almond_liqueur,1127,cherrystone_clam,해산물
+100,almond_liqueur,1342,chopped_clams_with_juice,해산물
+100,almond_liqueur,1395,clam,해산물
+100,almond_liqueur,1396,clam_base,해산물
+100,almond_liqueur,1397,clam_broth,해산물
+100,almond_liqueur,1398,clam_juice,해산물
+100,almond_liqueur,1399,clamato_juice,해산물
+100,almond_liqueur,1400,clams_in_shell,해산물
+100,almond_liqueur,3186,hard_shelled_clam,해산물
+100,almond_liqueur,3891,littleneck_clam,해산물
+100,almond_liqueur,4063,manila_clam,해산물
+100,almond_liqueur,4218,minced_clam,해산물
+100,almond_liqueur,4219,minced_clams_with_juice,해산물
+100,almond_liqueur,5248,razor_clam,해산물
+100,almond_liqueur,5860,small_clam,해산물
+100,almond_liqueur,6103,steamer_clam,해산물
+100,almond_liqueur,266,backfin_crab_meat,해산물
+100,almond_liqueur,542,blue_crab,해산물
+100,almond_liqueur,543,blue_crab_meat,해산물
+100,almond_liqueur,911,canned_crabmeat,해산물
+100,almond_liqueur,1645,crab,해산물
+100,almond_liqueur,1646,crab_boil,해산물
+100,almond_liqueur,1647,crab_boil_seasoning,해산물
+100,almond_liqueur,1648,crab_claw,해산물
+100,almond_liqueur,1649,crab_claw_meat,해산물
+100,almond_liqueur,1650,crab_leg,해산물
+100,almond_liqueur,1651,crabapple,해산물
+100,almond_liqueur,1652,crabmeat,해산물
+100,almond_liqueur,2170,dungeness_crab,해산물
+100,almond_liqueur,2171,dungeness_crabmeat,해산물
+100,almond_liqueur,2478,fresh_crab,해산물
+100,almond_liqueur,2479,fresh_crabmeat,해산물
+100,almond_liqueur,2527,fresh_lump_crabmeat,해산물
+100,almond_liqueur,2652,frozen_crabmeat,해산물
+100,almond_liqueur,3392,imitation_crab_stick,해산물
+100,almond_liqueur,3393,imitation_crabmeat,해산물
+100,almond_liqueur,3537,jumbo_lump_crab_meat,해산물
+100,almond_liqueur,3576,king_crab_leg,해산물
+100,almond_liqueur,3577,king_crab_meat,해산물
+100,almond_liqueur,3892,live_blue_crab,해산물
+100,almond_liqueur,4005,lump_crabmeat,해산물
+100,almond_liqueur,5924,snow_crab_leg,해산물
+100,almond_liqueur,5942,soft_shelled_crab,해산물
+100,almond_liqueur,6867,white_crab_meat,해산물
+100,almond_liqueur,163,apple_cider_vinegar,신 음식
+100,almond_liqueur,299,balsamic_vinegar,신 음식
+100,almond_liqueur,516,black_vinegar,신 음식
+100,almond_liqueur,743,brown_rice_vinegar,신 음식
+100,almond_liqueur,1071,champagne_vinegar,신 음식
+100,almond_liqueur,1250,chinese_white_rice_vinegar,신 음식
+100,almond_liqueur,1362,cider_vinegar,신 음식
+100,almond_liqueur,1452,coconut_vinegar,신 음식
+100,almond_liqueur,1912,distilled_vinegar,신 음식
+100,almond_liqueur,3228,heinz_apple_cider_vinegar,신 음식
+100,almond_liqueur,4041,malt_vinegar,신 음식
+100,almond_liqueur,4455,oil_and_vinegar_dressing,신 음식
+100,almond_liqueur,4738,pepper_vinegar,신 음식
+100,almond_liqueur,5225,raspberry_vinegar,신 음식
+100,almond_liqueur,5348,red_wine_vinegar,신 음식
+100,almond_liqueur,5449,rice_vinegar,신 음식
+100,almond_liqueur,5451,rice_wine_vinegar,신 음식
+100,almond_liqueur,5696,seasoned_rice_vinegar,신 음식
+100,almond_liqueur,5697,seasoned_rice_wine_vinegar,신 음식
+100,almond_liqueur,5775,sherry_wine_vinegar,신 음식
+100,almond_liqueur,6351,tarragon_vinegar,신 음식
+100,almond_liqueur,6756,vinegar,신 음식
+100,almond_liqueur,6836,white_balsamic_vinegar,신 음식
+100,almond_liqueur,6873,white_distilled_vinegar,신 음식
+100,almond_liqueur,6916,white_vinegar,신 음식
+100,almond_liqueur,6919,white_wine_vinegar,신 음식
+100,almond_liqueur,7018,wine_vinegar,신 음식
+100,almond_liqueur,644,bottled_lemon_juice,신 음식
+100,almond_liqueur,874,candied_lemon_peel,신 음식
+100,almond_liqueur,989,carbonated_lemon_lime_beverage,신 음식
+100,almond_liqueur,2015,dried_lemon_peel,신 음식
+100,almond_liqueur,2016,dried_lemongrass,신 음식
+100,almond_liqueur,2284,fat_free_lemon_yogurt,신 음식
+100,almond_liqueur,2516,fresh_lemon,신 음식
+100,almond_liqueur,2517,fresh_lemon_juice,신 음식
+100,almond_liqueur,2518,fresh_lemon_rind,신 음식
+100,almond_liqueur,2520,fresh_lemongrass,신 음식
+100,almond_liqueur,2530,fresh_meyer_lemon_juice,신 음식
+100,almond_liqueur,2679,frozen_lemonade,신 음식
+100,almond_liqueur,2680,frozen_lemonade_concentrate,신 음식
+100,almond_liqueur,2707,frozen_pink_lemonade_concentrate,신 음식
+100,almond_liqueur,3421,instant_lemon_pudding,신 음식
+100,almond_liqueur,3422,instant_lemon_pudding_mix,신 음식
+100,almond_liqueur,3720,lemon,신 음식
+100,almond_liqueur,3722,"lemon,_juice_and_zest_of",신 음식
+100,almond_liqueur,3723,"lemon,_juice_of",신 음식
+100,almond_liqueur,3724,"lemon,_rind_of",신 음식
+100,almond_liqueur,3725,"lemon,_zest_of",신 음식
+100,almond_liqueur,3727,lemon_balm,신 음식
+100,almond_liqueur,3728,lemon_balm_leaf,신 음식
+100,almond_liqueur,3729,lemon_basil,신 음식
+100,almond_liqueur,3730,lemon_butter,신 음식
+100,almond_liqueur,3731,lemon_cake_mix,신 음식
+100,almond_liqueur,3732,lemon_curd,신 음식
+100,almond_liqueur,3733,lemon_essence,신 음식
+100,almond_liqueur,3734,lemon_extract,신 음식
+100,almond_liqueur,3735,lemon_flavor_instant_pudding_and_pie_filling,신 음식
+100,almond_liqueur,3737,lemon_flavoring,신 음식
+100,almond_liqueur,3738,lemon_frosting,신 음식
+100,almond_liqueur,3739,lemon_gelatin,신 음식
+100,almond_liqueur,3741,lemon_jell_o_gelatin,신 음식
+100,almond_liqueur,3742,lemon_jelly_powder,신 음식
+100,almond_liqueur,3743,lemon_juice,신 음식
+100,almond_liqueur,3744,lemon_juice_concentrate,신 음식
+100,almond_liqueur,3745,lemon_leaf,신 음식
+100,almond_liqueur,3746,lemon_lime_flavored_soda,신 음식
+100,almond_liqueur,3747,lemon_low_fat_yogurt,신 음식
+100,almond_liqueur,3748,lemon_oil,신 음식
+100,almond_liqueur,3750,lemon_peel,신 음식
+100,almond_liqueur,3751,lemon_peel_strip,신 음식
+100,almond_liqueur,3752,lemon_pepper,신 음식
+100,almond_liqueur,3753,lemon_pepper_seasoning,신 음식
+100,almond_liqueur,3754,lemon_pie_filling,신 음식
+100,almond_liqueur,3755,lemon_pudding_mix,신 음식
+100,almond_liqueur,3756,lemon_rind,신 음식
+100,almond_liqueur,3757,lemon_sherbet,신 음식
+100,almond_liqueur,3758,lemon_slice,신 음식
+100,almond_liqueur,3760,lemon_sorbet,신 음식
+100,almond_liqueur,3761,lemon_supreme_cake_mix,신 음식
+100,almond_liqueur,3762,lemon_syrup,신 음식
+100,almond_liqueur,3763,lemon_thyme,신 음식
+100,almond_liqueur,3764,lemon_thyme_leaf,신 음식
+100,almond_liqueur,3765,lemon_twist,신 음식
+100,almond_liqueur,3766,lemon_verbena,신 음식
+100,almond_liqueur,3767,lemon_verbena_leaf,신 음식
+100,almond_liqueur,3768,lemon_vinaigrette,신 음식
+100,almond_liqueur,3769,lemon_wedge,신 음식
+100,almond_liqueur,3770,lemon_yogurt,신 음식
+100,almond_liqueur,3771,lemon_zest,신 음식
+100,almond_liqueur,3772,lemonade,신 음식
+100,almond_liqueur,3773,lemonade_concentrate,신 음식
+100,almond_liqueur,3774,lemonade_mix,신 음식
+100,almond_liqueur,3775,lemongrass,신 음식
+100,almond_liqueur,3776,lemongrass_paste,신 음식
+100,almond_liqueur,3777,"lemons,_juice_and_zest_of",신 음식
+100,almond_liqueur,3778,"lemons,_juice_of",신 음식
+100,almond_liqueur,3779,"lemons,_rind_of",신 음식
+100,almond_liqueur,3780,"lemons,_zest_of",신 음식
+100,almond_liqueur,4184,meyer_lemon,신 음식
+100,almond_liqueur,4185,meyer_lemon_zest,신 음식
+100,almond_liqueur,4873,pink_lemonade,신 음식
+100,almond_liqueur,5088,preserved_lemon,신 음식
+100,almond_liqueur,5258,realemon_juice,신 음식
+100,almond_liqueur,6293,sweetened_lemonade_drink_mix,신 음식
+122,amber_beer,2363,firm_white_fish,섬세한 해산물
+122,amber_beer,6874,white_fish_fillet,섬세한 해산물
+122,amber_beer,5649,sashimi_grade_tuna,섬세한 해산물
+122,amber_beer,3754,lemon_pie_filling,신 디저트
+122,amber_beer,1824,dark_miso,발효 음식
+122,amber_beer,3812,light_miso,발효 음식
+122,amber_beer,4264,miso,발효 음식
+122,amber_beer,5309,red_miso,발효 음식
+122,amber_beer,5783,shiro_miso,발효 음식
+122,amber_beer,6887,white_miso,발효 음식
+122,amber_beer,7065,yellow_miso,발효 음식
+123,amber_rum,237,baby_clam,해산물
+123,amber_rum,641,bottled_clam_juice,해산물
+123,amber_rum,907,canned_clam,해산물
+123,amber_rum,1127,cherrystone_clam,해산물
+123,amber_rum,1342,chopped_clams_with_juice,해산물
+123,amber_rum,1395,clam,해산물
+123,amber_rum,1396,clam_base,해산물
+123,amber_rum,1397,clam_broth,해산물
+123,amber_rum,1398,clam_juice,해산물
+123,amber_rum,1399,clamato_juice,해산물
+123,amber_rum,1400,clams_in_shell,해산물
+123,amber_rum,3186,hard_shelled_clam,해산물
+123,amber_rum,3891,littleneck_clam,해산물
+123,amber_rum,4063,manila_clam,해산물
+123,amber_rum,4218,minced_clam,해산물
+123,amber_rum,4219,minced_clams_with_juice,해산물
+123,amber_rum,5248,razor_clam,해산물
+123,amber_rum,5860,small_clam,해산물
+123,amber_rum,6103,steamer_clam,해산물
+123,amber_rum,5681,sea_bream,해산물
+123,amber_rum,135,anchovy,짠 음식
+123,amber_rum,136,anchovy_fillet,짠 음식
+123,amber_rum,137,anchovy_paste,짠 음식
+123,amber_rum,895,canned_anchovy_fillet,짠 음식
+123,amber_rum,1933,dried_anchovy,짠 음식
+123,amber_rum,5619,salt_packed_anchovy_fillet,짠 음식
+123,amber_rum,5624,salted_anchovy,짠 음식
+150,anise_flavored_liqueur,5649,sashimi_grade_tuna,생선회류
+150,anise_flavored_liqueur,2363,firm_white_fish,생선회류
+150,anise_flavored_liqueur,6874,white_fish_fillet,생선회류
+150,anise_flavored_liqueur,1319,chocolate_mousse_mix,디저트
+150,anise_flavored_liqueur,825,cabbage_kimchi,발효 음식
+150,anise_flavored_liqueur,129,anaheim_chili,매운 음식
+150,anise_flavored_liqueur,130,anaheim_chilies,매운 음식
+150,anise_flavored_liqueur,132,ancho_chili,매운 음식
+150,anise_flavored_liqueur,133,ancho_chilies,매운 음식
+150,anise_flavored_liqueur,208,asian_chili_sauce,매운 음식
+150,anise_flavored_liqueur,640,bottled_chili_sauce,매운 음식
+150,anise_flavored_liqueur,905,canned_chilies,매운 음식
+150,anise_flavored_liqueur,1212,chili,매운 음식
+150,anise_flavored_liqueur,1213,chili_bean,매운 음식
+150,anise_flavored_liqueur,1214,chili_bean_paste,매운 음식
+150,anise_flavored_liqueur,1215,chili_bean_sauce,매운 음식
+150,anise_flavored_liqueur,1216,chili_flake,매운 음식
+150,anise_flavored_liqueur,1217,chili_garlic_sauce,매운 음식
+150,anise_flavored_liqueur,1219,chili_oil,매운 음식
+150,anise_flavored_liqueur,1220,chili_paste,매운 음식
+150,anise_flavored_liqueur,1221,chili_paste_with_garlic,매운 음식
+150,anise_flavored_liqueur,1222,chili_pepper,매운 음식
+150,anise_flavored_liqueur,1223,chili_pepper_flake,매운 음식
+150,anise_flavored_liqueur,1224,chili_pod,매운 음식
+150,anise_flavored_liqueur,1225,chili_powder,매운 음식
+150,anise_flavored_liqueur,1226,chili_sauce,매운 음식
+150,anise_flavored_liqueur,1227,chili_seasoning_mix,매운 음식
+150,anise_flavored_liqueur,1228,chili_with_bean,매운 음식
+150,anise_flavored_liqueur,1229,chili_without_bean,매운 음식
+150,anise_flavored_liqueur,1230,chilies,매운 음식
+150,anise_flavored_liqueur,1236,chinese_chili_sauce,매운 음식
+150,anise_flavored_liqueur,1257,chipotle_chili_sauce,매운 음식
+150,anise_flavored_liqueur,1809,dark_chili_powder,매운 음식
+150,anise_flavored_liqueur,1873,diced_green_chili,매운 음식
+150,anise_flavored_liqueur,1874,diced_green_chilies,매운 음식
+150,anise_flavored_liqueur,1881,diced_tomatoes_with_green_chilies,매운 음식
+150,anise_flavored_liqueur,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+150,anise_flavored_liqueur,1961,dried_chili,매운 음식
+150,anise_flavored_liqueur,1962,dried_chili_pepper_flake,매운 음식
+150,anise_flavored_liqueur,1963,dried_chilies,매운 음식
+150,anise_flavored_liqueur,1993,dried_guajillo_chilies,매운 음식
+150,anise_flavored_liqueur,1997,dried_hot_chili_pepper,매운 음식
+150,anise_flavored_liqueur,2000,dried_hot_red_chili_pepper,매운 음식
+150,anise_flavored_liqueur,2001,dried_hot_red_chilies,매운 음식
+150,anise_flavored_liqueur,2053,dried_red_chili,매운 음식
+150,anise_flavored_liqueur,2054,dried_red_chili_pepper,매운 음식
+150,anise_flavored_liqueur,2055,dried_red_chilies,매운 음식
+150,anise_flavored_liqueur,2103,dry_chili_pepper,매운 음식
+150,anise_flavored_liqueur,2466,fresh_chili_pepper,매운 음식
+150,anise_flavored_liqueur,2502,fresh_green_chilies,매운 음식
+150,anise_flavored_liqueur,2511,fresh_jalapeno_chilies,매운 음식
+150,anise_flavored_liqueur,2990,green_chili,매운 음식
+150,anise_flavored_liqueur,2991,green_chili_paste,매운 음식
+150,anise_flavored_liqueur,2992,green_chili_pepper,매운 음식
+150,anise_flavored_liqueur,2994,green_chili_salsa,매운 음식
+150,anise_flavored_liqueur,2995,green_chili_sauce,매운 음식
+150,anise_flavored_liqueur,2996,green_chilies,매운 음식
+150,anise_flavored_liqueur,3028,green_serrano_chilies,매운 음식
+150,anise_flavored_liqueur,3054,ground_ancho_chili_pepper,매운 음식
+150,anise_flavored_liqueur,3106,ground_red_chili_pepper,매운 음식
+150,anise_flavored_liqueur,3131,guajillo_chilies,매운 음식
+150,anise_flavored_liqueur,3229,heinz_chili_sauce,매운 음식
+150,anise_flavored_liqueur,3309,hormel_chili,매운 음식
+150,anise_flavored_liqueur,3310,hormel_chili_without_bean,매운 음식
+150,anise_flavored_liqueur,3322,hot_chili_bean,매운 음식
+150,anise_flavored_liqueur,3323,hot_chili_flake,매운 음식
+150,anise_flavored_liqueur,3324,hot_chili_oil,매운 음식
+150,anise_flavored_liqueur,3325,hot_chili_paste,매운 음식
+150,anise_flavored_liqueur,3326,hot_chili_pepper,매운 음식
+150,anise_flavored_liqueur,3327,hot_chili_powder,매운 음식
+150,anise_flavored_liqueur,3328,hot_chili_sauce,매운 음식
+150,anise_flavored_liqueur,3329,hot_chinese_chili_paste,매운 음식
+150,anise_flavored_liqueur,3339,hot_green_chili_pepper,매운 음식
+150,anise_flavored_liqueur,3355,hot_red_chili_pepper,매운 음식
+150,anise_flavored_liqueur,3554,kashmiri_chili_powder,매운 음식
+150,anise_flavored_liqueur,4167,mexican_chili_powder,매운 음식
+150,anise_flavored_liqueur,4193,mild_chili_powder,매운 음식
+150,anise_flavored_liqueur,4197,mild_green_chili,매운 음식
+150,anise_flavored_liqueur,4198,mild_green_chilies,매운 음식
+150,anise_flavored_liqueur,4385,no_bean_chili,매운 음식
+150,anise_flavored_liqueur,4793,pickled_jalapeno_chilies,매운 음식
+150,anise_flavored_liqueur,5278,red_chili_paste,매운 음식
+150,anise_flavored_liqueur,5279,red_chili_pepper,매운 음식
+150,anise_flavored_liqueur,5281,red_chili_powder,매운 음식
+150,anise_flavored_liqueur,5282,red_chili_sauce,매운 음식
+150,anise_flavored_liqueur,5283,red_chilies,매운 음식
+150,anise_flavored_liqueur,5478,roasted_green_chilies,매운 음식
+150,anise_flavored_liqueur,5541,rotel_tomatoes_&_chilies,매운 음식
+150,anise_flavored_liqueur,5637,sambal_chili_paste,매운 음식
+150,anise_flavored_liqueur,5639,sambal_oelek_chili_paste,매운 음식
+150,anise_flavored_liqueur,5737,serrano_chili,매운 음식
+150,anise_flavored_liqueur,5738,serrano_chili_pepper,매운 음식
+150,anise_flavored_liqueur,5739,serrano_chilies,매운 음식
+150,anise_flavored_liqueur,6241,sweet_chili_sauce,매운 음식
+150,anise_flavored_liqueur,6387,thai_chili_paste,매운 음식
+150,anise_flavored_liqueur,6390,thai_green_chili,매운 음식
+150,anise_flavored_liqueur,6392,thai_red_chili_pepper,매운 음식
+150,anise_flavored_liqueur,6396,thai_sweet_chili_sauce,매운 음식
+150,anise_flavored_liqueur,6456,tomatoes_and_green_chilies,매운 음식
+150,anise_flavored_liqueur,6949,whole_green_chili,매운 음식
+150,anise_flavored_liqueur,6950,whole_green_chilies,매운 음식
+159,apple_brandy,4024,mackerel,생선류
+159,apple_brandy,4025,mackerel_fillet,생선류
+159,apple_brandy,5895,smoked_mackerel,생선류
+159,apple_brandy,508,black_soy_sauce,발효 음식
+159,apple_brandy,1836,dark_soy_sauce,발효 음식
+159,apple_brandy,2881,gluten_free_soy_sauce,발효 음식
+159,apple_brandy,3508,japanese_soy_sauce,발효 음식
+159,apple_brandy,3574,kikkoman_soy_sauce,발효 음식
+159,apple_brandy,3826,light_soy_sauce,발효 음식
+159,apple_brandy,3988,low_sodium_soy_sauce,발효 음식
+159,apple_brandy,4338,mushroom_soy_sauce,발효 음식
+159,apple_brandy,5396,reduced_sodium_soy_sauce,발효 음식
+159,apple_brandy,5997,soy_sauce,발효 음식
+159,apple_brandy,6277,sweet_soy_sauce,발효 음식
+159,apple_brandy,6328,tamari_soy_sauce,발효 음식
+159,apple_brandy,6400,thick_soy_sauce,발효 음식
+159,apple_brandy,6406,thin_soy_sauce,발효 음식
+167,apple_liqueur,825,cabbage_kimchi,발효 음식
+167,apple_liqueur,2372,fish_sauce,발효 음식
+167,apple_liqueur,6389,thai_fish_sauce,발효 음식
+167,apple_liqueur,1222,chili_pepper,매운 음식
+167,apple_liqueur,1223,chili_pepper_flake,매운 음식
+167,apple_liqueur,1962,dried_chili_pepper_flake,매운 음식
+167,apple_liqueur,1997,dried_hot_chili_pepper,매운 음식
+167,apple_liqueur,2000,dried_hot_red_chili_pepper,매운 음식
+167,apple_liqueur,2054,dried_red_chili_pepper,매운 음식
+167,apple_liqueur,2103,dry_chili_pepper,매운 음식
+167,apple_liqueur,2466,fresh_chili_pepper,매운 음식
+167,apple_liqueur,2992,green_chili_pepper,매운 음식
+167,apple_liqueur,3054,ground_ancho_chili_pepper,매운 음식
+167,apple_liqueur,3106,ground_red_chili_pepper,매운 음식
+167,apple_liqueur,3326,hot_chili_pepper,매운 음식
+167,apple_liqueur,3339,hot_green_chili_pepper,매운 음식
+167,apple_liqueur,3355,hot_red_chili_pepper,매운 음식
+167,apple_liqueur,5279,red_chili_pepper,매운 음식
+167,apple_liqueur,5738,serrano_chili_pepper,매운 음식
+167,apple_liqueur,6392,thai_red_chili_pepper,매운 음식
+167,apple_liqueur,3252,herring_fillet,비린 해산물
+167,apple_liqueur,135,anchovy,비린 해산물
+167,apple_liqueur,136,anchovy_fillet,비린 해산물
+167,apple_liqueur,137,anchovy_paste,비린 해산물
+167,apple_liqueur,895,canned_anchovy_fillet,비린 해산물
+167,apple_liqueur,1933,dried_anchovy,비린 해산물
+167,apple_liqueur,5619,salt_packed_anchovy_fillet,비린 해산물
+167,apple_liqueur,5624,salted_anchovy,비린 해산물
+167,apple_liqueur,2955,grapefruit,강산성 음식
+167,apple_liqueur,2956,grapefruit_juice,강산성 음식
+167,apple_liqueur,2957,grapefruit_peel,강산성 음식
+167,apple_liqueur,2958,grapefruit_section,강산성 음식
+167,apple_liqueur,2960,grapefruit_zest,강산성 음식
+167,apple_liqueur,4871,pink_grapefruit,강산성 음식
+167,apple_liqueur,4872,pink_grapefruit_juice,강산성 음식
+167,apple_liqueur,5296,red_grapefruit,강산성 음식
+167,apple_liqueur,5557,ruby_red_grapefruit_juice,강산성 음식
+167,apple_liqueur,6881,white_grapefruit,강산성 음식
+177,apricot_brandy,3578,king_oyster_mushroom,해산물
+177,apricot_brandy,4572,oyster,해산물
+177,apricot_brandy,4573,oyster_cracker,해산물
+177,apricot_brandy,4574,oyster_liquor,해산물
+177,apricot_brandy,4575,oyster_mushroom,해산물
+177,apricot_brandy,4576,oyster_sauce,해산물
+177,apricot_brandy,5898,smoked_oyster,해산물
+177,apricot_brandy,6728,vegetarian_oyster_sauce,해산물
+177,apricot_brandy,5649,sashimi_grade_tuna,해산물
+177,apricot_brandy,1824,dark_miso,발효 음식
+177,apricot_brandy,3812,light_miso,발효 음식
+177,apricot_brandy,4264,miso,발효 음식
+177,apricot_brandy,5309,red_miso,발효 음식
+177,apricot_brandy,5783,shiro_miso,발효 음식
+177,apricot_brandy,6887,white_miso,발효 음식
+177,apricot_brandy,7065,yellow_miso,발효 음식
+177,apricot_brandy,2955,grapefruit,산미 음식
+177,apricot_brandy,2956,grapefruit_juice,산미 음식
+177,apricot_brandy,2957,grapefruit_peel,산미 음식
+177,apricot_brandy,2958,grapefruit_section,산미 음식
+177,apricot_brandy,2960,grapefruit_zest,산미 음식
+177,apricot_brandy,4871,pink_grapefruit,산미 음식
+177,apricot_brandy,4872,pink_grapefruit_juice,산미 음식
+177,apricot_brandy,5296,red_grapefruit,산미 음식
+177,apricot_brandy,5557,ruby_red_grapefruit_juice,산미 음식
+177,apricot_brandy,6881,white_grapefruit,산미 음식
+177,apricot_brandy,4086,marmalade,매운 음식
+177,apricot_brandy,4483,onion_marmalade,매운 음식
+177,apricot_brandy,4520,orange_marmalade,매운 음식
+184,apricot_liqueur,4086,marmalade,매운 음식
+184,apricot_liqueur,4483,onion_marmalade,매운 음식
+184,apricot_liqueur,4520,orange_marmalade,매운 음식
+184,apricot_liqueur,129,anaheim_chili,매운 음식
+184,apricot_liqueur,130,anaheim_chilies,매운 음식
+184,apricot_liqueur,132,ancho_chili,매운 음식
+184,apricot_liqueur,133,ancho_chilies,매운 음식
+184,apricot_liqueur,208,asian_chili_sauce,매운 음식
+184,apricot_liqueur,640,bottled_chili_sauce,매운 음식
+184,apricot_liqueur,905,canned_chilies,매운 음식
+184,apricot_liqueur,1212,chili,매운 음식
+184,apricot_liqueur,1213,chili_bean,매운 음식
+184,apricot_liqueur,1214,chili_bean_paste,매운 음식
+184,apricot_liqueur,1215,chili_bean_sauce,매운 음식
+184,apricot_liqueur,1216,chili_flake,매운 음식
+184,apricot_liqueur,1217,chili_garlic_sauce,매운 음식
+184,apricot_liqueur,1219,chili_oil,매운 음식
+184,apricot_liqueur,1220,chili_paste,매운 음식
+184,apricot_liqueur,1221,chili_paste_with_garlic,매운 음식
+184,apricot_liqueur,1222,chili_pepper,매운 음식
+184,apricot_liqueur,1223,chili_pepper_flake,매운 음식
+184,apricot_liqueur,1224,chili_pod,매운 음식
+184,apricot_liqueur,1225,chili_powder,매운 음식
+184,apricot_liqueur,1226,chili_sauce,매운 음식
+184,apricot_liqueur,1227,chili_seasoning_mix,매운 음식
+184,apricot_liqueur,1228,chili_with_bean,매운 음식
+184,apricot_liqueur,1229,chili_without_bean,매운 음식
+184,apricot_liqueur,1230,chilies,매운 음식
+184,apricot_liqueur,1236,chinese_chili_sauce,매운 음식
+184,apricot_liqueur,1257,chipotle_chili_sauce,매운 음식
+184,apricot_liqueur,1809,dark_chili_powder,매운 음식
+184,apricot_liqueur,1873,diced_green_chili,매운 음식
+184,apricot_liqueur,1874,diced_green_chilies,매운 음식
+184,apricot_liqueur,1881,diced_tomatoes_with_green_chilies,매운 음식
+184,apricot_liqueur,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+184,apricot_liqueur,1961,dried_chili,매운 음식
+184,apricot_liqueur,1962,dried_chili_pepper_flake,매운 음식
+184,apricot_liqueur,1963,dried_chilies,매운 음식
+184,apricot_liqueur,1993,dried_guajillo_chilies,매운 음식
+184,apricot_liqueur,1997,dried_hot_chili_pepper,매운 음식
+184,apricot_liqueur,2000,dried_hot_red_chili_pepper,매운 음식
+184,apricot_liqueur,2001,dried_hot_red_chilies,매운 음식
+184,apricot_liqueur,2053,dried_red_chili,매운 음식
+184,apricot_liqueur,2054,dried_red_chili_pepper,매운 음식
+184,apricot_liqueur,2055,dried_red_chilies,매운 음식
+184,apricot_liqueur,2103,dry_chili_pepper,매운 음식
+184,apricot_liqueur,2466,fresh_chili_pepper,매운 음식
+184,apricot_liqueur,2502,fresh_green_chilies,매운 음식
+184,apricot_liqueur,2511,fresh_jalapeno_chilies,매운 음식
+184,apricot_liqueur,2990,green_chili,매운 음식
+184,apricot_liqueur,2991,green_chili_paste,매운 음식
+184,apricot_liqueur,2992,green_chili_pepper,매운 음식
+184,apricot_liqueur,2994,green_chili_salsa,매운 음식
+184,apricot_liqueur,2995,green_chili_sauce,매운 음식
+184,apricot_liqueur,2996,green_chilies,매운 음식
+184,apricot_liqueur,3028,green_serrano_chilies,매운 음식
+184,apricot_liqueur,3054,ground_ancho_chili_pepper,매운 음식
+184,apricot_liqueur,3106,ground_red_chili_pepper,매운 음식
+184,apricot_liqueur,3131,guajillo_chilies,매운 음식
+184,apricot_liqueur,3229,heinz_chili_sauce,매운 음식
+184,apricot_liqueur,3309,hormel_chili,매운 음식
+184,apricot_liqueur,3310,hormel_chili_without_bean,매운 음식
+184,apricot_liqueur,3322,hot_chili_bean,매운 음식
+184,apricot_liqueur,3323,hot_chili_flake,매운 음식
+184,apricot_liqueur,3324,hot_chili_oil,매운 음식
+184,apricot_liqueur,3325,hot_chili_paste,매운 음식
+184,apricot_liqueur,3326,hot_chili_pepper,매운 음식
+184,apricot_liqueur,3327,hot_chili_powder,매운 음식
+184,apricot_liqueur,3328,hot_chili_sauce,매운 음식
+184,apricot_liqueur,3329,hot_chinese_chili_paste,매운 음식
+184,apricot_liqueur,3339,hot_green_chili_pepper,매운 음식
+184,apricot_liqueur,3355,hot_red_chili_pepper,매운 음식
+184,apricot_liqueur,3554,kashmiri_chili_powder,매운 음식
+184,apricot_liqueur,4167,mexican_chili_powder,매운 음식
+184,apricot_liqueur,4193,mild_chili_powder,매운 음식
+184,apricot_liqueur,4197,mild_green_chili,매운 음식
+184,apricot_liqueur,4198,mild_green_chilies,매운 음식
+184,apricot_liqueur,4385,no_bean_chili,매운 음식
+184,apricot_liqueur,4793,pickled_jalapeno_chilies,매운 음식
+184,apricot_liqueur,5278,red_chili_paste,매운 음식
+184,apricot_liqueur,5279,red_chili_pepper,매운 음식
+184,apricot_liqueur,5281,red_chili_powder,매운 음식
+184,apricot_liqueur,5282,red_chili_sauce,매운 음식
+184,apricot_liqueur,5283,red_chilies,매운 음식
+184,apricot_liqueur,5478,roasted_green_chilies,매운 음식
+184,apricot_liqueur,5541,rotel_tomatoes_&_chilies,매운 음식
+184,apricot_liqueur,5637,sambal_chili_paste,매운 음식
+184,apricot_liqueur,5639,sambal_oelek_chili_paste,매운 음식
+184,apricot_liqueur,5737,serrano_chili,매운 음식
+184,apricot_liqueur,5738,serrano_chili_pepper,매운 음식
+184,apricot_liqueur,5739,serrano_chilies,매운 음식
+184,apricot_liqueur,6241,sweet_chili_sauce,매운 음식
+184,apricot_liqueur,6387,thai_chili_paste,매운 음식
+184,apricot_liqueur,6390,thai_green_chili,매운 음식
+184,apricot_liqueur,6392,thai_red_chili_pepper,매운 음식
+184,apricot_liqueur,6396,thai_sweet_chili_sauce,매운 음식
+184,apricot_liqueur,6456,tomatoes_and_green_chilies,매운 음식
+184,apricot_liqueur,6949,whole_green_chili,매운 음식
+184,apricot_liqueur,6950,whole_green_chilies,매운 음식
+184,apricot_liqueur,2568,fresh_sardine,비린 해산물
+184,apricot_liqueur,5647,sardine,비린 해산물
+184,apricot_liqueur,5648,sardines_in_oil,비린 해산물
+184,apricot_liqueur,237,baby_clam,비린 해산물
+184,apricot_liqueur,641,bottled_clam_juice,비린 해산물
+184,apricot_liqueur,907,canned_clam,비린 해산물
+184,apricot_liqueur,1127,cherrystone_clam,비린 해산물
+184,apricot_liqueur,1342,chopped_clams_with_juice,비린 해산물
+184,apricot_liqueur,1395,clam,비린 해산물
+184,apricot_liqueur,1396,clam_base,비린 해산물
+184,apricot_liqueur,1397,clam_broth,비린 해산물
+184,apricot_liqueur,1398,clam_juice,비린 해산물
+184,apricot_liqueur,1399,clamato_juice,비린 해산물
+184,apricot_liqueur,1400,clams_in_shell,비린 해산물
+184,apricot_liqueur,3186,hard_shelled_clam,비린 해산물
+184,apricot_liqueur,3891,littleneck_clam,비린 해산물
+184,apricot_liqueur,4063,manila_clam,비린 해산물
+184,apricot_liqueur,4218,minced_clam,비린 해산물
+184,apricot_liqueur,4219,minced_clams_with_juice,비린 해산물
+184,apricot_liqueur,5248,razor_clam,비린 해산물
+184,apricot_liqueur,5860,small_clam,비린 해산물
+184,apricot_liqueur,6103,steamer_clam,비린 해산물
+194,armagnac,2955,grapefruit,산미 음식
+194,armagnac,2956,grapefruit_juice,산미 음식
+194,armagnac,2957,grapefruit_peel,산미 음식
+194,armagnac,2958,grapefruit_section,산미 음식
+194,armagnac,2960,grapefruit_zest,산미 음식
+194,armagnac,4871,pink_grapefruit,산미 음식
+194,armagnac,4872,pink_grapefruit_juice,산미 음식
+194,armagnac,5296,red_grapefruit,산미 음식
+194,armagnac,5557,ruby_red_grapefruit_juice,산미 음식
+194,armagnac,6881,white_grapefruit,산미 음식
+194,armagnac,163,apple_cider_vinegar,산미 음식
+194,armagnac,299,balsamic_vinegar,산미 음식
+194,armagnac,516,black_vinegar,산미 음식
+194,armagnac,743,brown_rice_vinegar,산미 음식
+194,armagnac,1071,champagne_vinegar,산미 음식
+194,armagnac,1250,chinese_white_rice_vinegar,산미 음식
+194,armagnac,1362,cider_vinegar,산미 음식
+194,armagnac,1452,coconut_vinegar,산미 음식
+194,armagnac,1912,distilled_vinegar,산미 음식
+194,armagnac,3228,heinz_apple_cider_vinegar,산미 음식
+194,armagnac,4041,malt_vinegar,산미 음식
+194,armagnac,4455,oil_and_vinegar_dressing,산미 음식
+194,armagnac,4738,pepper_vinegar,산미 음식
+194,armagnac,5225,raspberry_vinegar,산미 음식
+194,armagnac,5348,red_wine_vinegar,산미 음식
+194,armagnac,5449,rice_vinegar,산미 음식
+194,armagnac,5451,rice_wine_vinegar,산미 음식
+194,armagnac,5696,seasoned_rice_vinegar,산미 음식
+194,armagnac,5697,seasoned_rice_wine_vinegar,산미 음식
+194,armagnac,5775,sherry_wine_vinegar,산미 음식
+194,armagnac,6351,tarragon_vinegar,산미 음식
+194,armagnac,6756,vinegar,산미 음식
+194,armagnac,6836,white_balsamic_vinegar,산미 음식
+194,armagnac,6873,white_distilled_vinegar,산미 음식
+194,armagnac,6916,white_vinegar,산미 음식
+194,armagnac,6919,white_wine_vinegar,산미 음식
+194,armagnac,7018,wine_vinegar,산미 음식
+194,armagnac,3578,king_oyster_mushroom,해산물
+194,armagnac,4572,oyster,해산물
+194,armagnac,4573,oyster_cracker,해산물
+194,armagnac,4574,oyster_liquor,해산물
+194,armagnac,4575,oyster_mushroom,해산물
+194,armagnac,4576,oyster_sauce,해산물
+194,armagnac,5898,smoked_oyster,해산물
+194,armagnac,6728,vegetarian_oyster_sauce,해산물
+194,armagnac,1785,curry,매운 음식
+194,armagnac,1786,curry_leaf,매운 음식
+194,armagnac,1787,curry_paste,매운 음식
+194,armagnac,1788,curry_powder,매운 음식
+194,armagnac,1789,curry_sauce,매운 음식
+194,armagnac,1975,dried_curry_leaf,매운 음식
+194,armagnac,3000,green_curry_paste,매운 음식
+194,armagnac,4027,madras_curry_powder,매운 음식
+194,armagnac,4194,mild_curry_paste,매운 음식
+194,armagnac,4195,mild_curry_powder,매운 음식
+194,armagnac,4587,panang_curry_paste,매운 음식
+194,armagnac,5287,red_curry_paste,매운 음식
+194,armagnac,6388,thai_curry_paste,매운 음식
+194,armagnac,6393,thai_red_curry_paste,매운 음식
+194,armagnac,7061,yellow_curry_paste,매운 음식
+262,bacardi_dark_rum,5649,sashimi_grade_tuna,해산물
+262,bacardi_dark_rum,237,baby_clam,해산물
+262,bacardi_dark_rum,641,bottled_clam_juice,해산물
+262,bacardi_dark_rum,907,canned_clam,해산물
+262,bacardi_dark_rum,1127,cherrystone_clam,해산물
+262,bacardi_dark_rum,1342,chopped_clams_with_juice,해산물
+262,bacardi_dark_rum,1395,clam,해산물
+262,bacardi_dark_rum,1396,clam_base,해산물
+262,bacardi_dark_rum,1397,clam_broth,해산물
+262,bacardi_dark_rum,1398,clam_juice,해산물
+262,bacardi_dark_rum,1399,clamato_juice,해산물
+262,bacardi_dark_rum,1400,clams_in_shell,해산물
+262,bacardi_dark_rum,3186,hard_shelled_clam,해산물
+262,bacardi_dark_rum,3891,littleneck_clam,해산물
+262,bacardi_dark_rum,4063,manila_clam,해산물
+262,bacardi_dark_rum,4218,minced_clam,해산물
+262,bacardi_dark_rum,4219,minced_clams_with_juice,해산물
+262,bacardi_dark_rum,5248,razor_clam,해산물
+262,bacardi_dark_rum,5860,small_clam,해산물
+262,bacardi_dark_rum,6103,steamer_clam,해산물
+262,bacardi_dark_rum,4455,oil_and_vinegar_dressing,산미 음식
+263,bacardi_light_rum,67,ahi_tuna_steak,구운 고기
+263,bacardi_light_rum,377,beef_cube_steak,구운 고기
+263,bacardi_light_rum,396,beef_round_steak,구운 고기
+263,bacardi_light_rum,397,beef_round_tip_steak,구운 고기
+263,bacardi_light_rum,404,beef_sirloin_steak,구운 고기
+263,bacardi_light_rum,406,beef_steak,구운 고기
+263,bacardi_light_rum,414,beef_t_bone_steak,구운 고기
+263,bacardi_light_rum,418,beef_tenderloin_steak,구운 고기
+263,bacardi_light_rum,421,beef_top_round_steak,구운 고기
+263,bacardi_light_rum,422,beefsteak_tomato,구운 고기
+263,bacardi_light_rum,527,blade_steak,구운 고기
+263,bacardi_light_rum,577,boneless_beef_chuck_steak,구운 고기
+263,bacardi_light_rum,580,boneless_beef_round_steak,구운 고기
+263,bacardi_light_rum,585,boneless_beef_top_loin_steak,구운 고기
+263,bacardi_light_rum,586,boneless_beef_top_round_steak,구운 고기
+263,bacardi_light_rum,613,boneless_rib_eye_steak,구운 고기
+263,bacardi_light_rum,614,boneless_round_steak,구운 고기
+263,bacardi_light_rum,618,boneless_sirloin_steak,구운 고기
+263,bacardi_light_rum,631,boneless_veal_steak,구운 고기
+263,bacardi_light_rum,647,bottom_round_steak,구운 고기
+263,bacardi_light_rum,1350,chuck_steak,구운 고기
+263,bacardi_light_rum,1457,cod_steak,구운 고기
+263,bacardi_light_rum,1766,cube_steak,구운 고기
+263,bacardi_light_rum,2338,filet_mignon_steak,구운 고기
+263,bacardi_light_rum,2373,fish_steak,구운 고기
+263,bacardi_light_rum,2381,flank_steak,구운 고기
+263,bacardi_light_rum,2383,flat_iron_steak,구운 고기
+263,bacardi_light_rum,3158,halibut_steak,구운 고기
+263,bacardi_light_rum,3167,ham_steak,구운 고기
+263,bacardi_light_rum,3175,hanger_steak,구운 고기
+263,bacardi_light_rum,3227,heinz_57_steak_sauce,구운 고기
+263,bacardi_light_rum,3366,hp_steak_sauce,구운 고기
+263,bacardi_light_rum,3653,lamb_steak,구운 고기
+263,bacardi_light_rum,3692,lean_flank_steak,구운 고기
+263,bacardi_light_rum,3708,lean_round_steak,구운 고기
+263,bacardi_light_rum,3710,lean_sirloin_steak,구운 고기
+263,bacardi_light_rum,3711,lean_steak,구운 고기
+263,bacardi_light_rum,4118,mccormick's_montreal_brand_steak_seasoning,구운 고기
+263,bacardi_light_rum,4255,minute_steak,구운 고기
+263,bacardi_light_rum,4381,new_york_strip_steak,구운 고기
+263,bacardi_light_rum,4973,pork_blade_steak,구운 고기
+263,bacardi_light_rum,5010,pork_steak,구운 고기
+263,bacardi_light_rum,5020,porterhouse_steak,구운 고기
+263,bacardi_light_rum,5427,rib_eye_steak,구운 고기
+263,bacardi_light_rum,5551,round_steak,구운 고기
+263,bacardi_light_rum,5562,rump_steak,구운 고기
+263,bacardi_light_rum,5602,salmon_steak,구운 고기
+263,bacardi_light_rum,5761,shark_steak,구운 고기
+263,bacardi_light_rum,5769,shell_steak,구운 고기
+263,bacardi_light_rum,5827,sirloin_steak,구운 고기
+263,bacardi_light_rum,5829,sirloin_tip_steak,구운 고기
+263,bacardi_light_rum,5846,skirt_steak,구운 고기
+263,bacardi_light_rum,6095,steak,구운 고기
+263,bacardi_light_rum,6096,steak_fillet,구운 고기
+263,bacardi_light_rum,6097,steak_sauce,구운 고기
+263,bacardi_light_rum,6098,steak_seasoning,구운 고기
+263,bacardi_light_rum,6099,steak_spice,구운 고기
+263,bacardi_light_rum,6101,steak_ums,구운 고기
+263,bacardi_light_rum,6158,strip_steak,구운 고기
+263,bacardi_light_rum,6302,swordfish_steak,구운 고기
+263,bacardi_light_rum,6471,top_round_steak,구운 고기
+263,bacardi_light_rum,6472,top_sirloin_steak,구운 고기
+263,bacardi_light_rum,6484,tri_tip_steak,구운 고기
+263,bacardi_light_rum,6505,tuna_steak,구운 고기
+263,bacardi_light_rum,6685,veal_steak,구운 고기
+263,bacardi_light_rum,6742,venison_steak,구운 고기
+263,bacardi_light_rum,7085,yellowfin_tuna_steak,구운 고기
+263,bacardi_light_rum,599,boneless_lamb,구운 고기
+263,bacardi_light_rum,600,boneless_lamb_shoulder,구운 고기
+263,bacardi_light_rum,602,boneless_leg_of_lamb,구운 고기
+263,bacardi_light_rum,803,butterflied_leg_of_lamb,구운 고기
+263,bacardi_light_rum,1538,cooked_lamb,구운 고기
+263,bacardi_light_rum,3088,ground_lamb,구운 고기
+263,bacardi_light_rum,3636,lamb,구운 고기
+263,bacardi_light_rum,3638,lamb_bone,구운 고기
+263,bacardi_light_rum,3639,lamb_breast,구운 고기
+263,bacardi_light_rum,3640,lamb_chop,구운 고기
+263,bacardi_light_rum,3641,lamb_cutlet,구운 고기
+263,bacardi_light_rum,3642,lamb_fillet,구운 고기
+263,bacardi_light_rum,3644,lamb_liver,구운 고기
+263,bacardi_light_rum,3645,lamb_loin_chop,구운 고기
+263,bacardi_light_rum,3646,lamb_neck,구운 고기
+263,bacardi_light_rum,3647,lamb_rack,구운 고기
+263,bacardi_light_rum,3648,lamb_rib,구운 고기
+263,bacardi_light_rum,3649,lamb_rib_chop,구운 고기
+263,bacardi_light_rum,3650,lamb_sausage,구운 고기
+263,bacardi_light_rum,3651,lamb_shank,구운 고기
+263,bacardi_light_rum,3652,lamb_shoulder,구운 고기
+263,bacardi_light_rum,3653,lamb_steak,구운 고기
+263,bacardi_light_rum,3654,lamb_stew_meat,구운 고기
+263,bacardi_light_rum,3655,lamb_stock,구운 고기
+263,bacardi_light_rum,3657,lambs_kidney,구운 고기
+263,bacardi_light_rum,3688,lean_boneless_lamb,구운 고기
+263,bacardi_light_rum,3696,lean_ground_lamb,구운 고기
+263,bacardi_light_rum,3703,lean_lamb,구운 고기
+263,bacardi_light_rum,3719,leg_of_lamb,구운 고기
+263,bacardi_light_rum,3906,loin_lamb,구운 고기
+263,bacardi_light_rum,5177,rack_of_lamb,구운 고기
+263,bacardi_light_rum,5179,racks_of_lamb,구운 고기
+263,bacardi_light_rum,5801,shoulder_lamb_chop,구운 고기
+263,bacardi_light_rum,6113,stewing_lamb,구운 고기
+263,bacardi_light_rum,537,blue_cheese,숙성 치즈
+263,bacardi_light_rum,538,blue_cheese_dressing,숙성 치즈
+263,bacardi_light_rum,1802,danish_blue_cheese,숙성 치즈
+263,bacardi_light_rum,3617,kraft_natural_blue_cheese_crumbles,숙성 치즈
+263,bacardi_light_rum,4117,maytag_blue_cheese,숙성 치즈
+263,bacardi_light_rum,11,2%_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,64,aged_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,65,aged_white_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,858,campbell's_cheddar_cheese_soup,숙성 치즈
+263,bacardi_light_rum,1083,cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,1084,cheddar_cheese_cube,숙성 치즈
+263,bacardi_light_rum,1086,cheddar_cheese_soup,숙성 치즈
+263,bacardi_light_rum,1087,cheddar_cheese_spread,숙성 치즈
+263,bacardi_light_rum,1493,condensed_cheddar_cheese_soup,숙성 치즈
+263,bacardi_light_rum,1660,cracker_barrel_sharp_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,2251,extra_sharp_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,2269,fat_free_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,3621,kraft_shredded_mild_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,3628,kraft_shredded_triple_cheddar_cheese_with_a_touch_of_philadelphia,숙성 치즈
+263,bacardi_light_rum,3796,light_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,3963,low_fat_sharp_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,4108,mature_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,4135,medium_cheddar,숙성 치즈
+263,bacardi_light_rum,4189,mild_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,4296,monterey_jack_and_cheddar_cheese_blend,숙성 치즈
+263,bacardi_light_rum,4463,old_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,5763,sharp_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,5764,sharp_white_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,5803,shredded_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,5885,smoked_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,5985,soy_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,6692,vegan_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,6848,white_cheddar_cheese,숙성 치즈
+263,bacardi_light_rum,4086,marmalade,강한 향신료 음식
+263,bacardi_light_rum,4483,onion_marmalade,강한 향신료 음식
+263,bacardi_light_rum,4520,orange_marmalade,강한 향신료 음식
+263,bacardi_light_rum,825,cabbage_kimchi,발효 음식
+311,banana_liqueur,4086,marmalade,매운 음식
+311,banana_liqueur,4483,onion_marmalade,매운 음식
+311,banana_liqueur,4520,orange_marmalade,매운 음식
+311,banana_liqueur,2372,fish_sauce,발효 음식
+311,banana_liqueur,6389,thai_fish_sauce,발효 음식
+311,banana_liqueur,3578,king_oyster_mushroom,해산물
+311,banana_liqueur,4572,oyster,해산물
+311,banana_liqueur,4573,oyster_cracker,해산물
+311,banana_liqueur,4574,oyster_liquor,해산물
+311,banana_liqueur,4575,oyster_mushroom,해산물
+311,banana_liqueur,4576,oyster_sauce,해산물
+311,banana_liqueur,5898,smoked_oyster,해산물
+311,banana_liqueur,6728,vegetarian_oyster_sauce,해산물
+311,banana_liqueur,237,baby_clam,해산물
+311,banana_liqueur,641,bottled_clam_juice,해산물
+311,banana_liqueur,907,canned_clam,해산물
+311,banana_liqueur,1127,cherrystone_clam,해산물
+311,banana_liqueur,1342,chopped_clams_with_juice,해산물
+311,banana_liqueur,1395,clam,해산물
+311,banana_liqueur,1396,clam_base,해산물
+311,banana_liqueur,1397,clam_broth,해산물
+311,banana_liqueur,1398,clam_juice,해산물
+311,banana_liqueur,1399,clamato_juice,해산물
+311,banana_liqueur,1400,clams_in_shell,해산물
+311,banana_liqueur,3186,hard_shelled_clam,해산물
+311,banana_liqueur,3891,littleneck_clam,해산물
+311,banana_liqueur,4063,manila_clam,해산물
+311,banana_liqueur,4218,minced_clam,해산물
+311,banana_liqueur,4219,minced_clams_with_juice,해산물
+311,banana_liqueur,5248,razor_clam,해산물
+311,banana_liqueur,5860,small_clam,해산물
+311,banana_liqueur,6103,steamer_clam,해산물
+423,beer,5649,sashimi_grade_tuna,섬세한 해산물
+423,beer,537,blue_cheese,숙성 치즈
+423,beer,538,blue_cheese_dressing,숙성 치즈
+423,beer,1802,danish_blue_cheese,숙성 치즈
+423,beer,3617,kraft_natural_blue_cheese_crumbles,숙성 치즈
+423,beer,4117,maytag_blue_cheese,숙성 치즈
+423,beer,825,cabbage_kimchi,발효 음식
+519,blackberry_brandy,237,baby_clam,해산물
+519,blackberry_brandy,641,bottled_clam_juice,해산물
+519,blackberry_brandy,907,canned_clam,해산물
+519,blackberry_brandy,1127,cherrystone_clam,해산물
+519,blackberry_brandy,1342,chopped_clams_with_juice,해산물
+519,blackberry_brandy,1395,clam,해산물
+519,blackberry_brandy,1396,clam_base,해산물
+519,blackberry_brandy,1397,clam_broth,해산물
+519,blackberry_brandy,1398,clam_juice,해산물
+519,blackberry_brandy,1399,clamato_juice,해산물
+519,blackberry_brandy,1400,clams_in_shell,해산물
+519,blackberry_brandy,3186,hard_shelled_clam,해산물
+519,blackberry_brandy,3891,littleneck_clam,해산물
+519,blackberry_brandy,4063,manila_clam,해산물
+519,blackberry_brandy,4218,minced_clam,해산물
+519,blackberry_brandy,4219,minced_clams_with_juice,해산물
+519,blackberry_brandy,5248,razor_clam,해산물
+519,blackberry_brandy,5860,small_clam,해산물
+519,blackberry_brandy,6103,steamer_clam,해산물
+519,blackberry_brandy,4024,mackerel,해산물
+519,blackberry_brandy,4025,mackerel_fillet,해산물
+519,blackberry_brandy,5895,smoked_mackerel,해산물
+519,blackberry_brandy,4086,marmalade,매운 음식
+519,blackberry_brandy,4483,onion_marmalade,매운 음식
+519,blackberry_brandy,4520,orange_marmalade,매운 음식
+521,blackberry_liqueur,129,anaheim_chili,매운 음식
+521,blackberry_liqueur,130,anaheim_chilies,매운 음식
+521,blackberry_liqueur,132,ancho_chili,매운 음식
+521,blackberry_liqueur,133,ancho_chilies,매운 음식
+521,blackberry_liqueur,208,asian_chili_sauce,매운 음식
+521,blackberry_liqueur,640,bottled_chili_sauce,매운 음식
+521,blackberry_liqueur,905,canned_chilies,매운 음식
+521,blackberry_liqueur,1212,chili,매운 음식
+521,blackberry_liqueur,1213,chili_bean,매운 음식
+521,blackberry_liqueur,1214,chili_bean_paste,매운 음식
+521,blackberry_liqueur,1215,chili_bean_sauce,매운 음식
+521,blackberry_liqueur,1216,chili_flake,매운 음식
+521,blackberry_liqueur,1217,chili_garlic_sauce,매운 음식
+521,blackberry_liqueur,1219,chili_oil,매운 음식
+521,blackberry_liqueur,1220,chili_paste,매운 음식
+521,blackberry_liqueur,1221,chili_paste_with_garlic,매운 음식
+521,blackberry_liqueur,1222,chili_pepper,매운 음식
+521,blackberry_liqueur,1223,chili_pepper_flake,매운 음식
+521,blackberry_liqueur,1224,chili_pod,매운 음식
+521,blackberry_liqueur,1225,chili_powder,매운 음식
+521,blackberry_liqueur,1226,chili_sauce,매운 음식
+521,blackberry_liqueur,1227,chili_seasoning_mix,매운 음식
+521,blackberry_liqueur,1228,chili_with_bean,매운 음식
+521,blackberry_liqueur,1229,chili_without_bean,매운 음식
+521,blackberry_liqueur,1230,chilies,매운 음식
+521,blackberry_liqueur,1236,chinese_chili_sauce,매운 음식
+521,blackberry_liqueur,1257,chipotle_chili_sauce,매운 음식
+521,blackberry_liqueur,1809,dark_chili_powder,매운 음식
+521,blackberry_liqueur,1873,diced_green_chili,매운 음식
+521,blackberry_liqueur,1874,diced_green_chilies,매운 음식
+521,blackberry_liqueur,1881,diced_tomatoes_with_green_chilies,매운 음식
+521,blackberry_liqueur,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+521,blackberry_liqueur,1961,dried_chili,매운 음식
+521,blackberry_liqueur,1962,dried_chili_pepper_flake,매운 음식
+521,blackberry_liqueur,1963,dried_chilies,매운 음식
+521,blackberry_liqueur,1993,dried_guajillo_chilies,매운 음식
+521,blackberry_liqueur,1997,dried_hot_chili_pepper,매운 음식
+521,blackberry_liqueur,2000,dried_hot_red_chili_pepper,매운 음식
+521,blackberry_liqueur,2001,dried_hot_red_chilies,매운 음식
+521,blackberry_liqueur,2053,dried_red_chili,매운 음식
+521,blackberry_liqueur,2054,dried_red_chili_pepper,매운 음식
+521,blackberry_liqueur,2055,dried_red_chilies,매운 음식
+521,blackberry_liqueur,2103,dry_chili_pepper,매운 음식
+521,blackberry_liqueur,2466,fresh_chili_pepper,매운 음식
+521,blackberry_liqueur,2502,fresh_green_chilies,매운 음식
+521,blackberry_liqueur,2511,fresh_jalapeno_chilies,매운 음식
+521,blackberry_liqueur,2990,green_chili,매운 음식
+521,blackberry_liqueur,2991,green_chili_paste,매운 음식
+521,blackberry_liqueur,2992,green_chili_pepper,매운 음식
+521,blackberry_liqueur,2994,green_chili_salsa,매운 음식
+521,blackberry_liqueur,2995,green_chili_sauce,매운 음식
+521,blackberry_liqueur,2996,green_chilies,매운 음식
+521,blackberry_liqueur,3028,green_serrano_chilies,매운 음식
+521,blackberry_liqueur,3054,ground_ancho_chili_pepper,매운 음식
+521,blackberry_liqueur,3106,ground_red_chili_pepper,매운 음식
+521,blackberry_liqueur,3131,guajillo_chilies,매운 음식
+521,blackberry_liqueur,3229,heinz_chili_sauce,매운 음식
+521,blackberry_liqueur,3309,hormel_chili,매운 음식
+521,blackberry_liqueur,3310,hormel_chili_without_bean,매운 음식
+521,blackberry_liqueur,3322,hot_chili_bean,매운 음식
+521,blackberry_liqueur,3323,hot_chili_flake,매운 음식
+521,blackberry_liqueur,3324,hot_chili_oil,매운 음식
+521,blackberry_liqueur,3325,hot_chili_paste,매운 음식
+521,blackberry_liqueur,3326,hot_chili_pepper,매운 음식
+521,blackberry_liqueur,3327,hot_chili_powder,매운 음식
+521,blackberry_liqueur,3328,hot_chili_sauce,매운 음식
+521,blackberry_liqueur,3329,hot_chinese_chili_paste,매운 음식
+521,blackberry_liqueur,3339,hot_green_chili_pepper,매운 음식
+521,blackberry_liqueur,3355,hot_red_chili_pepper,매운 음식
+521,blackberry_liqueur,3554,kashmiri_chili_powder,매운 음식
+521,blackberry_liqueur,4167,mexican_chili_powder,매운 음식
+521,blackberry_liqueur,4193,mild_chili_powder,매운 음식
+521,blackberry_liqueur,4197,mild_green_chili,매운 음식
+521,blackberry_liqueur,4198,mild_green_chilies,매운 음식
+521,blackberry_liqueur,4385,no_bean_chili,매운 음식
+521,blackberry_liqueur,4793,pickled_jalapeno_chilies,매운 음식
+521,blackberry_liqueur,5278,red_chili_paste,매운 음식
+521,blackberry_liqueur,5279,red_chili_pepper,매운 음식
+521,blackberry_liqueur,5281,red_chili_powder,매운 음식
+521,blackberry_liqueur,5282,red_chili_sauce,매운 음식
+521,blackberry_liqueur,5283,red_chilies,매운 음식
+521,blackberry_liqueur,5478,roasted_green_chilies,매운 음식
+521,blackberry_liqueur,5541,rotel_tomatoes_&_chilies,매운 음식
+521,blackberry_liqueur,5637,sambal_chili_paste,매운 음식
+521,blackberry_liqueur,5639,sambal_oelek_chili_paste,매운 음식
+521,blackberry_liqueur,5737,serrano_chili,매운 음식
+521,blackberry_liqueur,5738,serrano_chili_pepper,매운 음식
+521,blackberry_liqueur,5739,serrano_chilies,매운 음식
+521,blackberry_liqueur,6241,sweet_chili_sauce,매운 음식
+521,blackberry_liqueur,6387,thai_chili_paste,매운 음식
+521,blackberry_liqueur,6390,thai_green_chili,매운 음식
+521,blackberry_liqueur,6392,thai_red_chili_pepper,매운 음식
+521,blackberry_liqueur,6396,thai_sweet_chili_sauce,매운 음식
+521,blackberry_liqueur,6456,tomatoes_and_green_chilies,매운 음식
+521,blackberry_liqueur,6949,whole_green_chili,매운 음식
+521,blackberry_liqueur,6950,whole_green_chilies,매운 음식
+521,blackberry_liqueur,4086,marmalade,매운 음식
+521,blackberry_liqueur,4483,onion_marmalade,매운 음식
+521,blackberry_liqueur,4520,orange_marmalade,매운 음식
+521,blackberry_liqueur,3578,king_oyster_mushroom,해산물
+521,blackberry_liqueur,4572,oyster,해산물
+521,blackberry_liqueur,4573,oyster_cracker,해산물
+521,blackberry_liqueur,4574,oyster_liquor,해산물
+521,blackberry_liqueur,4575,oyster_mushroom,해산물
+521,blackberry_liqueur,4576,oyster_sauce,해산물
+521,blackberry_liqueur,5898,smoked_oyster,해산물
+521,blackberry_liqueur,6728,vegetarian_oyster_sauce,해산물
+521,blackberry_liqueur,135,anchovy,해산물
+521,blackberry_liqueur,136,anchovy_fillet,해산물
+521,blackberry_liqueur,137,anchovy_paste,해산물
+521,blackberry_liqueur,895,canned_anchovy_fillet,해산물
+521,blackberry_liqueur,1933,dried_anchovy,해산물
+521,blackberry_liqueur,5619,salt_packed_anchovy_fillet,해산물
+521,blackberry_liqueur,5624,salted_anchovy,해산물
+521,blackberry_liqueur,1824,dark_miso,발효 음식
+521,blackberry_liqueur,3812,light_miso,발효 음식
+521,blackberry_liqueur,4264,miso,발효 음식
+521,blackberry_liqueur,5309,red_miso,발효 음식
+521,blackberry_liqueur,5783,shiro_miso,발효 음식
+521,blackberry_liqueur,6887,white_miso,발효 음식
+521,blackberry_liqueur,7065,yellow_miso,발효 음식
+524,blackberry_wine,5649,sashimi_grade_tuna,해산물
+524,blackberry_wine,237,baby_clam,해산물
+524,blackberry_wine,641,bottled_clam_juice,해산물
+524,blackberry_wine,907,canned_clam,해산물
+524,blackberry_wine,1127,cherrystone_clam,해산물
+524,blackberry_wine,1342,chopped_clams_with_juice,해산물
+524,blackberry_wine,1395,clam,해산물
+524,blackberry_wine,1396,clam_base,해산물
+524,blackberry_wine,1397,clam_broth,해산물
+524,blackberry_wine,1398,clam_juice,해산물
+524,blackberry_wine,1399,clamato_juice,해산물
+524,blackberry_wine,1400,clams_in_shell,해산물
+524,blackberry_wine,3186,hard_shelled_clam,해산물
+524,blackberry_wine,3891,littleneck_clam,해산물
+524,blackberry_wine,4063,manila_clam,해산물
+524,blackberry_wine,4218,minced_clam,해산물
+524,blackberry_wine,4219,minced_clams_with_juice,해산물
+524,blackberry_wine,5248,razor_clam,해산물
+524,blackberry_wine,5860,small_clam,해산물
+524,blackberry_wine,6103,steamer_clam,해산물
+524,blackberry_wine,163,apple_cider_vinegar,산미 음식
+524,blackberry_wine,299,balsamic_vinegar,산미 음식
+524,blackberry_wine,516,black_vinegar,산미 음식
+524,blackberry_wine,743,brown_rice_vinegar,산미 음식
+524,blackberry_wine,1071,champagne_vinegar,산미 음식
+524,blackberry_wine,1250,chinese_white_rice_vinegar,산미 음식
+524,blackberry_wine,1362,cider_vinegar,산미 음식
+524,blackberry_wine,1452,coconut_vinegar,산미 음식
+524,blackberry_wine,1912,distilled_vinegar,산미 음식
+524,blackberry_wine,3228,heinz_apple_cider_vinegar,산미 음식
+524,blackberry_wine,4041,malt_vinegar,산미 음식
+524,blackberry_wine,4455,oil_and_vinegar_dressing,산미 음식
+524,blackberry_wine,4738,pepper_vinegar,산미 음식
+524,blackberry_wine,5225,raspberry_vinegar,산미 음식
+524,blackberry_wine,5348,red_wine_vinegar,산미 음식
+524,blackberry_wine,5449,rice_vinegar,산미 음식
+524,blackberry_wine,5451,rice_wine_vinegar,산미 음식
+524,blackberry_wine,5696,seasoned_rice_vinegar,산미 음식
+524,blackberry_wine,5697,seasoned_rice_wine_vinegar,산미 음식
+524,blackberry_wine,5775,sherry_wine_vinegar,산미 음식
+524,blackberry_wine,6351,tarragon_vinegar,산미 음식
+524,blackberry_wine,6756,vinegar,산미 음식
+524,blackberry_wine,6836,white_balsamic_vinegar,산미 음식
+524,blackberry_wine,6873,white_distilled_vinegar,산미 음식
+524,blackberry_wine,6916,white_vinegar,산미 음식
+524,blackberry_wine,6919,white_wine_vinegar,산미 음식
+524,blackberry_wine,7018,wine_vinegar,산미 음식
+524,blackberry_wine,825,cabbage_kimchi,발효 음식
+562,bock_beer,5649,sashimi_grade_tuna,해산물
+562,bock_beer,129,anaheim_chili,매운 음식
+562,bock_beer,130,anaheim_chilies,매운 음식
+562,bock_beer,132,ancho_chili,매운 음식
+562,bock_beer,133,ancho_chilies,매운 음식
+562,bock_beer,208,asian_chili_sauce,매운 음식
+562,bock_beer,640,bottled_chili_sauce,매운 음식
+562,bock_beer,905,canned_chilies,매운 음식
+562,bock_beer,1212,chili,매운 음식
+562,bock_beer,1213,chili_bean,매운 음식
+562,bock_beer,1214,chili_bean_paste,매운 음식
+562,bock_beer,1215,chili_bean_sauce,매운 음식
+562,bock_beer,1216,chili_flake,매운 음식
+562,bock_beer,1217,chili_garlic_sauce,매운 음식
+562,bock_beer,1219,chili_oil,매운 음식
+562,bock_beer,1220,chili_paste,매운 음식
+562,bock_beer,1221,chili_paste_with_garlic,매운 음식
+562,bock_beer,1222,chili_pepper,매운 음식
+562,bock_beer,1223,chili_pepper_flake,매운 음식
+562,bock_beer,1224,chili_pod,매운 음식
+562,bock_beer,1225,chili_powder,매운 음식
+562,bock_beer,1226,chili_sauce,매운 음식
+562,bock_beer,1227,chili_seasoning_mix,매운 음식
+562,bock_beer,1228,chili_with_bean,매운 음식
+562,bock_beer,1229,chili_without_bean,매운 음식
+562,bock_beer,1230,chilies,매운 음식
+562,bock_beer,1236,chinese_chili_sauce,매운 음식
+562,bock_beer,1257,chipotle_chili_sauce,매운 음식
+562,bock_beer,1809,dark_chili_powder,매운 음식
+562,bock_beer,1873,diced_green_chili,매운 음식
+562,bock_beer,1874,diced_green_chilies,매운 음식
+562,bock_beer,1881,diced_tomatoes_with_green_chilies,매운 음식
+562,bock_beer,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+562,bock_beer,1961,dried_chili,매운 음식
+562,bock_beer,1962,dried_chili_pepper_flake,매운 음식
+562,bock_beer,1963,dried_chilies,매운 음식
+562,bock_beer,1993,dried_guajillo_chilies,매운 음식
+562,bock_beer,1997,dried_hot_chili_pepper,매운 음식
+562,bock_beer,2000,dried_hot_red_chili_pepper,매운 음식
+562,bock_beer,2001,dried_hot_red_chilies,매운 음식
+562,bock_beer,2053,dried_red_chili,매운 음식
+562,bock_beer,2054,dried_red_chili_pepper,매운 음식
+562,bock_beer,2055,dried_red_chilies,매운 음식
+562,bock_beer,2103,dry_chili_pepper,매운 음식
+562,bock_beer,2466,fresh_chili_pepper,매운 음식
+562,bock_beer,2502,fresh_green_chilies,매운 음식
+562,bock_beer,2511,fresh_jalapeno_chilies,매운 음식
+562,bock_beer,2990,green_chili,매운 음식
+562,bock_beer,2991,green_chili_paste,매운 음식
+562,bock_beer,2992,green_chili_pepper,매운 음식
+562,bock_beer,2994,green_chili_salsa,매운 음식
+562,bock_beer,2995,green_chili_sauce,매운 음식
+562,bock_beer,2996,green_chilies,매운 음식
+562,bock_beer,3028,green_serrano_chilies,매운 음식
+562,bock_beer,3054,ground_ancho_chili_pepper,매운 음식
+562,bock_beer,3106,ground_red_chili_pepper,매운 음식
+562,bock_beer,3131,guajillo_chilies,매운 음식
+562,bock_beer,3229,heinz_chili_sauce,매운 음식
+562,bock_beer,3309,hormel_chili,매운 음식
+562,bock_beer,3310,hormel_chili_without_bean,매운 음식
+562,bock_beer,3322,hot_chili_bean,매운 음식
+562,bock_beer,3323,hot_chili_flake,매운 음식
+562,bock_beer,3324,hot_chili_oil,매운 음식
+562,bock_beer,3325,hot_chili_paste,매운 음식
+562,bock_beer,3326,hot_chili_pepper,매운 음식
+562,bock_beer,3327,hot_chili_powder,매운 음식
+562,bock_beer,3328,hot_chili_sauce,매운 음식
+562,bock_beer,3329,hot_chinese_chili_paste,매운 음식
+562,bock_beer,3339,hot_green_chili_pepper,매운 음식
+562,bock_beer,3355,hot_red_chili_pepper,매운 음식
+562,bock_beer,3554,kashmiri_chili_powder,매운 음식
+562,bock_beer,4167,mexican_chili_powder,매운 음식
+562,bock_beer,4193,mild_chili_powder,매운 음식
+562,bock_beer,4197,mild_green_chili,매운 음식
+562,bock_beer,4198,mild_green_chilies,매운 음식
+562,bock_beer,4385,no_bean_chili,매운 음식
+562,bock_beer,4793,pickled_jalapeno_chilies,매운 음식
+562,bock_beer,5278,red_chili_paste,매운 음식
+562,bock_beer,5279,red_chili_pepper,매운 음식
+562,bock_beer,5281,red_chili_powder,매운 음식
+562,bock_beer,5282,red_chili_sauce,매운 음식
+562,bock_beer,5283,red_chilies,매운 음식
+562,bock_beer,5478,roasted_green_chilies,매운 음식
+562,bock_beer,5541,rotel_tomatoes_&_chilies,매운 음식
+562,bock_beer,5637,sambal_chili_paste,매운 음식
+562,bock_beer,5639,sambal_oelek_chili_paste,매운 음식
+562,bock_beer,5737,serrano_chili,매운 음식
+562,bock_beer,5738,serrano_chili_pepper,매운 음식
+562,bock_beer,5739,serrano_chilies,매운 음식
+562,bock_beer,6241,sweet_chili_sauce,매운 음식
+562,bock_beer,6387,thai_chili_paste,매운 음식
+562,bock_beer,6390,thai_green_chili,매운 음식
+562,bock_beer,6392,thai_red_chili_pepper,매운 음식
+562,bock_beer,6396,thai_sweet_chili_sauce,매운 음식
+562,bock_beer,6456,tomatoes_and_green_chilies,매운 음식
+562,bock_beer,6949,whole_green_chili,매운 음식
+562,bock_beer,6950,whole_green_chilies,매운 음식
+652,bourbon,3578,king_oyster_mushroom,해산물
+652,bourbon,4572,oyster,해산물
+652,bourbon,4573,oyster_cracker,해산물
+652,bourbon,4574,oyster_liquor,해산물
+652,bourbon,4575,oyster_mushroom,해산물
+652,bourbon,4576,oyster_sauce,해산물
+652,bourbon,5898,smoked_oyster,해산물
+652,bourbon,6728,vegetarian_oyster_sauce,해산물
+652,bourbon,156,annatto_oil,발효 음식
+652,bourbon,157,annatto_seed,발효 음식
+652,bourbon,3056,ground_annatto_seed,발효 음식
+662,brandy,5649,sashimi_grade_tuna,해산물
+662,brandy,3578,king_oyster_mushroom,해산물
+662,brandy,4572,oyster,해산물
+662,brandy,4573,oyster_cracker,해산물
+662,brandy,4574,oyster_liquor,해산물
+662,brandy,4575,oyster_mushroom,해산물
+662,brandy,4576,oyster_sauce,해산물
+662,brandy,5898,smoked_oyster,해산물
+662,brandy,6728,vegetarian_oyster_sauce,해산물
+662,brandy,4086,marmalade,매운 음식
+662,brandy,4483,onion_marmalade,매운 음식
+662,brandy,4520,orange_marmalade,매운 음식
+662,brandy,825,cabbage_kimchi,발효 음식
+662,brandy,135,anchovy,해산물
+662,brandy,136,anchovy_fillet,해산물
+662,brandy,137,anchovy_paste,해산물
+662,brandy,895,canned_anchovy_fillet,해산물
+662,brandy,1933,dried_anchovy,해산물
+662,brandy,5619,salt_packed_anchovy_fillet,해산물
+662,brandy,5624,salted_anchovy,해산물
+662,brandy,1824,dark_miso,발효 음식
+662,brandy,3812,light_miso,발효 음식
+662,brandy,4264,miso,발효 음식
+662,brandy,5309,red_miso,발효 음식
+662,brandy,5783,shiro_miso,발효 음식
+662,brandy,6887,white_miso,발효 음식
+662,brandy,7065,yellow_miso,발효 음식
+662,brandy,129,anaheim_chili,매운 음식
+662,brandy,130,anaheim_chilies,매운 음식
+662,brandy,132,ancho_chili,매운 음식
+662,brandy,133,ancho_chilies,매운 음식
+662,brandy,208,asian_chili_sauce,매운 음식
+662,brandy,640,bottled_chili_sauce,매운 음식
+662,brandy,905,canned_chilies,매운 음식
+662,brandy,1212,chili,매운 음식
+662,brandy,1213,chili_bean,매운 음식
+662,brandy,1214,chili_bean_paste,매운 음식
+662,brandy,1215,chili_bean_sauce,매운 음식
+662,brandy,1216,chili_flake,매운 음식
+662,brandy,1217,chili_garlic_sauce,매운 음식
+662,brandy,1219,chili_oil,매운 음식
+662,brandy,1220,chili_paste,매운 음식
+662,brandy,1221,chili_paste_with_garlic,매운 음식
+662,brandy,1222,chili_pepper,매운 음식
+662,brandy,1223,chili_pepper_flake,매운 음식
+662,brandy,1224,chili_pod,매운 음식
+662,brandy,1225,chili_powder,매운 음식
+662,brandy,1226,chili_sauce,매운 음식
+662,brandy,1227,chili_seasoning_mix,매운 음식
+662,brandy,1228,chili_with_bean,매운 음식
+662,brandy,1229,chili_without_bean,매운 음식
+662,brandy,1230,chilies,매운 음식
+662,brandy,1236,chinese_chili_sauce,매운 음식
+662,brandy,1257,chipotle_chili_sauce,매운 음식
+662,brandy,1809,dark_chili_powder,매운 음식
+662,brandy,1873,diced_green_chili,매운 음식
+662,brandy,1874,diced_green_chilies,매운 음식
+755,brut_champagne,67,ahi_tuna_steak,무거운 고기 요리
+755,brut_champagne,377,beef_cube_steak,무거운 고기 요리
+755,brut_champagne,396,beef_round_steak,무거운 고기 요리
+755,brut_champagne,397,beef_round_tip_steak,무거운 고기 요리
+755,brut_champagne,404,beef_sirloin_steak,무거운 고기 요리
+755,brut_champagne,406,beef_steak,무거운 고기 요리
+755,brut_champagne,414,beef_t_bone_steak,무거운 고기 요리
+755,brut_champagne,418,beef_tenderloin_steak,무거운 고기 요리
+755,brut_champagne,421,beef_top_round_steak,무거운 고기 요리
+755,brut_champagne,422,beefsteak_tomato,무거운 고기 요리
+755,brut_champagne,527,blade_steak,무거운 고기 요리
+755,brut_champagne,577,boneless_beef_chuck_steak,무거운 고기 요리
+755,brut_champagne,580,boneless_beef_round_steak,무거운 고기 요리
+755,brut_champagne,585,boneless_beef_top_loin_steak,무거운 고기 요리
+755,brut_champagne,586,boneless_beef_top_round_steak,무거운 고기 요리
+755,brut_champagne,613,boneless_rib_eye_steak,무거운 고기 요리
+755,brut_champagne,614,boneless_round_steak,무거운 고기 요리
+755,brut_champagne,618,boneless_sirloin_steak,무거운 고기 요리
+755,brut_champagne,631,boneless_veal_steak,무거운 고기 요리
+755,brut_champagne,647,bottom_round_steak,무거운 고기 요리
+755,brut_champagne,1350,chuck_steak,무거운 고기 요리
+755,brut_champagne,1457,cod_steak,무거운 고기 요리
+755,brut_champagne,1766,cube_steak,무거운 고기 요리
+755,brut_champagne,2338,filet_mignon_steak,무거운 고기 요리
+755,brut_champagne,2373,fish_steak,무거운 고기 요리
+755,brut_champagne,2381,flank_steak,무거운 고기 요리
+755,brut_champagne,2383,flat_iron_steak,무거운 고기 요리
+755,brut_champagne,3158,halibut_steak,무거운 고기 요리
+755,brut_champagne,3167,ham_steak,무거운 고기 요리
+755,brut_champagne,3175,hanger_steak,무거운 고기 요리
+755,brut_champagne,3227,heinz_57_steak_sauce,무거운 고기 요리
+755,brut_champagne,3366,hp_steak_sauce,무거운 고기 요리
+755,brut_champagne,3653,lamb_steak,무거운 고기 요리
+755,brut_champagne,3692,lean_flank_steak,무거운 고기 요리
+755,brut_champagne,3708,lean_round_steak,무거운 고기 요리
+755,brut_champagne,3710,lean_sirloin_steak,무거운 고기 요리
+755,brut_champagne,3711,lean_steak,무거운 고기 요리
+755,brut_champagne,4118,mccormick's_montreal_brand_steak_seasoning,무거운 고기 요리
+755,brut_champagne,4255,minute_steak,무거운 고기 요리
+755,brut_champagne,4381,new_york_strip_steak,무거운 고기 요리
+755,brut_champagne,4973,pork_blade_steak,무거운 고기 요리
+755,brut_champagne,5010,pork_steak,무거운 고기 요리
+755,brut_champagne,5020,porterhouse_steak,무거운 고기 요리
+755,brut_champagne,5427,rib_eye_steak,무거운 고기 요리
+755,brut_champagne,5551,round_steak,무거운 고기 요리
+755,brut_champagne,5562,rump_steak,무거운 고기 요리
+755,brut_champagne,5602,salmon_steak,무거운 고기 요리
+755,brut_champagne,5761,shark_steak,무거운 고기 요리
+755,brut_champagne,5769,shell_steak,무거운 고기 요리
+755,brut_champagne,5827,sirloin_steak,무거운 고기 요리
+755,brut_champagne,5829,sirloin_tip_steak,무거운 고기 요리
+755,brut_champagne,5846,skirt_steak,무거운 고기 요리
+755,brut_champagne,6095,steak,무거운 고기 요리
+755,brut_champagne,6096,steak_fillet,무거운 고기 요리
+755,brut_champagne,6097,steak_sauce,무거운 고기 요리
+755,brut_champagne,6098,steak_seasoning,무거운 고기 요리
+755,brut_champagne,6099,steak_spice,무거운 고기 요리
+755,brut_champagne,6101,steak_ums,무거운 고기 요리
+755,brut_champagne,6158,strip_steak,무거운 고기 요리
+755,brut_champagne,6302,swordfish_steak,무거운 고기 요리
+755,brut_champagne,6471,top_round_steak,무거운 고기 요리
+755,brut_champagne,6472,top_sirloin_steak,무거운 고기 요리
+755,brut_champagne,6484,tri_tip_steak,무거운 고기 요리
+755,brut_champagne,6505,tuna_steak,무거운 고기 요리
+755,brut_champagne,6685,veal_steak,무거운 고기 요리
+755,brut_champagne,6742,venison_steak,무거운 고기 요리
+755,brut_champagne,7085,yellowfin_tuna_steak,무거운 고기 요리
+755,brut_champagne,599,boneless_lamb,무거운 고기 요리
+755,brut_champagne,600,boneless_lamb_shoulder,무거운 고기 요리
+755,brut_champagne,602,boneless_leg_of_lamb,무거운 고기 요리
+755,brut_champagne,803,butterflied_leg_of_lamb,무거운 고기 요리
+755,brut_champagne,1538,cooked_lamb,무거운 고기 요리
+755,brut_champagne,3088,ground_lamb,무거운 고기 요리
+755,brut_champagne,3636,lamb,무거운 고기 요리
+755,brut_champagne,3638,lamb_bone,무거운 고기 요리
+755,brut_champagne,3639,lamb_breast,무거운 고기 요리
+755,brut_champagne,3640,lamb_chop,무거운 고기 요리
+755,brut_champagne,3641,lamb_cutlet,무거운 고기 요리
+755,brut_champagne,3642,lamb_fillet,무거운 고기 요리
+755,brut_champagne,3644,lamb_liver,무거운 고기 요리
+755,brut_champagne,3645,lamb_loin_chop,무거운 고기 요리
+755,brut_champagne,3646,lamb_neck,무거운 고기 요리
+755,brut_champagne,3647,lamb_rack,무거운 고기 요리
+755,brut_champagne,3648,lamb_rib,무거운 고기 요리
+755,brut_champagne,3649,lamb_rib_chop,무거운 고기 요리
+755,brut_champagne,3650,lamb_sausage,무거운 고기 요리
+755,brut_champagne,3651,lamb_shank,무거운 고기 요리
+755,brut_champagne,3652,lamb_shoulder,무거운 고기 요리
+755,brut_champagne,3653,lamb_steak,무거운 고기 요리
+755,brut_champagne,3654,lamb_stew_meat,무거운 고기 요리
+755,brut_champagne,3655,lamb_stock,무거운 고기 요리
+755,brut_champagne,3657,lambs_kidney,무거운 고기 요리
+755,brut_champagne,3688,lean_boneless_lamb,무거운 고기 요리
+755,brut_champagne,3696,lean_ground_lamb,무거운 고기 요리
+755,brut_champagne,3703,lean_lamb,무거운 고기 요리
+755,brut_champagne,3719,leg_of_lamb,무거운 고기 요리
+755,brut_champagne,3906,loin_lamb,무거운 고기 요리
+755,brut_champagne,5177,rack_of_lamb,무거운 고기 요리
+755,brut_champagne,5179,racks_of_lamb,무거운 고기 요리
+755,brut_champagne,5801,shoulder_lamb_chop,무거운 고기 요리
+755,brut_champagne,6113,stewing_lamb,무거운 고기 요리
+755,brut_champagne,4086,marmalade,매운 음식
+755,brut_champagne,4483,onion_marmalade,매운 음식
+755,brut_champagne,4520,orange_marmalade,매운 음식
+755,brut_champagne,445,betty_crocker_fudge_brownie_mix,초콜릿 디저트
+755,brut_champagne,751,brownie,초콜릿 디저트
+755,brut_champagne,2775,fudge_brownie_mix,초콜릿 디저트
+755,brut_champagne,1810,dark_chocolate,초콜릿 디저트
+755,brut_champagne,1811,dark_chocolate_bar,초콜릿 디저트
+755,brut_champagne,1812,dark_chocolate_cake_mix,초콜릿 디저트
+755,brut_champagne,1813,dark_chocolate_chip,초콜릿 디저트
+755,brut_champagne,1814,dark_chocolate_frosting,초콜릿 디저트
+755,brut_champagne,1815,dark_chocolate_melt,초콜릿 디저트
+755,brut_champagne,1816,dark_chocolate_shaving,초콜릿 디저트
+755,brut_champagne,6610,unsweetened_dark_chocolate,초콜릿 디저트
+755,brut_champagne,825,cabbage_kimchi,발효 음식
+761,budweiser_beer,4086,marmalade,매운 음식
+761,budweiser_beer,4483,onion_marmalade,매운 음식
+761,budweiser_beer,4520,orange_marmalade,매운 음식
+761,budweiser_beer,918,canned_jalapeno_pepper,강한 향신료 요리
+761,budweiser_beer,919,canned_jalapeno_slice,강한 향신료 요리
+761,budweiser_beer,1883,diced_tomatoes_with_jalapeno,강한 향신료 요리
+761,budweiser_beer,2510,fresh_jalapeno,강한 향신료 요리
+761,budweiser_beer,2511,fresh_jalapeno_chilies,강한 향신료 요리
+761,budweiser_beer,2512,fresh_jalapeno_pepper,강한 향신료 요리
+761,budweiser_beer,3009,green_jalapeno_pepper,강한 향신료 요리
+761,budweiser_beer,3492,jalapeno,강한 향신료 요리
+761,budweiser_beer,3493,jalapeno_chile,강한 향신료 요리
+761,budweiser_beer,3494,jalapeno_jack_cheese,강한 향신료 요리
+761,budweiser_beer,3495,jalapeno_jelly,강한 향신료 요리
+761,budweiser_beer,3496,jalapeno_juice,강한 향신료 요리
+761,budweiser_beer,3497,jalapeno_pepper,강한 향신료 요리
+761,budweiser_beer,3498,jalapeno_pepper_cheese,강한 향신료 요리
+761,budweiser_beer,3499,jalapeno_powder,강한 향신료 요리
+761,budweiser_beer,3500,jalapeno_sauce,강한 향신료 요리
+761,budweiser_beer,4793,pickled_jalapeno_chilies,강한 향신료 요리
+761,budweiser_beer,4794,pickled_jalapeno_pepper,강한 향신료 요리
+761,budweiser_beer,5301,red_jalapeno_chile,강한 향신료 요리
+761,budweiser_beer,6309,tabasco_jalapeno_sauce,강한 향신료 요리
+761,budweiser_beer,1785,curry,강한 향신료 요리
+761,budweiser_beer,1786,curry_leaf,강한 향신료 요리
+761,budweiser_beer,1787,curry_paste,강한 향신료 요리
+761,budweiser_beer,1788,curry_powder,강한 향신료 요리
+761,budweiser_beer,1789,curry_sauce,강한 향신료 요리
+761,budweiser_beer,1975,dried_curry_leaf,강한 향신료 요리
+761,budweiser_beer,3000,green_curry_paste,강한 향신료 요리
+761,budweiser_beer,4027,madras_curry_powder,강한 향신료 요리
+761,budweiser_beer,4194,mild_curry_paste,강한 향신료 요리
+761,budweiser_beer,4195,mild_curry_powder,강한 향신료 요리
+761,budweiser_beer,4587,panang_curry_paste,강한 향신료 요리
+761,budweiser_beer,5287,red_curry_paste,강한 향신료 요리
+761,budweiser_beer,6388,thai_curry_paste,강한 향신료 요리
+761,budweiser_beer,6393,thai_red_curry_paste,강한 향신료 요리
+761,budweiser_beer,7061,yellow_curry_paste,강한 향신료 요리
+761,budweiser_beer,445,betty_crocker_fudge_brownie_mix,진한 디저트
+761,budweiser_beer,751,brownie,진한 디저트
+761,budweiser_beer,2775,fudge_brownie_mix,진한 디저트
+761,budweiser_beer,514,black_truffle,진한 디저트
+761,budweiser_beer,1332,chocolate_truffle,진한 디저트
+761,budweiser_beer,6490,truffle,진한 디저트
+761,budweiser_beer,6491,truffle_butter,진한 디저트
+761,budweiser_beer,6492,truffle_oil,진한 디저트
+761,budweiser_beer,6493,truffle_salt,진한 디저트
+761,budweiser_beer,6912,white_truffle,진한 디저트
+761,budweiser_beer,6913,white_truffle_oil,진한 디저트
+777,burgundy_wine,5649,sashimi_grade_tuna,해산물
+777,burgundy_wine,825,cabbage_kimchi,발효 음식
+827,cabernet_sauvignon_wine,1455,cod,해산물
+827,cabernet_sauvignon_wine,1456,cod_fish_fillet,해산물
+827,cabernet_sauvignon_wine,1457,cod_steak,해산물
+827,cabernet_sauvignon_wine,5615,salt_cod_fish,해산물
+827,cabernet_sauvignon_wine,2955,grapefruit,산미 디저트
+827,cabernet_sauvignon_wine,2956,grapefruit_juice,산미 디저트
+827,cabernet_sauvignon_wine,2957,grapefruit_peel,산미 디저트
+827,cabernet_sauvignon_wine,2958,grapefruit_section,산미 디저트
+827,cabernet_sauvignon_wine,2960,grapefruit_zest,산미 디저트
+827,cabernet_sauvignon_wine,4871,pink_grapefruit,산미 디저트
+827,cabernet_sauvignon_wine,4872,pink_grapefruit_juice,산미 디저트
+827,cabernet_sauvignon_wine,5296,red_grapefruit,산미 디저트
+827,cabernet_sauvignon_wine,5557,ruby_red_grapefruit_juice,산미 디저트
+827,cabernet_sauvignon_wine,6881,white_grapefruit,산미 디저트
+827,cabernet_sauvignon_wine,825,cabbage_kimchi,발효 음식
+1079,chardonnay_wine,825,cabbage_kimchi,발효 음식
+1079,chardonnay_wine,445,betty_crocker_fudge_brownie_mix,초콜릿 디저트
+1079,chardonnay_wine,751,brownie,초콜릿 디저트
+1079,chardonnay_wine,2775,fudge_brownie_mix,초콜릿 디저트
+1112,cherry_brandy,237,baby_clam,해산물
+1112,cherry_brandy,641,bottled_clam_juice,해산물
+1112,cherry_brandy,907,canned_clam,해산물
+1112,cherry_brandy,1127,cherrystone_clam,해산물
+1112,cherry_brandy,1342,chopped_clams_with_juice,해산물
+1112,cherry_brandy,1395,clam,해산물
+1112,cherry_brandy,1396,clam_base,해산물
+1112,cherry_brandy,1397,clam_broth,해산물
+1112,cherry_brandy,1398,clam_juice,해산물
+1112,cherry_brandy,1399,clamato_juice,해산물
+1112,cherry_brandy,1400,clams_in_shell,해산물
+1112,cherry_brandy,3186,hard_shelled_clam,해산물
+1112,cherry_brandy,3891,littleneck_clam,해산물
+1112,cherry_brandy,4063,manila_clam,해산물
+1112,cherry_brandy,4218,minced_clam,해산물
+1112,cherry_brandy,4219,minced_clams_with_juice,해산물
+1112,cherry_brandy,5248,razor_clam,해산물
+1112,cherry_brandy,5860,small_clam,해산물
+1112,cherry_brandy,6103,steamer_clam,해산물
+1112,cherry_brandy,3768,lemon_vinaigrette,산미 음식
+1112,cherry_brandy,4086,marmalade,매운 음식
+1112,cherry_brandy,4483,onion_marmalade,매운 음식
+1112,cherry_brandy,4520,orange_marmalade,매운 음식
+1112,cherry_brandy,825,cabbage_kimchi,발효 음식
+1115,cherry_flavored_liqueur,343,bay_scallop,해산물
+1115,cherry_flavored_liqueur,2067,dried_scallop,해산물
+1115,cherry_flavored_liqueur,2572,fresh_scallop,해산물
+1115,cherry_flavored_liqueur,2573,fresh_sea_scallop,해산물
+1115,cherry_flavored_liqueur,3664,large_scallop,해산물
+1115,cherry_flavored_liqueur,5668,scallop,해산물
+1115,cherry_flavored_liqueur,5669,scalloped_potatoes_mix,해산물
+1115,cherry_flavored_liqueur,5683,sea_scallop,해산물
+1115,cherry_flavored_liqueur,5870,small_scallop,해산물
+1115,cherry_flavored_liqueur,6681,veal_scallop,해산물
+1115,cherry_flavored_liqueur,6682,veal_scallopini,해산물
+1115,cherry_flavored_liqueur,5649,sashimi_grade_tuna,해산물
+1115,cherry_flavored_liqueur,825,cabbage_kimchi,발효 음식
+1137,chianti_wine,1455,cod,해산물
+1137,chianti_wine,1456,cod_fish_fillet,해산물
+1137,chianti_wine,1457,cod_steak,해산물
+1137,chianti_wine,5615,salt_cod_fish,해산물
+1137,chianti_wine,5649,sashimi_grade_tuna,해산물
+1137,chianti_wine,825,cabbage_kimchi,발효 음식
+1246,chinese_rice_wine,854,camembert_cheese,치즈 요리
+1246,chinese_rice_wine,2915,gorgonzola,치즈 요리
+1246,chinese_rice_wine,1272,chocolate_cake,단 디저트
+1246,chinese_rice_wine,1274,chocolate_cake_mix,단 디저트
+1246,chinese_rice_wine,1812,dark_chocolate_cake_mix,단 디저트
+1246,chinese_rice_wine,2829,german_chocolate_cake_mix,단 디저트
+1246,chinese_rice_wine,2301,fat_free_sugar_free_instant_vanilla_pudding_mix,단 디저트
+1246,chinese_rice_wine,2444,french_vanilla_pudding_mix,단 디저트
+1246,chinese_rice_wine,3442,instant_vanilla_pudding,단 디저트
+1246,chinese_rice_wine,3520,jello_instant_vanilla_pudding_mix,단 디저트
+1246,chinese_rice_wine,5083,prepared_vanilla_pudding,단 디저트
+1246,chinese_rice_wine,6184,sugar_free_instant_vanilla_pudding_mix,단 디저트
+1246,chinese_rice_wine,6197,sugar_free_vanilla_pudding,단 디저트
+1246,chinese_rice_wine,6198,sugar_free_vanilla_pudding_mix,단 디저트
+1246,chinese_rice_wine,6661,vanilla_pudding_mix,단 디저트
+1300,chocolate_flavored_liqueur,4086,marmalade,매운 음식
+1300,chocolate_flavored_liqueur,4483,onion_marmalade,매운 음식
+1300,chocolate_flavored_liqueur,4520,orange_marmalade,매운 음식
+1391,citrus_infused_vodka,4086,marmalade,매운 음식
+1391,citrus_infused_vodka,4483,onion_marmalade,매운 음식
+1391,citrus_infused_vodka,4520,orange_marmalade,매운 음식
+1391,citrus_infused_vodka,825,cabbage_kimchi,발효 음식
+1441,coconut_liqueur,825,cabbage_kimchi,발효 음식
+1441,coconut_liqueur,5649,sashimi_grade_tuna,해산물
+1441,coconut_liqueur,1332,chocolate_truffle,다크 초콜릿
+1448,coconut_rum,4086,marmalade,매운 음식
+1448,coconut_rum,4483,onion_marmalade,매운 음식
+1448,coconut_rum,4520,orange_marmalade,매운 음식
+1448,coconut_rum,825,cabbage_kimchi,발효 음식
+1448,coconut_rum,3578,king_oyster_mushroom,해산물
+1448,coconut_rum,4572,oyster,해산물
+1448,coconut_rum,4573,oyster_cracker,해산물
+1448,coconut_rum,4574,oyster_liquor,해산물
+1448,coconut_rum,4575,oyster_mushroom,해산물
+1448,coconut_rum,4576,oyster_sauce,해산물
+1448,coconut_rum,5898,smoked_oyster,해산물
+1448,coconut_rum,6728,vegetarian_oyster_sauce,해산물
+1448,coconut_rum,445,betty_crocker_fudge_brownie_mix,초콜릿 디저트
+1448,coconut_rum,751,brownie,초콜릿 디저트
+1448,coconut_rum,2775,fudge_brownie_mix,초콜릿 디저트
+1462,coffee_flavored_liqueur,4086,marmalade,매운 음식
+1462,coffee_flavored_liqueur,4483,onion_marmalade,매운 음식
+1462,coffee_flavored_liqueur,4520,orange_marmalade,매운 음식
+1462,coffee_flavored_liqueur,5649,sashimi_grade_tuna,해산물
+1462,coffee_flavored_liqueur,825,cabbage_kimchi,발효 음식
+1467,cognac,5649,sashimi_grade_tuna,해산물
+1467,cognac,825,cabbage_kimchi,발효 음식
+1627,corona_beer,407,beef_stew,무거운 고기
+1627,corona_beer,408,beef_stew_meat,무거운 고기
+1627,corona_beer,409,beef_stew_seasoning,무거운 고기
+1627,corona_beer,599,boneless_lamb,무거운 고기
+1627,corona_beer,600,boneless_lamb_shoulder,무거운 고기
+1627,corona_beer,602,boneless_leg_of_lamb,무거운 고기
+1627,corona_beer,803,butterflied_leg_of_lamb,무거운 고기
+1627,corona_beer,1538,cooked_lamb,무거운 고기
+1627,corona_beer,3088,ground_lamb,무거운 고기
+1627,corona_beer,3636,lamb,무거운 고기
+1627,corona_beer,3638,lamb_bone,무거운 고기
+1627,corona_beer,3639,lamb_breast,무거운 고기
+1627,corona_beer,3640,lamb_chop,무거운 고기
+1627,corona_beer,3641,lamb_cutlet,무거운 고기
+1627,corona_beer,3642,lamb_fillet,무거운 고기
+1627,corona_beer,3644,lamb_liver,무거운 고기
+1627,corona_beer,3645,lamb_loin_chop,무거운 고기
+1627,corona_beer,3646,lamb_neck,무거운 고기
+1627,corona_beer,3647,lamb_rack,무거운 고기
+1627,corona_beer,3648,lamb_rib,무거운 고기
+1627,corona_beer,3649,lamb_rib_chop,무거운 고기
+1627,corona_beer,3650,lamb_sausage,무거운 고기
+1627,corona_beer,3651,lamb_shank,무거운 고기
+1627,corona_beer,3652,lamb_shoulder,무거운 고기
+1627,corona_beer,3653,lamb_steak,무거운 고기
+1627,corona_beer,3654,lamb_stew_meat,무거운 고기
+1627,corona_beer,3655,lamb_stock,무거운 고기
+1627,corona_beer,3657,lambs_kidney,무거운 고기
+1627,corona_beer,3688,lean_boneless_lamb,무거운 고기
+1627,corona_beer,3696,lean_ground_lamb,무거운 고기
+1627,corona_beer,3703,lean_lamb,무거운 고기
+1627,corona_beer,3719,leg_of_lamb,무거운 고기
+1627,corona_beer,3906,loin_lamb,무거운 고기
+1627,corona_beer,5177,rack_of_lamb,무거운 고기
+1627,corona_beer,5179,racks_of_lamb,무거운 고기
+1627,corona_beer,5801,shoulder_lamb_chop,무거운 고기
+1627,corona_beer,6113,stewing_lamb,무거운 고기
+1627,corona_beer,445,betty_crocker_fudge_brownie_mix,진한 디저트
+1627,corona_beer,751,brownie,진한 디저트
+1627,corona_beer,2775,fudge_brownie_mix,진한 디저트
+1627,corona_beer,1810,dark_chocolate,진한 디저트
+1627,corona_beer,1811,dark_chocolate_bar,진한 디저트
+1627,corona_beer,1812,dark_chocolate_cake_mix,진한 디저트
+1627,corona_beer,1813,dark_chocolate_chip,진한 디저트
+1627,corona_beer,1814,dark_chocolate_frosting,진한 디저트
+1627,corona_beer,1815,dark_chocolate_melt,진한 디저트
+1627,corona_beer,1816,dark_chocolate_shaving,진한 디저트
+1627,corona_beer,6610,unsweetened_dark_chocolate,진한 디저트
+1627,corona_beer,825,cabbage_kimchi,발효 음식
+1627,corona_beer,3959,low_fat_plain_yogurt,유제품
+1627,corona_beer,4422,nonfat_plain_yogurt,유제품
+1627,corona_beer,4920,plain_yogurt,유제품
+1805,dark_beer,2955,grapefruit,산미 음식
+1805,dark_beer,2956,grapefruit_juice,산미 음식
+1805,dark_beer,2957,grapefruit_peel,산미 음식
+1805,dark_beer,2958,grapefruit_section,산미 음식
+1805,dark_beer,2960,grapefruit_zest,산미 음식
+1805,dark_beer,4871,pink_grapefruit,산미 음식
+1805,dark_beer,4872,pink_grapefruit_juice,산미 음식
+1805,dark_beer,5296,red_grapefruit,산미 음식
+1805,dark_beer,5557,ruby_red_grapefruit_juice,산미 음식
+1805,dark_beer,6881,white_grapefruit,산미 음식
+1805,dark_beer,4086,marmalade,매운 음식
+1805,dark_beer,4483,onion_marmalade,매운 음식
+1805,dark_beer,4520,orange_marmalade,매운 음식
+1805,dark_beer,5649,sashimi_grade_tuna,해산물
+1805,dark_beer,3731,lemon_cake_mix,시트러스 디저트
+1805,dark_beer,7095,yuzu,시트러스 디저트
+1805,dark_beer,7096,yuzu_juice,시트러스 디저트
+1821,dark_jamaican_rum,3578,king_oyster_mushroom,해산물
+1821,dark_jamaican_rum,4572,oyster,해산물
+1821,dark_jamaican_rum,4573,oyster_cracker,해산물
+1821,dark_jamaican_rum,4574,oyster_liquor,해산물
+1821,dark_jamaican_rum,4575,oyster_mushroom,해산물
+1821,dark_jamaican_rum,4576,oyster_sauce,해산물
+1821,dark_jamaican_rum,5898,smoked_oyster,해산물
+1821,dark_jamaican_rum,6728,vegetarian_oyster_sauce,해산물
+1821,dark_jamaican_rum,343,bay_scallop,해산물
+1821,dark_jamaican_rum,2067,dried_scallop,해산물
+1821,dark_jamaican_rum,2572,fresh_scallop,해산물
+1821,dark_jamaican_rum,2573,fresh_sea_scallop,해산물
+1821,dark_jamaican_rum,3664,large_scallop,해산물
+1821,dark_jamaican_rum,5668,scallop,해산물
+1821,dark_jamaican_rum,5669,scalloped_potatoes_mix,해산물
+1821,dark_jamaican_rum,5683,sea_scallop,해산물
+1821,dark_jamaican_rum,5870,small_scallop,해산물
+1821,dark_jamaican_rum,6681,veal_scallop,해산물
+1821,dark_jamaican_rum,6682,veal_scallopini,해산물
+1821,dark_jamaican_rum,4086,marmalade,매운 음식
+1821,dark_jamaican_rum,4483,onion_marmalade,매운 음식
+1821,dark_jamaican_rum,4520,orange_marmalade,매운 음식
+1821,dark_jamaican_rum,825,cabbage_kimchi,발효 음식
+1823,dark_mexican_beer,3085,ground_habanero_chile_pepper,강한 매운 음식
+1823,dark_mexican_beer,3144,habanero,강한 매운 음식
+1823,dark_mexican_beer,3145,habanero_pepper,강한 매운 음식
+1823,dark_mexican_beer,3146,habanero_sauce,강한 매운 음식
+1823,dark_mexican_beer,3147,habaneros,강한 매운 음식
+1823,dark_mexican_beer,4086,marmalade,강한 매운 음식
+1823,dark_mexican_beer,4483,onion_marmalade,강한 매운 음식
+1823,dark_mexican_beer,4520,orange_marmalade,강한 매운 음식
+1823,dark_mexican_beer,825,cabbage_kimchi,발효 음식
+1823,dark_mexican_beer,1824,dark_miso,발효 음식
+1823,dark_mexican_beer,3812,light_miso,발효 음식
+1823,dark_mexican_beer,4264,miso,발효 음식
+1823,dark_mexican_beer,5309,red_miso,발효 음식
+1823,dark_mexican_beer,5783,shiro_miso,발효 음식
+1823,dark_mexican_beer,6887,white_miso,발효 음식
+1823,dark_mexican_beer,7065,yellow_miso,발효 음식
+1830,dark_rum,5649,sashimi_grade_tuna,해산물
+1830,dark_rum,237,baby_clam,해산물
+1830,dark_rum,641,bottled_clam_juice,해산물
+1830,dark_rum,907,canned_clam,해산물
+1830,dark_rum,1127,cherrystone_clam,해산물
+1830,dark_rum,1342,chopped_clams_with_juice,해산물
+1830,dark_rum,1395,clam,해산물
+1830,dark_rum,1396,clam_base,해산물
+1830,dark_rum,1397,clam_broth,해산물
+1830,dark_rum,1398,clam_juice,해산물
+1830,dark_rum,1399,clamato_juice,해산물
+1830,dark_rum,1400,clams_in_shell,해산물
+1830,dark_rum,3186,hard_shelled_clam,해산물
+1830,dark_rum,3891,littleneck_clam,해산물
+1830,dark_rum,4063,manila_clam,해산물
+1830,dark_rum,4218,minced_clam,해산물
+1830,dark_rum,4219,minced_clams_with_juice,해산물
+1830,dark_rum,5248,razor_clam,해산물
+1830,dark_rum,5860,small_clam,해산물
+1830,dark_rum,6103,steamer_clam,해산물
+1830,dark_rum,4086,marmalade,매운 음식
+1830,dark_rum,4483,onion_marmalade,매운 음식
+1830,dark_rum,4520,orange_marmalade,매운 음식
+1830,dark_rum,825,cabbage_kimchi,발효 음식
+2102,dry_champagne,825,cabbage_kimchi,발효 음식
+2102,dry_champagne,156,annatto_oil,발효 음식
+2102,dry_champagne,157,annatto_seed,발효 음식
+2102,dry_champagne,3056,ground_annatto_seed,발효 음식
+2102,dry_champagne,208,asian_chili_sauce,매운 음식
+2102,dry_champagne,640,bottled_chili_sauce,매운 음식
+2102,dry_champagne,1226,chili_sauce,매운 음식
+2102,dry_champagne,1236,chinese_chili_sauce,매운 음식
+2102,dry_champagne,1257,chipotle_chili_sauce,매운 음식
+2102,dry_champagne,2995,green_chili_sauce,매운 음식
+2102,dry_champagne,3229,heinz_chili_sauce,매운 음식
+2102,dry_champagne,3328,hot_chili_sauce,매운 음식
+2102,dry_champagne,5282,red_chili_sauce,매운 음식
+2102,dry_champagne,6241,sweet_chili_sauce,매운 음식
+2102,dry_champagne,6396,thai_sweet_chili_sauce,매운 음식
+2102,dry_champagne,3754,lemon_pie_filling,산미 디저트
+2112,dry_gin,3654,lamb_stew_meat,무거운 고기
+2112,dry_gin,1322,chocolate_pudding,단 디저트
+2112,dry_gin,1323,chocolate_pudding_mix,단 디저트
+2112,dry_gin,3407,instant_chocolate_pudding_mix,단 디저트
+2112,dry_gin,3443,instant_white_chocolate_pudding_and_pie_filling_mix,단 디저트
+2112,dry_gin,3516,jell_o_chocolate_pudding_and_pie_filling,단 디저트
+2112,dry_gin,6182,sugar_free_instant_chocolate_pudding_mix,단 디저트
+2112,dry_gin,6859,white_chocolate_pudding_mix,단 디저트
+2112,dry_gin,825,cabbage_kimchi,발효 음식
+2112,dry_gin,4086,marmalade,매운 음식
+2112,dry_gin,4483,onion_marmalade,매운 음식
+2112,dry_gin,4520,orange_marmalade,매운 음식
+2119,dry_marsala_wine,3768,lemon_vinaigrette,산미 샐러드
+2119,dry_marsala_wine,4086,marmalade,매운 음식
+2119,dry_marsala_wine,4483,onion_marmalade,매운 음식
+2119,dry_marsala_wine,4520,orange_marmalade,매운 음식
+2119,dry_marsala_wine,5649,sashimi_grade_tuna,해산물
+2119,dry_marsala_wine,3578,king_oyster_mushroom,해산물
+2119,dry_marsala_wine,4572,oyster,해산물
+2119,dry_marsala_wine,4573,oyster_cracker,해산물
+2119,dry_marsala_wine,4574,oyster_liquor,해산물
+2119,dry_marsala_wine,4575,oyster_mushroom,해산물
+2119,dry_marsala_wine,4576,oyster_sauce,해산물
+2119,dry_marsala_wine,5898,smoked_oyster,해산물
+2119,dry_marsala_wine,6728,vegetarian_oyster_sauce,해산물
+2119,dry_marsala_wine,1272,chocolate_cake,디저트
+2119,dry_marsala_wine,1274,chocolate_cake_mix,디저트
+2119,dry_marsala_wine,1812,dark_chocolate_cake_mix,디저트
+2119,dry_marsala_wine,2829,german_chocolate_cake_mix,디저트
+2135,dry_red_wine,5649,sashimi_grade_tuna,해산물
+2135,dry_red_wine,1455,cod,해산물
+2135,dry_red_wine,1456,cod_fish_fillet,해산물
+2135,dry_red_wine,1457,cod_steak,해산물
+2135,dry_red_wine,5615,salt_cod_fish,해산물
+2135,dry_red_wine,4086,marmalade,매운 음식
+2135,dry_red_wine,4483,onion_marmalade,매운 음식
+2135,dry_red_wine,4520,orange_marmalade,매운 음식
+2135,dry_red_wine,3731,lemon_cake_mix,산미 디저트
+2135,dry_red_wine,825,cabbage_kimchi,발효 음식
+2149,dry_vermouth,67,ahi_tuna_steak,붉은 고기
+2149,dry_vermouth,377,beef_cube_steak,붉은 고기
+2149,dry_vermouth,396,beef_round_steak,붉은 고기
+2149,dry_vermouth,397,beef_round_tip_steak,붉은 고기
+2149,dry_vermouth,404,beef_sirloin_steak,붉은 고기
+2149,dry_vermouth,406,beef_steak,붉은 고기
+2149,dry_vermouth,414,beef_t_bone_steak,붉은 고기
+2149,dry_vermouth,418,beef_tenderloin_steak,붉은 고기
+2149,dry_vermouth,421,beef_top_round_steak,붉은 고기
+2149,dry_vermouth,422,beefsteak_tomato,붉은 고기
+2149,dry_vermouth,527,blade_steak,붉은 고기
+2149,dry_vermouth,577,boneless_beef_chuck_steak,붉은 고기
+2149,dry_vermouth,580,boneless_beef_round_steak,붉은 고기
+2149,dry_vermouth,585,boneless_beef_top_loin_steak,붉은 고기
+2149,dry_vermouth,586,boneless_beef_top_round_steak,붉은 고기
+2149,dry_vermouth,613,boneless_rib_eye_steak,붉은 고기
+2149,dry_vermouth,614,boneless_round_steak,붉은 고기
+2149,dry_vermouth,618,boneless_sirloin_steak,붉은 고기
+2149,dry_vermouth,631,boneless_veal_steak,붉은 고기
+2149,dry_vermouth,647,bottom_round_steak,붉은 고기
+2149,dry_vermouth,1350,chuck_steak,붉은 고기
+2149,dry_vermouth,1457,cod_steak,붉은 고기
+2149,dry_vermouth,1766,cube_steak,붉은 고기
+2149,dry_vermouth,2338,filet_mignon_steak,붉은 고기
+2149,dry_vermouth,2373,fish_steak,붉은 고기
+2149,dry_vermouth,2381,flank_steak,붉은 고기
+2149,dry_vermouth,2383,flat_iron_steak,붉은 고기
+2149,dry_vermouth,3158,halibut_steak,붉은 고기
+2149,dry_vermouth,3167,ham_steak,붉은 고기
+2149,dry_vermouth,3175,hanger_steak,붉은 고기
+2149,dry_vermouth,3227,heinz_57_steak_sauce,붉은 고기
+2149,dry_vermouth,3366,hp_steak_sauce,붉은 고기
+2149,dry_vermouth,3653,lamb_steak,붉은 고기
+2149,dry_vermouth,3692,lean_flank_steak,붉은 고기
+2149,dry_vermouth,3708,lean_round_steak,붉은 고기
+2149,dry_vermouth,3710,lean_sirloin_steak,붉은 고기
+2149,dry_vermouth,3711,lean_steak,붉은 고기
+2149,dry_vermouth,4118,mccormick's_montreal_brand_steak_seasoning,붉은 고기
+2149,dry_vermouth,4255,minute_steak,붉은 고기
+2149,dry_vermouth,4381,new_york_strip_steak,붉은 고기
+2149,dry_vermouth,4973,pork_blade_steak,붉은 고기
+2149,dry_vermouth,5010,pork_steak,붉은 고기
+2149,dry_vermouth,5020,porterhouse_steak,붉은 고기
+2149,dry_vermouth,5427,rib_eye_steak,붉은 고기
+2149,dry_vermouth,5551,round_steak,붉은 고기
+2149,dry_vermouth,5562,rump_steak,붉은 고기
+2149,dry_vermouth,5602,salmon_steak,붉은 고기
+2149,dry_vermouth,5761,shark_steak,붉은 고기
+2149,dry_vermouth,5769,shell_steak,붉은 고기
+2149,dry_vermouth,5827,sirloin_steak,붉은 고기
+2149,dry_vermouth,5829,sirloin_tip_steak,붉은 고기
+2149,dry_vermouth,5846,skirt_steak,붉은 고기
+2149,dry_vermouth,6095,steak,붉은 고기
+2149,dry_vermouth,6096,steak_fillet,붉은 고기
+2149,dry_vermouth,6097,steak_sauce,붉은 고기
+2149,dry_vermouth,6098,steak_seasoning,붉은 고기
+2149,dry_vermouth,6099,steak_spice,붉은 고기
+2149,dry_vermouth,6101,steak_ums,붉은 고기
+2149,dry_vermouth,6158,strip_steak,붉은 고기
+2149,dry_vermouth,6302,swordfish_steak,붉은 고기
+2149,dry_vermouth,6471,top_round_steak,붉은 고기
+2149,dry_vermouth,6472,top_sirloin_steak,붉은 고기
+2149,dry_vermouth,6484,tri_tip_steak,붉은 고기
+2149,dry_vermouth,6505,tuna_steak,붉은 고기
+2149,dry_vermouth,6685,veal_steak,붉은 고기
+2149,dry_vermouth,6742,venison_steak,붉은 고기
+2149,dry_vermouth,7085,yellowfin_tuna_steak,붉은 고기
+2149,dry_vermouth,599,boneless_lamb,붉은 고기
+2149,dry_vermouth,600,boneless_lamb_shoulder,붉은 고기
+2149,dry_vermouth,602,boneless_leg_of_lamb,붉은 고기
+2149,dry_vermouth,803,butterflied_leg_of_lamb,붉은 고기
+2149,dry_vermouth,1538,cooked_lamb,붉은 고기
+2149,dry_vermouth,3088,ground_lamb,붉은 고기
+2149,dry_vermouth,3636,lamb,붉은 고기
+2149,dry_vermouth,3638,lamb_bone,붉은 고기
+2149,dry_vermouth,3639,lamb_breast,붉은 고기
+2149,dry_vermouth,3640,lamb_chop,붉은 고기
+2149,dry_vermouth,3641,lamb_cutlet,붉은 고기
+2149,dry_vermouth,3642,lamb_fillet,붉은 고기
+2149,dry_vermouth,3644,lamb_liver,붉은 고기
+2149,dry_vermouth,3645,lamb_loin_chop,붉은 고기
+2149,dry_vermouth,3646,lamb_neck,붉은 고기
+2149,dry_vermouth,3647,lamb_rack,붉은 고기
+2149,dry_vermouth,3648,lamb_rib,붉은 고기
+2149,dry_vermouth,3649,lamb_rib_chop,붉은 고기
+2149,dry_vermouth,3650,lamb_sausage,붉은 고기
+2149,dry_vermouth,3651,lamb_shank,붉은 고기
+2149,dry_vermouth,3652,lamb_shoulder,붉은 고기
+2149,dry_vermouth,3653,lamb_steak,붉은 고기
+2149,dry_vermouth,3654,lamb_stew_meat,붉은 고기
+2149,dry_vermouth,3655,lamb_stock,붉은 고기
+2149,dry_vermouth,3657,lambs_kidney,붉은 고기
+2149,dry_vermouth,3688,lean_boneless_lamb,붉은 고기
+2149,dry_vermouth,3696,lean_ground_lamb,붉은 고기
+2149,dry_vermouth,3703,lean_lamb,붉은 고기
+2149,dry_vermouth,3719,leg_of_lamb,붉은 고기
+2149,dry_vermouth,3906,loin_lamb,붉은 고기
+2149,dry_vermouth,5177,rack_of_lamb,붉은 고기
+2149,dry_vermouth,5179,racks_of_lamb,붉은 고기
+2149,dry_vermouth,5801,shoulder_lamb_chop,붉은 고기
+2149,dry_vermouth,6113,stewing_lamb,붉은 고기
+2149,dry_vermouth,1785,curry,매운 음식
+2149,dry_vermouth,1786,curry_leaf,매운 음식
+2149,dry_vermouth,1787,curry_paste,매운 음식
+2149,dry_vermouth,1788,curry_powder,매운 음식
+2149,dry_vermouth,1789,curry_sauce,매운 음식
+2149,dry_vermouth,1975,dried_curry_leaf,매운 음식
+2149,dry_vermouth,3000,green_curry_paste,매운 음식
+2149,dry_vermouth,4027,madras_curry_powder,매운 음식
+2149,dry_vermouth,4194,mild_curry_paste,매운 음식
+2149,dry_vermouth,4195,mild_curry_powder,매운 음식
+2149,dry_vermouth,4587,panang_curry_paste,매운 음식
+2149,dry_vermouth,5287,red_curry_paste,매운 음식
+2149,dry_vermouth,6388,thai_curry_paste,매운 음식
+2149,dry_vermouth,6393,thai_red_curry_paste,매운 음식
+2149,dry_vermouth,7061,yellow_curry_paste,매운 음식
+2149,dry_vermouth,445,betty_crocker_fudge_brownie_mix,단 디저트
+2149,dry_vermouth,751,brownie,단 디저트
+2149,dry_vermouth,2775,fudge_brownie_mix,단 디저트
+2149,dry_vermouth,2301,fat_free_sugar_free_instant_vanilla_pudding_mix,단 디저트
+2149,dry_vermouth,2444,french_vanilla_pudding_mix,단 디저트
+2149,dry_vermouth,3442,instant_vanilla_pudding,단 디저트
+2149,dry_vermouth,3520,jello_instant_vanilla_pudding_mix,단 디저트
+2149,dry_vermouth,5083,prepared_vanilla_pudding,단 디저트
+2149,dry_vermouth,6184,sugar_free_instant_vanilla_pudding_mix,단 디저트
+2149,dry_vermouth,6197,sugar_free_vanilla_pudding,단 디저트
+2149,dry_vermouth,6198,sugar_free_vanilla_pudding_mix,단 디저트
+2149,dry_vermouth,6661,vanilla_pudding_mix,단 디저트
+2149,dry_vermouth,825,cabbage_kimchi,발효 음식
+2152,dry_white_wine,22,80%_lean_ground_beef,붉은 고기
+2152,dry_white_wine,23,85%_lean_ground_beef,붉은 고기
+2152,dry_white_wine,27,90%_lean_ground_beef,붉은 고기
+2152,dry_white_wine,28,93%_lean_ground_beef,붉은 고기
+2152,dry_white_wine,29,95%_lean_ground_beef,붉은 고기
+2152,dry_white_wine,30,96%_lean_ground_beef,붉은 고기
+2152,dry_white_wine,361,beef,붉은 고기
+2152,dry_white_wine,363,beef_base,붉은 고기
+2152,dry_white_wine,364,beef_bone,붉은 고기
+2152,dry_white_wine,365,beef_bones_with_marrow,붉은 고기
+2152,dry_white_wine,366,beef_bouillon,붉은 고기
+2152,dry_white_wine,367,beef_bouillon_cube,붉은 고기
+2152,dry_white_wine,368,beef_bouillon_granule,붉은 고기
+2152,dry_white_wine,369,beef_bouillon_powder,붉은 고기
+2152,dry_white_wine,370,beef_brisket,붉은 고기
+2152,dry_white_wine,371,beef_broth,붉은 고기
+2152,dry_white_wine,372,beef_burger,붉은 고기
+2152,dry_white_wine,373,beef_cheek,붉은 고기
+2152,dry_white_wine,374,beef_chuck,붉은 고기
+2152,dry_white_wine,375,beef_consomme,붉은 고기
+2152,dry_white_wine,376,beef_consomme_soup,붉은 고기
+2152,dry_white_wine,377,beef_cube_steak,붉은 고기
+2152,dry_white_wine,378,beef_dripping,붉은 고기
+2152,dry_white_wine,379,beef_eye_round,붉은 고기
+2152,dry_white_wine,380,beef_fat,붉은 고기
+2152,dry_white_wine,382,beef_flavor_ramen_noodle,붉은 고기
+2152,dry_white_wine,383,beef_gravy,붉은 고기
+2152,dry_white_wine,384,beef_gravy_mix,붉은 고기
+2152,dry_white_wine,385,beef_heart,붉은 고기
+2152,dry_white_wine,386,beef_hot_dog,붉은 고기
+2152,dry_white_wine,387,beef_jerky,붉은 고기
+2152,dry_white_wine,388,beef_kidney,붉은 고기
+2152,dry_white_wine,389,beef_liver,붉은 고기
+2152,dry_white_wine,390,beef_mince,붉은 고기
+2152,dry_white_wine,391,beef_neck_bone,붉은 고기
+2152,dry_white_wine,392,beef_rib,붉은 고기
+2152,dry_white_wine,393,beef_rib_eye_roast,붉은 고기
+2152,dry_white_wine,394,beef_rib_roast,붉은 고기
+2152,dry_white_wine,395,beef_roast,붉은 고기
+2152,dry_white_wine,396,beef_round_steak,붉은 고기
+2152,dry_white_wine,397,beef_round_tip_steak,붉은 고기
+2152,dry_white_wine,398,beef_rump,붉은 고기
+2152,dry_white_wine,399,beef_sausage,붉은 고기
+2152,dry_white_wine,400,beef_shank,붉은 고기
+2152,dry_white_wine,401,beef_short_rib,붉은 고기
+2152,dry_white_wine,402,beef_shoulder,붉은 고기
+2152,dry_white_wine,403,beef_sirloin,붉은 고기
+2152,dry_white_wine,404,beef_sirloin_steak,붉은 고기
+2152,dry_white_wine,406,beef_steak,붉은 고기
+2152,dry_white_wine,407,beef_stew,붉은 고기
+2152,dry_white_wine,408,beef_stew_meat,붉은 고기
+2152,dry_white_wine,409,beef_stew_seasoning,붉은 고기
+2152,dry_white_wine,410,beef_stock,붉은 고기
+2152,dry_white_wine,411,beef_stock_cube,붉은 고기
+2152,dry_white_wine,412,beef_stock_powder,붉은 고기
+2152,dry_white_wine,413,beef_suet,붉은 고기
+2152,dry_white_wine,414,beef_t_bone_steak,붉은 고기
+2152,dry_white_wine,416,beef_tenderloin,붉은 고기
+2152,dry_white_wine,417,beef_tenderloin_fillet,붉은 고기
+2152,dry_white_wine,418,beef_tenderloin_steak,붉은 고기
+2152,dry_white_wine,419,beef_tip,붉은 고기
+2152,dry_white_wine,420,beef_tongue,붉은 고기
+2152,dry_white_wine,421,beef_top_round_steak,붉은 고기
+2152,dry_white_wine,422,beefsteak_tomato,붉은 고기
+2152,dry_white_wine,573,boneless_beef_brisket,붉은 고기
+2152,dry_white_wine,574,boneless_beef_chuck,붉은 고기
+2152,dry_white_wine,575,boneless_beef_chuck_roast,붉은 고기
+2152,dry_white_wine,576,boneless_beef_chuck_shoulder_pot_roast,붉은 고기
+2152,dry_white_wine,577,boneless_beef_chuck_steak,붉은 고기
+2152,dry_white_wine,578,boneless_beef_cube,붉은 고기
+2152,dry_white_wine,579,boneless_beef_roast,붉은 고기
+2152,dry_white_wine,580,boneless_beef_round_steak,붉은 고기
+2152,dry_white_wine,581,boneless_beef_rump_roast,붉은 고기
+2152,dry_white_wine,582,boneless_beef_short_rib,붉은 고기
+2152,dry_white_wine,583,boneless_beef_sirloin,붉은 고기
+2152,dry_white_wine,585,boneless_beef_top_loin_steak,붉은 고기
+2152,dry_white_wine,586,boneless_beef_top_round_steak,붉은 고기
+2152,dry_white_wine,646,bottom_round_beef_roast,붉은 고기
+2152,dry_white_wine,898,canned_beef_broth,붉은 고기
+2152,dry_white_wine,1262,chipped_beef,붉은 고기
+2152,dry_white_wine,1491,condensed_beef_broth,붉은 고기
+2152,dry_white_wine,1492,condensed_beef_consomme,붉은 고기
+2152,dry_white_wine,1517,cooked_beef,붉은 고기
+2152,dry_white_wine,1527,cooked_corned_beef,붉은 고기
+2152,dry_white_wine,1534,cooked_ground_beef,붉은 고기
+2152,dry_white_wine,1596,corn_beef_hash,붉은 고기
+2152,dry_white_wine,1618,corned_beef,붉은 고기
+2152,dry_white_wine,1619,corned_beef_brisket,붉은 고기
+2152,dry_white_wine,1858,deli_corned_beef,붉은 고기
+2152,dry_white_wine,1860,deli_roast_beef,붉은 고기
+2152,dry_white_wine,1945,dried_beef,붉은 고기
+2152,dry_white_wine,2249,extra_lean_ground_beef,붉은 고기
+2152,dry_white_wine,2286,fat_free_low_sodium_beef_broth,붉은 고기
+2152,dry_white_wine,2339,filet_of_beef,붉은 고기
+2152,dry_white_wine,3058,ground_beef,붉은 고기
+2152,dry_white_wine,3059,ground_beef_round,붉은 고기
+2152,dry_white_wine,3282,homemade_beef_stock,붉은 고기
+2152,dry_white_wine,3398,instant_beef_bouillon,붉은 고기
+2152,dry_white_wine,3686,lean_beef,붉은 고기
+2152,dry_white_wine,3687,lean_beef_chuck,붉은 고기
+2152,dry_white_wine,3693,lean_ground_beef,붉은 고기
+2152,dry_white_wine,3713,lean_stewing_beef,붉은 고기
+2152,dry_white_wine,3866,lipton_beefy_onion_soup_mix,붉은 고기
+2152,dry_white_wine,3910,london_broil_beef,붉은 고기
+2152,dry_white_wine,3977,low_sodium_beef_bouillon_cube,붉은 고기
+2152,dry_white_wine,3978,low_sodium_beef_bouillon_granule,붉은 고기
+2152,dry_white_wine,4216,minced_beef,붉은 고기
+2152,dry_white_wine,4387,no_salt_added_beef_broth,붉은 고기
+2152,dry_white_wine,4417,nonfat_beef_broth,붉은 고기
+2152,dry_white_wine,4570,oxo_beef_cube,붉은 고기
+2152,dry_white_wine,5251,ready_to_serve_beef_broth,붉은 고기
+2152,dry_white_wine,5389,reduced_sodium_beef_broth,붉은 고기
+2152,dry_white_wine,5393,reduced_sodium_fat_free_beef_broth,붉은 고기
+2152,dry_white_wine,5466,roast_beef,붉은 고기
+2152,dry_white_wine,5780,shin_beef,붉은 고기
+2152,dry_white_wine,5791,short_rib_of_beef,붉은 고기
+2152,dry_white_wine,5826,sirloin_beef,붉은 고기
+2152,dry_white_wine,5884,smoked_beef_sausage,붉은 고기
+2152,dry_white_wine,6108,stew_beef_chunk,붉은 고기
+2152,dry_white_wine,6111,stewing_beef,붉은 고기
+2152,dry_white_wine,6118,stir_fry_beef,붉은 고기
+2152,dry_white_wine,6469,top_round_beef,붉은 고기
+2152,dry_white_wine,6573,unsalted_beef_stock,붉은 고기
+2152,dry_white_wine,6727,vegetarian_ground_beef,붉은 고기
+2152,dry_white_wine,599,boneless_lamb,붉은 고기
+2152,dry_white_wine,600,boneless_lamb_shoulder,붉은 고기
+2152,dry_white_wine,602,boneless_leg_of_lamb,붉은 고기
+2152,dry_white_wine,803,butterflied_leg_of_lamb,붉은 고기
+2152,dry_white_wine,1538,cooked_lamb,붉은 고기
+2152,dry_white_wine,3088,ground_lamb,붉은 고기
+2152,dry_white_wine,3636,lamb,붉은 고기
+2152,dry_white_wine,3638,lamb_bone,붉은 고기
+2152,dry_white_wine,3639,lamb_breast,붉은 고기
+2152,dry_white_wine,3640,lamb_chop,붉은 고기
+2152,dry_white_wine,3641,lamb_cutlet,붉은 고기
+2152,dry_white_wine,3642,lamb_fillet,붉은 고기
+2152,dry_white_wine,3644,lamb_liver,붉은 고기
+2152,dry_white_wine,3645,lamb_loin_chop,붉은 고기
+2152,dry_white_wine,3646,lamb_neck,붉은 고기
+2152,dry_white_wine,3647,lamb_rack,붉은 고기
+2152,dry_white_wine,3648,lamb_rib,붉은 고기
+2152,dry_white_wine,3649,lamb_rib_chop,붉은 고기
+2152,dry_white_wine,3650,lamb_sausage,붉은 고기
+2152,dry_white_wine,3651,lamb_shank,붉은 고기
+2152,dry_white_wine,3652,lamb_shoulder,붉은 고기
+2152,dry_white_wine,3653,lamb_steak,붉은 고기
+2152,dry_white_wine,3654,lamb_stew_meat,붉은 고기
+2152,dry_white_wine,3655,lamb_stock,붉은 고기
+2152,dry_white_wine,3657,lambs_kidney,붉은 고기
+2152,dry_white_wine,3688,lean_boneless_lamb,붉은 고기
+2152,dry_white_wine,3696,lean_ground_lamb,붉은 고기
+2152,dry_white_wine,3703,lean_lamb,붉은 고기
+2152,dry_white_wine,3719,leg_of_lamb,붉은 고기
+2152,dry_white_wine,3906,loin_lamb,붉은 고기
+2152,dry_white_wine,5177,rack_of_lamb,붉은 고기
+2152,dry_white_wine,5179,racks_of_lamb,붉은 고기
+2152,dry_white_wine,5801,shoulder_lamb_chop,붉은 고기
+2152,dry_white_wine,6113,stewing_lamb,붉은 고기
+2152,dry_white_wine,2915,gorgonzola,크림 치즈 요리
+2152,dry_white_wine,825,cabbage_kimchi,발효 음식
+2152,dry_white_wine,1824,dark_miso,발효 음식
+2152,dry_white_wine,3812,light_miso,발효 음식
+2152,dry_white_wine,4264,miso,발효 음식
+2152,dry_white_wine,5309,red_miso,발효 음식
+2152,dry_white_wine,5783,shiro_miso,발효 음식
+2152,dry_white_wine,6887,white_miso,발효 음식
+2152,dry_white_wine,7065,yellow_miso,발효 음식
+2204,elderflower_liqueur,4086,marmalade,매운 음식
+2204,elderflower_liqueur,4483,onion_marmalade,매운 음식
+2204,elderflower_liqueur,4520,orange_marmalade,매운 음식
+2204,elderflower_liqueur,129,anaheim_chili,매운 음식
+2204,elderflower_liqueur,130,anaheim_chilies,매운 음식
+2204,elderflower_liqueur,132,ancho_chili,매운 음식
+2204,elderflower_liqueur,133,ancho_chilies,매운 음식
+2204,elderflower_liqueur,208,asian_chili_sauce,매운 음식
+2204,elderflower_liqueur,640,bottled_chili_sauce,매운 음식
+2204,elderflower_liqueur,905,canned_chilies,매운 음식
+2204,elderflower_liqueur,1212,chili,매운 음식
+2204,elderflower_liqueur,1213,chili_bean,매운 음식
+2204,elderflower_liqueur,1214,chili_bean_paste,매운 음식
+2204,elderflower_liqueur,1215,chili_bean_sauce,매운 음식
+2204,elderflower_liqueur,1216,chili_flake,매운 음식
+2204,elderflower_liqueur,1217,chili_garlic_sauce,매운 음식
+2204,elderflower_liqueur,1219,chili_oil,매운 음식
+2204,elderflower_liqueur,1220,chili_paste,매운 음식
+2204,elderflower_liqueur,1221,chili_paste_with_garlic,매운 음식
+2204,elderflower_liqueur,1222,chili_pepper,매운 음식
+2204,elderflower_liqueur,1223,chili_pepper_flake,매운 음식
+2204,elderflower_liqueur,1224,chili_pod,매운 음식
+2204,elderflower_liqueur,1225,chili_powder,매운 음식
+2204,elderflower_liqueur,1226,chili_sauce,매운 음식
+2204,elderflower_liqueur,1227,chili_seasoning_mix,매운 음식
+2204,elderflower_liqueur,1228,chili_with_bean,매운 음식
+2204,elderflower_liqueur,1229,chili_without_bean,매운 음식
+2204,elderflower_liqueur,1230,chilies,매운 음식
+2204,elderflower_liqueur,1236,chinese_chili_sauce,매운 음식
+2204,elderflower_liqueur,1257,chipotle_chili_sauce,매운 음식
+2204,elderflower_liqueur,1809,dark_chili_powder,매운 음식
+2204,elderflower_liqueur,1873,diced_green_chili,매운 음식
+2204,elderflower_liqueur,1874,diced_green_chilies,매운 음식
+2204,elderflower_liqueur,1881,diced_tomatoes_with_green_chilies,매운 음식
+2204,elderflower_liqueur,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+2204,elderflower_liqueur,1961,dried_chili,매운 음식
+2204,elderflower_liqueur,1962,dried_chili_pepper_flake,매운 음식
+2204,elderflower_liqueur,1963,dried_chilies,매운 음식
+2204,elderflower_liqueur,1993,dried_guajillo_chilies,매운 음식
+2204,elderflower_liqueur,1997,dried_hot_chili_pepper,매운 음식
+2204,elderflower_liqueur,2000,dried_hot_red_chili_pepper,매운 음식
+2204,elderflower_liqueur,2001,dried_hot_red_chilies,매운 음식
+2204,elderflower_liqueur,2053,dried_red_chili,매운 음식
+2204,elderflower_liqueur,2054,dried_red_chili_pepper,매운 음식
+2204,elderflower_liqueur,2055,dried_red_chilies,매운 음식
+2204,elderflower_liqueur,2103,dry_chili_pepper,매운 음식
+2204,elderflower_liqueur,2466,fresh_chili_pepper,매운 음식
+2204,elderflower_liqueur,2502,fresh_green_chilies,매운 음식
+2204,elderflower_liqueur,2511,fresh_jalapeno_chilies,매운 음식
+2204,elderflower_liqueur,2990,green_chili,매운 음식
+2204,elderflower_liqueur,2991,green_chili_paste,매운 음식
+2204,elderflower_liqueur,2992,green_chili_pepper,매운 음식
+2204,elderflower_liqueur,2994,green_chili_salsa,매운 음식
+2204,elderflower_liqueur,2995,green_chili_sauce,매운 음식
+2204,elderflower_liqueur,2996,green_chilies,매운 음식
+2204,elderflower_liqueur,3028,green_serrano_chilies,매운 음식
+2204,elderflower_liqueur,3054,ground_ancho_chili_pepper,매운 음식
+2204,elderflower_liqueur,3106,ground_red_chili_pepper,매운 음식
+2204,elderflower_liqueur,3131,guajillo_chilies,매운 음식
+2204,elderflower_liqueur,3229,heinz_chili_sauce,매운 음식
+2204,elderflower_liqueur,3309,hormel_chili,매운 음식
+2204,elderflower_liqueur,3310,hormel_chili_without_bean,매운 음식
+2204,elderflower_liqueur,3322,hot_chili_bean,매운 음식
+2204,elderflower_liqueur,3323,hot_chili_flake,매운 음식
+2204,elderflower_liqueur,3324,hot_chili_oil,매운 음식
+2204,elderflower_liqueur,3325,hot_chili_paste,매운 음식
+2204,elderflower_liqueur,3326,hot_chili_pepper,매운 음식
+2204,elderflower_liqueur,3327,hot_chili_powder,매운 음식
+2204,elderflower_liqueur,3328,hot_chili_sauce,매운 음식
+2204,elderflower_liqueur,3329,hot_chinese_chili_paste,매운 음식
+2204,elderflower_liqueur,3339,hot_green_chili_pepper,매운 음식
+2204,elderflower_liqueur,3355,hot_red_chili_pepper,매운 음식
+2204,elderflower_liqueur,3554,kashmiri_chili_powder,매운 음식
+2204,elderflower_liqueur,4167,mexican_chili_powder,매운 음식
+2204,elderflower_liqueur,4193,mild_chili_powder,매운 음식
+2204,elderflower_liqueur,4197,mild_green_chili,매운 음식
+2204,elderflower_liqueur,4198,mild_green_chilies,매운 음식
+2204,elderflower_liqueur,4385,no_bean_chili,매운 음식
+2204,elderflower_liqueur,4793,pickled_jalapeno_chilies,매운 음식
+2204,elderflower_liqueur,5278,red_chili_paste,매운 음식
+2204,elderflower_liqueur,5279,red_chili_pepper,매운 음식
+2204,elderflower_liqueur,5281,red_chili_powder,매운 음식
+2204,elderflower_liqueur,5282,red_chili_sauce,매운 음식
+2204,elderflower_liqueur,5283,red_chilies,매운 음식
+2204,elderflower_liqueur,5478,roasted_green_chilies,매운 음식
+2204,elderflower_liqueur,5541,rotel_tomatoes_&_chilies,매운 음식
+2204,elderflower_liqueur,5637,sambal_chili_paste,매운 음식
+2204,elderflower_liqueur,5639,sambal_oelek_chili_paste,매운 음식
+2204,elderflower_liqueur,5737,serrano_chili,매운 음식
+2204,elderflower_liqueur,5738,serrano_chili_pepper,매운 음식
+2204,elderflower_liqueur,5739,serrano_chilies,매운 음식
+2204,elderflower_liqueur,6241,sweet_chili_sauce,매운 음식
+2204,elderflower_liqueur,6387,thai_chili_paste,매운 음식
+2204,elderflower_liqueur,6390,thai_green_chili,매운 음식
+2204,elderflower_liqueur,6392,thai_red_chili_pepper,매운 음식
+2204,elderflower_liqueur,6396,thai_sweet_chili_sauce,매운 음식
+2204,elderflower_liqueur,6456,tomatoes_and_green_chilies,매운 음식
+2204,elderflower_liqueur,6949,whole_green_chili,매운 음식
+2204,elderflower_liqueur,6950,whole_green_chilies,매운 음식
+2204,elderflower_liqueur,825,cabbage_kimchi,발효 음식
+2204,elderflower_liqueur,2372,fish_sauce,발효 음식
+2204,elderflower_liqueur,6389,thai_fish_sauce,발효 음식
+2204,elderflower_liqueur,407,beef_stew,고기요리
+2204,elderflower_liqueur,408,beef_stew_meat,고기요리
+2204,elderflower_liqueur,409,beef_stew_seasoning,고기요리
+2204,elderflower_liqueur,599,boneless_lamb,고기요리
+2204,elderflower_liqueur,600,boneless_lamb_shoulder,고기요리
+2204,elderflower_liqueur,602,boneless_leg_of_lamb,고기요리
+2204,elderflower_liqueur,803,butterflied_leg_of_lamb,고기요리
+2204,elderflower_liqueur,1538,cooked_lamb,고기요리
+2204,elderflower_liqueur,3088,ground_lamb,고기요리
+2204,elderflower_liqueur,3636,lamb,고기요리
+2204,elderflower_liqueur,3638,lamb_bone,고기요리
+2204,elderflower_liqueur,3639,lamb_breast,고기요리
+2204,elderflower_liqueur,3640,lamb_chop,고기요리
+2204,elderflower_liqueur,3641,lamb_cutlet,고기요리
+2204,elderflower_liqueur,3642,lamb_fillet,고기요리
+2204,elderflower_liqueur,3644,lamb_liver,고기요리
+2204,elderflower_liqueur,3645,lamb_loin_chop,고기요리
+2204,elderflower_liqueur,3646,lamb_neck,고기요리
+2204,elderflower_liqueur,3647,lamb_rack,고기요리
+2204,elderflower_liqueur,3648,lamb_rib,고기요리
+2204,elderflower_liqueur,3649,lamb_rib_chop,고기요리
+2204,elderflower_liqueur,3650,lamb_sausage,고기요리
+2204,elderflower_liqueur,3651,lamb_shank,고기요리
+2204,elderflower_liqueur,3652,lamb_shoulder,고기요리
+2204,elderflower_liqueur,3653,lamb_steak,고기요리
+2204,elderflower_liqueur,3654,lamb_stew_meat,고기요리
+2204,elderflower_liqueur,3655,lamb_stock,고기요리
+2204,elderflower_liqueur,3657,lambs_kidney,고기요리
+2204,elderflower_liqueur,3688,lean_boneless_lamb,고기요리
+2204,elderflower_liqueur,3696,lean_ground_lamb,고기요리
+2204,elderflower_liqueur,3703,lean_lamb,고기요리
+2204,elderflower_liqueur,3719,leg_of_lamb,고기요리
+2204,elderflower_liqueur,3906,loin_lamb,고기요리
+2204,elderflower_liqueur,5177,rack_of_lamb,고기요리
+2204,elderflower_liqueur,5179,racks_of_lamb,고기요리
+2204,elderflower_liqueur,5801,shoulder_lamb_chop,고기요리
+2204,elderflower_liqueur,6113,stewing_lamb,고기요리
+2204,elderflower_liqueur,445,betty_crocker_fudge_brownie_mix,초콜릿 디저트
+2204,elderflower_liqueur,751,brownie,초콜릿 디저트
+2204,elderflower_liqueur,2775,fudge_brownie_mix,초콜릿 디저트
+2204,elderflower_liqueur,514,black_truffle,초콜릿 디저트
+2204,elderflower_liqueur,1332,chocolate_truffle,초콜릿 디저트
+2204,elderflower_liqueur,6490,truffle,초콜릿 디저트
+2204,elderflower_liqueur,6491,truffle_butter,초콜릿 디저트
+2204,elderflower_liqueur,6492,truffle_oil,초콜릿 디저트
+2204,elderflower_liqueur,6493,truffle_salt,초콜릿 디저트
+2204,elderflower_liqueur,6912,white_truffle,초콜릿 디저트
+2204,elderflower_liqueur,6913,white_truffle_oil,초콜릿 디저트
+2413,framboise_liqueur,4086,marmalade,매운 음식
+2413,framboise_liqueur,4483,onion_marmalade,매운 음식
+2413,framboise_liqueur,4520,orange_marmalade,매운 음식
+2413,framboise_liqueur,825,cabbage_kimchi,발효 음식
+2413,framboise_liqueur,67,ahi_tuna_steak,고기요리
+2413,framboise_liqueur,377,beef_cube_steak,고기요리
+2413,framboise_liqueur,396,beef_round_steak,고기요리
+2413,framboise_liqueur,397,beef_round_tip_steak,고기요리
+2413,framboise_liqueur,404,beef_sirloin_steak,고기요리
+2413,framboise_liqueur,406,beef_steak,고기요리
+2413,framboise_liqueur,414,beef_t_bone_steak,고기요리
+2413,framboise_liqueur,418,beef_tenderloin_steak,고기요리
+2413,framboise_liqueur,421,beef_top_round_steak,고기요리
+2413,framboise_liqueur,422,beefsteak_tomato,고기요리
+2413,framboise_liqueur,527,blade_steak,고기요리
+2413,framboise_liqueur,577,boneless_beef_chuck_steak,고기요리
+2413,framboise_liqueur,580,boneless_beef_round_steak,고기요리
+2413,framboise_liqueur,585,boneless_beef_top_loin_steak,고기요리
+2413,framboise_liqueur,586,boneless_beef_top_round_steak,고기요리
+2413,framboise_liqueur,613,boneless_rib_eye_steak,고기요리
+2413,framboise_liqueur,614,boneless_round_steak,고기요리
+2413,framboise_liqueur,618,boneless_sirloin_steak,고기요리
+2413,framboise_liqueur,631,boneless_veal_steak,고기요리
+2413,framboise_liqueur,647,bottom_round_steak,고기요리
+2413,framboise_liqueur,1350,chuck_steak,고기요리
+2413,framboise_liqueur,1457,cod_steak,고기요리
+2413,framboise_liqueur,1766,cube_steak,고기요리
+2413,framboise_liqueur,2338,filet_mignon_steak,고기요리
+2413,framboise_liqueur,2373,fish_steak,고기요리
+2413,framboise_liqueur,2381,flank_steak,고기요리
+2413,framboise_liqueur,2383,flat_iron_steak,고기요리
+2413,framboise_liqueur,3158,halibut_steak,고기요리
+2413,framboise_liqueur,3167,ham_steak,고기요리
+2413,framboise_liqueur,3175,hanger_steak,고기요리
+2413,framboise_liqueur,3227,heinz_57_steak_sauce,고기요리
+2413,framboise_liqueur,3366,hp_steak_sauce,고기요리
+2413,framboise_liqueur,3653,lamb_steak,고기요리
+2413,framboise_liqueur,3692,lean_flank_steak,고기요리
+2413,framboise_liqueur,3708,lean_round_steak,고기요리
+2413,framboise_liqueur,3710,lean_sirloin_steak,고기요리
+2413,framboise_liqueur,3711,lean_steak,고기요리
+2413,framboise_liqueur,4118,mccormick's_montreal_brand_steak_seasoning,고기요리
+2413,framboise_liqueur,4255,minute_steak,고기요리
+2413,framboise_liqueur,4381,new_york_strip_steak,고기요리
+2413,framboise_liqueur,4973,pork_blade_steak,고기요리
+2413,framboise_liqueur,5010,pork_steak,고기요리
+2413,framboise_liqueur,5020,porterhouse_steak,고기요리
+2413,framboise_liqueur,5427,rib_eye_steak,고기요리
+2413,framboise_liqueur,5551,round_steak,고기요리
+2413,framboise_liqueur,5562,rump_steak,고기요리
+2413,framboise_liqueur,5602,salmon_steak,고기요리
+2413,framboise_liqueur,5761,shark_steak,고기요리
+2413,framboise_liqueur,5769,shell_steak,고기요리
+2413,framboise_liqueur,5827,sirloin_steak,고기요리
+2413,framboise_liqueur,5829,sirloin_tip_steak,고기요리
+2413,framboise_liqueur,5846,skirt_steak,고기요리
+2413,framboise_liqueur,6095,steak,고기요리
+2413,framboise_liqueur,6096,steak_fillet,고기요리
+2413,framboise_liqueur,6097,steak_sauce,고기요리
+2413,framboise_liqueur,6098,steak_seasoning,고기요리
+2413,framboise_liqueur,6099,steak_spice,고기요리
+2413,framboise_liqueur,6101,steak_ums,고기요리
+2413,framboise_liqueur,6158,strip_steak,고기요리
+2413,framboise_liqueur,6302,swordfish_steak,고기요리
+2413,framboise_liqueur,6471,top_round_steak,고기요리
+2413,framboise_liqueur,6472,top_sirloin_steak,고기요리
+2413,framboise_liqueur,6484,tri_tip_steak,고기요리
+2413,framboise_liqueur,6505,tuna_steak,고기요리
+2413,framboise_liqueur,6685,veal_steak,고기요리
+2413,framboise_liqueur,6742,venison_steak,고기요리
+2413,framboise_liqueur,7085,yellowfin_tuna_steak,고기요리
+2413,framboise_liqueur,599,boneless_lamb,고기요리
+2413,framboise_liqueur,600,boneless_lamb_shoulder,고기요리
+2413,framboise_liqueur,602,boneless_leg_of_lamb,고기요리
+2413,framboise_liqueur,803,butterflied_leg_of_lamb,고기요리
+2413,framboise_liqueur,1538,cooked_lamb,고기요리
+2413,framboise_liqueur,3088,ground_lamb,고기요리
+2413,framboise_liqueur,3636,lamb,고기요리
+2413,framboise_liqueur,3638,lamb_bone,고기요리
+2413,framboise_liqueur,3639,lamb_breast,고기요리
+2413,framboise_liqueur,3640,lamb_chop,고기요리
+2413,framboise_liqueur,3641,lamb_cutlet,고기요리
+2413,framboise_liqueur,3642,lamb_fillet,고기요리
+2413,framboise_liqueur,3644,lamb_liver,고기요리
+2413,framboise_liqueur,3645,lamb_loin_chop,고기요리
+2413,framboise_liqueur,3646,lamb_neck,고기요리
+2413,framboise_liqueur,3647,lamb_rack,고기요리
+2413,framboise_liqueur,3648,lamb_rib,고기요리
+2413,framboise_liqueur,3649,lamb_rib_chop,고기요리
+2413,framboise_liqueur,3650,lamb_sausage,고기요리
+2413,framboise_liqueur,3651,lamb_shank,고기요리
+2413,framboise_liqueur,3652,lamb_shoulder,고기요리
+2413,framboise_liqueur,3653,lamb_steak,고기요리
+2413,framboise_liqueur,3654,lamb_stew_meat,고기요리
+2413,framboise_liqueur,3655,lamb_stock,고기요리
+2413,framboise_liqueur,3657,lambs_kidney,고기요리
+2413,framboise_liqueur,3688,lean_boneless_lamb,고기요리
+2413,framboise_liqueur,3696,lean_ground_lamb,고기요리
+2413,framboise_liqueur,3703,lean_lamb,고기요리
+2413,framboise_liqueur,3719,leg_of_lamb,고기요리
+2413,framboise_liqueur,3906,loin_lamb,고기요리
+2413,framboise_liqueur,5177,rack_of_lamb,고기요리
+2413,framboise_liqueur,5179,racks_of_lamb,고기요리
+2413,framboise_liqueur,5801,shoulder_lamb_chop,고기요리
+2413,framboise_liqueur,6113,stewing_lamb,고기요리
+2413,framboise_liqueur,2955,grapefruit,산미 음식
+2413,framboise_liqueur,2956,grapefruit_juice,산미 음식
+2413,framboise_liqueur,2957,grapefruit_peel,산미 음식
+2413,framboise_liqueur,2958,grapefruit_section,산미 음식
+2413,framboise_liqueur,2960,grapefruit_zest,산미 음식
+2413,framboise_liqueur,4871,pink_grapefruit,산미 음식
+2413,framboise_liqueur,4872,pink_grapefruit_juice,산미 음식
+2413,framboise_liqueur,5296,red_grapefruit,산미 음식
+2413,framboise_liqueur,5557,ruby_red_grapefruit_juice,산미 음식
+2413,framboise_liqueur,6881,white_grapefruit,산미 음식
+2413,framboise_liqueur,7095,yuzu,산미 음식
+2413,framboise_liqueur,7096,yuzu_juice,산미 음식
+2780,full_bodied_red_wine,5649,sashimi_grade_tuna,해산물
+2780,full_bodied_red_wine,4086,marmalade,매운 음식
+2780,full_bodied_red_wine,4483,onion_marmalade,매운 음식
+2780,full_bodied_red_wine,4520,orange_marmalade,매운 음식
+2780,full_bodied_red_wine,644,bottled_lemon_juice,가벼운 디저트
+2780,full_bodied_red_wine,874,candied_lemon_peel,가벼운 디저트
+2780,full_bodied_red_wine,989,carbonated_lemon_lime_beverage,가벼운 디저트
+2780,full_bodied_red_wine,2015,dried_lemon_peel,가벼운 디저트
+2780,full_bodied_red_wine,2016,dried_lemongrass,가벼운 디저트
+2780,full_bodied_red_wine,2284,fat_free_lemon_yogurt,가벼운 디저트
+2780,full_bodied_red_wine,2516,fresh_lemon,가벼운 디저트
+2780,full_bodied_red_wine,2517,fresh_lemon_juice,가벼운 디저트
+2780,full_bodied_red_wine,2518,fresh_lemon_rind,가벼운 디저트
+2780,full_bodied_red_wine,2520,fresh_lemongrass,가벼운 디저트
+2780,full_bodied_red_wine,2530,fresh_meyer_lemon_juice,가벼운 디저트
+2780,full_bodied_red_wine,2679,frozen_lemonade,가벼운 디저트
+2780,full_bodied_red_wine,2680,frozen_lemonade_concentrate,가벼운 디저트
+2780,full_bodied_red_wine,2707,frozen_pink_lemonade_concentrate,가벼운 디저트
+2780,full_bodied_red_wine,3421,instant_lemon_pudding,가벼운 디저트
+2780,full_bodied_red_wine,3422,instant_lemon_pudding_mix,가벼운 디저트
+2780,full_bodied_red_wine,3720,lemon,가벼운 디저트
+2780,full_bodied_red_wine,3722,"lemon,_juice_and_zest_of",가벼운 디저트
+2780,full_bodied_red_wine,3723,"lemon,_juice_of",가벼운 디저트
+2780,full_bodied_red_wine,3724,"lemon,_rind_of",가벼운 디저트
+2780,full_bodied_red_wine,3725,"lemon,_zest_of",가벼운 디저트
+2780,full_bodied_red_wine,3727,lemon_balm,가벼운 디저트
+2780,full_bodied_red_wine,3728,lemon_balm_leaf,가벼운 디저트
+2780,full_bodied_red_wine,3729,lemon_basil,가벼운 디저트
+2780,full_bodied_red_wine,3730,lemon_butter,가벼운 디저트
+2780,full_bodied_red_wine,3731,lemon_cake_mix,가벼운 디저트
+2780,full_bodied_red_wine,3732,lemon_curd,가벼운 디저트
+2780,full_bodied_red_wine,3733,lemon_essence,가벼운 디저트
+2780,full_bodied_red_wine,3734,lemon_extract,가벼운 디저트
+2780,full_bodied_red_wine,3735,lemon_flavor_instant_pudding_and_pie_filling,가벼운 디저트
+2780,full_bodied_red_wine,3737,lemon_flavoring,가벼운 디저트
+2780,full_bodied_red_wine,3738,lemon_frosting,가벼운 디저트
+2780,full_bodied_red_wine,3739,lemon_gelatin,가벼운 디저트
+2780,full_bodied_red_wine,3741,lemon_jell_o_gelatin,가벼운 디저트
+2780,full_bodied_red_wine,3742,lemon_jelly_powder,가벼운 디저트
+2780,full_bodied_red_wine,3743,lemon_juice,가벼운 디저트
+2780,full_bodied_red_wine,3744,lemon_juice_concentrate,가벼운 디저트
+2780,full_bodied_red_wine,3745,lemon_leaf,가벼운 디저트
+2780,full_bodied_red_wine,3746,lemon_lime_flavored_soda,가벼운 디저트
+2780,full_bodied_red_wine,3747,lemon_low_fat_yogurt,가벼운 디저트
+2780,full_bodied_red_wine,3748,lemon_oil,가벼운 디저트
+2780,full_bodied_red_wine,3750,lemon_peel,가벼운 디저트
+2780,full_bodied_red_wine,3751,lemon_peel_strip,가벼운 디저트
+2780,full_bodied_red_wine,3752,lemon_pepper,가벼운 디저트
+2780,full_bodied_red_wine,3753,lemon_pepper_seasoning,가벼운 디저트
+2780,full_bodied_red_wine,3754,lemon_pie_filling,가벼운 디저트
+2780,full_bodied_red_wine,3755,lemon_pudding_mix,가벼운 디저트
+2780,full_bodied_red_wine,3756,lemon_rind,가벼운 디저트
+2780,full_bodied_red_wine,3757,lemon_sherbet,가벼운 디저트
+2780,full_bodied_red_wine,3758,lemon_slice,가벼운 디저트
+2780,full_bodied_red_wine,3760,lemon_sorbet,가벼운 디저트
+2780,full_bodied_red_wine,3761,lemon_supreme_cake_mix,가벼운 디저트
+2780,full_bodied_red_wine,3762,lemon_syrup,가벼운 디저트
+2780,full_bodied_red_wine,3763,lemon_thyme,가벼운 디저트
+2780,full_bodied_red_wine,3764,lemon_thyme_leaf,가벼운 디저트
+2780,full_bodied_red_wine,3765,lemon_twist,가벼운 디저트
+2780,full_bodied_red_wine,3766,lemon_verbena,가벼운 디저트
+2780,full_bodied_red_wine,3767,lemon_verbena_leaf,가벼운 디저트
+2780,full_bodied_red_wine,3768,lemon_vinaigrette,가벼운 디저트
+2780,full_bodied_red_wine,3769,lemon_wedge,가벼운 디저트
+2780,full_bodied_red_wine,3770,lemon_yogurt,가벼운 디저트
+2780,full_bodied_red_wine,3771,lemon_zest,가벼운 디저트
+2780,full_bodied_red_wine,3772,lemonade,가벼운 디저트
+2780,full_bodied_red_wine,3773,lemonade_concentrate,가벼운 디저트
+2780,full_bodied_red_wine,3774,lemonade_mix,가벼운 디저트
+2780,full_bodied_red_wine,3775,lemongrass,가벼운 디저트
+2780,full_bodied_red_wine,3776,lemongrass_paste,가벼운 디저트
+2780,full_bodied_red_wine,3777,"lemons,_juice_and_zest_of",가벼운 디저트
+2780,full_bodied_red_wine,3778,"lemons,_juice_of",가벼운 디저트
+2780,full_bodied_red_wine,3779,"lemons,_rind_of",가벼운 디저트
+2780,full_bodied_red_wine,3780,"lemons,_zest_of",가벼운 디저트
+2780,full_bodied_red_wine,4184,meyer_lemon,가벼운 디저트
+2780,full_bodied_red_wine,4185,meyer_lemon_zest,가벼운 디저트
+2780,full_bodied_red_wine,4873,pink_lemonade,가벼운 디저트
+2780,full_bodied_red_wine,5088,preserved_lemon,가벼운 디저트
+2780,full_bodied_red_wine,5258,realemon_juice,가벼운 디저트
+2780,full_bodied_red_wine,6293,sweetened_lemonade_drink_mix,가벼운 디저트
+2780,full_bodied_red_wine,1326,chocolate_sorbet,가벼운 디저트
+2780,full_bodied_red_wine,1449,coconut_sorbet,가벼운 디저트
+2780,full_bodied_red_wine,3760,lemon_sorbet,가벼운 디저트
+2780,full_bodied_red_wine,4061,mango_sorbet,가벼운 디저트
+2780,full_bodied_red_wine,5222,raspberry_sorbet,가벼운 디저트
+2780,full_bodied_red_wine,5955,sorbet,가벼운 디저트
+2780,full_bodied_red_wine,6151,strawberry_sorbet,가벼운 디저트
+2780,full_bodied_red_wine,825,cabbage_kimchi,발효 음식
+2836,gin,599,boneless_lamb,고기요리
+2836,gin,600,boneless_lamb_shoulder,고기요리
+2836,gin,602,boneless_leg_of_lamb,고기요리
+2836,gin,803,butterflied_leg_of_lamb,고기요리
+2836,gin,1538,cooked_lamb,고기요리
+2836,gin,3088,ground_lamb,고기요리
+2836,gin,3636,lamb,고기요리
+2836,gin,3638,lamb_bone,고기요리
+2836,gin,3639,lamb_breast,고기요리
+2836,gin,3640,lamb_chop,고기요리
+2836,gin,3641,lamb_cutlet,고기요리
+2836,gin,3642,lamb_fillet,고기요리
+2836,gin,3644,lamb_liver,고기요리
+2836,gin,3645,lamb_loin_chop,고기요리
+2836,gin,3646,lamb_neck,고기요리
+2836,gin,3647,lamb_rack,고기요리
+2836,gin,3648,lamb_rib,고기요리
+2836,gin,3649,lamb_rib_chop,고기요리
+2836,gin,3650,lamb_sausage,고기요리
+2836,gin,3651,lamb_shank,고기요리
+2836,gin,3652,lamb_shoulder,고기요리
+2836,gin,3653,lamb_steak,고기요리
+2836,gin,3654,lamb_stew_meat,고기요리
+2836,gin,3655,lamb_stock,고기요리
+2836,gin,3657,lambs_kidney,고기요리
+2836,gin,3688,lean_boneless_lamb,고기요리
+2836,gin,3696,lean_ground_lamb,고기요리
+2836,gin,3703,lean_lamb,고기요리
+2836,gin,3719,leg_of_lamb,고기요리
+2836,gin,3906,loin_lamb,고기요리
+2836,gin,5177,rack_of_lamb,고기요리
+2836,gin,5179,racks_of_lamb,고기요리
+2836,gin,5801,shoulder_lamb_chop,고기요리
+2836,gin,6113,stewing_lamb,고기요리
+2836,gin,825,cabbage_kimchi,발효 음식
+2836,gin,445,betty_crocker_fudge_brownie_mix,디저트
+2836,gin,751,brownie,디저트
+2836,gin,2775,fudge_brownie_mix,디저트
+2836,gin,306,banana_cream_instant_pudding,디저트
+2836,gin,309,banana_instant_pudding,디저트
+2836,gin,502,black_pudding,디저트
+2836,gin,677,bread_pudding,디저트
+2836,gin,816,butterscotch_pudding,디저트
+2836,gin,817,butterscotch_pudding_mix,디저트
+2836,gin,1105,cheesecake_flavor_instant_pudding_and_pie_filling,디저트
+2836,gin,1106,cheesecake_flavor_instant_pudding_and_pie_filling_mix,디저트
+2836,gin,1297,chocolate_flavor_instant_pudding_and_pie_filling_mix,디저트
+2836,gin,1305,chocolate_fudge_instant_pudding_mix,디저트
+2836,gin,1315,chocolate_instant_pudding,디저트
+2836,gin,1322,chocolate_pudding,디저트
+2836,gin,1323,chocolate_pudding_mix,디저트
+2836,gin,2301,fat_free_sugar_free_instant_vanilla_pudding_mix,디저트
+2836,gin,2443,french_vanilla_instant_pudding,디저트
+2836,gin,2444,french_vanilla_pudding_mix,디저트
+2836,gin,3397,instant_banana_pudding_mix,디저트
+2836,gin,3401,instant_butterscotch_pudding_mix,디저트
+2836,gin,3407,instant_chocolate_pudding_mix,디저트
+2836,gin,3408,instant_coconut_cream_pudding_mix,디저트
+2836,gin,3421,instant_lemon_pudding,디저트
+2836,gin,3422,instant_lemon_pudding_mix,디저트
+2836,gin,3433,instant_pistachio_pudding_mix,디저트
+2836,gin,3437,instant_pudding_mix,디저트
+2836,gin,3441,instant_vanilla_flavor_pudding_and_pie_filling,디저트
+2836,gin,3442,instant_vanilla_pudding,디저트
+2836,gin,3443,instant_white_chocolate_pudding_and_pie_filling_mix,디저트
+2836,gin,3515,jell_o_chocolate_instant_pudding,디저트
+2836,gin,3516,jell_o_chocolate_pudding_and_pie_filling,디저트
+2836,gin,3517,jell_o_pudding_mix,디저트
+2836,gin,3520,jello_instant_vanilla_pudding_mix,디저트
+2836,gin,3735,lemon_flavor_instant_pudding_and_pie_filling,디저트
+2836,gin,3755,lemon_pudding_mix,디저트
+2836,gin,4890,pistachio_pudding_mix,디저트
+2836,gin,5083,prepared_vanilla_pudding,디저트
+2836,gin,5115,pudding,디저트
+2836,gin,5116,pudding_mix,디저트
+2836,gin,5117,pudding_rice,디저트
+2836,gin,6180,sugar_free_fat_free_instant_pudding_mix,디저트
+2836,gin,6181,sugar_free_instant_butterscotch_pudding_mix,디저트
+2836,gin,6182,sugar_free_instant_chocolate_pudding_mix,디저트
+2836,gin,6183,sugar_free_instant_pudding_mix,디저트
+2836,gin,6184,sugar_free_instant_vanilla_pudding_mix,디저트
+2836,gin,6197,sugar_free_vanilla_pudding,디저트
+2836,gin,6198,sugar_free_vanilla_pudding_mix,디저트
+2836,gin,6345,tapioca_pudding,디저트
+2836,gin,6645,vanilla_flavor_instant_pudding_and_pie_filling_mix,디저트
+2836,gin,6655,vanilla_instant_pudding_mix,디저트
+2836,gin,6661,vanilla_pudding_mix,디저트
+2836,gin,6846,white_cake_mix_with_pudding,디저트
+2836,gin,6859,white_chocolate_pudding_mix,디저트
+2836,gin,7053,yellow_cake_mix_with_pudding,디저트
+2844,ginger_liqueur,343,bay_scallop,해산물
+2844,ginger_liqueur,2067,dried_scallop,해산물
+2844,ginger_liqueur,2572,fresh_scallop,해산물
+2844,ginger_liqueur,2573,fresh_sea_scallop,해산물
+2844,ginger_liqueur,3664,large_scallop,해산물
+2844,ginger_liqueur,5668,scallop,해산물
+2844,ginger_liqueur,5669,scalloped_potatoes_mix,해산물
+2844,ginger_liqueur,5683,sea_scallop,해산물
+2844,ginger_liqueur,5870,small_scallop,해산물
+2844,ginger_liqueur,6681,veal_scallop,해산물
+2844,ginger_liqueur,6682,veal_scallopini,해산물
+2844,ginger_liqueur,556,bluefish,해산물
+2844,ginger_liqueur,557,bluefish_fillet,해산물
+2844,ginger_liqueur,802,butterfish,해산물
+2844,ginger_liqueur,1023,catfish,해산물
+2844,ginger_liqueur,1024,catfish_fillet,해산물
+2844,ginger_liqueur,1456,cod_fish_fillet,해산물
+2844,ginger_liqueur,1676,crawfish,해산물
+2844,ginger_liqueur,1677,crawfish_tail,해산물
+2844,ginger_liqueur,1678,crawfish_tail_meat,해산물
+2844,ginger_liqueur,1679,crayfish,해산물
+2844,ginger_liqueur,1680,crayfish_tail,해산물
+2844,ginger_liqueur,1794,cuttlefish,해산물
+2844,ginger_liqueur,2363,firm_white_fish,해산물
+2844,ginger_liqueur,2364,fish,해산물
+2844,ginger_liqueur,2365,fish_bone,해산물
+2844,ginger_liqueur,2366,fish_bouillon_cube,해산물
+2844,ginger_liqueur,2367,fish_cake,해산물
+2844,ginger_liqueur,2368,fish_fillet,해산물
+2844,ginger_liqueur,2369,fish_fumet,해산물
+2844,ginger_liqueur,2370,fish_head,해산물
+2844,ginger_liqueur,2371,fish_roe,해산물
+2844,ginger_liqueur,2372,fish_sauce,해산물
+2844,ginger_liqueur,2373,fish_steak,해산물
+2844,ginger_liqueur,2374,fish_stock,해산물
+2844,ginger_liqueur,2908,goldfish_cracker,해산물
+2844,ginger_liqueur,3580,kingfish,해산물
+2844,ginger_liqueur,4294,monkfish_fillet,해산물
+2844,ginger_liqueur,5504,rockfish_fillet,해산물
+2844,ginger_liqueur,5615,salt_cod_fish,해산물
+2844,ginger_liqueur,5678,scrod_fish,해산물
+2844,ginger_liqueur,5888,smoked_fish_fillet,해산물
+2844,ginger_liqueur,5915,smoked_whitefish,해산물
+2844,ginger_liqueur,6300,swordfish,해산물
+2844,ginger_liqueur,6301,swordfish_fillet,해산물
+2844,ginger_liqueur,6302,swordfish_steak,해산물
+2844,ginger_liqueur,6389,thai_fish_sauce,해산물
+2844,ginger_liqueur,6499,tuna_fish,해산물
+2844,ginger_liqueur,6874,white_fish_fillet,해산물
+2844,ginger_liqueur,6875,white_fleshed_fish,해산물
+2844,ginger_liqueur,4086,marmalade,매운 음식
+2844,ginger_liqueur,4483,onion_marmalade,매운 음식
+2844,ginger_liqueur,4520,orange_marmalade,매운 음식
+2844,ginger_liqueur,129,anaheim_chili,매운 음식
+2844,ginger_liqueur,130,anaheim_chilies,매운 음식
+2844,ginger_liqueur,132,ancho_chili,매운 음식
+2844,ginger_liqueur,133,ancho_chilies,매운 음식
+2844,ginger_liqueur,208,asian_chili_sauce,매운 음식
+2844,ginger_liqueur,640,bottled_chili_sauce,매운 음식
+2844,ginger_liqueur,905,canned_chilies,매운 음식
+2844,ginger_liqueur,1212,chili,매운 음식
+2844,ginger_liqueur,1213,chili_bean,매운 음식
+2844,ginger_liqueur,1214,chili_bean_paste,매운 음식
+2844,ginger_liqueur,1215,chili_bean_sauce,매운 음식
+2844,ginger_liqueur,1216,chili_flake,매운 음식
+2844,ginger_liqueur,1217,chili_garlic_sauce,매운 음식
+2844,ginger_liqueur,1219,chili_oil,매운 음식
+2844,ginger_liqueur,1220,chili_paste,매운 음식
+2844,ginger_liqueur,1221,chili_paste_with_garlic,매운 음식
+2844,ginger_liqueur,1222,chili_pepper,매운 음식
+2844,ginger_liqueur,1223,chili_pepper_flake,매운 음식
+2844,ginger_liqueur,1224,chili_pod,매운 음식
+2844,ginger_liqueur,1225,chili_powder,매운 음식
+2844,ginger_liqueur,1226,chili_sauce,매운 음식
+2844,ginger_liqueur,1227,chili_seasoning_mix,매운 음식
+2844,ginger_liqueur,1228,chili_with_bean,매운 음식
+2844,ginger_liqueur,1229,chili_without_bean,매운 음식
+2844,ginger_liqueur,1230,chilies,매운 음식
+2844,ginger_liqueur,1236,chinese_chili_sauce,매운 음식
+2844,ginger_liqueur,1257,chipotle_chili_sauce,매운 음식
+2844,ginger_liqueur,1809,dark_chili_powder,매운 음식
+2844,ginger_liqueur,1873,diced_green_chili,매운 음식
+2844,ginger_liqueur,1874,diced_green_chilies,매운 음식
+2844,ginger_liqueur,1881,diced_tomatoes_with_green_chilies,매운 음식
+2844,ginger_liqueur,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+2844,ginger_liqueur,1961,dried_chili,매운 음식
+2844,ginger_liqueur,1962,dried_chili_pepper_flake,매운 음식
+2844,ginger_liqueur,1963,dried_chilies,매운 음식
+2844,ginger_liqueur,1993,dried_guajillo_chilies,매운 음식
+2844,ginger_liqueur,1997,dried_hot_chili_pepper,매운 음식
+2844,ginger_liqueur,2000,dried_hot_red_chili_pepper,매운 음식
+2844,ginger_liqueur,2001,dried_hot_red_chilies,매운 음식
+2844,ginger_liqueur,2053,dried_red_chili,매운 음식
+2844,ginger_liqueur,2054,dried_red_chili_pepper,매운 음식
+2844,ginger_liqueur,2055,dried_red_chilies,매운 음식
+2844,ginger_liqueur,2103,dry_chili_pepper,매운 음식
+2844,ginger_liqueur,2466,fresh_chili_pepper,매운 음식
+2844,ginger_liqueur,2502,fresh_green_chilies,매운 음식
+2844,ginger_liqueur,2511,fresh_jalapeno_chilies,매운 음식
+2844,ginger_liqueur,2990,green_chili,매운 음식
+2844,ginger_liqueur,2991,green_chili_paste,매운 음식
+2844,ginger_liqueur,2992,green_chili_pepper,매운 음식
+2844,ginger_liqueur,2994,green_chili_salsa,매운 음식
+2844,ginger_liqueur,2995,green_chili_sauce,매운 음식
+2844,ginger_liqueur,2996,green_chilies,매운 음식
+2844,ginger_liqueur,3028,green_serrano_chilies,매운 음식
+2844,ginger_liqueur,3054,ground_ancho_chili_pepper,매운 음식
+2844,ginger_liqueur,3106,ground_red_chili_pepper,매운 음식
+2844,ginger_liqueur,3131,guajillo_chilies,매운 음식
+2844,ginger_liqueur,3229,heinz_chili_sauce,매운 음식
+2844,ginger_liqueur,3309,hormel_chili,매운 음식
+2844,ginger_liqueur,3310,hormel_chili_without_bean,매운 음식
+2844,ginger_liqueur,3322,hot_chili_bean,매운 음식
+2844,ginger_liqueur,3323,hot_chili_flake,매운 음식
+2844,ginger_liqueur,3324,hot_chili_oil,매운 음식
+2844,ginger_liqueur,3325,hot_chili_paste,매운 음식
+2844,ginger_liqueur,3326,hot_chili_pepper,매운 음식
+2844,ginger_liqueur,3327,hot_chili_powder,매운 음식
+2844,ginger_liqueur,3328,hot_chili_sauce,매운 음식
+2844,ginger_liqueur,3329,hot_chinese_chili_paste,매운 음식
+2844,ginger_liqueur,3339,hot_green_chili_pepper,매운 음식
+2844,ginger_liqueur,3355,hot_red_chili_pepper,매운 음식
+2844,ginger_liqueur,3554,kashmiri_chili_powder,매운 음식
+2844,ginger_liqueur,4167,mexican_chili_powder,매운 음식
+2844,ginger_liqueur,4193,mild_chili_powder,매운 음식
+2844,ginger_liqueur,4197,mild_green_chili,매운 음식
+2844,ginger_liqueur,4198,mild_green_chilies,매운 음식
+2844,ginger_liqueur,4385,no_bean_chili,매운 음식
+2844,ginger_liqueur,4793,pickled_jalapeno_chilies,매운 음식
+2844,ginger_liqueur,5278,red_chili_paste,매운 음식
+2844,ginger_liqueur,5279,red_chili_pepper,매운 음식
+2844,ginger_liqueur,5281,red_chili_powder,매운 음식
+2844,ginger_liqueur,5282,red_chili_sauce,매운 음식
+2844,ginger_liqueur,5283,red_chilies,매운 음식
+2844,ginger_liqueur,5478,roasted_green_chilies,매운 음식
+2844,ginger_liqueur,5541,rotel_tomatoes_&_chilies,매운 음식
+2844,ginger_liqueur,5637,sambal_chili_paste,매운 음식
+2844,ginger_liqueur,5639,sambal_oelek_chili_paste,매운 음식
+2844,ginger_liqueur,5737,serrano_chili,매운 음식
+2844,ginger_liqueur,5738,serrano_chili_pepper,매운 음식
+2844,ginger_liqueur,5739,serrano_chilies,매운 음식
+2844,ginger_liqueur,6241,sweet_chili_sauce,매운 음식
+2844,ginger_liqueur,6387,thai_chili_paste,매운 음식
+2844,ginger_liqueur,6390,thai_green_chili,매운 음식
+2844,ginger_liqueur,6392,thai_red_chili_pepper,매운 음식
+2844,ginger_liqueur,6396,thai_sweet_chili_sauce,매운 음식
+2844,ginger_liqueur,6456,tomatoes_and_green_chilies,매운 음식
+2844,ginger_liqueur,6949,whole_green_chili,매운 음식
+2844,ginger_liqueur,6950,whole_green_chilies,매운 음식
+2844,ginger_liqueur,644,bottled_lemon_juice,시트러스 디저트
+2844,ginger_liqueur,874,candied_lemon_peel,시트러스 디저트
+2844,ginger_liqueur,989,carbonated_lemon_lime_beverage,시트러스 디저트
+2844,ginger_liqueur,2015,dried_lemon_peel,시트러스 디저트
+2844,ginger_liqueur,2016,dried_lemongrass,시트러스 디저트
+2844,ginger_liqueur,2284,fat_free_lemon_yogurt,시트러스 디저트
+2844,ginger_liqueur,2516,fresh_lemon,시트러스 디저트
+2844,ginger_liqueur,2517,fresh_lemon_juice,시트러스 디저트
+2844,ginger_liqueur,2518,fresh_lemon_rind,시트러스 디저트
+2844,ginger_liqueur,2520,fresh_lemongrass,시트러스 디저트
+2844,ginger_liqueur,2530,fresh_meyer_lemon_juice,시트러스 디저트
+2844,ginger_liqueur,2679,frozen_lemonade,시트러스 디저트
+2844,ginger_liqueur,2680,frozen_lemonade_concentrate,시트러스 디저트
+2844,ginger_liqueur,2707,frozen_pink_lemonade_concentrate,시트러스 디저트
+2844,ginger_liqueur,3421,instant_lemon_pudding,시트러스 디저트
+2844,ginger_liqueur,3422,instant_lemon_pudding_mix,시트러스 디저트
+2844,ginger_liqueur,3720,lemon,시트러스 디저트
+2844,ginger_liqueur,3722,"lemon,_juice_and_zest_of",시트러스 디저트
+2844,ginger_liqueur,3723,"lemon,_juice_of",시트러스 디저트
+2844,ginger_liqueur,3724,"lemon,_rind_of",시트러스 디저트
+2844,ginger_liqueur,3725,"lemon,_zest_of",시트러스 디저트
+2844,ginger_liqueur,3727,lemon_balm,시트러스 디저트
+2844,ginger_liqueur,3728,lemon_balm_leaf,시트러스 디저트
+2844,ginger_liqueur,3729,lemon_basil,시트러스 디저트
+2844,ginger_liqueur,3730,lemon_butter,시트러스 디저트
+2844,ginger_liqueur,3731,lemon_cake_mix,시트러스 디저트
+2844,ginger_liqueur,3732,lemon_curd,시트러스 디저트
+2844,ginger_liqueur,3733,lemon_essence,시트러스 디저트
+2844,ginger_liqueur,3734,lemon_extract,시트러스 디저트
+2844,ginger_liqueur,3735,lemon_flavor_instant_pudding_and_pie_filling,시트러스 디저트
+2844,ginger_liqueur,3737,lemon_flavoring,시트러스 디저트
+2844,ginger_liqueur,3738,lemon_frosting,시트러스 디저트
+2844,ginger_liqueur,3739,lemon_gelatin,시트러스 디저트
+2844,ginger_liqueur,3741,lemon_jell_o_gelatin,시트러스 디저트
+2844,ginger_liqueur,3742,lemon_jelly_powder,시트러스 디저트
+2844,ginger_liqueur,3743,lemon_juice,시트러스 디저트
+2844,ginger_liqueur,3744,lemon_juice_concentrate,시트러스 디저트
+2844,ginger_liqueur,3745,lemon_leaf,시트러스 디저트
+2844,ginger_liqueur,3746,lemon_lime_flavored_soda,시트러스 디저트
+2844,ginger_liqueur,3747,lemon_low_fat_yogurt,시트러스 디저트
+2844,ginger_liqueur,3748,lemon_oil,시트러스 디저트
+2844,ginger_liqueur,3750,lemon_peel,시트러스 디저트
+2844,ginger_liqueur,3751,lemon_peel_strip,시트러스 디저트
+2844,ginger_liqueur,3752,lemon_pepper,시트러스 디저트
+2844,ginger_liqueur,3753,lemon_pepper_seasoning,시트러스 디저트
+2844,ginger_liqueur,3754,lemon_pie_filling,시트러스 디저트
+2844,ginger_liqueur,3755,lemon_pudding_mix,시트러스 디저트
+2844,ginger_liqueur,3756,lemon_rind,시트러스 디저트
+2844,ginger_liqueur,3757,lemon_sherbet,시트러스 디저트
+2844,ginger_liqueur,3758,lemon_slice,시트러스 디저트
+2844,ginger_liqueur,3760,lemon_sorbet,시트러스 디저트
+2844,ginger_liqueur,3761,lemon_supreme_cake_mix,시트러스 디저트
+2844,ginger_liqueur,3762,lemon_syrup,시트러스 디저트
+2844,ginger_liqueur,3763,lemon_thyme,시트러스 디저트
+2844,ginger_liqueur,3764,lemon_thyme_leaf,시트러스 디저트
+2844,ginger_liqueur,3765,lemon_twist,시트러스 디저트
+2844,ginger_liqueur,3766,lemon_verbena,시트러스 디저트
+2844,ginger_liqueur,3767,lemon_verbena_leaf,시트러스 디저트
+2844,ginger_liqueur,3768,lemon_vinaigrette,시트러스 디저트
+2844,ginger_liqueur,3769,lemon_wedge,시트러스 디저트
+2844,ginger_liqueur,3770,lemon_yogurt,시트러스 디저트
+2844,ginger_liqueur,3771,lemon_zest,시트러스 디저트
+2844,ginger_liqueur,3772,lemonade,시트러스 디저트
+2844,ginger_liqueur,3773,lemonade_concentrate,시트러스 디저트
+2844,ginger_liqueur,3774,lemonade_mix,시트러스 디저트
+2844,ginger_liqueur,3775,lemongrass,시트러스 디저트
+2844,ginger_liqueur,3776,lemongrass_paste,시트러스 디저트
+2844,ginger_liqueur,3777,"lemons,_juice_and_zest_of",시트러스 디저트
+2844,ginger_liqueur,3778,"lemons,_juice_of",시트러스 디저트
+2844,ginger_liqueur,3779,"lemons,_rind_of",시트러스 디저트
+2844,ginger_liqueur,3780,"lemons,_zest_of",시트러스 디저트
+2844,ginger_liqueur,4184,meyer_lemon,시트러스 디저트
+2844,ginger_liqueur,4185,meyer_lemon_zest,시트러스 디저트
+2844,ginger_liqueur,4873,pink_lemonade,시트러스 디저트
+2844,ginger_liqueur,5088,preserved_lemon,시트러스 디저트
+2844,ginger_liqueur,5258,realemon_juice,시트러스 디저트
+2844,ginger_liqueur,6293,sweetened_lemonade_drink_mix,시트러스 디저트
+2844,ginger_liqueur,2955,grapefruit,시트러스 디저트
+2844,ginger_liqueur,2956,grapefruit_juice,시트러스 디저트
+2844,ginger_liqueur,2957,grapefruit_peel,시트러스 디저트
+2844,ginger_liqueur,2958,grapefruit_section,시트러스 디저트
+2844,ginger_liqueur,2960,grapefruit_zest,시트러스 디저트
+2844,ginger_liqueur,4871,pink_grapefruit,시트러스 디저트
+2844,ginger_liqueur,4872,pink_grapefruit_juice,시트러스 디저트
+2844,ginger_liqueur,5296,red_grapefruit,시트러스 디저트
+2844,ginger_liqueur,5557,ruby_red_grapefruit_juice,시트러스 디저트
+2844,ginger_liqueur,6881,white_grapefruit,시트러스 디저트
+2844,ginger_liqueur,825,cabbage_kimchi,발효 음식
+2893,godiva_original_chocolate_liqueur,1342,chopped_clams_with_juice,해산물
+2893,godiva_original_chocolate_liqueur,1400,clams_in_shell,해산물
+2893,godiva_original_chocolate_liqueur,4219,minced_clams_with_juice,해산물
+2893,godiva_original_chocolate_liqueur,4086,marmalade,매운 음식
+2893,godiva_original_chocolate_liqueur,4483,onion_marmalade,매운 음식
+2893,godiva_original_chocolate_liqueur,4520,orange_marmalade,매운 음식
+2893,godiva_original_chocolate_liqueur,825,cabbage_kimchi,발효 음식
+2894,godiva_white_chocolate_liqueur,4086,marmalade,매운 음식
+2894,godiva_white_chocolate_liqueur,4483,onion_marmalade,매운 음식
+2894,godiva_white_chocolate_liqueur,4520,orange_marmalade,매운 음식
+2894,godiva_white_chocolate_liqueur,825,cabbage_kimchi,발효 음식
+2898,gold_tequila,5649,sashimi_grade_tuna,해산물
+2898,gold_tequila,1455,cod,해산물
+2898,gold_tequila,1456,cod_fish_fillet,해산물
+2898,gold_tequila,1457,cod_steak,해산물
+2898,gold_tequila,5615,salt_cod_fish,해산물
+2898,gold_tequila,1790,custard,크림 디저트
+2898,gold_tequila,1791,custard_powder,크림 디저트
+2898,gold_tequila,5069,prepared_custard,크림 디저트
+2898,gold_tequila,6641,vanilla_custard,크림 디저트
+2898,gold_tequila,6642,vanilla_custard_powder,크림 디저트
+2898,gold_tequila,825,cabbage_kimchi,발효 음식
+2898,gold_tequila,3760,lemon_sorbet,산미 디저트
+2905,golden_rum,5649,sashimi_grade_tuna,해산물
+2905,golden_rum,129,anaheim_chili,매운 음식
+2905,golden_rum,130,anaheim_chilies,매운 음식
+2905,golden_rum,132,ancho_chili,매운 음식
+2905,golden_rum,133,ancho_chilies,매운 음식
+2905,golden_rum,208,asian_chili_sauce,매운 음식
+2905,golden_rum,640,bottled_chili_sauce,매운 음식
+2905,golden_rum,905,canned_chilies,매운 음식
+2905,golden_rum,1212,chili,매운 음식
+2905,golden_rum,1213,chili_bean,매운 음식
+2905,golden_rum,1214,chili_bean_paste,매운 음식
+2905,golden_rum,1215,chili_bean_sauce,매운 음식
+2905,golden_rum,1216,chili_flake,매운 음식
+2905,golden_rum,1217,chili_garlic_sauce,매운 음식
+2905,golden_rum,1219,chili_oil,매운 음식
+2905,golden_rum,1220,chili_paste,매운 음식
+2905,golden_rum,1221,chili_paste_with_garlic,매운 음식
+2905,golden_rum,1222,chili_pepper,매운 음식
+2905,golden_rum,1223,chili_pepper_flake,매운 음식
+2905,golden_rum,1224,chili_pod,매운 음식
+2905,golden_rum,1225,chili_powder,매운 음식
+2905,golden_rum,1226,chili_sauce,매운 음식
+2905,golden_rum,1227,chili_seasoning_mix,매운 음식
+2905,golden_rum,1228,chili_with_bean,매운 음식
+2905,golden_rum,1229,chili_without_bean,매운 음식
+2905,golden_rum,1230,chilies,매운 음식
+2905,golden_rum,1236,chinese_chili_sauce,매운 음식
+2905,golden_rum,1257,chipotle_chili_sauce,매운 음식
+2905,golden_rum,1809,dark_chili_powder,매운 음식
+2905,golden_rum,1873,diced_green_chili,매운 음식
+2905,golden_rum,1874,diced_green_chilies,매운 음식
+2905,golden_rum,1881,diced_tomatoes_with_green_chilies,매운 음식
+2905,golden_rum,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+2905,golden_rum,1961,dried_chili,매운 음식
+2905,golden_rum,1962,dried_chili_pepper_flake,매운 음식
+2905,golden_rum,1963,dried_chilies,매운 음식
+2905,golden_rum,1993,dried_guajillo_chilies,매운 음식
+2905,golden_rum,1997,dried_hot_chili_pepper,매운 음식
+2905,golden_rum,2000,dried_hot_red_chili_pepper,매운 음식
+2905,golden_rum,2001,dried_hot_red_chilies,매운 음식
+2905,golden_rum,2053,dried_red_chili,매운 음식
+2905,golden_rum,2054,dried_red_chili_pepper,매운 음식
+2905,golden_rum,2055,dried_red_chilies,매운 음식
+2905,golden_rum,2103,dry_chili_pepper,매운 음식
+2905,golden_rum,2466,fresh_chili_pepper,매운 음식
+2905,golden_rum,2502,fresh_green_chilies,매운 음식
+2905,golden_rum,2511,fresh_jalapeno_chilies,매운 음식
+2905,golden_rum,2990,green_chili,매운 음식
+2905,golden_rum,2991,green_chili_paste,매운 음식
+2905,golden_rum,2992,green_chili_pepper,매운 음식
+2905,golden_rum,2994,green_chili_salsa,매운 음식
+2905,golden_rum,2995,green_chili_sauce,매운 음식
+2905,golden_rum,2996,green_chilies,매운 음식
+2905,golden_rum,3028,green_serrano_chilies,매운 음식
+2905,golden_rum,3054,ground_ancho_chili_pepper,매운 음식
+2905,golden_rum,3106,ground_red_chili_pepper,매운 음식
+2905,golden_rum,3131,guajillo_chilies,매운 음식
+2905,golden_rum,3229,heinz_chili_sauce,매운 음식
+2905,golden_rum,3309,hormel_chili,매운 음식
+2905,golden_rum,3310,hormel_chili_without_bean,매운 음식
+2905,golden_rum,3322,hot_chili_bean,매운 음식
+2905,golden_rum,3323,hot_chili_flake,매운 음식
+2905,golden_rum,3324,hot_chili_oil,매운 음식
+2905,golden_rum,3325,hot_chili_paste,매운 음식
+2905,golden_rum,3326,hot_chili_pepper,매운 음식
+2905,golden_rum,3327,hot_chili_powder,매운 음식
+2905,golden_rum,3328,hot_chili_sauce,매운 음식
+2905,golden_rum,3329,hot_chinese_chili_paste,매운 음식
+2905,golden_rum,3339,hot_green_chili_pepper,매운 음식
+2905,golden_rum,3355,hot_red_chili_pepper,매운 음식
+2905,golden_rum,3554,kashmiri_chili_powder,매운 음식
+2905,golden_rum,4167,mexican_chili_powder,매운 음식
+2905,golden_rum,4193,mild_chili_powder,매운 음식
+2905,golden_rum,4197,mild_green_chili,매운 음식
+2905,golden_rum,4198,mild_green_chilies,매운 음식
+2905,golden_rum,4385,no_bean_chili,매운 음식
+2905,golden_rum,4793,pickled_jalapeno_chilies,매운 음식
+2905,golden_rum,5278,red_chili_paste,매운 음식
+2905,golden_rum,5279,red_chili_pepper,매운 음식
+2905,golden_rum,5281,red_chili_powder,매운 음식
+2905,golden_rum,5282,red_chili_sauce,매운 음식
+2905,golden_rum,5283,red_chilies,매운 음식
+2905,golden_rum,5478,roasted_green_chilies,매운 음식
+2905,golden_rum,5541,rotel_tomatoes_&_chilies,매운 음식
+2905,golden_rum,5637,sambal_chili_paste,매운 음식
+2905,golden_rum,5639,sambal_oelek_chili_paste,매운 음식
+2905,golden_rum,5737,serrano_chili,매운 음식
+2905,golden_rum,5738,serrano_chili_pepper,매운 음식
+2905,golden_rum,5739,serrano_chilies,매운 음식
+2905,golden_rum,6241,sweet_chili_sauce,매운 음식
+2905,golden_rum,6387,thai_chili_paste,매운 음식
+2905,golden_rum,6390,thai_green_chili,매운 음식
+2905,golden_rum,6392,thai_red_chili_pepper,매운 음식
+2905,golden_rum,6396,thai_sweet_chili_sauce,매운 음식
+2905,golden_rum,6456,tomatoes_and_green_chilies,매운 음식
+2905,golden_rum,6949,whole_green_chili,매운 음식
+2905,golden_rum,6950,whole_green_chilies,매운 음식
+2905,golden_rum,825,cabbage_kimchi,발효 음식
+2905,golden_rum,1824,dark_miso,발효 음식
+2905,golden_rum,3812,light_miso,발효 음식
+2905,golden_rum,4264,miso,발효 음식
+2905,golden_rum,5309,red_miso,발효 음식
+2905,golden_rum,5783,shiro_miso,발효 음식
+2905,golden_rum,6887,white_miso,발효 음식
+2905,golden_rum,7065,yellow_miso,발효 음식
+3204,hazelnut_flavored_liqueur,237,baby_clam,해산물
+3204,hazelnut_flavored_liqueur,641,bottled_clam_juice,해산물
+3204,hazelnut_flavored_liqueur,907,canned_clam,해산물
+3204,hazelnut_flavored_liqueur,1127,cherrystone_clam,해산물
+3204,hazelnut_flavored_liqueur,1342,chopped_clams_with_juice,해산물
+3204,hazelnut_flavored_liqueur,1395,clam,해산물
+3204,hazelnut_flavored_liqueur,1396,clam_base,해산물
+3204,hazelnut_flavored_liqueur,1397,clam_broth,해산물
+3204,hazelnut_flavored_liqueur,1398,clam_juice,해산물
+3204,hazelnut_flavored_liqueur,1399,clamato_juice,해산물
+3204,hazelnut_flavored_liqueur,1400,clams_in_shell,해산물
+3204,hazelnut_flavored_liqueur,3186,hard_shelled_clam,해산물
+3204,hazelnut_flavored_liqueur,3891,littleneck_clam,해산물
+3204,hazelnut_flavored_liqueur,4063,manila_clam,해산물
+3204,hazelnut_flavored_liqueur,4218,minced_clam,해산물
+3204,hazelnut_flavored_liqueur,4219,minced_clams_with_juice,해산물
+3204,hazelnut_flavored_liqueur,5248,razor_clam,해산물
+3204,hazelnut_flavored_liqueur,5860,small_clam,해산물
+3204,hazelnut_flavored_liqueur,6103,steamer_clam,해산물
+3204,hazelnut_flavored_liqueur,4086,marmalade,매운 음식
+3204,hazelnut_flavored_liqueur,4483,onion_marmalade,매운 음식
+3204,hazelnut_flavored_liqueur,4520,orange_marmalade,매운 음식
+3204,hazelnut_flavored_liqueur,129,anaheim_chili,매운 음식
+3204,hazelnut_flavored_liqueur,130,anaheim_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,132,ancho_chili,매운 음식
+3204,hazelnut_flavored_liqueur,133,ancho_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,208,asian_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,640,bottled_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,905,canned_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,1212,chili,매운 음식
+3204,hazelnut_flavored_liqueur,1213,chili_bean,매운 음식
+3204,hazelnut_flavored_liqueur,1214,chili_bean_paste,매운 음식
+3204,hazelnut_flavored_liqueur,1215,chili_bean_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,1216,chili_flake,매운 음식
+3204,hazelnut_flavored_liqueur,1217,chili_garlic_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,1219,chili_oil,매운 음식
+3204,hazelnut_flavored_liqueur,1220,chili_paste,매운 음식
+3204,hazelnut_flavored_liqueur,1221,chili_paste_with_garlic,매운 음식
+3204,hazelnut_flavored_liqueur,1222,chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,1223,chili_pepper_flake,매운 음식
+3204,hazelnut_flavored_liqueur,1224,chili_pod,매운 음식
+3204,hazelnut_flavored_liqueur,1225,chili_powder,매운 음식
+3204,hazelnut_flavored_liqueur,1226,chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,1227,chili_seasoning_mix,매운 음식
+3204,hazelnut_flavored_liqueur,1228,chili_with_bean,매운 음식
+3204,hazelnut_flavored_liqueur,1229,chili_without_bean,매운 음식
+3204,hazelnut_flavored_liqueur,1230,chilies,매운 음식
+3204,hazelnut_flavored_liqueur,1236,chinese_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,1257,chipotle_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,1809,dark_chili_powder,매운 음식
+3204,hazelnut_flavored_liqueur,1873,diced_green_chili,매운 음식
+3204,hazelnut_flavored_liqueur,1874,diced_green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,1881,diced_tomatoes_with_green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,1961,dried_chili,매운 음식
+3204,hazelnut_flavored_liqueur,1962,dried_chili_pepper_flake,매운 음식
+3204,hazelnut_flavored_liqueur,1963,dried_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,1993,dried_guajillo_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,1997,dried_hot_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,2000,dried_hot_red_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,2001,dried_hot_red_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,2053,dried_red_chili,매운 음식
+3204,hazelnut_flavored_liqueur,2054,dried_red_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,2055,dried_red_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,2103,dry_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,2466,fresh_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,2502,fresh_green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,2511,fresh_jalapeno_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,2990,green_chili,매운 음식
+3204,hazelnut_flavored_liqueur,2991,green_chili_paste,매운 음식
+3204,hazelnut_flavored_liqueur,2992,green_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,2994,green_chili_salsa,매운 음식
+3204,hazelnut_flavored_liqueur,2995,green_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,2996,green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,3028,green_serrano_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,3054,ground_ancho_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,3106,ground_red_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,3131,guajillo_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,3229,heinz_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,3309,hormel_chili,매운 음식
+3204,hazelnut_flavored_liqueur,3310,hormel_chili_without_bean,매운 음식
+3204,hazelnut_flavored_liqueur,3322,hot_chili_bean,매운 음식
+3204,hazelnut_flavored_liqueur,3323,hot_chili_flake,매운 음식
+3204,hazelnut_flavored_liqueur,3324,hot_chili_oil,매운 음식
+3204,hazelnut_flavored_liqueur,3325,hot_chili_paste,매운 음식
+3204,hazelnut_flavored_liqueur,3326,hot_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,3327,hot_chili_powder,매운 음식
+3204,hazelnut_flavored_liqueur,3328,hot_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,3329,hot_chinese_chili_paste,매운 음식
+3204,hazelnut_flavored_liqueur,3339,hot_green_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,3355,hot_red_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,3554,kashmiri_chili_powder,매운 음식
+3204,hazelnut_flavored_liqueur,4167,mexican_chili_powder,매운 음식
+3204,hazelnut_flavored_liqueur,4193,mild_chili_powder,매운 음식
+3204,hazelnut_flavored_liqueur,4197,mild_green_chili,매운 음식
+3204,hazelnut_flavored_liqueur,4198,mild_green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,4385,no_bean_chili,매운 음식
+3204,hazelnut_flavored_liqueur,4793,pickled_jalapeno_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,5278,red_chili_paste,매운 음식
+3204,hazelnut_flavored_liqueur,5279,red_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,5281,red_chili_powder,매운 음식
+3204,hazelnut_flavored_liqueur,5282,red_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,5283,red_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,5478,roasted_green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,5541,rotel_tomatoes_&_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,5637,sambal_chili_paste,매운 음식
+3204,hazelnut_flavored_liqueur,5639,sambal_oelek_chili_paste,매운 음식
+3204,hazelnut_flavored_liqueur,5737,serrano_chili,매운 음식
+3204,hazelnut_flavored_liqueur,5738,serrano_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,5739,serrano_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,6241,sweet_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,6387,thai_chili_paste,매운 음식
+3204,hazelnut_flavored_liqueur,6390,thai_green_chili,매운 음식
+3204,hazelnut_flavored_liqueur,6392,thai_red_chili_pepper,매운 음식
+3204,hazelnut_flavored_liqueur,6396,thai_sweet_chili_sauce,매운 음식
+3204,hazelnut_flavored_liqueur,6456,tomatoes_and_green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,6949,whole_green_chili,매운 음식
+3204,hazelnut_flavored_liqueur,6950,whole_green_chilies,매운 음식
+3204,hazelnut_flavored_liqueur,3754,lemon_pie_filling,산미 디저트
+3204,hazelnut_flavored_liqueur,825,cabbage_kimchi,발효 음식
+3449,irish_whiskey,5649,sashimi_grade_tuna,해산물
+3449,irish_whiskey,825,cabbage_kimchi,발효 음식
+3488,jack_daniels_whiskey,5649,sashimi_grade_tuna,해산물
+3488,jack_daniels_whiskey,163,apple_cider_vinegar,산미 음식
+3488,jack_daniels_whiskey,299,balsamic_vinegar,산미 음식
+3488,jack_daniels_whiskey,516,black_vinegar,산미 음식
+3488,jack_daniels_whiskey,743,brown_rice_vinegar,산미 음식
+3488,jack_daniels_whiskey,1071,champagne_vinegar,산미 음식
+3488,jack_daniels_whiskey,1250,chinese_white_rice_vinegar,산미 음식
+3488,jack_daniels_whiskey,1362,cider_vinegar,산미 음식
+3488,jack_daniels_whiskey,1452,coconut_vinegar,산미 음식
+3488,jack_daniels_whiskey,1912,distilled_vinegar,산미 음식
+3488,jack_daniels_whiskey,3228,heinz_apple_cider_vinegar,산미 음식
+3488,jack_daniels_whiskey,4041,malt_vinegar,산미 음식
+3488,jack_daniels_whiskey,4455,oil_and_vinegar_dressing,산미 음식
+3488,jack_daniels_whiskey,4738,pepper_vinegar,산미 음식
+3488,jack_daniels_whiskey,5225,raspberry_vinegar,산미 음식
+3488,jack_daniels_whiskey,5348,red_wine_vinegar,산미 음식
+3488,jack_daniels_whiskey,5449,rice_vinegar,산미 음식
+3488,jack_daniels_whiskey,5451,rice_wine_vinegar,산미 음식
+3488,jack_daniels_whiskey,5696,seasoned_rice_vinegar,산미 음식
+3488,jack_daniels_whiskey,5697,seasoned_rice_wine_vinegar,산미 음식
+3488,jack_daniels_whiskey,5775,sherry_wine_vinegar,산미 음식
+3488,jack_daniels_whiskey,6351,tarragon_vinegar,산미 음식
+3488,jack_daniels_whiskey,6756,vinegar,산미 음식
+3488,jack_daniels_whiskey,6836,white_balsamic_vinegar,산미 음식
+3488,jack_daniels_whiskey,6873,white_distilled_vinegar,산미 음식
+3488,jack_daniels_whiskey,6916,white_vinegar,산미 음식
+3488,jack_daniels_whiskey,6919,white_wine_vinegar,산미 음식
+3488,jack_daniels_whiskey,7018,wine_vinegar,산미 음식
+3488,jack_daniels_whiskey,825,cabbage_kimchi,발효 음식
+3504,jamaican_rum,5649,sashimi_grade_tuna,해산물
+3504,jamaican_rum,4086,marmalade,매운 음식
+3504,jamaican_rum,4483,onion_marmalade,매운 음식
+3504,jamaican_rum,4520,orange_marmalade,매운 음식
+3504,jamaican_rum,825,cabbage_kimchi,발효 음식
+3543,kahlua,3578,king_oyster_mushroom,해산물
+3543,kahlua,4572,oyster,해산물
+3543,kahlua,4573,oyster_cracker,해산물
+3543,kahlua,4574,oyster_liquor,해산물
+3543,kahlua,4575,oyster_mushroom,해산물
+3543,kahlua,4576,oyster_sauce,해산물
+3543,kahlua,5898,smoked_oyster,해산물
+3543,kahlua,6728,vegetarian_oyster_sauce,해산물
+3543,kahlua,5649,sashimi_grade_tuna,해산물
+3543,kahlua,129,anaheim_chili,매운 음식
+3543,kahlua,130,anaheim_chilies,매운 음식
+3543,kahlua,132,ancho_chili,매운 음식
+3543,kahlua,133,ancho_chilies,매운 음식
+3543,kahlua,208,asian_chili_sauce,매운 음식
+3543,kahlua,640,bottled_chili_sauce,매운 음식
+3543,kahlua,905,canned_chilies,매운 음식
+3543,kahlua,1212,chili,매운 음식
+3543,kahlua,1213,chili_bean,매운 음식
+3543,kahlua,1214,chili_bean_paste,매운 음식
+3543,kahlua,1215,chili_bean_sauce,매운 음식
+3543,kahlua,1216,chili_flake,매운 음식
+3543,kahlua,1217,chili_garlic_sauce,매운 음식
+3543,kahlua,1219,chili_oil,매운 음식
+3543,kahlua,1220,chili_paste,매운 음식
+3543,kahlua,1221,chili_paste_with_garlic,매운 음식
+3543,kahlua,1222,chili_pepper,매운 음식
+3543,kahlua,1223,chili_pepper_flake,매운 음식
+3543,kahlua,1224,chili_pod,매운 음식
+3543,kahlua,1225,chili_powder,매운 음식
+3543,kahlua,1226,chili_sauce,매운 음식
+3543,kahlua,1227,chili_seasoning_mix,매운 음식
+3543,kahlua,1228,chili_with_bean,매운 음식
+3543,kahlua,1229,chili_without_bean,매운 음식
+3543,kahlua,1230,chilies,매운 음식
+3543,kahlua,1236,chinese_chili_sauce,매운 음식
+3543,kahlua,1257,chipotle_chili_sauce,매운 음식
+3543,kahlua,1809,dark_chili_powder,매운 음식
+3543,kahlua,1873,diced_green_chili,매운 음식
+3543,kahlua,1874,diced_green_chilies,매운 음식
+3543,kahlua,1881,diced_tomatoes_with_green_chilies,매운 음식
+3543,kahlua,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+3543,kahlua,1961,dried_chili,매운 음식
+3543,kahlua,1962,dried_chili_pepper_flake,매운 음식
+3543,kahlua,1963,dried_chilies,매운 음식
+3543,kahlua,1993,dried_guajillo_chilies,매운 음식
+3543,kahlua,1997,dried_hot_chili_pepper,매운 음식
+3543,kahlua,2000,dried_hot_red_chili_pepper,매운 음식
+3543,kahlua,2001,dried_hot_red_chilies,매운 음식
+3543,kahlua,2053,dried_red_chili,매운 음식
+3543,kahlua,2054,dried_red_chili_pepper,매운 음식
+3543,kahlua,2055,dried_red_chilies,매운 음식
+3543,kahlua,2103,dry_chili_pepper,매운 음식
+3543,kahlua,2466,fresh_chili_pepper,매운 음식
+3543,kahlua,2502,fresh_green_chilies,매운 음식
+3543,kahlua,2511,fresh_jalapeno_chilies,매운 음식
+3543,kahlua,2990,green_chili,매운 음식
+3543,kahlua,2991,green_chili_paste,매운 음식
+3543,kahlua,2992,green_chili_pepper,매운 음식
+3543,kahlua,2994,green_chili_salsa,매운 음식
+3543,kahlua,2995,green_chili_sauce,매운 음식
+3543,kahlua,2996,green_chilies,매운 음식
+3543,kahlua,3028,green_serrano_chilies,매운 음식
+3543,kahlua,3054,ground_ancho_chili_pepper,매운 음식
+3543,kahlua,3106,ground_red_chili_pepper,매운 음식
+3543,kahlua,3131,guajillo_chilies,매운 음식
+3543,kahlua,3229,heinz_chili_sauce,매운 음식
+3543,kahlua,3309,hormel_chili,매운 음식
+3543,kahlua,3310,hormel_chili_without_bean,매운 음식
+3543,kahlua,3322,hot_chili_bean,매운 음식
+3543,kahlua,3323,hot_chili_flake,매운 음식
+3543,kahlua,3324,hot_chili_oil,매운 음식
+3543,kahlua,3325,hot_chili_paste,매운 음식
+3543,kahlua,3326,hot_chili_pepper,매운 음식
+3543,kahlua,3327,hot_chili_powder,매운 음식
+3543,kahlua,3328,hot_chili_sauce,매운 음식
+3543,kahlua,3329,hot_chinese_chili_paste,매운 음식
+3543,kahlua,3339,hot_green_chili_pepper,매운 음식
+3543,kahlua,3355,hot_red_chili_pepper,매운 음식
+3543,kahlua,3554,kashmiri_chili_powder,매운 음식
+3543,kahlua,4167,mexican_chili_powder,매운 음식
+3543,kahlua,4193,mild_chili_powder,매운 음식
+3543,kahlua,4197,mild_green_chili,매운 음식
+3543,kahlua,4198,mild_green_chilies,매운 음식
+3543,kahlua,4385,no_bean_chili,매운 음식
+3543,kahlua,4793,pickled_jalapeno_chilies,매운 음식
+3543,kahlua,5278,red_chili_paste,매운 음식
+3543,kahlua,5279,red_chili_pepper,매운 음식
+3543,kahlua,5281,red_chili_powder,매운 음식
+3543,kahlua,5282,red_chili_sauce,매운 음식
+3543,kahlua,5283,red_chilies,매운 음식
+3543,kahlua,5478,roasted_green_chilies,매운 음식
+3543,kahlua,5541,rotel_tomatoes_&_chilies,매운 음식
+3543,kahlua,5637,sambal_chili_paste,매운 음식
+3543,kahlua,5639,sambal_oelek_chili_paste,매운 음식
+3543,kahlua,5737,serrano_chili,매운 음식
+3543,kahlua,5738,serrano_chili_pepper,매운 음식
+3543,kahlua,5739,serrano_chilies,매운 음식
+3543,kahlua,6241,sweet_chili_sauce,매운 음식
+3543,kahlua,6387,thai_chili_paste,매운 음식
+3543,kahlua,6390,thai_green_chili,매운 음식
+3543,kahlua,6392,thai_red_chili_pepper,매운 음식
+3543,kahlua,6396,thai_sweet_chili_sauce,매운 음식
+3543,kahlua,6456,tomatoes_and_green_chilies,매운 음식
+3543,kahlua,6949,whole_green_chili,매운 음식
+3543,kahlua,6950,whole_green_chilies,매운 음식
+3543,kahlua,825,cabbage_kimchi,발효 음식
+3635,lager_beer,414,beef_t_bone_steak,스테이크
+3635,lager_beer,2915,gorgonzola,블루치즈
+3736,lemon_flavored_vodka,67,ahi_tuna_steak,붉은 고기
+3736,lemon_flavored_vodka,377,beef_cube_steak,붉은 고기
+3736,lemon_flavored_vodka,396,beef_round_steak,붉은 고기
+3736,lemon_flavored_vodka,397,beef_round_tip_steak,붉은 고기
+3736,lemon_flavored_vodka,404,beef_sirloin_steak,붉은 고기
+3736,lemon_flavored_vodka,406,beef_steak,붉은 고기
+3736,lemon_flavored_vodka,414,beef_t_bone_steak,붉은 고기
+3736,lemon_flavored_vodka,418,beef_tenderloin_steak,붉은 고기
+3736,lemon_flavored_vodka,421,beef_top_round_steak,붉은 고기
+3736,lemon_flavored_vodka,422,beefsteak_tomato,붉은 고기
+3736,lemon_flavored_vodka,527,blade_steak,붉은 고기
+3736,lemon_flavored_vodka,577,boneless_beef_chuck_steak,붉은 고기
+3736,lemon_flavored_vodka,580,boneless_beef_round_steak,붉은 고기
+3736,lemon_flavored_vodka,585,boneless_beef_top_loin_steak,붉은 고기
+3736,lemon_flavored_vodka,586,boneless_beef_top_round_steak,붉은 고기
+3736,lemon_flavored_vodka,613,boneless_rib_eye_steak,붉은 고기
+3736,lemon_flavored_vodka,614,boneless_round_steak,붉은 고기
+3736,lemon_flavored_vodka,618,boneless_sirloin_steak,붉은 고기
+3736,lemon_flavored_vodka,631,boneless_veal_steak,붉은 고기
+3736,lemon_flavored_vodka,647,bottom_round_steak,붉은 고기
+3736,lemon_flavored_vodka,1350,chuck_steak,붉은 고기
+3736,lemon_flavored_vodka,1457,cod_steak,붉은 고기
+3736,lemon_flavored_vodka,1766,cube_steak,붉은 고기
+3736,lemon_flavored_vodka,2338,filet_mignon_steak,붉은 고기
+3736,lemon_flavored_vodka,2373,fish_steak,붉은 고기
+3736,lemon_flavored_vodka,2381,flank_steak,붉은 고기
+3736,lemon_flavored_vodka,2383,flat_iron_steak,붉은 고기
+3736,lemon_flavored_vodka,3158,halibut_steak,붉은 고기
+3736,lemon_flavored_vodka,3167,ham_steak,붉은 고기
+3736,lemon_flavored_vodka,3175,hanger_steak,붉은 고기
+3736,lemon_flavored_vodka,3227,heinz_57_steak_sauce,붉은 고기
+3736,lemon_flavored_vodka,3366,hp_steak_sauce,붉은 고기
+3736,lemon_flavored_vodka,3653,lamb_steak,붉은 고기
+3736,lemon_flavored_vodka,3692,lean_flank_steak,붉은 고기
+3736,lemon_flavored_vodka,3708,lean_round_steak,붉은 고기
+3736,lemon_flavored_vodka,3710,lean_sirloin_steak,붉은 고기
+3736,lemon_flavored_vodka,3711,lean_steak,붉은 고기
+3736,lemon_flavored_vodka,4118,mccormick's_montreal_brand_steak_seasoning,붉은 고기
+3736,lemon_flavored_vodka,4255,minute_steak,붉은 고기
+3736,lemon_flavored_vodka,4381,new_york_strip_steak,붉은 고기
+3736,lemon_flavored_vodka,4973,pork_blade_steak,붉은 고기
+3736,lemon_flavored_vodka,5010,pork_steak,붉은 고기
+3736,lemon_flavored_vodka,5020,porterhouse_steak,붉은 고기
+3736,lemon_flavored_vodka,5427,rib_eye_steak,붉은 고기
+3736,lemon_flavored_vodka,5551,round_steak,붉은 고기
+3736,lemon_flavored_vodka,5562,rump_steak,붉은 고기
+3736,lemon_flavored_vodka,5602,salmon_steak,붉은 고기
+3736,lemon_flavored_vodka,5761,shark_steak,붉은 고기
+3736,lemon_flavored_vodka,5769,shell_steak,붉은 고기
+3736,lemon_flavored_vodka,5827,sirloin_steak,붉은 고기
+3736,lemon_flavored_vodka,5829,sirloin_tip_steak,붉은 고기
+3736,lemon_flavored_vodka,5846,skirt_steak,붉은 고기
+3736,lemon_flavored_vodka,6095,steak,붉은 고기
+3736,lemon_flavored_vodka,6096,steak_fillet,붉은 고기
+3736,lemon_flavored_vodka,6097,steak_sauce,붉은 고기
+3736,lemon_flavored_vodka,6098,steak_seasoning,붉은 고기
+3736,lemon_flavored_vodka,6099,steak_spice,붉은 고기
+3736,lemon_flavored_vodka,6101,steak_ums,붉은 고기
+3736,lemon_flavored_vodka,6158,strip_steak,붉은 고기
+3736,lemon_flavored_vodka,6302,swordfish_steak,붉은 고기
+3736,lemon_flavored_vodka,6471,top_round_steak,붉은 고기
+3736,lemon_flavored_vodka,6472,top_sirloin_steak,붉은 고기
+3736,lemon_flavored_vodka,6484,tri_tip_steak,붉은 고기
+3736,lemon_flavored_vodka,6505,tuna_steak,붉은 고기
+3736,lemon_flavored_vodka,6685,veal_steak,붉은 고기
+3736,lemon_flavored_vodka,6742,venison_steak,붉은 고기
+3736,lemon_flavored_vodka,7085,yellowfin_tuna_steak,붉은 고기
+3736,lemon_flavored_vodka,599,boneless_lamb,붉은 고기
+3736,lemon_flavored_vodka,600,boneless_lamb_shoulder,붉은 고기
+3736,lemon_flavored_vodka,602,boneless_leg_of_lamb,붉은 고기
+3736,lemon_flavored_vodka,803,butterflied_leg_of_lamb,붉은 고기
+3736,lemon_flavored_vodka,1538,cooked_lamb,붉은 고기
+3736,lemon_flavored_vodka,3088,ground_lamb,붉은 고기
+3736,lemon_flavored_vodka,3636,lamb,붉은 고기
+3736,lemon_flavored_vodka,3638,lamb_bone,붉은 고기
+3736,lemon_flavored_vodka,3639,lamb_breast,붉은 고기
+3736,lemon_flavored_vodka,3640,lamb_chop,붉은 고기
+3736,lemon_flavored_vodka,3641,lamb_cutlet,붉은 고기
+3736,lemon_flavored_vodka,3642,lamb_fillet,붉은 고기
+3736,lemon_flavored_vodka,3644,lamb_liver,붉은 고기
+3736,lemon_flavored_vodka,3645,lamb_loin_chop,붉은 고기
+3736,lemon_flavored_vodka,3646,lamb_neck,붉은 고기
+3736,lemon_flavored_vodka,3647,lamb_rack,붉은 고기
+3736,lemon_flavored_vodka,3648,lamb_rib,붉은 고기
+3736,lemon_flavored_vodka,3649,lamb_rib_chop,붉은 고기
+3736,lemon_flavored_vodka,3650,lamb_sausage,붉은 고기
+3736,lemon_flavored_vodka,3651,lamb_shank,붉은 고기
+3736,lemon_flavored_vodka,3652,lamb_shoulder,붉은 고기
+3736,lemon_flavored_vodka,3653,lamb_steak,붉은 고기
+3736,lemon_flavored_vodka,3654,lamb_stew_meat,붉은 고기
+3736,lemon_flavored_vodka,3655,lamb_stock,붉은 고기
+3736,lemon_flavored_vodka,3657,lambs_kidney,붉은 고기
+3736,lemon_flavored_vodka,3688,lean_boneless_lamb,붉은 고기
+3736,lemon_flavored_vodka,3696,lean_ground_lamb,붉은 고기
+3736,lemon_flavored_vodka,3703,lean_lamb,붉은 고기
+3736,lemon_flavored_vodka,3719,leg_of_lamb,붉은 고기
+3736,lemon_flavored_vodka,3906,loin_lamb,붉은 고기
+3736,lemon_flavored_vodka,5177,rack_of_lamb,붉은 고기
+3736,lemon_flavored_vodka,5179,racks_of_lamb,붉은 고기
+3736,lemon_flavored_vodka,5801,shoulder_lamb_chop,붉은 고기
+3736,lemon_flavored_vodka,6113,stewing_lamb,붉은 고기
+3736,lemon_flavored_vodka,129,anaheim_chili,매운 음식
+3736,lemon_flavored_vodka,130,anaheim_chilies,매운 음식
+3736,lemon_flavored_vodka,132,ancho_chili,매운 음식
+3736,lemon_flavored_vodka,133,ancho_chilies,매운 음식
+3736,lemon_flavored_vodka,208,asian_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,640,bottled_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,905,canned_chilies,매운 음식
+3736,lemon_flavored_vodka,1212,chili,매운 음식
+3736,lemon_flavored_vodka,1213,chili_bean,매운 음식
+3736,lemon_flavored_vodka,1214,chili_bean_paste,매운 음식
+3736,lemon_flavored_vodka,1215,chili_bean_sauce,매운 음식
+3736,lemon_flavored_vodka,1216,chili_flake,매운 음식
+3736,lemon_flavored_vodka,1217,chili_garlic_sauce,매운 음식
+3736,lemon_flavored_vodka,1219,chili_oil,매운 음식
+3736,lemon_flavored_vodka,1220,chili_paste,매운 음식
+3736,lemon_flavored_vodka,1221,chili_paste_with_garlic,매운 음식
+3736,lemon_flavored_vodka,1222,chili_pepper,매운 음식
+3736,lemon_flavored_vodka,1223,chili_pepper_flake,매운 음식
+3736,lemon_flavored_vodka,1224,chili_pod,매운 음식
+3736,lemon_flavored_vodka,1225,chili_powder,매운 음식
+3736,lemon_flavored_vodka,1226,chili_sauce,매운 음식
+3736,lemon_flavored_vodka,1227,chili_seasoning_mix,매운 음식
+3736,lemon_flavored_vodka,1228,chili_with_bean,매운 음식
+3736,lemon_flavored_vodka,1229,chili_without_bean,매운 음식
+3736,lemon_flavored_vodka,1230,chilies,매운 음식
+3736,lemon_flavored_vodka,1236,chinese_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,1257,chipotle_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,1809,dark_chili_powder,매운 음식
+3736,lemon_flavored_vodka,1873,diced_green_chili,매운 음식
+3736,lemon_flavored_vodka,1874,diced_green_chilies,매운 음식
+3736,lemon_flavored_vodka,1881,diced_tomatoes_with_green_chilies,매운 음식
+3736,lemon_flavored_vodka,1885,diced_tomatoes_with_mild_green_chilies,매운 음식
+3736,lemon_flavored_vodka,1961,dried_chili,매운 음식
+3736,lemon_flavored_vodka,1962,dried_chili_pepper_flake,매운 음식
+3736,lemon_flavored_vodka,1963,dried_chilies,매운 음식
+3736,lemon_flavored_vodka,1993,dried_guajillo_chilies,매운 음식
+3736,lemon_flavored_vodka,1997,dried_hot_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,2000,dried_hot_red_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,2001,dried_hot_red_chilies,매운 음식
+3736,lemon_flavored_vodka,2053,dried_red_chili,매운 음식
+3736,lemon_flavored_vodka,2054,dried_red_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,2055,dried_red_chilies,매운 음식
+3736,lemon_flavored_vodka,2103,dry_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,2466,fresh_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,2502,fresh_green_chilies,매운 음식
+3736,lemon_flavored_vodka,2511,fresh_jalapeno_chilies,매운 음식
+3736,lemon_flavored_vodka,2990,green_chili,매운 음식
+3736,lemon_flavored_vodka,2991,green_chili_paste,매운 음식
+3736,lemon_flavored_vodka,2992,green_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,2994,green_chili_salsa,매운 음식
+3736,lemon_flavored_vodka,2995,green_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,2996,green_chilies,매운 음식
+3736,lemon_flavored_vodka,3028,green_serrano_chilies,매운 음식
+3736,lemon_flavored_vodka,3054,ground_ancho_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,3106,ground_red_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,3131,guajillo_chilies,매운 음식
+3736,lemon_flavored_vodka,3229,heinz_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,3309,hormel_chili,매운 음식
+3736,lemon_flavored_vodka,3310,hormel_chili_without_bean,매운 음식
+3736,lemon_flavored_vodka,3322,hot_chili_bean,매운 음식
+3736,lemon_flavored_vodka,3323,hot_chili_flake,매운 음식
+3736,lemon_flavored_vodka,3324,hot_chili_oil,매운 음식
+3736,lemon_flavored_vodka,3325,hot_chili_paste,매운 음식
+3736,lemon_flavored_vodka,3326,hot_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,3327,hot_chili_powder,매운 음식
+3736,lemon_flavored_vodka,3328,hot_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,3329,hot_chinese_chili_paste,매운 음식
+3736,lemon_flavored_vodka,3339,hot_green_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,3355,hot_red_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,3554,kashmiri_chili_powder,매운 음식
+3736,lemon_flavored_vodka,4167,mexican_chili_powder,매운 음식
+3736,lemon_flavored_vodka,4193,mild_chili_powder,매운 음식
+3736,lemon_flavored_vodka,4197,mild_green_chili,매운 음식
+3736,lemon_flavored_vodka,4198,mild_green_chilies,매운 음식
+3736,lemon_flavored_vodka,4385,no_bean_chili,매운 음식
+3736,lemon_flavored_vodka,4793,pickled_jalapeno_chilies,매운 음식
+3736,lemon_flavored_vodka,5278,red_chili_paste,매운 음식
+3736,lemon_flavored_vodka,5279,red_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,5281,red_chili_powder,매운 음식
+3736,lemon_flavored_vodka,5282,red_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,5283,red_chilies,매운 음식
+3736,lemon_flavored_vodka,5478,roasted_green_chilies,매운 음식
+3736,lemon_flavored_vodka,5541,rotel_tomatoes_&_chilies,매운 음식
+3736,lemon_flavored_vodka,5637,sambal_chili_paste,매운 음식
+3736,lemon_flavored_vodka,5639,sambal_oelek_chili_paste,매운 음식
+3736,lemon_flavored_vodka,5737,serrano_chili,매운 음식
+3736,lemon_flavored_vodka,5738,serrano_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,5739,serrano_chilies,매운 음식
+3736,lemon_flavored_vodka,6241,sweet_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,6387,thai_chili_paste,매운 음식
+3736,lemon_flavored_vodka,6390,thai_green_chili,매운 음식
+3736,lemon_flavored_vodka,6392,thai_red_chili_pepper,매운 음식
+3736,lemon_flavored_vodka,6396,thai_sweet_chili_sauce,매운 음식
+3736,lemon_flavored_vodka,6456,tomatoes_and_green_chilies,매운 음식
+3736,lemon_flavored_vodka,6949,whole_green_chili,매운 음식
+3736,lemon_flavored_vodka,6950,whole_green_chilies,매운 음식
+3736,lemon_flavored_vodka,825,cabbage_kimchi,발효 음식
+3736,lemon_flavored_vodka,2372,fish_sauce,발효 음식
+3736,lemon_flavored_vodka,6389,thai_fish_sauce,발효 음식
+3736,lemon_flavored_vodka,1332,chocolate_truffle,초콜릿 디저트
+3736,lemon_flavored_vodka,445,betty_crocker_fudge_brownie_mix,초콜릿 디저트
+3736,lemon_flavored_vodka,751,brownie,초콜릿 디저트
+3736,lemon_flavored_vodka,2775,fudge_brownie_mix,초콜릿 디저트
+3791,light_beer,407,beef_stew,무거운 고기
+3791,light_beer,408,beef_stew_meat,무거운 고기
+3791,light_beer,409,beef_stew_seasoning,무거운 고기
+3791,light_beer,537,blue_cheese,강한 치즈
+3791,light_beer,538,blue_cheese_dressing,강한 치즈
+3791,light_beer,1802,danish_blue_cheese,강한 치즈
+3791,light_beer,3617,kraft_natural_blue_cheese_crumbles,강한 치즈
+3791,light_beer,4117,maytag_blue_cheese,강한 치즈
+3791,light_beer,1322,chocolate_pudding,초콜릿 디저트
+3791,light_beer,1323,chocolate_pudding_mix,초콜릿 디저트
+3791,light_beer,3407,instant_chocolate_pudding_mix,초콜릿 디저트
+3791,light_beer,3443,instant_white_chocolate_pudding_and_pie_filling_mix,초콜릿 디저트
+3791,light_beer,3516,jell_o_chocolate_pudding_and_pie_filling,초콜릿 디저트
+3791,light_beer,6182,sugar_free_instant_chocolate_pudding_mix,초콜릿 디저트
+3791,light_beer,6859,white_chocolate_pudding_mix,초콜릿 디저트
+3791,light_beer,825,cabbage_kimchi,발효 음식
+3822,light_rum,67,ahi_tuna_steak,무거운 육류
+3822,light_rum,377,beef_cube_steak,무거운 육류
+3822,light_rum,396,beef_round_steak,무거운 육류
+3822,light_rum,397,beef_round_tip_steak,무거운 육류
+3822,light_rum,404,beef_sirloin_steak,무거운 육류
+3822,light_rum,406,beef_steak,무거운 육류
+3822,light_rum,414,beef_t_bone_steak,무거운 육류
+3822,light_rum,418,beef_tenderloin_steak,무거운 육류
+3822,light_rum,421,beef_top_round_steak,무거운 육류
+3822,light_rum,422,beefsteak_tomato,무거운 육류
+3822,light_rum,527,blade_steak,무거운 육류
+3822,light_rum,577,boneless_beef_chuck_steak,무거운 육류
+3822,light_rum,580,boneless_beef_round_steak,무거운 육류
+3822,light_rum,585,boneless_beef_top_loin_steak,무거운 육류
+3822,light_rum,586,boneless_beef_top_round_steak,무거운 육류
+3822,light_rum,613,boneless_rib_eye_steak,무거운 육류
+3822,light_rum,614,boneless_round_steak,무거운 육류
+3822,light_rum,618,boneless_sirloin_steak,무거운 육류
+3822,light_rum,631,boneless_veal_steak,무거운 육류
+3822,light_rum,647,bottom_round_steak,무거운 육류
+3822,light_rum,1350,chuck_steak,무거운 육류
+3822,light_rum,1457,cod_steak,무거운 육류
+3822,light_rum,1766,cube_steak,무거운 육류
+3822,light_rum,2338,filet_mignon_steak,무거운 육류
+3822,light_rum,2373,fish_steak,무거운 육류
+3822,light_rum,2381,flank_steak,무거운 육류
+3822,light_rum,2383,flat_iron_steak,무거운 육류
+3822,light_rum,3158,halibut_steak,무거운 육류
+3822,light_rum,3167,ham_steak,무거운 육류
+3822,light_rum,3175,hanger_steak,무거운 육류
+3822,light_rum,3227,heinz_57_steak_sauce,무거운 육류
+3822,light_rum,3366,hp_steak_sauce,무거운 육류
+3822,light_rum,3653,lamb_steak,무거운 육류
+3822,light_rum,3692,lean_flank_steak,무거운 육류
+3822,light_rum,3708,lean_round_steak,무거운 육류
+3822,light_rum,3710,lean_sirloin_steak,무거운 육류
+3822,light_rum,3711,lean_steak,무거운 육류
+3822,light_rum,4118,mccormick's_montreal_brand_steak_seasoning,무거운 육류
+3822,light_rum,4255,minute_steak,무거운 육류
+3822,light_rum,4381,new_york_strip_steak,무거운 육류
+3822,light_rum,4973,pork_blade_steak,무거운 육류
+3822,light_rum,5010,pork_steak,무거운 육류
+3822,light_rum,5020,porterhouse_steak,무거운 육류
+3822,light_rum,5427,rib_eye_steak,무거운 육류
+3822,light_rum,5551,round_steak,무거운 육류
+3822,light_rum,5562,rump_steak,무거운 육류
+3822,light_rum,5602,salmon_steak,무거운 육류
+3822,light_rum,5761,shark_steak,무거운 육류
+3822,light_rum,5769,shell_steak,무거운 육류
+3822,light_rum,5827,sirloin_steak,무거운 육류
+3822,light_rum,5829,sirloin_tip_steak,무거운 육류
+3822,light_rum,5846,skirt_steak,무거운 육류
+3822,light_rum,6095,steak,무거운 육류
+3822,light_rum,6096,steak_fillet,무거운 육류
+3822,light_rum,6097,steak_sauce,무거운 육류
+3822,light_rum,6098,steak_seasoning,무거운 육류
+3822,light_rum,6099,steak_spice,무거운 육류
+3822,light_rum,6101,steak_ums,무거운 육류
+3822,light_rum,6158,strip_steak,무거운 육류
+3822,light_rum,6302,swordfish_steak,무거운 육류
+3822,light_rum,6471,top_round_steak,무거운 육류
+3822,light_rum,6472,top_sirloin_steak,무거운 육류
+3822,light_rum,6484,tri_tip_steak,무거운 육류
+3822,light_rum,6505,tuna_steak,무거운 육류
+3822,light_rum,6685,veal_steak,무거운 육류
+3822,light_rum,6742,venison_steak,무거운 육류
+3822,light_rum,7085,yellowfin_tuna_steak,무거운 육류
+3822,light_rum,599,boneless_lamb,무거운 육류
+3822,light_rum,600,boneless_lamb_shoulder,무거운 육류
+3822,light_rum,602,boneless_leg_of_lamb,무거운 육류
+3822,light_rum,803,butterflied_leg_of_lamb,무거운 육류
+3822,light_rum,1538,cooked_lamb,무거운 육류
+3822,light_rum,3088,ground_lamb,무거운 육류
+3822,light_rum,3636,lamb,무거운 육류
+3822,light_rum,3638,lamb_bone,무거운 육류
+3822,light_rum,3639,lamb_breast,무거운 육류
+3822,light_rum,3640,lamb_chop,무거운 육류
+3822,light_rum,3641,lamb_cutlet,무거운 육류
+3822,light_rum,3642,lamb_fillet,무거운 육류
+3822,light_rum,3644,lamb_liver,무거운 육류
+3822,light_rum,3645,lamb_loin_chop,무거운 육류
+3822,light_rum,3646,lamb_neck,무거운 육류
+3822,light_rum,3647,lamb_rack,무거운 육류
+3822,light_rum,3648,lamb_rib,무거운 육류
+3822,light_rum,3649,lamb_rib_chop,무거운 육류
+3822,light_rum,3650,lamb_sausage,무거운 육류
+3822,light_rum,3651,lamb_shank,무거운 육류
+3822,light_rum,3652,lamb_shoulder,무거운 육류
+3822,light_rum,3653,lamb_steak,무거운 육류
+3822,light_rum,3654,lamb_stew_meat,무거운 육류
+3822,light_rum,3655,lamb_stock,무거운 육류
+3822,light_rum,3657,lambs_kidney,무거운 육류
+3822,light_rum,3688,lean_boneless_lamb,무거운 육류
+3822,light_rum,3696,lean_ground_lamb,무거운 육류
+3822,light_rum,3703,lean_lamb,무거운 육류
+3822,light_rum,3719,leg_of_lamb,무거운 육류
+3822,light_rum,3906,loin_lamb,무거운 육류
+3822,light_rum,5177,rack_of_lamb,무거운 육류
+3822,light_rum,5179,racks_of_lamb,무거운 육류
+3822,light_rum,5801,shoulder_lamb_chop,무거운 육류
+3822,light_rum,6113,stewing_lamb,무거운 육류
+3822,light_rum,4086,marmalade,매운 음식
+3822,light_rum,4483,onion_marmalade,매운 음식
+3822,light_rum,4520,orange_marmalade,매운 음식
+3822,light_rum,825,cabbage_kimchi,발효 음식
+3822,light_rum,514,black_truffle,초콜릿
+3822,light_rum,1332,chocolate_truffle,초콜릿
+3822,light_rum,6490,truffle,초콜릿
+3822,light_rum,6491,truffle_butter,초콜릿
+3822,light_rum,6492,truffle_oil,초콜릿
+3822,light_rum,6493,truffle_salt,초콜릿
+3822,light_rum,6912,white_truffle,초콜릿
+3822,light_rum,6913,white_truffle_oil,초콜릿
+4164,mexican_beer,67,ahi_tuna_steak,붉은 고기류
+4164,mexican_beer,377,beef_cube_steak,붉은 고기류
+4164,mexican_beer,396,beef_round_steak,붉은 고기류
+4164,mexican_beer,397,beef_round_tip_steak,붉은 고기류
+4164,mexican_beer,404,beef_sirloin_steak,붉은 고기류
+4164,mexican_beer,406,beef_steak,붉은 고기류
+4164,mexican_beer,414,beef_t_bone_steak,붉은 고기류
+4164,mexican_beer,418,beef_tenderloin_steak,붉은 고기류
+4164,mexican_beer,421,beef_top_round_steak,붉은 고기류
+4164,mexican_beer,422,beefsteak_tomato,붉은 고기류
+4164,mexican_beer,527,blade_steak,붉은 고기류
+4164,mexican_beer,577,boneless_beef_chuck_steak,붉은 고기류
+4164,mexican_beer,580,boneless_beef_round_steak,붉은 고기류
+4164,mexican_beer,585,boneless_beef_top_loin_steak,붉은 고기류
+4164,mexican_beer,586,boneless_beef_top_round_steak,붉은 고기류
+4164,mexican_beer,613,boneless_rib_eye_steak,붉은 고기류
+4164,mexican_beer,614,boneless_round_steak,붉은 고기류
+4164,mexican_beer,618,boneless_sirloin_steak,붉은 고기류
+4164,mexican_beer,631,boneless_veal_steak,붉은 고기류
+4164,mexican_beer,647,bottom_round_steak,붉은 고기류
+4164,mexican_beer,1350,chuck_steak,붉은 고기류
+4164,mexican_beer,1457,cod_steak,붉은 고기류
+4164,mexican_beer,1766,cube_steak,붉은 고기류
+4164,mexican_beer,2338,filet_mignon_steak,붉은 고기류
+4164,mexican_beer,2373,fish_steak,붉은 고기류
+4164,mexican_beer,2381,flank_steak,붉은 고기류
+4164,mexican_beer,2383,flat_iron_steak,붉은 고기류
+4164,mexican_beer,3158,halibut_steak,붉은 고기류
+4164,mexican_beer,3167,ham_steak,붉은 고기류
+4164,mexican_beer,3175,hanger_steak,붉은 고기류
+4164,mexican_beer,3227,heinz_57_steak_sauce,붉은 고기류
+4164,mexican_beer,3366,hp_steak_sauce,붉은 고기류
+4164,mexican_beer,3653,lamb_steak,붉은 고기류
+4164,mexican_beer,3692,lean_flank_steak,붉은 고기류
+4164,mexican_beer,3708,lean_round_steak,붉은 고기류
+4164,mexican_beer,3710,lean_sirloin_steak,붉은 고기류
+4164,mexican_beer,3711,lean_steak,붉은 고기류
+4164,mexican_beer,4118,mccormick's_montreal_brand_steak_seasoning,붉은 고기류
+4164,mexican_beer,4255,minute_steak,붉은 고기류
+4164,mexican_beer,4381,new_york_strip_steak,붉은 고기류
+4164,mexican_beer,4973,pork_blade_steak,붉은 고기류
+4164,mexican_beer,5010,pork_steak,붉은 고기류
+4164,mexican_beer,5020,porterhouse_steak,붉은 고기류
+4164,mexican_beer,5427,rib_eye_steak,붉은 고기류
+4164,mexican_beer,5551,round_steak,붉은 고기류
+4164,mexican_beer,5562,rump_steak,붉은 고기류
+4164,mexican_beer,5602,salmon_steak,붉은 고기류
+4164,mexican_beer,5761,shark_steak,붉은 고기류
+4164,mexican_beer,5769,shell_steak,붉은 고기류
+4164,mexican_beer,5827,sirloin_steak,붉은 고기류
+4164,mexican_beer,5829,sirloin_tip_steak,붉은 고기류
+4164,mexican_beer,5846,skirt_steak,붉은 고기류
+4164,mexican_beer,6095,steak,붉은 고기류
+4164,mexican_beer,6096,steak_fillet,붉은 고기류
+4164,mexican_beer,6097,steak_sauce,붉은 고기류
+4164,mexican_beer,6098,steak_seasoning,붉은 고기류
+4164,mexican_beer,6099,steak_spice,붉은 고기류
+4164,mexican_beer,6101,steak_ums,붉은 고기류
+4164,mexican_beer,6158,strip_steak,붉은 고기류
+4164,mexican_beer,6302,swordfish_steak,붉은 고기류
+4164,mexican_beer,6471,top_round_steak,붉은 고기류
+4164,mexican_beer,6472,top_sirloin_steak,붉은 고기류
+4164,mexican_beer,6484,tri_tip_steak,붉은 고기류
+4164,mexican_beer,6505,tuna_steak,붉은 고기류
+4164,mexican_beer,6685,veal_steak,붉은 고기류
+4164,mexican_beer,6742,venison_steak,붉은 고기류
+4164,mexican_beer,7085,yellowfin_tuna_steak,붉은 고기류
+4164,mexican_beer,3640,lamb_chop,붉은 고기류
+4164,mexican_beer,5801,shoulder_lamb_chop,붉은 고기류
+4164,mexican_beer,2915,gorgonzola,강한 치즈
+4164,mexican_beer,514,black_truffle,다크 초콜릿 디저트
+4164,mexican_beer,1332,chocolate_truffle,다크 초콜릿 디저트
+4164,mexican_beer,6490,truffle,다크 초콜릿 디저트
+4164,mexican_beer,6491,truffle_butter,다크 초콜릿 디저트
+4164,mexican_beer,6492,truffle_oil,다크 초콜릿 디저트
+4164,mexican_beer,6493,truffle_salt,다크 초콜릿 디저트
+4164,mexican_beer,6912,white_truffle,다크 초콜릿 디저트
+4164,mexican_beer,6913,white_truffle_oil,다크 초콜릿 디저트
+4164,mexican_beer,445,betty_crocker_fudge_brownie_mix,다크 초콜릿 디저트
+4164,mexican_beer,751,brownie,다크 초콜릿 디저트
+4164,mexican_beer,2775,fudge_brownie_mix,다크 초콜릿 디저트
+4188,midori_melon_liqueur,67,ahi_tuna_steak,붉은 고기류
+4188,midori_melon_liqueur,377,beef_cube_steak,붉은 고기류
+4188,midori_melon_liqueur,396,beef_round_steak,붉은 고기류
+4188,midori_melon_liqueur,397,beef_round_tip_steak,붉은 고기류
+4188,midori_melon_liqueur,404,beef_sirloin_steak,붉은 고기류
+4188,midori_melon_liqueur,406,beef_steak,붉은 고기류
+4188,midori_melon_liqueur,414,beef_t_bone_steak,붉은 고기류
+4188,midori_melon_liqueur,418,beef_tenderloin_steak,붉은 고기류
+4188,midori_melon_liqueur,421,beef_top_round_steak,붉은 고기류
+4188,midori_melon_liqueur,422,beefsteak_tomato,붉은 고기류
+4188,midori_melon_liqueur,527,blade_steak,붉은 고기류
+4188,midori_melon_liqueur,577,boneless_beef_chuck_steak,붉은 고기류
+4188,midori_melon_liqueur,580,boneless_beef_round_steak,붉은 고기류
+4188,midori_melon_liqueur,585,boneless_beef_top_loin_steak,붉은 고기류
+4188,midori_melon_liqueur,586,boneless_beef_top_round_steak,붉은 고기류
+4188,midori_melon_liqueur,613,boneless_rib_eye_steak,붉은 고기류
+4188,midori_melon_liqueur,614,boneless_round_steak,붉은 고기류
+4188,midori_melon_liqueur,618,boneless_sirloin_steak,붉은 고기류
+4188,midori_melon_liqueur,631,boneless_veal_steak,붉은 고기류
+4188,midori_melon_liqueur,647,bottom_round_steak,붉은 고기류
+4188,midori_melon_liqueur,1350,chuck_steak,붉은 고기류
+4188,midori_melon_liqueur,1457,cod_steak,붉은 고기류
+4188,midori_melon_liqueur,1766,cube_steak,붉은 고기류
+4188,midori_melon_liqueur,2338,filet_mignon_steak,붉은 고기류
+4188,midori_melon_liqueur,2373,fish_steak,붉은 고기류
+4188,midori_melon_liqueur,2381,flank_steak,붉은 고기류
+4188,midori_melon_liqueur,2383,flat_iron_steak,붉은 고기류
+4188,midori_melon_liqueur,3158,halibut_steak,붉은 고기류
+4188,midori_melon_liqueur,3167,ham_steak,붉은 고기류
+4188,midori_melon_liqueur,3175,hanger_steak,붉은 고기류
+4188,midori_melon_liqueur,3227,heinz_57_steak_sauce,붉은 고기류
+4188,midori_melon_liqueur,3366,hp_steak_sauce,붉은 고기류
+4188,midori_melon_liqueur,3653,lamb_steak,붉은 고기류
+4188,midori_melon_liqueur,3692,lean_flank_steak,붉은 고기류
+4188,midori_melon_liqueur,3708,lean_round_steak,붉은 고기류
+4188,midori_melon_liqueur,3710,lean_sirloin_steak,붉은 고기류
+4188,midori_melon_liqueur,3711,lean_steak,붉은 고기류
+4188,midori_melon_liqueur,4118,mccormick's_montreal_brand_steak_seasoning,붉은 고기류
+4188,midori_melon_liqueur,4255,minute_steak,붉은 고기류
+4188,midori_melon_liqueur,4381,new_york_strip_steak,붉은 고기류
+4188,midori_melon_liqueur,4973,pork_blade_steak,붉은 고기류
+4188,midori_melon_liqueur,5010,pork_steak,붉은 고기류
+4188,midori_melon_liqueur,5020,porterhouse_steak,붉은 고기류
+4188,midori_melon_liqueur,5427,rib_eye_steak,붉은 고기류
+4188,midori_melon_liqueur,5551,round_steak,붉은 고기류
+4188,midori_melon_liqueur,5562,rump_steak,붉은 고기류
+4188,midori_melon_liqueur,5602,salmon_steak,붉은 고기류
+4188,midori_melon_liqueur,5761,shark_steak,붉은 고기류
+4188,midori_melon_liqueur,5769,shell_steak,붉은 고기류
+4188,midori_melon_liqueur,5827,sirloin_steak,붉은 고기류
+4188,midori_melon_liqueur,5829,sirloin_tip_steak,붉은 고기류
+4188,midori_melon_liqueur,5846,skirt_steak,붉은 고기류
+4188,midori_melon_liqueur,6095,steak,붉은 고기류
+4188,midori_melon_liqueur,6096,steak_fillet,붉은 고기류
+4188,midori_melon_liqueur,6097,steak_sauce,붉은 고기류
+4188,midori_melon_liqueur,6098,steak_seasoning,붉은 고기류
+4188,midori_melon_liqueur,6099,steak_spice,붉은 고기류
+4188,midori_melon_liqueur,6101,steak_ums,붉은 고기류
+4188,midori_melon_liqueur,6158,strip_steak,붉은 고기류
+4188,midori_melon_liqueur,6302,swordfish_steak,붉은 고기류
+4188,midori_melon_liqueur,6471,top_round_steak,붉은 고기류
+4188,midori_melon_liqueur,6472,top_sirloin_steak,붉은 고기류
+4188,midori_melon_liqueur,6484,tri_tip_steak,붉은 고기류
+4188,midori_melon_liqueur,6505,tuna_steak,붉은 고기류
+4188,midori_melon_liqueur,6685,veal_steak,붉은 고기류
+4188,midori_melon_liqueur,6742,venison_steak,붉은 고기류
+4188,midori_melon_liqueur,7085,yellowfin_tuna_steak,붉은 고기류
+4188,midori_melon_liqueur,599,boneless_lamb,붉은 고기류
+4188,midori_melon_liqueur,600,boneless_lamb_shoulder,붉은 고기류
+4188,midori_melon_liqueur,602,boneless_leg_of_lamb,붉은 고기류
+4188,midori_melon_liqueur,803,butterflied_leg_of_lamb,붉은 고기류
+4188,midori_melon_liqueur,1538,cooked_lamb,붉은 고기류
+4188,midori_melon_liqueur,3088,ground_lamb,붉은 고기류
+4188,midori_melon_liqueur,3636,lamb,붉은 고기류
+4188,midori_melon_liqueur,3638,lamb_bone,붉은 고기류
+4188,midori_melon_liqueur,3639,lamb_breast,붉은 고기류
+4188,midori_melon_liqueur,3640,lamb_chop,붉은 고기류
+4188,midori_melon_liqueur,3641,lamb_cutlet,붉은 고기류
+4188,midori_melon_liqueur,3642,lamb_fillet,붉은 고기류
+4188,midori_melon_liqueur,3644,lamb_liver,붉은 고기류
+4188,midori_melon_liqueur,3645,lamb_loin_chop,붉은 고기류
+4188,midori_melon_liqueur,3646,lamb_neck,붉은 고기류
+4188,midori_melon_liqueur,3647,lamb_rack,붉은 고기류
+4188,midori_melon_liqueur,3648,lamb_rib,붉은 고기류
+4188,midori_melon_liqueur,3649,lamb_rib_chop,붉은 고기류
+4188,midori_melon_liqueur,3650,lamb_sausage,붉은 고기류
+4188,midori_melon_liqueur,3651,lamb_shank,붉은 고기류
+4188,midori_melon_liqueur,3652,lamb_shoulder,붉은 고기류
+4188,midori_melon_liqueur,3653,lamb_steak,붉은 고기류
+4188,midori_melon_liqueur,3654,lamb_stew_meat,붉은 고기류
+4188,midori_melon_liqueur,3655,lamb_stock,붉은 고기류
+4188,midori_melon_liqueur,3657,lambs_kidney,붉은 고기류
+4188,midori_melon_liqueur,3688,lean_boneless_lamb,붉은 고기류
+4188,midori_melon_liqueur,3696,lean_ground_lamb,붉은 고기류
+4188,midori_melon_liqueur,3703,lean_lamb,붉은 고기류
+4188,midori_melon_liqueur,3719,leg_of_lamb,붉은 고기류
+4188,midori_melon_liqueur,3906,loin_lamb,붉은 고기류
+4188,midori_melon_liqueur,5177,rack_of_lamb,붉은 고기류
+4188,midori_melon_liqueur,5179,racks_of_lamb,붉은 고기류
+4188,midori_melon_liqueur,5801,shoulder_lamb_chop,붉은 고기류
+4188,midori_melon_liqueur,6113,stewing_lamb,붉은 고기류
+4188,midori_melon_liqueur,4086,marmalade,매운 음식
+4188,midori_melon_liqueur,4483,onion_marmalade,매운 음식
+4188,midori_melon_liqueur,4520,orange_marmalade,매운 음식
+4188,midori_melon_liqueur,825,cabbage_kimchi,강발효 음식
+4328,muscat_wine,67,ahi_tuna_steak,붉은 고기류
+4328,muscat_wine,377,beef_cube_steak,붉은 고기류
+4328,muscat_wine,396,beef_round_steak,붉은 고기류
+4328,muscat_wine,397,beef_round_tip_steak,붉은 고기류
+4328,muscat_wine,404,beef_sirloin_steak,붉은 고기류
+4328,muscat_wine,406,beef_steak,붉은 고기류
+4328,muscat_wine,414,beef_t_bone_steak,붉은 고기류
+4328,muscat_wine,418,beef_tenderloin_steak,붉은 고기류
+4328,muscat_wine,421,beef_top_round_steak,붉은 고기류
+4328,muscat_wine,422,beefsteak_tomato,붉은 고기류
+4328,muscat_wine,527,blade_steak,붉은 고기류
+4328,muscat_wine,577,boneless_beef_chuck_steak,붉은 고기류
+4328,muscat_wine,580,boneless_beef_round_steak,붉은 고기류
+4328,muscat_wine,585,boneless_beef_top_loin_steak,붉은 고기류
+4328,muscat_wine,586,boneless_beef_top_round_steak,붉은 고기류
+4328,muscat_wine,613,boneless_rib_eye_steak,붉은 고기류
+4328,muscat_wine,614,boneless_round_steak,붉은 고기류
+4328,muscat_wine,618,boneless_sirloin_steak,붉은 고기류
+4328,muscat_wine,631,boneless_veal_steak,붉은 고기류
+4328,muscat_wine,647,bottom_round_steak,붉은 고기류
+4328,muscat_wine,1350,chuck_steak,붉은 고기류
+4328,muscat_wine,1457,cod_steak,붉은 고기류
+4328,muscat_wine,1766,cube_steak,붉은 고기류
+4328,muscat_wine,2338,filet_mignon_steak,붉은 고기류
+4328,muscat_wine,2373,fish_steak,붉은 고기류
+4328,muscat_wine,2381,flank_steak,붉은 고기류
+4328,muscat_wine,2383,flat_iron_steak,붉은 고기류
+4328,muscat_wine,3158,halibut_steak,붉은 고기류
+4328,muscat_wine,3167,ham_steak,붉은 고기류
+4328,muscat_wine,3175,hanger_steak,붉은 고기류
+4328,muscat_wine,3227,heinz_57_steak_sauce,붉은 고기류
+4328,muscat_wine,3366,hp_steak_sauce,붉은 고기류
+4328,muscat_wine,3653,lamb_steak,붉은 고기류
+4328,muscat_wine,3692,lean_flank_steak,붉은 고기류
+4328,muscat_wine,3708,lean_round_steak,붉은 고기류
+4328,muscat_wine,3710,lean_sirloin_steak,붉은 고기류
+4328,muscat_wine,3711,lean_steak,붉은 고기류
+4328,muscat_wine,4118,mccormick's_montreal_brand_steak_seasoning,붉은 고기류
+4328,muscat_wine,4255,minute_steak,붉은 고기류
+4328,muscat_wine,4381,new_york_strip_steak,붉은 고기류
+4328,muscat_wine,4973,pork_blade_steak,붉은 고기류
+4328,muscat_wine,5010,pork_steak,붉은 고기류
+4328,muscat_wine,5020,porterhouse_steak,붉은 고기류
+4328,muscat_wine,5427,rib_eye_steak,붉은 고기류
+4328,muscat_wine,5551,round_steak,붉은 고기류
+4328,muscat_wine,5562,rump_steak,붉은 고기류
+4328,muscat_wine,5602,salmon_steak,붉은 고기류
+4328,muscat_wine,5761,shark_steak,붉은 고기류
+4328,muscat_wine,5769,shell_steak,붉은 고기류
+4328,muscat_wine,5827,sirloin_steak,붉은 고기류
+4328,muscat_wine,5829,sirloin_tip_steak,붉은 고기류
+4328,muscat_wine,5846,skirt_steak,붉은 고기류
+4328,muscat_wine,6095,steak,붉은 고기류
+4328,muscat_wine,6096,steak_fillet,붉은 고기류
+4328,muscat_wine,6097,steak_sauce,붉은 고기류
+4328,muscat_wine,6098,steak_seasoning,붉은 고기류
+4328,muscat_wine,6099,steak_spice,붉은 고기류
+4328,muscat_wine,6101,steak_ums,붉은 고기류
+4328,muscat_wine,6158,strip_steak,붉은 고기류
+4328,muscat_wine,6302,swordfish_steak,붉은 고기류
+4328,muscat_wine,6471,top_round_steak,붉은 고기류
+4328,muscat_wine,6472,top_sirloin_steak,붉은 고기류
+4328,muscat_wine,6484,tri_tip_steak,붉은 고기류
+4328,muscat_wine,6505,tuna_steak,붉은 고기류
+4328,muscat_wine,6685,veal_steak,붉은 고기류
+4328,muscat_wine,6742,venison_steak,붉은 고기류
+4328,muscat_wine,7085,yellowfin_tuna_steak,붉은 고기류
+4328,muscat_wine,4086,marmalade,매운 음식
+4328,muscat_wine,4483,onion_marmalade,매운 음식
+4328,muscat_wine,4520,orange_marmalade,매운 음식
+4328,muscat_wine,825,cabbage_kimchi,발효 음식

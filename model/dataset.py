@@ -8,6 +8,85 @@ from tqdm import tqdm
 import torch
 from torch.utils.data import Dataset
 
+def map_graph_nodes():
+    nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
+
+    nodes_map = {}
+    liquor_map = {}
+    ingredient_map = {}
+    compound_map = {}
+    
+    for i, row in nodes_df.iterrows():
+        node_id = row['node_id']
+        node_type = row['node_type']
+        
+        if node_type == "liquor":
+            liquor_map[node_id] = i
+        elif node_type == "ingredient":
+            ingredient_map[node_id] = i
+        elif node_type == "compound":
+            compound_map[node_id] = i
+        
+        nodes_map[node_id] = i
+    nodes_map["liquor"] = liquor_map
+    nodes_map["ingredient"] = ingredient_map
+    nodes_map["compound"] = compound_map
+    
+    return nodes_map
+
+def edges_index():
+    edges_df = pd.read_csv("./dataset/edges_191120_updated.csv")
+    nodes_map = map_graph_nodes()
+
+    edges_index = []
+    edges_weights = []
+
+    for _, row in tqdm(edges_df.iterrows(), desc="Processing edges...", total=len(edges_df)):
+        src, tgt = row['id_1'], row['id_2']
+
+        src_idx = nodes_map[src]
+        tgt_idx = nodes_map[tgt]
+        
+        edges_index.append((src_idx, tgt_idx))
+        edges_weights.append(row['score']) if not pd.isna(row['score']) else edges_weights.append(0.1)
+        
+    edge_index = torch.tensor(edges_index, dtype=torch.long).t().contiguous()
+    edge_weights = torch.tensor(edges_weights, dtype=torch.float32)
+    
+    print(f"Edge index shape: {edge_index.shape}")
+    print(f"Edge weights shape: {edge_weights.shape}")
+
+    return edge_index, edge_weights
+
+class InteractionDataset(Dataset):
+    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=5.0):
+        self.samples = []
+        self.num_users = num_users
+        self.num_items = num_items
+
+        # Positive samples
+        for _, row in positive_pairs.iterrows():
+            self.samples.append((row['liquor_id'], row['ingredient_id'], 1))
+
+        # Hard negatives
+        for _, row in hard_negatives.iterrows():
+            self.samples.append((row['liquor_id'], row['ingredient_id'], 0))  
+
+        # Negative samples
+        num_neg = int(len(positive_pairs) * negative_ratio)
+        for _ in range(num_neg):
+            u = random.randint(0, num_users - 1)
+            i = random.randint(0, num_items - 1)
+            if (u, i) not in positive_pairs:
+                self.samples.append((u, i, 0))
+
+    def __len__(self):
+        return len(self.samples)
+
+    def __getitem__(self, idx):
+        user, item, label = self.samples[idx]
+        return torch.tensor(user), torch.tensor(item), torch.tensor(label, dtype=torch.float32)
+
 def preprocess():
     nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
     edges_df = pd.read_csv("./dataset/flavor diffusion/edges_191120.csv")
@@ -211,35 +290,6 @@ def make_emb():
 
     torch.save(liquor_embedding_tensor, "./model/data/liquor_init_embedding.pt")
     torch.save(ingredient_embedding_tensor, "./model/data/ingredient_init_embedding.pt")
-
-class InteractionDataset(Dataset):
-    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=1.0):
-        self.samples = []
-        self.num_users = num_users
-        self.num_items = num_items
-
-        # Positive samples
-        for _, row in positive_pairs.iterrows():
-            self.samples.append((row['liquor_id'], row['ingredient_id'], 1))
-
-        # Hard negatives
-        for _, row in hard_negatives.iterrows():
-            self.samples.append((row['liquor_id'], row['ingredient_id'], 0))  
-
-        # Negative samples
-        num_neg = int(len(positive_pairs) * negative_ratio)
-        for _ in range(num_neg):
-            u = random.randint(0, num_users - 1)
-            i = random.randint(0, num_items - 1)
-            if (u, i) not in positive_pairs:
-                self.samples.append((u, i, 0))
-
-    def __len__(self):
-        return len(self.samples)
-
-    def __getitem__(self, idx):
-        user, item, label = self.samples[idx]
-        return torch.tensor(user), torch.tensor(item), torch.tensor(label, dtype=torch.float32)
     
 class TripletInteractionDataset(Dataset):
     def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=1.0):
