@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 
 from dataset import InteractionDataset, map_graph_nodes, edges_index
-from plot import plot_score_distribution, all_score_visualization, emmbeds_visualization
+from plot import plot_score_distribution, all_score_visualization
 from models import NeuralCF
 
 class EarlyStopping:
@@ -36,6 +36,9 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, num
     torch.manual_seed(123)
     
     model.to(device)
+    
+    edges_index = edges_index.to(device)
+    edges_weights = edges_weights.to(device)
     model.train()
 
     criterion = nn.BCELoss()
@@ -117,6 +120,9 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, num
 def test_visualization(model, test_loader, edges_index, edges_weights):
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     model.to(device)
+
+    edges_index = edges_index.to(device)
+    edges_weights = edges_weights.to(device)
     
     model.eval()
     pos_scores = []
@@ -187,12 +193,11 @@ if __name__ == "__main__":
     model = NeuralCF(num_users=155, num_items=6496, emb_size=128)
 
     print("Training model...")
-    #train_model(model=model, train_loader=train_loader, val_loader=val_loader ,edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+    train_model(model=model, train_loader=train_loader, val_loader=val_loader ,edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
     
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     
     print("Testing model...")
-    emmbeds_visualization(model=model, test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights)
     
     test_visualization(model=model, test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights)
     all_score_visualization(test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights)

@@ -36,9 +36,6 @@ class NeuralCF(nn.Module):
         self.conv1 = GCNConv(emb_size, emb_size) # GNN layer
         self.conv2 = GCNConv(emb_size, emb_size)
         
-        self.bn1 = nn.BatchNorm1d(emb_size) # Batch Normalization
-        self.bn2 = nn.BatchNorm1d(emb_size)
-        
         # GMF 
         self.user_emb_gmf = nn.Embedding(num_users, emb_size)
         self.item_emb_gmf = nn.Embedding(num_items, emb_size)
@@ -80,23 +77,30 @@ class NeuralCF(nn.Module):
             edge_index   :   GNN에서 사용할 edge_index
             edge_weight  :   GNN에서 사용할 edge_weight (default: None)
         """
-        # GNN
+        # GNN 기반 임베딩
         x = self.embedding.weight
         x = self.conv1(x, edge_index, edge_weight)
         x = self.conv2(x, edge_index, edge_weight)
-        
-        liquor_emb = x[user_indices]
-        ingredient_emb = x[item_indices]
-        
+
+        # GMF 임베딩 (가능하면 별도 레이어로 분리)
+        gmf_user_emb = self.user_emb_gmf
+        gmf_item_emb = self.item_emb_gmf
+
+        # MLP 임베딩 (가능하면 별도 레이어로 분리)
+        mlp_user_emb = self.user_emb_mlp
+        mlp_item_emb = self.item_emb_mlp
+
+        # 또는 GNN 결과를 분기해서도 가능
+        gmf_user_emb = x[user_indices]
+        gmf_item_emb = x[item_indices]
+        mlp_user_emb = x[user_indices]
+        mlp_item_emb = x[item_indices]
+
         # GMF
-        gmf_user = liquor_emb
-        gmf_item = ingredient_emb
-        gmf_output = gmf_user * gmf_item
+        gmf_output = gmf_user_emb * gmf_item_emb
 
         # MLP
-        mlp_user = liquor_emb
-        mlp_item = ingredient_emb
-        mlp_input = torch.cat((mlp_user, mlp_item), dim=-1)
+        mlp_input = torch.cat([mlp_user_emb, mlp_item_emb], dim=-1)
         mlp_output = self.mlp(mlp_input)
 
         # GMF + MLP
@@ -104,7 +108,7 @@ class NeuralCF(nn.Module):
         "... we concatenate the learned representations from GMF and MLP, and feed them into a final prediction layer."
         GMF + MLP 둘이 성질이 다르기 때문에 곱하거나 평균내지 않고 그냥 나란히 붙인다
         """
-        final_input = torch.cat((gmf_output, mlp_output), dim=-1)
+        final_input = torch.cat([gmf_output, mlp_output], dim=-1)
         logits = self.output_layer(final_input)
 
         return torch.sigmoid(logits).squeeze()

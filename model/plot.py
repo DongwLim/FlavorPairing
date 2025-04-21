@@ -29,39 +29,7 @@ def plot_score_distribution(pos_score, neg_score, title="Score Distribution"):
     plt.ylabel('Frequency')
     plt.legend()
     plt.grid()
-    plt.show()
-    
-def emmbeds_visualization(model, test_loader, edges_index, edges_weights):
-    model = NeuralCF(num_users=155, num_items=6496, emb_size=128)
-    
-    init_embbed = model.embedding.weight.data.cpu().numpy()
-    
-    model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
-    
-    trained_embbed = model.embedding.weight.data.cpu().numpy()
-    
-    mapping = map_graph_nodes()
-    
-    pca = PCA(n_components=2)
-    init_embbed_2d = pca.fit_transform(init_embbed)
-    trained_embbed_2d = pca.fit_transform(trained_embbed)
-    
-    difference = np.linalg.norm(init_embbed - trained_embbed)
-    print(f"Difference between initial and trained embeddings: {difference}")
-    
-    plt.figure(figsize=(10, 6))
-    plt.scatter(init_embbed_2d[:, 0], init_embbed_2d[:, 1], alpha=0.5, label='Initial Embedding', color='blue')
-    plt.title("Initial Embedding Visualization")
-    plt.legend()
-    plt.grid(True)
-    plt.show()
-    
-    plt.figure(figsize=(10, 6))
-    plt.scatter(trained_embbed_2d[:, 0], trained_embbed_2d[:, 1], alpha=0.5, label='Trained Embedding', color='red')
-    plt.title("Trained Embedding Visualization")
-    plt.legend()
-    plt.grid(True)
-    plt.show()
+    plt.savefig("./figure/plot_score_distribution_output3.png")
             
 def all_score_visualization(test_loader, edges_index, edges_weights):
     all_scores = []
@@ -81,4 +49,4 @@ def all_score_visualization(test_loader, edges_index, edges_weights):
     plt.xlabel('Score')
     plt.ylabel('Frequency')
     plt.grid(True)
-    plt.show()
+    plt.savefig("./figure/all_score_visualization_output.png")
