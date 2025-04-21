@@ -34,29 +34,33 @@ def map_graph_nodes():
     
     return nodes_map
 
-def edges_index():
+def edges_index(edge_type_map):
     edges_df = pd.read_csv("./dataset/edges_191120_updated.csv")
     nodes_map = map_graph_nodes()
 
     edges_index = []
     edges_weights = []
+    edges_type = []
 
     for _, row in tqdm(edges_df.iterrows(), desc="Processing edges...", total=len(edges_df)):
         src, tgt = row['id_1'], row['id_2']
-
+        type = row['edge_type']
+        
         src_idx = nodes_map[src]
         tgt_idx = nodes_map[tgt]
         
         edges_index.append((src_idx, tgt_idx))
         edges_weights.append(row['score']) if not pd.isna(row['score']) else edges_weights.append(0.1)
+        edges_type.append(edge_type_map[type])
         
     edge_index = torch.tensor(edges_index, dtype=torch.long).t().contiguous()
     edge_weights = torch.tensor(edges_weights, dtype=torch.float32)
+    edges_type = torch.tensor(edges_type, dtype=torch.long)
     
     print(f"Edge index shape: {edge_index.shape}")
     print(f"Edge weights shape: {edge_weights.shape}")
 
-    return edge_index, edge_weights
+    return edge_index, edge_weights, edges_type
 
 class InteractionDataset(Dataset):
     def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=1.0):

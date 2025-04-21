@@ -29,9 +29,9 @@ def plot_score_distribution(pos_score, neg_score, title="Score Distribution"):
     plt.ylabel('Frequency')
     plt.legend()
     plt.grid()
-    plt.savefig("./figure/plot_score_distribution_output3.png")
+    plt.savefig("./figure/rgcn_plot0.png")
             
-def all_score_visualization(test_loader, edges_index, edges_weights):
+def all_score_visualization(test_loader, edges_index, edges_weights, edges_type):
     all_scores = []
     
     model = NeuralCF(num_users=155, num_items=6496, emb_size=128)
@@ -40,7 +40,7 @@ def all_score_visualization(test_loader, edges_index, edges_weights):
     
     with torch.no_grad():
         for user, item, label in test_loader:
-            preds = model(user, item, edges_index, edges_weights)
+            preds = model(user, item, edges_index, edges_type, edges_weights)
             all_scores.extend(preds.cpu().numpy())
             
     plt.figure(figsize=(10, 6))

@@ -31,7 +31,7 @@ class EarlyStopping:
             self.best_score = val_loss
             self.counter = 0
 
-def train_model(model, train_loader, val_loader, edges_index, edges_weights, num_epochs=10, lr=0.001, weight_decay=1e-5):
+def train_model(model, train_loader, val_loader, edges_index, edges_weights, edges_type, num_epochs=10, lr=0.001, weight_decay=1e-5):
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     torch.manual_seed(123)
     
@@ -39,6 +39,7 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, num
     
     edges_index = edges_index.to(device)
     edges_weights = edges_weights.to(device)
+    edges_type = edges_type.to(device).long()
     model.train()
 
     criterion = nn.BCELoss()
@@ -62,7 +63,7 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, num
             user, item, label = user.to(device), item.to(device), label.to(device)
 
             optimizer.zero_grad()
-            output = model(user, item, edges_index, edges_weights)
+            output = model(user, item, edges_index, edges_type, edges_weights)
             loss = criterion(output, label)
 
             loss.backward()
@@ -91,7 +92,7 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, num
 
                 user, item, label = user.to(device), item.to(device), label.to(device)
 
-                output = model(user, item, edges_index, edges_weights)
+                output = model(user, item, edges_index, edges_type, edges_weights)
                 loss = criterion(output, label)
 
                 val_loss += loss.item() * label.size(0)
@@ -117,7 +118,7 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, num
             torch.save(best_model, "./model/checkpoint/best_model.pth")
             break
 
-def test_visualization(model, test_loader, edges_index, edges_weights):
+def test_visualization(model, test_loader, edges_index, edges_weights, edges_type):
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     model.to(device)
 
@@ -136,7 +137,7 @@ def test_visualization(model, test_loader, edges_index, edges_weights):
 
             user, item, label = user.to(device), item.to(device), label.to(device)
 
-            output = model(user, item, edges_index, edges_weights)
+            output = model(user, item, edges_index, edges_type, edges_weights)
             
             pos_scores.extend(output[label == 1].cpu().numpy())
             neg_scores.extend(output[label == 0].cpu().numpy())
@@ -152,7 +153,16 @@ if __name__ == "__main__":
 
     #print(lid_to_idx)
     print("Loading graph data...")
-    edges_indexes, edges_weights = edges_index()
+    
+    edge_type_map ={
+        'liqr-ingr': 0,
+        'ingr-ingr': 1,
+        'liqr-liqr': 1,
+        'ingr-fcomp': 2,
+        'ingr-dcomp': 2
+    }
+    
+    edges_indexes, edges_weights, edges_type = edges_index(edge_type_map)
     
     print("Loading dataset...")
     positive_pairs = pd.read_csv("./liquor_good_ingredients.csv")
@@ -193,13 +203,13 @@ if __name__ == "__main__":
     model = NeuralCF(num_users=155, num_items=6496, emb_size=128)
 
     print("Training model...")
-    train_model(model=model, train_loader=train_loader, val_loader=val_loader ,edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+    train_model(model=model, train_loader=train_loader, val_loader=val_loader , edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
     
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     
     print("Testing model...")
     
-    test_visualization(model=model, test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights)
-    all_score_visualization(test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights)
+    test_visualization(model=model, test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights, edges_type=edges_type)
+    all_score_visualization(test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights, edges_type=edges_type)
     
     

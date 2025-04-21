@@ -1,7 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch_geometric.nn import GCNConv
+from torch_geometric.nn import GCNConv, RGCNConv, NNConv, MessagePassing
+from torch_geometric.utils import softmax
 
 """
 all_node_emb = GNN(edge_index)
@@ -13,7 +14,7 @@ loss.backward()
 """
 
 class NeuralCF(nn.Module):
-    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=0, emb_size=128, hidden_layers=[128, 64, 32], user_init=None, item_init=None):
+    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=3, emb_size=128, hidden_layers=[128, 64, 32], user_init=None, item_init=None):
         super(NeuralCF, self).__init__()
         """
             num_users       :   술 노드의 개수
@@ -32,9 +33,19 @@ class NeuralCF(nn.Module):
         
         self.embedding = nn.Embedding(num_nodes, emb_size) # GNN에서 사용될 노드 임베딩
         
+        # RGNN
+        self.rgcn1 = RGCNConv(emb_size, emb_size, num_relations)
+        self.rgcn2 = RGCNConv(emb_size, emb_size, num_relations)
+        self.rgcn3 = RGCNConv(emb_size, emb_size, num_relations)
+        
+        self.wrgcn = WeightedRGCNConv(emb_size, emb_size, num_relations) # GNN layer
+        self.wrgcn2 = WeightedRGCNConv(emb_size, emb_size, num_relations)
+        self.wrgcn3 = WeightedRGCNConv(emb_size, emb_size, num_relations)
+        
         # GNN
         self.conv1 = GCNConv(emb_size, emb_size) # GNN layer
         self.conv2 = GCNConv(emb_size, emb_size)
+        self.conv3 = GCNConv(emb_size, emb_size)
         
         # GMF 
         self.user_emb_gmf = nn.Embedding(num_users, emb_size)
@@ -70,17 +81,29 @@ class NeuralCF(nn.Module):
         # 최종 결과 출력층 
         self.output_layer = nn.Linear(hidden_layers[-1] + emb_size, 1)
 
-    def forward(self, user_indices, item_indices, edge_index, edge_weight=None):
+    def forward(self, user_indices, item_indices, edge_index, edge_type, edge_weight=None):
         """
             user_indices :   술 노드의 인덱스
             item_indices :   음식 노드의 인덱스
             edge_index   :   GNN에서 사용할 edge_index
             edge_weight  :   GNN에서 사용할 edge_weight (default: None)
         """
-        # GNN 기반 임베딩
+        # RGCN 기반 임베딩
         x = self.embedding.weight
+        
+        """x = self.rgcn1(x, edge_index, edge_type)
+        x = self.rgcn2(x, edge_index, edge_type)
+        x = self.rgcn3(x, edge_index, edge_type)"""
+        
+        x = self.wrgcn(x, edge_index, edge_type, edge_weight)
+        x = self.wrgcn2(x, edge_index, edge_type, edge_weight)
+        x = self.wrgcn3(x, edge_index, edge_type, edge_weight)
+        
+        # GNN 기반 임베딩
+        """x = self.embedding.weight
         x = self.conv1(x, edge_index, edge_weight)
         x = self.conv2(x, edge_index, edge_weight)
+        x = self.conv3(x, edge_index, edge_weight)"""
 
         # GMF 임베딩 (가능하면 별도 레이어로 분리)
         gmf_user_emb = self.user_emb_gmf
@@ -112,3 +135,62 @@ class NeuralCF(nn.Module):
         logits = self.output_layer(final_input)
 
         return torch.sigmoid(logits).squeeze()
+
+
+class WeightedRGCNConv(MessagePassing):
+    def __init__(self, in_channels, out_channels, num_relations, aggr='add', bias=True):
+        super().__init__(aggr=aggr)
+        self.num_relations = num_relations
+        self.in_channels = in_channels
+        self.out_channels = out_channels
+
+        # 각 관계(r)마다 weight matrix 생성
+        self.rel_lins = nn.ModuleList([
+            nn.Linear(in_channels, out_channels, bias=False) for _ in range(num_relations)
+        ])
+
+        self.root = nn.Linear(in_channels, out_channels, bias=False)  # 자기 자신
+        self.bias = nn.Parameter(torch.Tensor(out_channels)) if bias else None
+        self.reset_parameters()
+
+    def reset_parameters(self):
+        for lin in self.rel_lins:
+            lin.reset_parameters()
+        self.root.reset_parameters()
+        if self.bias is not None:
+            nn.init.zeros_(self.bias)
+
+    def forward(self, x, edge_index, edge_type, edge_weight=None):
+        '''
+        x: [num_nodes, in_channels]
+        edge_index: [2, num_edges]
+        edge_type: [num_edges]
+        edge_weight: [num_edges] or None
+        '''
+        if edge_weight is None:
+            edge_weight = torch.ones(edge_index.size(1), device=edge_index.device)
+
+        return self.propagate(edge_index, x=x, edge_type=edge_type, edge_weight=edge_weight)
+
+    def message(self, x_j, edge_type, edge_weight):
+        '''
+        x_j: source node features [num_edges, in_channels]
+        edge_type: edge types [num_edges]
+        edge_weight: edge weights [num_edges]
+        '''
+        # 각 관계에 따라 다른 transformation
+        out = torch.zeros(x_j.size(0), self.out_channels, device=x_j.device)
+
+        for r in range(self.num_relations):
+            mask = edge_type == r
+            if mask.sum() > 0:
+                transformed = self.rel_lins[r](x_j[mask])
+                out[mask] = edge_weight[mask].unsqueeze(-1) * transformed
+
+        return out
+
+    def update(self, aggr_out, x):
+        out = aggr_out + self.root(x)
+        if self.bias is not None:
+            out = out + self.bias
+        return out
