@@ -9,6 +9,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 
 from dataset import InteractionDataset, map_graph_nodes, edges_index
+from plot import plot_score_distribution, all_score_visualization, emmbeds_visualization
 from models import NeuralCF
 
 class EarlyStopping:
@@ -39,7 +40,10 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, num
 
     criterion = nn.BCELoss()
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
-    early_stopping = EarlyStopping(patience=10)
+    early_stopping = EarlyStopping(patience=10, delta=0.001)
+
+    best_model = None
+    best_val_loss = float('inf')
 
     print(f"Training on {device}")
     for epoch in range(num_epochs):
@@ -98,11 +102,40 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, num
         print(f"[Validation] Loss: {avg_val_loss:.4f} | Accuracy: {val_acc:.4f}")
         torch.save(model.state_dict(), f"./model/checkpoint/epoch_{epoch}.pth")
         
+        if avg_val_loss < best_val_loss:
+            best_val_loss = avg_val_loss
+            best_model = model.state_dict()
+            print(f"Best model saved at epoch {epoch+1} with validation loss {best_val_loss:.4f}")
+            
         # Check Early Stopping
         early_stopping(avg_val_loss)
         if early_stopping.early_stop:
             print("Early stopping triggered.")
+            torch.save(best_model, "./model/checkpoint/best_model.pth")
             break
+
+def test_visualization(model, test_loader, edges_index, edges_weights):
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    model.to(device)
+    
+    model.eval()
+    pos_scores = []
+    neg_scores = []
+    
+    with torch.no_grad():
+        for user, item, label in test_loader:
+            user = user.long()
+            item = item.long()
+            label = label.float()
+
+            user, item, label = user.to(device), item.to(device), label.to(device)
+
+            output = model(user, item, edges_index, edges_weights)
+            
+            pos_scores.extend(output[label == 1].cpu().numpy())
+            neg_scores.extend(output[label == 0].cpu().numpy())
+    
+    plot_score_distribution(pos_scores, neg_scores, title="Score Distribution")
 
 if __name__ == "__main__":
     print("Loading data...")
@@ -130,8 +163,8 @@ if __name__ == "__main__":
     negative_pairs['ingredient_id'] = negative_pairs['ingredient_id'].map(iid_to_idx)
 
     """
-    num_users = 162 # Number of unique liquor IDs
-    num_items = 6491 # Number of unique ingredient IDs
+    num_users = 155 # Number of unique liquor IDs
+    num_items = 6498 # Number of unique ingredient IDs
     """
     
     print("Creating dataset...")
@@ -142,16 +175,26 @@ if __name__ == "__main__":
     train_val_pairs, test_pairs = train_test_split(all_pairs, test_size=0.2, random_state=42)
     train_pairs, val_pairs = train_test_split(train_val_pairs, test_size=0.2, random_state=42)
     
-    train_dataset = InteractionDataset(positive_pairs=train_pairs, hard_negatives=negative_pairs, num_users=162, num_items=6491)
-    val_dataset = InteractionDataset(positive_pairs=val_pairs, hard_negatives=negative_pairs, num_users=162, num_items=6491)
-    test_dataset = InteractionDataset(positive_pairs=test_pairs, hard_negatives=negative_pairs, num_users=162, num_items=6491)
+    train_dataset = InteractionDataset(positive_pairs=train_pairs, hard_negatives=negative_pairs, num_users=155, num_items=6498)
+    val_dataset = InteractionDataset(positive_pairs=val_pairs, hard_negatives=negative_pairs, num_users=155, num_items=6498)
+    test_dataset = InteractionDataset(positive_pairs=test_pairs, hard_negatives=negative_pairs, num_users=155, num_items=6498)
     
     train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=256, shuffle=False)
     test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False)
 
     print("Creating model...")
-    model = NeuralCF(num_users=162, num_items=6491, emb_size=128)
+    model = NeuralCF(num_users=155, num_items=6496, emb_size=128)
 
     print("Training model...")
-    train_model(model=model, train_loader=train_loader, val_loader=val_loader ,edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+    #train_model(model=model, train_loader=train_loader, val_loader=val_loader ,edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+    
+    model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
+    
+    print("Testing model...")
+    emmbeds_visualization(model=model, test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights)
+    
+    test_visualization(model=model, test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights)
+    all_score_visualization(test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights)
+    
+    

@@ -36,6 +36,9 @@ class NeuralCF(nn.Module):
         self.conv1 = GCNConv(emb_size, emb_size) # GNN layer
         self.conv2 = GCNConv(emb_size, emb_size)
         
+        self.bn1 = nn.BatchNorm1d(emb_size) # Batch Normalization
+        self.bn2 = nn.BatchNorm1d(emb_size)
+        
         # GMF 
         self.user_emb_gmf = nn.Embedding(num_users, emb_size)
         self.item_emb_gmf = nn.Embedding(num_items, emb_size)
@@ -63,6 +66,7 @@ class NeuralCF(nn.Module):
         for h in hidden_layers:
             layers.append(nn.Linear(input_size, h))
             layers.append(nn.ReLU())
+            layers.append(nn.Dropout(0.2)) # Dropout 추가
             input_size = h
         self.mlp = nn.Sequential(*layers)
 
@@ -79,10 +83,7 @@ class NeuralCF(nn.Module):
         # GNN
         x = self.embedding.weight
         x = self.conv1(x, edge_index, edge_weight)
-        x = F.relu(x)
         x = self.conv2(x, edge_index, edge_weight)
-        
-        #x = F.relu(x)
         
         liquor_emb = x[user_indices]
         ingredient_emb = x[item_indices]

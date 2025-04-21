@@ -64,7 +64,7 @@ node_id,name,id,node_type,is_hub
 71,albacore_tuna,,ingredient,hub
 72,albacore_tuna_in_water,,ingredient,no_hub
 73,alcaparrado,,ingredient,no_hub
-74,alcohol,,liquor,no_hub
+74,alcohol,,ingredient,no_hub
 75,ale,,liquor,no_hub
 76,aleppo_pepper,,ingredient,no_hub
 77,alfalfa,,ingredient,hub
@@ -207,7 +207,7 @@ node_id,name,id,node_type,is_hub
 219,au_gratin_potato_mix,,ingredient,no_hub
 220,au_jus_mix,,ingredient,no_hub
 221,au_jus_sauce,,ingredient,no_hub
-222,aubergine,,liquor,no_hub
+222,aubergine,,ingredient,no_hub
 223,avocado,,ingredient,hub
 224,avocado_dip,,ingredient,no_hub
 225,avocado_oil,,ingredient,no_hub
@@ -811,7 +811,7 @@ node_id,name,id,node_type,is_hub
 869,candied_citron_peel,,ingredient,no_hub
 870,candied_citrus_peel,,ingredient,no_hub
 871,candied_fruit,,ingredient,no_hub
-872,candied_ginger,,liquor,no_hub
+872,candied_ginger,,ingredient,no_hub
 873,candied_green_cherry,,ingredient,no_hub
 874,candied_lemon_peel,,ingredient,no_hub
 875,candied_orange,,ingredient,no_hub
@@ -2066,7 +2066,7 @@ node_id,name,id,node_type,is_hub
 2202,elderberry,,ingredient,hub
 2204,elderflower_liqueur,,liquor,no_hub
 2206,elephant_garlic_clove,,ingredient,no_hub
-2207,emeril's_original_essence,,liquor,no_hub
+2207,emeril's_original_essence,,ingredient,no_hub
 2208,emmenthaler_cheese,,ingredient,no_hub
 2209,enchilada_sauce,,ingredient,no_hub
 2210,endive,,ingredient,hub
@@ -2689,7 +2689,7 @@ node_id,name,id,node_type,is_hub
 2872,gluten_free_baking_mix,,ingredient,no_hub
 2873,gluten_free_baking_powder,,ingredient,no_hub
 2874,gluten_free_bread,,ingredient,no_hub
-2875,gluten_free_breadcrumb,,liquor,no_hub
+2875,gluten_free_breadcrumb,,ingredient,no_hub
 2876,gluten_free_chocolate_chip,,ingredient,no_hub
 2877,gluten_free_flour,,ingredient,no_hub
 2878,gluten_free_oat,,ingredient,no_hub
@@ -3942,7 +3942,7 @@ node_id,name,id,node_type,is_hub
 4218,minced_clam,,ingredient,no_hub
 4219,minced_clams_with_juice,,ingredient,no_hub
 4220,minced_garlic_clove,,ingredient,no_hub
-4221,minced_ginger,,liquor,no_hub
+4221,minced_ginger,,ingredient,no_hub
 4222,minced_meat,,ingredient,no_hub
 4223,mincemeat,,ingredient,no_hub
 4224,mineral_water,,ingredient,no_hub
@@ -5145,7 +5145,7 @@ node_id,name,id,node_type,is_hub
 5519,romano_cheese,,ingredient,hub
 5520,rome_apple,,ingredient,no_hub
 5521,romesco_sauce,,ingredient,no_hub
-5522,root_beer,,liquor,no_hub
+5522,root_beer,,ingredient,no_hub
 5523,root_beer_concentrate,,ingredient,no_hub
 5524,root_beer_extract,,ingredient,no_hub
 5525,root_vegetable,,ingredient,no_hub

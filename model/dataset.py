@@ -59,7 +59,7 @@ def edges_index():
     return edge_index, edge_weights
 
 class InteractionDataset(Dataset):
-    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=5.0):
+    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=1.0):
         self.samples = []
         self.num_users = num_users
         self.num_items = num_items
@@ -103,8 +103,8 @@ def preprocess():
         elif row['node_type'] == "compound":
             compounds_map.append(row['node_id'])
     
-    #print(len(liquors_map))
-    #print(len(ingredients_map))
+    print(len(liquors_map))
+    print(len(ingredients_map))
     
     with open("./model/data/liquor_key.pkl", "wb") as f:
         pickle.dump(liquors_map, f)
@@ -292,7 +292,7 @@ def make_emb():
     torch.save(ingredient_embedding_tensor, "./model/data/ingredient_init_embedding.pt")
     
 class TripletInteractionDataset(Dataset):
-    def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=1.0):
+    def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=5.0):
         self.triplets = []
         self.positive_pairs = list(positive_pairs)
         self.positive_set = set(positive_pairs)
@@ -322,5 +322,4 @@ class TripletInteractionDataset(Dataset):
         return torch.tensor(u, dtype=torch.long), torch.tensor(pos, dtype=torch.long), torch.tensor(neg, dtype=torch.long)
 
 if __name__ == "__main__":
-    #preprocess()
-    make_emb()
+    preprocess()
