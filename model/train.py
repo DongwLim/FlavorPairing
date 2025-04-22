@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 
 from dataset import InteractionDataset, map_graph_nodes, edges_index
-from plot import plot_score_distribution, all_score_visualization
+from plot import plot_score_distribution, all_score_visualization, visualize_embeddings
 from models import NeuralCF
 
 class EarlyStopping:
@@ -118,32 +118,6 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
             torch.save(best_model, "./model/checkpoint/best_model.pth")
             break
 
-def test_visualization(model, test_loader, edges_index, edges_weights, edges_type):
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    model.to(device)
-
-    edges_index = edges_index.to(device)
-    edges_weights = edges_weights.to(device)
-    
-    model.eval()
-    pos_scores = []
-    neg_scores = []
-    
-    with torch.no_grad():
-        for user, item, label in test_loader:
-            user = user.long()
-            item = item.long()
-            label = label.float()
-
-            user, item, label = user.to(device), item.to(device), label.to(device)
-
-            output = model(user, item, edges_index, edges_type, edges_weights)
-            
-            pos_scores.extend(output[label == 1].cpu().numpy())
-            neg_scores.extend(output[label == 0].cpu().numpy())
-    
-    plot_score_distribution(pos_scores, neg_scores, title="Score Distribution")
-
 if __name__ == "__main__":
     print("Loading data...")
     mapping = map_graph_nodes()
@@ -204,12 +178,3 @@ if __name__ == "__main__":
 
     print("Training model...")
     train_model(model=model, train_loader=train_loader, val_loader=val_loader , edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
-    
-    model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
-    
-    print("Testing model...")
-    
-    test_visualization(model=model, test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights, edges_type=edges_type)
-    all_score_visualization(test_loader=test_loader, edges_index=edges_indexes, edges_weights=edges_weights, edges_type=edges_type)
-    
-    

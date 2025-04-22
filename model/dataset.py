@@ -46,6 +46,9 @@ def edges_index(edge_type_map):
         src, tgt = row['id_1'], row['id_2']
         type = row['edge_type']
         
+        if type == "ingr-fcomp" or type == "ingr-dcomp":
+            continue
+        
         src_idx = nodes_map[src]
         tgt_idx = nodes_map[tgt]
         

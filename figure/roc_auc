@@ -1,5 +1,0 @@
-gcn without weight  roc_auc : 0.8517    val_loss : 0.3911   val_accuracy : 0.8689
-rgcn without weight roc_auc : 0.8475    val_loss : 0.3799   val_accuracy : 0.8876
-
-gcn with weight     roc_auc : 0.8508    val_loss : 0.3800   val_accuracy : 0.8817
-rgcn with weight    roc_auc : 0.8573    val_loss : 0.3863   val_accuracy : 0.8850

@@ -14,7 +14,7 @@ loss.backward()
 """
 
 class NeuralCF(nn.Module):
-    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=3, emb_size=128, hidden_layers=[128, 64, 32], user_init=None, item_init=None):
+    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[128, 64, 32], user_init=None, item_init=None):
         super(NeuralCF, self).__init__()
         """
             num_users       :   술 노드의 개수
@@ -30,22 +30,23 @@ class NeuralCF(nn.Module):
             GNN 구현 완료 
             CSP_Aggregation 미구현
         """
+        self.num_nodes = num_nodes
         
         self.embedding = nn.Embedding(num_nodes, emb_size) # GNN에서 사용될 노드 임베딩
         
         # RGNN
-        self.rgcn1 = RGCNConv(emb_size, emb_size, num_relations)
+        """self.rgcn1 = RGCNConv(emb_size, emb_size, num_relations)
         self.rgcn2 = RGCNConv(emb_size, emb_size, num_relations)
-        self.rgcn3 = RGCNConv(emb_size, emb_size, num_relations)
+        self.rgcn3 = RGCNConv(emb_size, emb_size, num_relations)"""
         
         self.wrgcn = WeightedRGCNConv(emb_size, emb_size, num_relations) # GNN layer
         self.wrgcn2 = WeightedRGCNConv(emb_size, emb_size, num_relations)
         self.wrgcn3 = WeightedRGCNConv(emb_size, emb_size, num_relations)
         
         # GNN
-        self.conv1 = GCNConv(emb_size, emb_size) # GNN layer
+        """self.conv1 = GCNConv(emb_size, emb_size) # GNN layer
         self.conv2 = GCNConv(emb_size, emb_size)
-        self.conv3 = GCNConv(emb_size, emb_size)
+        self.conv3 = GCNConv(emb_size, emb_size)"""
         
         # GMF 
         self.user_emb_gmf = nn.Embedding(num_users, emb_size)
@@ -89,7 +90,7 @@ class NeuralCF(nn.Module):
             edge_weight  :   GNN에서 사용할 edge_weight (default: None)
         """
         # RGCN 기반 임베딩
-        x = self.embedding.weight
+        x = self.embedding(torch.arange(self.num_nodes, device=edge_index.device))
         
         """x = self.rgcn1(x, edge_index, edge_type)
         x = self.rgcn2(x, edge_index, edge_type)
@@ -100,8 +101,7 @@ class NeuralCF(nn.Module):
         x = self.wrgcn3(x, edge_index, edge_type, edge_weight)
         
         # GNN 기반 임베딩
-        """x = self.embedding.weight
-        x = self.conv1(x, edge_index, edge_weight)
+        """x = self.conv1(x, edge_index, edge_weight)
         x = self.conv2(x, edge_index, edge_weight)
         x = self.conv3(x, edge_index, edge_weight)"""
 

@@ -29,7 +29,33 @@ def plot_score_distribution(pos_score, neg_score, title="Score Distribution"):
     plt.ylabel('Frequency')
     plt.legend()
     plt.grid()
-    plt.savefig("./figure/rgcn_plot0.png")
+    plt.savefig("./figure/gcn_plot_1.png")
+    
+def test_visualization(model, test_loader, edges_index, edges_weights, edges_type):
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    model.to(device)
+
+    edges_index = edges_index.to(device)
+    edges_weights = edges_weights.to(device)
+    
+    model.eval()
+    pos_scores = []
+    neg_scores = []
+    
+    with torch.no_grad():
+        for user, item, label in test_loader:
+            user = user.long()
+            item = item.long()
+            label = label.float()
+
+            user, item, label = user.to(device), item.to(device), label.to(device)
+
+            output = model(user, item, edges_index, edges_type, edges_weights)
+            
+            pos_scores.extend(output[label == 1].cpu().numpy())
+            neg_scores.extend(output[label == 0].cpu().numpy())
+    
+    plot_score_distribution(pos_scores, neg_scores, title="Score Distribution")
             
 def all_score_visualization(test_loader, edges_index, edges_weights, edges_type):
     all_scores = []
@@ -50,3 +76,35 @@ def all_score_visualization(test_loader, edges_index, edges_weights, edges_type)
     plt.ylabel('Frequency')
     plt.grid(True)
     plt.savefig("./figure/all_score_visualization_output.png")
+    
+def visualize_embeddings(before_emb, after_emb, user_ids, item_ids, title='Embedding Comparison'):
+    # CPU 이동
+    before_np = before_emb.detach().cpu().numpy()
+    after_np = after_emb.detach().cpu().numpy()
+    
+    # PCA로 2차원 변환
+    pca = PCA(n_components=2)
+    combined = pca.fit_transform(np.vstack([before_np, after_np]))
+
+    num_nodes = before_np.shape[0]
+    before_pca = combined[:num_nodes]
+    after_pca = combined[num_nodes:]
+
+    # 시각화
+    plt.figure(figsize=(10, 5))
+    
+    # Before
+    plt.subplot(1, 2, 1)
+    plt.title("Before Training")
+    plt.scatter(before_pca[user_ids, 0], before_pca[user_ids, 1], label='Users', alpha=0.6)
+    plt.scatter(before_pca[item_ids, 0], before_pca[item_ids, 1], label='Items', alpha=0.6)
+    plt.legend()
+
+    # After
+    plt.subplot(1, 2, 2)
+    plt.title("After Training")
+    plt.scatter(after_pca[user_ids, 0], after_pca[user_ids, 1], label='Users', alpha=0.6)
+    plt.scatter(after_pca[item_ids, 0], after_pca[item_ids, 1], label='Items', alpha=0.6)
+    plt.legend()
+
+    plt.savefig("./figure/embedding_visualization.png")

@@ -3,3 +3,5 @@ model/checkpoint
 model/utils.py
 preprocess.py
 utils.py
+figure/
+gcn_with_comp.pth
