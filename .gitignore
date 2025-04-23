@@ -1,7 +1,7 @@
 __pycache__/
 model/checkpoint
 model/utils.py
-preprocess.py
+preprocessing.py
 utils.py
 figure/
 gcn_with_comp.pth

@@ -91,4 +91,16 @@ def get_csp_with_dim_reduction(output_dim=128):
 
     print(f"저장 완료: {output_file}")
 
-get_csp_with_dim_reduction(output_dim=128)
+df = pd.read_csv('./dataset/nodes_191120_updated.csv')
+
+inng = 0
+li = 0
+
+for _, rows in df.iterrows():
+    if rows['node_type'] == 'ingredient':
+        inng = inng + 1
+    elif rows['node_type'] == 'liquor':
+        li = li + 1
+
+print(f"ingredient : {inng}")
+print(f"liquor : {li}")

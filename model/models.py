@@ -33,6 +33,9 @@ class NeuralCF(nn.Module):
         self.num_nodes = num_nodes
         
         self.embedding = nn.Embedding(num_nodes, emb_size) # GNN에서 사용될 노드 임베딩
+
+        self.norm1 = nn.LayerNorm(emb_size)
+        self.norm2 = nn.LayerNorm(emb_size)
         
         # RGNN
         """self.rgcn1 = RGCNConv(emb_size, emb_size, num_relations)
@@ -97,7 +100,13 @@ class NeuralCF(nn.Module):
         x = self.rgcn3(x, edge_index, edge_type)"""
         
         x = self.wrgcn(x, edge_index, edge_type, edge_weight)
+        x = F.relu(x)
+        x = F.dropout(x, p=0.2, training=self.training)
+        x = self.norm1(x)
         x = self.wrgcn2(x, edge_index, edge_type, edge_weight)
+        x = F.relu(x)
+        x = F.dropout(x, p=0.2, training=self.training)
+        x = self.norm2(x)
         x = self.wrgcn3(x, edge_index, edge_type, edge_weight)
         
         # GNN 기반 임베딩
@@ -105,19 +114,14 @@ class NeuralCF(nn.Module):
         x = self.conv2(x, edge_index, edge_weight)
         x = self.conv3(x, edge_index, edge_weight)"""
 
-        # GMF 임베딩 (가능하면 별도 레이어로 분리)
-        gmf_user_emb = self.user_emb_gmf
-        gmf_item_emb = self.item_emb_gmf
-
-        # MLP 임베딩 (가능하면 별도 레이어로 분리)
-        mlp_user_emb = self.user_emb_mlp
-        mlp_item_emb = self.item_emb_mlp
-
-        # 또는 GNN 결과를 분기해서도 가능
+        # GNN 결과 슬라이싱
         gmf_user_emb = x[user_indices]
         gmf_item_emb = x[item_indices]
         mlp_user_emb = x[user_indices]
         mlp_item_emb = x[item_indices]
+
+        gmf_user_emb = F.normalize(gmf_user_emb, dim=-1)
+        gmf_item_emb = F.normalize(gmf_item_emb, dim=-1)
 
         # GMF
         gmf_output = gmf_user_emb * gmf_item_emb

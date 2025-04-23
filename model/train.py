@@ -7,10 +7,19 @@ import pandas as pd
 import pickle
 from sklearn.model_selection import train_test_split
 import numpy as np
+import random
 
 from dataset import InteractionDataset, map_graph_nodes, edges_index
-from plot import plot_score_distribution, all_score_visualization, visualize_embeddings
+from plot import test_visualization
 from models import NeuralCF
+
+def set_seed(seed=123):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)  # GPU에서도 고정
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 class EarlyStopping:
     def __init__(self, patience=10, delta=0):
@@ -119,6 +128,8 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
             break
 
 if __name__ == "__main__":
+    set_seed()
+
     print("Loading data...")
     mapping = map_graph_nodes()
     
@@ -174,7 +185,10 @@ if __name__ == "__main__":
     test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False)
 
     print("Creating model...")
-    model = NeuralCF(num_users=155, num_items=6496, emb_size=128)
+    model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
 
     print("Training model...")
     train_model(model=model, train_loader=train_loader, val_loader=val_loader , edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+
+    model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
+    test_visualization(model, test_loader,edges_indexes, edges_weights, edges_type)
