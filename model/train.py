@@ -10,14 +10,14 @@ import numpy as np
 import random
 
 from dataset import InteractionDataset, map_graph_nodes, edges_index
-from plot import test_visualization
+from plot import test_visualization, all_score_visualization
 from models import NeuralCF
 
 def set_seed(seed=123):
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)  # GPU에서도 고정
+    torch.cuda.manual_seed(seed) 
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
@@ -192,3 +192,5 @@ if __name__ == "__main__":
 
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     test_visualization(model, test_loader,edges_indexes, edges_weights, edges_type)
+
+    all_score_visualization(edges_indexes, edges_weights, edges_type)

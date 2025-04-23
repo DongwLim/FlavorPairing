@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score
-
+from tqdm import tqdm
 import torch
 import numpy as np
 from sklearn.decomposition import PCA
 import torch.nn as nn
-
+import random
 from models import NeuralCF
 from dataset import map_graph_nodes
 
@@ -57,17 +57,37 @@ def test_visualization(model, test_loader, edges_index, edges_weights, edges_typ
     
     plot_score_distribution(pos_scores, neg_scores, title="Score Distribution")
             
-def all_score_visualization(test_loader, edges_index, edges_weights, edges_type):
+def all_score_visualization(edges_index, edges_weights, edges_type):
     all_scores = []
     
-    model = NeuralCF(num_users=155, num_items=6496, emb_size=128)
+    model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     model.eval()
+
+    mapping = map_graph_nodes()
     
+    lid_to_idx = mapping['liquor']
+    iid_to_idx = mapping['ingredient']
+
+    lid = []
+    iid = []
+
+    for i in range(7101):
+        if i in lid_to_idx:
+            lid.append(lid_to_idx[i])
+        elif i in iid_to_idx:
+            iid.append(iid_to_idx[i])
+        else:
+            continue
+
+    sample_iid = random.sample(iid, 100)  
+    sample_lid = random.sample(lid, 5)
+
     with torch.no_grad():
-        for user, item, label in test_loader:
-            preds = model(user, item, edges_index, edges_type, edges_weights)
-            all_scores.extend(preds.cpu().numpy())
+        for i in tqdm(sample_iid, desc="Processing ingredients"):
+            for l in sample_lid:
+                preds = model(l, i, edges_index, edges_type, edges_weights)
+                all_scores.append(preds.item())
             
     plt.figure(figsize=(10, 6))
     plt.hist(all_scores, bins=50, alpha=0.7, color='green')

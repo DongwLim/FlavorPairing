@@ -165,23 +165,25 @@ class WeightedRGCNConv(MessagePassing):
             nn.init.zeros_(self.bias)
 
     def forward(self, x, edge_index, edge_type, edge_weight=None):
-        '''
+        """
         x: [num_nodes, in_channels]
         edge_index: [2, num_edges]
         edge_type: [num_edges]
         edge_weight: [num_edges] or None
-        '''
+        """
+        
         if edge_weight is None:
             edge_weight = torch.ones(edge_index.size(1), device=edge_index.device)
 
         return self.propagate(edge_index, x=x, edge_type=edge_type, edge_weight=edge_weight)
 
     def message(self, x_j, edge_type, edge_weight):
-        '''
+        """
         x_j: source node features [num_edges, in_channels]
         edge_type: edge types [num_edges]
         edge_weight: edge weights [num_edges]
-        '''
+        """
+
         # 각 관계에 따라 다른 transformation
         out = torch.zeros(x_j.size(0), self.out_channels, device=x_j.device)
 
