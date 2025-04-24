@@ -2,6 +2,7 @@ import pandas as pd
 import pickle
 import numpy as np
 from sklearn.decomposition import PCA
+from model.dataset import map_graph_nodes, edges_index
 
 def node_data_add_liquor():
     df =  pd.read_csv("./dataset/Hub_Nodes.csv")
@@ -21,7 +22,7 @@ def node_data_add_liquor():
     al.to_csv("./dataset/Alcohol-Related_Hub_Nodes.csv", index=False)
 
 def get_csp():
-    with open("./dataset/node2fp_revised_1120.pickle", "rb") as f:
+    with open("./dataset/flavor diffusion/node2fp_revised_1120.pickle", "rb") as f:
         binary_dict = pickle.load(f)
 
     valid_node_vectors = {}
@@ -39,8 +40,8 @@ def get_csp():
     for node_id, vec in sample_items:
         print(f"Node {node_id}: {vec[:5]} ...")  
 
-    with open("./dataset/compound_embeddings.pkl", "wb") as f:
-        pickle.dump(valid_node_vectors, f)
+    #with open("./dataset/compound_embeddings.pkl", "wb") as f:
+    #    pickle.dump(valid_node_vectors, f)
 
 
 """df = pd.read_csv("./Unique_Target_Nodes_from_ingr-fcomp_Edges.csv")
@@ -91,16 +92,15 @@ def get_csp_with_dim_reduction(output_dim=128):
 
     print(f"저장 완료: {output_file}")
 
-df = pd.read_csv('./dataset/nodes_191120_updated.csv')
-
-inng = 0
-li = 0
-
-for _, rows in df.iterrows():
-    if rows['node_type'] == 'ingredient':
-        inng = inng + 1
-    elif rows['node_type'] == 'liquor':
-        li = li + 1
-
-print(f"ingredient : {inng}")
-print(f"liquor : {li}")
+if __name__ == "__main__":
+    get_csp()
+    
+    map = map_graph_nodes()
+    
+    with open("./dataset/flavor diffusion/node2fp_revised_1120.pickle", "rb") as f:
+        binary_dict = pickle.load(f)
+        
+    nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
+    edges_df = pd.read_csv("./dataset/edges_191120_updated.csv")
+    
+    

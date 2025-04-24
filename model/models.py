@@ -1,8 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch_geometric.nn import GCNConv, RGCNConv, NNConv, MessagePassing
-from torch_geometric.utils import softmax
+from torch_geometric.nn import MessagePassing
 
 """
 all_node_emb = GNN(edge_index)
@@ -14,7 +13,7 @@ loss.backward()
 """
 
 class NeuralCF(nn.Module):
-    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[256,128, 64, 32], user_init=None, item_init=None):
+    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[256,128, 64, 32], emb_init = None):
         super(NeuralCF, self).__init__()
         """
             num_users       :   술 노드의 개수
@@ -33,6 +32,10 @@ class NeuralCF(nn.Module):
         self.num_nodes = num_nodes
         
         self.embedding = nn.Embedding(num_nodes, emb_size) # GNN에서 사용될 노드 임베딩
+        
+        if emb_init is not None:
+            for node_idx, init_vector in emb_init.items():
+                self.embedding.weight.data[node_idx] = torch.tensor(init_vector, dtype=torch.float32)
 
         self.norm1 = nn.LayerNorm(emb_size)
         self.norm2 = nn.LayerNorm(emb_size)

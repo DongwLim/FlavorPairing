@@ -4,12 +4,11 @@ import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
 import pandas as pd
-import pickle
 from sklearn.model_selection import train_test_split
 import numpy as np
 import random
 
-from dataset import InteractionDataset, map_graph_nodes, edges_index, BPRDataset
+from dataset import map_graph_nodes, edges_index, BPRDataset
 from plot import test_visualization, all_score_visualization
 from models import NeuralCF
 
@@ -216,4 +215,4 @@ if __name__ == "__main__":
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     test_visualization(model, test_loader,edges_indexes, edges_weights, edges_type)
 
-    all_score_visualization(edges_indexes, edges_weights, edges_type)
+    #all_score_visualization(edges_indexes, edges_weights, edges_type)

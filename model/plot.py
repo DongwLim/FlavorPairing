@@ -4,7 +4,6 @@ from tqdm import tqdm
 import torch
 import numpy as np
 from sklearn.decomposition import PCA
-import torch.nn as nn
 import random
 from models import NeuralCF
 from dataset import map_graph_nodes
@@ -18,8 +17,11 @@ def plot_score_distribution(pos_score, neg_score, title="Score Distribution"):
     - neg_score: List or array of negative scores.
     - title: Title of the plot.
     """
-    #sklearn_auc = roc_auc_score(len(pos_score) + len(neg_score), pos_score + neg_score)
-    #print(f"ROC AUC Score: {sklearn_auc:.4f}")
+    true_labels = np.array([1] * len(pos_score) + [0] * len(neg_score))
+    all_scores = np.array(pos_score + neg_score)
+    
+    sklearn_auc = roc_auc_score(true_labels, all_scores)
+    print(f"ROC AUC Score: {sklearn_auc:.4f}")
     
     plt.figure(figsize=(10, 6))
     plt.hist(pos_score, bins=50, alpha=0.5, label='Positive Score', color='blue')

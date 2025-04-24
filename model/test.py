@@ -1,5 +1,3 @@
-import pandas as pd
-import pickle
 from dataset import map_graph_nodes, edges_index
 import torch
 from models import NeuralCF

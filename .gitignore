@@ -4,4 +4,3 @@ model/utils.py
 preprocessing.py
 utils.py
 figure/
-gcn_with_comp.pth
