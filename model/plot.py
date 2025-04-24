@@ -18,8 +18,8 @@ def plot_score_distribution(pos_score, neg_score, title="Score Distribution"):
     - neg_score: List or array of negative scores.
     - title: Title of the plot.
     """
-    sklearn_auc = roc_auc_score([1]*len(pos_score) + [0]*len(neg_score), pos_score + neg_score)
-    print(f"ROC AUC Score: {sklearn_auc:.4f}")
+    #sklearn_auc = roc_auc_score(len(pos_score) + len(neg_score), pos_score + neg_score)
+    #print(f"ROC AUC Score: {sklearn_auc:.4f}")
     
     plt.figure(figsize=(10, 6))
     plt.hist(pos_score, bins=50, alpha=0.5, label='Positive Score', color='blue')
@@ -43,17 +43,18 @@ def test_visualization(model, test_loader, edges_index, edges_weights, edges_typ
     neg_scores = []
     
     with torch.no_grad():
-        for user, item, label in test_loader:
+        for user, pos, neg in test_loader:
             user = user.long()
-            item = item.long()
-            label = label.float()
+            pos = pos.long()
+            neg = neg.long()
 
-            user, item, label = user.to(device), item.to(device), label.to(device)
+            user, pos, neg = user.to(device), pos.to(device), neg.to(device)
 
-            output = model(user, item, edges_index, edges_type, edges_weights)
+            pos_output = model(user, pos, edges_index, edges_type, edges_weights)
+            neg_output = model(user, neg, edges_index, edges_type, edges_weights)
             
-            pos_scores.extend(output[label == 1].cpu().numpy())
-            neg_scores.extend(output[label == 0].cpu().numpy())
+            pos_scores.extend(pos_output.cpu().numpy())
+            neg_scores.extend(neg_output.cpu().numpy())
     
     plot_score_distribution(pos_scores, neg_scores, title="Score Distribution")
             
@@ -80,8 +81,8 @@ def all_score_visualization(edges_index, edges_weights, edges_type):
         else:
             continue
 
-    sample_iid = random.sample(iid, 100)  
-    sample_lid = random.sample(lid, 5)
+    sample_iid = random.sample(iid, 500)  
+    sample_lid = random.sample(lid, 10)
 
     with torch.no_grad():
         for i in tqdm(sample_iid, desc="Processing ingredients"):

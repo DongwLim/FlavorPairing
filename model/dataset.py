@@ -66,7 +66,7 @@ def edges_index(edge_type_map):
     return edge_index, edge_weights, edges_type
 
 class InteractionDataset(Dataset):
-    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=1.0):
+    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=5.0):
         self.samples = []
         self.num_users = num_users
         self.num_items = num_items
@@ -143,7 +143,82 @@ def preprocess():
     print(f"ingr_ingr edges :\t{ingr_ingr}")
     
     edges_df.to_csv("./dataset/edges_191120_updated.csv", index=False)
-            
+    
+class BPRDataset(Dataset):
+    def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=5.0):
+        self.BPR_samples = []
+        self.positive_pairs = []
+        self.negative_pairs = []
+        self.positive_set = set()
+        self.num_users = num_users
+        self.num_items = num_items
+        
+        # Positive samples
+        for _, row in positive_pairs.iterrows():
+            self.positive_pairs.append((row['liquor_id'], row['ingredient_id']))
+            self.positive_set.add((row['liquor_id'], row['ingredient_id']))
+
+        # Hard negatives
+        for _, row in hard_negatives.iterrows():
+            self.negative_pairs.append((row['liquor_id'], row['ingredient_id']))  
+        
+        for pair in self.positive_pairs:
+            u = pair[0]
+            i = pair[1]
+            for _ in range(int(negative_ratio)):
+                while True:
+                    j = random.randint(0, num_items - 1)
+                    if (u, j) not in self.positive_set:
+                        self.BPR_samples.append((u, i, j))
+                        break
+        
+        if hard_negatives is not None:
+            for pair in self.negative_pairs:
+                u = pair[0]
+                j = pair[1]
+                positives_for_u = [i for x, i in self.positive_pairs if x == u]
+                if positives_for_u:
+                    i = random.choice(positives_for_u)
+                    self.BPR_samples.append((u, i, j))
+                        
+    def __len__(self):
+        return len(self.BPR_samples)
+    
+    def __getitem__(self, idx):
+        u, pos, neg = self.BPR_samples[idx]
+        return torch.tensor(u, dtype=torch.long), torch.tensor(pos, dtype=torch.long), torch.tensor(neg, dtype=torch.long)
+                    
+class TripletInteractionDataset(Dataset):
+    def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=5.0):
+        self.triplets = []
+        self.positive_pairs = list(positive_pairs)
+        self.positive_set = set(positive_pairs)
+
+        # Positive samples + Negative samples(random)
+        for u, i in self.positive_pairs:
+            for _ in range(int(negative_ratio)):
+                while True:
+                    j = random.randint(0, num_items - 1)
+                    if (u, j) not in self.positive_set:
+                        self.triplets.append((u, i, j))
+                        break
+
+        # Hard negatives
+        if hard_negatives is not None:
+            for u, j in hard_negatives:
+                positives_for_u = [i for x, i in self.positive_pairs if x == u]
+                if positives_for_u:
+                    i = random.choice(positives_for_u)
+                    self.triplets.append((u, i, j))  # (anchor, positive, hard negative)
+
+    def __len__(self):
+        return len(self.triplets)
+
+    def __getitem__(self, idx):
+        u, pos, neg = self.triplets[idx]
+        return torch.tensor(u, dtype=torch.long), torch.tensor(pos, dtype=torch.long), torch.tensor(neg, dtype=torch.long)
+
+
 def liquors_embbed() -> dict[int, list[float]]:
     # 파일 불러오기
     nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
@@ -297,36 +372,6 @@ def make_emb():
 
     torch.save(liquor_embedding_tensor, "./model/data/liquor_init_embedding.pt")
     torch.save(ingredient_embedding_tensor, "./model/data/ingredient_init_embedding.pt")
-    
-class TripletInteractionDataset(Dataset):
-    def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=5.0):
-        self.triplets = []
-        self.positive_pairs = list(positive_pairs)
-        self.positive_set = set(positive_pairs)
-
-        # Positive samples + Negative samples(random)
-        for u, i in self.positive_pairs:
-            for _ in range(int(negative_ratio)):
-                while True:
-                    j = random.randint(0, num_items - 1)
-                    if (u, j) not in self.positive_set:
-                        self.triplets.append((u, i, j))
-                        break
-
-        # Hard negatives
-        if hard_negatives is not None:
-            for u, j in hard_negatives:
-                positives_for_u = [i for x, i in self.positive_pairs if x == u]
-                if positives_for_u:
-                    i = random.choice(positives_for_u)
-                    self.triplets.append((u, i, j))  # (anchor, positive, hard negative)
-
-    def __len__(self):
-        return len(self.triplets)
-
-    def __getitem__(self, idx):
-        u, pos, neg = self.triplets[idx]
-        return torch.tensor(u, dtype=torch.long), torch.tensor(pos, dtype=torch.long), torch.tensor(neg, dtype=torch.long)
 
 if __name__ == "__main__":
     preprocess()
