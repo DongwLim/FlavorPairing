@@ -44,19 +44,6 @@ class NeuralCF(nn.Module):
         self.wrgcn = WeightedRGCNConv(emb_size, emb_size, num_relations) # GNN layer
         self.wrgcn2 = WeightedRGCNConv(emb_size, emb_size, num_relations)
         self.wrgcn3 = WeightedRGCNConv(emb_size, emb_size, num_relations)
-        
-        # GNN
-        """self.conv1 = GCNConv(emb_size, emb_size) # GNN layer
-        self.conv2 = GCNConv(emb_size, emb_size)
-        self.conv3 = GCNConv(emb_size, emb_size)"""
-        
-        # GMF 
-        self.user_emb_gmf = nn.Embedding(num_users, emb_size)
-        self.item_emb_gmf = nn.Embedding(num_items, emb_size)
-
-        # MLP 
-        self.user_emb_mlp = nn.Embedding(num_users, emb_size)
-        self.item_emb_mlp = nn.Embedding(num_items, emb_size)
 
         layers = []
         input_size = emb_size * 2
@@ -116,6 +103,7 @@ class NeuralCF(nn.Module):
         score = self.output_layer(final_input).squeeze() 
         
         #return torch.sigmoid(logits).squeeze()
+        #score = torch.tanh(score)
         return score
 
 

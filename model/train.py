@@ -42,7 +42,7 @@ class EarlyStopping:
 def bpr_loss(pos_scores, neg_scores):
     return -torch.mean(torch.log(torch.sigmoid(pos_scores - neg_scores) + 1e-10))
 
-def train_model(model, train_loader, val_loader, edges_index, edges_weights, edges_type, num_epochs=10, lr=0.001, weight_decay=1e-5):
+def train_model(model, train_loader, val_loader, edges_index, edges_weights, edges_type, num_epochs=10, lr=0.0002, weight_decay=1e-5):
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     torch.manual_seed(123)
     
@@ -60,6 +60,8 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
     best_model = None
     best_val_loss = float('inf')
 
+    topk = 5
+
     print(f"Training on {device}")
     for epoch in range(num_epochs):
         total_loss = 0
@@ -74,8 +76,25 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
             user, pos, neg = user.to(device), pos.to(device), neg.to(device)
 
             optimizer.zero_grad()
+
             pos_output = model(user, pos, edges_index, edges_type, edges_weights)
-            neg_output = model(user, neg, edges_index, edges_type, edges_weights)
+
+            num_neg_candidates = 10
+            neg_candidates = torch.randint(0, 6498, (user.size(0), num_neg_candidates), device=device)
+
+            user_expand = user.unsqueeze(1).expand_as(neg_candidates)
+            user_flat = user_expand.reshape(-1)
+            neg_flat = neg_candidates.reshape(-1)
+
+            neg_scores = model(user_flat, neg_flat, edges_index, edges_type, edges_weights)
+            neg_scores = neg_scores.view(user.size(0), num_neg_candidates)
+
+            hard_neg_scores, hard_neg_indices = torch.topk(neg_scores, k=topk, dim=1)
+
+            random_idx = torch.randint(0, topk, (user.size(0),), device=device)
+            hard_neg = neg_candidates[torch.arange(user.size(0)), hard_neg_indices[torch.arange(user.size(0)), random_idx]]
+
+            neg_output = model(user, hard_neg, edges_index, edges_type, edges_weights)
             loss = bpr_loss(pos_output, neg_output)
             #loss = criterion(output, label)
 
@@ -202,9 +221,9 @@ if __name__ == "__main__":
     val_dataset = BPRDataset(positive_pairs=val_pairs, hard_negatives=negative_pairs, num_users=155, num_items=6498)
     test_dataset = BPRDataset(positive_pairs=test_pairs, hard_negatives=negative_pairs, num_users=155, num_items=6498)
     
-    train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=256, shuffle=False)
-    test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False)
+    train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=64, shuffle=False)
+    test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
 
     print("Creating model...")
     model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
