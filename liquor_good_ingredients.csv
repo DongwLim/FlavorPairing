@@ -1348,109 +1348,554 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,origin
 311,banana_liqueur,3972,low_fat_vanilla_ice_cream,라이트 크림 디저트
 311,banana_liqueur,6196,sugar_free_vanilla_ice_cream,라이트 크림 디저트
 311,banana_liqueur,6653,vanilla_ice_cream,라이트 크림 디저트
-423,beer,2606,fried_chicken,튀김
-423,beer,139,andouille_sausage,짭짤한 안주
-423,beer,399,beef_sausage,짭짤한 안주
-423,beer,558,bob_evans_sausage,짭짤한 안주
-423,beer,666,braunschweiger_sausage,짭짤한 안주
-423,beer,686,breakfast_sausage,짭짤한 안주
-423,beer,687,breakfast_sausage_link,짭짤한 안주
-423,beer,688,breakfast_sausage_patty,짭짤한 안주
-423,beer,726,brown_and_serve_sausage,짭짤한 안주
-423,beer,772,bulk_italian_sausage,짭짤한 안주
-423,beer,773,bulk_pork_sausage,짭짤한 안주
-423,beer,774,bulk_sausage,짭짤한 안주
-423,beer,1140,chicken_apple_sausage,짭짤한 안주
-423,beer,1187,chicken_sausage,짭짤한 안주
-423,beer,1247,chinese_sausage,짭짤한 안주
-423,beer,1345,chorizo_sausage,짭짤한 안주
-423,beer,1536,cooked_italian_sausage,짭짤한 안주
-423,beer,1557,cooked_sausage,짭짤한 안주
-423,beer,1637,country_sausage,짭짤한 안주
-423,beer,2817,garlic_sausage,짭짤한 안주
-423,beer,3104,ground_pork_breakfast_sausage,짭짤한 안주
-423,beer,3112,ground_sausage,짭짤한 안주
-423,beer,3341,hot_italian_sausage,짭짤한 안주
-423,beer,3342,hot_italian_sausage_link,짭짤한 안주
-423,beer,3343,hot_italian_turkey_sausage,짭짤한 안주
-423,beer,3354,hot_pork_sausage,짭짤한 안주
-423,beer,3363,hot_sausage,짭짤한 안주
-423,beer,3455,italian_chicken_sausage,짭짤한 안주
-423,beer,3463,italian_pork_sausage,짭짤한 안주
-423,beer,3468,italian_sausage,짭짤한 안주
-423,beer,3481,italian_sweet_sausage,짭짤한 안주
-423,beer,3484,italian_turkey_sausage,짭짤한 안주
-423,beer,3485,italian_turkey_sausage_link,짭짤한 안주
-423,beer,3531,jimmy_dean_sausage,짭짤한 안주
-423,beer,3650,lamb_sausage,짭짤한 안주
-423,beer,3863,linguica_sausage,짭짤한 안주
-423,beer,3865,link_sausage,짭짤한 안주
-423,beer,3890,little_smokies_sausage,짭짤한 안주
-423,beer,3896,liver_sausage,짭짤한 안주
-423,beer,4069,maple_sausage,짭짤한 안주
-423,beer,4199,mild_italian_sausage,짭짤한 안주
-423,beer,4202,mild_sausage,짭짤한 안주
-423,beer,4944,polish_sausage,짭짤한 안주
-423,beer,4999,pork_sausage,짭짤한 안주
-423,beer,5000,pork_sausage_casing,짭짤한 안주
-423,beer,5001,pork_sausage_link,짭짤한 안주
-423,beer,5506,roll_of_pork_sausage,짭짤한 안주
-423,beer,5584,sage_sausage,짭짤한 안주
-423,beer,5653,sausage,짭짤한 안주
-423,beer,5654,sausage_link,짭짤한 안주
-423,beer,5655,sausage_meat,짭짤한 안주
-423,beer,5656,sausage_patty,짭짤한 안주
-423,beer,5884,smoked_beef_sausage,짭짤한 안주
-423,beer,5894,smoked_link_sausage,짭짤한 안주
-423,beer,5903,smoked_pork_sausage,짭짤한 안주
-423,beer,5906,smoked_sausage,짭짤한 안주
-423,beer,5914,smoked_turkey_sausage,짭짤한 안주
-423,beer,6043,spicy_bulk_sausage,짭짤한 안주
-423,beer,6046,spicy_pork_sausage,짭짤한 안주
-423,beer,6047,spicy_sausage,짭짤한 안주
-423,beer,6211,summer_sausage,짭짤한 안주
-423,beer,6252,sweet_italian_sausage,짭짤한 안주
-423,beer,6253,sweet_italian_sausage_link,짭짤한 안주
-423,beer,6254,sweet_italian_turkey_sausage,짭짤한 안주
-423,beer,6274,sweet_sausage,짭짤한 안주
-423,beer,6510,turkey_breakfast_sausage,짭짤한 안주
-423,beer,6535,turkey_sausage,짭짤한 안주
-423,beer,6731,vegetarian_sausage,짭짤한 안주
-423,beer,6752,vienna_sausage,짭짤한 안주
-423,beer,4240,miniature_pretzel,짭짤한 안주
-423,beer,4241,miniature_pretzel_twist,짭짤한 안주
-423,beer,5089,pretzel,짭짤한 안주
-423,beer,5090,pretzel_crumb,짭짤한 안주
-423,beer,5092,pretzel_rod,짭짤한 안주
-423,beer,5093,pretzel_roll,짭짤한 안주
-423,beer,5094,pretzel_stick,짭짤한 안주
-423,beer,5095,pretzel_twist,짭짤한 안주
-423,beer,5868,small_pretzel,짭짤한 안주
-423,beer,3169,hamburger,구운 고기
-423,beer,3170,hamburger_bun,구운 고기
-423,beer,3171,hamburger_bun_with_sesame_seed,구운 고기
-423,beer,3172,hamburger_buns_with_sesame_seed,구운 고기
-423,beer,3173,hamburger_meat,구운 고기
-423,beer,3174,hamburger_patty,구운 고기
-423,beer,3702,lean_hamburger,구운 고기
-423,beer,4481,onion_hamburger_bun,구운 고기
-423,beer,6816,wheat_hamburger_bun,구운 고기
-423,beer,6990,whole_wheat_hamburger_bun,구운 고기
-423,beer,1785,curry,향신료 음식
-423,beer,1786,curry_leaf,향신료 음식
-423,beer,1787,curry_paste,향신료 음식
-423,beer,1788,curry_powder,향신료 음식
-423,beer,1789,curry_sauce,향신료 음식
-423,beer,1975,dried_curry_leaf,향신료 음식
-423,beer,3000,green_curry_paste,향신료 음식
-423,beer,4027,madras_curry_powder,향신료 음식
-423,beer,4194,mild_curry_paste,향신료 음식
-423,beer,4195,mild_curry_powder,향신료 음식
-423,beer,4587,panang_curry_paste,향신료 음식
-423,beer,5287,red_curry_paste,향신료 음식
-423,beer,6388,thai_curry_paste,향신료 음식
-423,beer,6393,thai_red_curry_paste,향신료 음식
-423,beer,7061,yellow_curry_paste,향신료 음식
+423,beer,2296,fat_free_refried_bean,튀김 & 바삭한 음식
+423,beer,2420,french's_french_fried_onion,튀김 & 바삭한 음식
+423,beer,2428,french_fried_onion,튀김 & 바삭한 음식
+423,beer,2429,french_fried_onion_ring,튀김 & 바삭한 음식
+423,beer,2605,fried_bacon,튀김 & 바삭한 음식
+423,beer,2606,fried_chicken,튀김 & 바삭한 음식
+423,beer,2607,fried_chinese_noodle,튀김 & 바삭한 음식
+423,beer,2608,fried_corn_tortilla_strip,튀김 & 바삭한 음식
+423,beer,2609,fried_onion,튀김 & 바삭한 음식
+423,beer,2610,fried_rice,튀김 & 바삭한 음식
+423,beer,2611,fried_shallot,튀김 & 바삭한 음식
+423,beer,2612,fried_tofu,튀김 & 바삭한 음식
+423,beer,5404,refried_bean,튀김 & 바삭한 음식
+423,beer,5405,refried_black_bean,튀김 & 바삭한 음식
+423,beer,6730,vegetarian_refried_bean,튀김 & 바삭한 음식
+423,beer,556,bluefish,튀김 & 바삭한 음식
+423,beer,557,bluefish_fillet,튀김 & 바삭한 음식
+423,beer,802,butterfish,튀김 & 바삭한 음식
+423,beer,1023,catfish,튀김 & 바삭한 음식
+423,beer,1024,catfish_fillet,튀김 & 바삭한 음식
+423,beer,1456,cod_fish_fillet,튀김 & 바삭한 음식
+423,beer,1676,crawfish,튀김 & 바삭한 음식
+423,beer,1677,crawfish_tail,튀김 & 바삭한 음식
+423,beer,1678,crawfish_tail_meat,튀김 & 바삭한 음식
+423,beer,1679,crayfish,튀김 & 바삭한 음식
+423,beer,1680,crayfish_tail,튀김 & 바삭한 음식
+423,beer,1794,cuttlefish,튀김 & 바삭한 음식
+423,beer,2363,firm_white_fish,튀김 & 바삭한 음식
+423,beer,2364,fish,튀김 & 바삭한 음식
+423,beer,2365,fish_bone,튀김 & 바삭한 음식
+423,beer,2366,fish_bouillon_cube,튀김 & 바삭한 음식
+423,beer,2367,fish_cake,튀김 & 바삭한 음식
+423,beer,2368,fish_fillet,튀김 & 바삭한 음식
+423,beer,2369,fish_fumet,튀김 & 바삭한 음식
+423,beer,2370,fish_head,튀김 & 바삭한 음식
+423,beer,2371,fish_roe,튀김 & 바삭한 음식
+423,beer,2372,fish_sauce,튀김 & 바삭한 음식
+423,beer,2373,fish_steak,튀김 & 바삭한 음식
+423,beer,2374,fish_stock,튀김 & 바삭한 음식
+423,beer,2908,goldfish_cracker,튀김 & 바삭한 음식
+423,beer,3580,kingfish,튀김 & 바삭한 음식
+423,beer,4294,monkfish_fillet,튀김 & 바삭한 음식
+423,beer,5504,rockfish_fillet,튀김 & 바삭한 음식
+423,beer,5615,salt_cod_fish,튀김 & 바삭한 음식
+423,beer,5678,scrod_fish,튀김 & 바삭한 음식
+423,beer,5888,smoked_fish_fillet,튀김 & 바삭한 음식
+423,beer,5915,smoked_whitefish,튀김 & 바삭한 음식
+423,beer,6300,swordfish,튀김 & 바삭한 음식
+423,beer,6301,swordfish_fillet,튀김 & 바삭한 음식
+423,beer,6302,swordfish_steak,튀김 & 바삭한 음식
+423,beer,6389,thai_fish_sauce,튀김 & 바삭한 음식
+423,beer,6499,tuna_fish,튀김 & 바삭한 음식
+423,beer,6874,white_fish_fillet,튀김 & 바삭한 음식
+423,beer,6875,white_fleshed_fish,튀김 & 바삭한 음식
+423,beer,416,beef_tenderloin,튀김 & 바삭한 음식
+423,beer,417,beef_tenderloin_fillet,튀김 & 바삭한 음식
+423,beer,418,beef_tenderloin_steak,튀김 & 바삭한 음식
+423,beer,1152,chicken_breast_tender,튀김 & 바삭한 음식
+423,beer,1199,chicken_tenderloin,튀김 & 바삭한 음식
+423,beer,4128,meat_tenderizer,튀김 & 바삭한 음식
+423,beer,5014,pork_tenderloin,튀김 & 바삭한 음식
+423,beer,6376,tender_quick,튀김 & 바삭한 음식
+423,beer,6377,tenderloin,튀김 & 바삭한 음식
+423,beer,6514,turkey_breast_tenderloin,튀김 & 바삭한 음식
+423,beer,6540,turkey_tenderloin,튀김 & 바삭한 음식
+423,beer,6688,veal_tenderloin,튀김 & 바삭한 음식
+423,beer,6744,venison_tenderloin,튀김 & 바삭한 음식
+423,beer,372,beef_burger,햄버거 & 소시지
+423,beer,560,boca_meatless_ground_burger,햄버거 & 소시지
+423,beer,3169,hamburger,햄버거 & 소시지
+423,beer,3170,hamburger_bun,햄버거 & 소시지
+423,beer,3171,hamburger_bun_with_sesame_seed,햄버거 & 소시지
+423,beer,3172,hamburger_buns_with_sesame_seed,햄버거 & 소시지
+423,beer,3173,hamburger_meat,햄버거 & 소시지
+423,beer,3174,hamburger_patty,햄버거 & 소시지
+423,beer,3702,lean_hamburger,햄버거 & 소시지
+423,beer,4481,onion_hamburger_bun,햄버거 & 소시지
+423,beer,6690,vegan_burger,햄버거 & 소시지
+423,beer,6733,veggie_burger,햄버거 & 소시지
+423,beer,6816,wheat_hamburger_bun,햄버거 & 소시지
+423,beer,6990,whole_wheat_hamburger_bun,햄버거 & 소시지
+423,beer,139,andouille_sausage,햄버거 & 소시지
+423,beer,399,beef_sausage,햄버거 & 소시지
+423,beer,558,bob_evans_sausage,햄버거 & 소시지
+423,beer,666,braunschweiger_sausage,햄버거 & 소시지
+423,beer,686,breakfast_sausage,햄버거 & 소시지
+423,beer,687,breakfast_sausage_link,햄버거 & 소시지
+423,beer,688,breakfast_sausage_patty,햄버거 & 소시지
+423,beer,726,brown_and_serve_sausage,햄버거 & 소시지
+423,beer,772,bulk_italian_sausage,햄버거 & 소시지
+423,beer,773,bulk_pork_sausage,햄버거 & 소시지
+423,beer,774,bulk_sausage,햄버거 & 소시지
+423,beer,1140,chicken_apple_sausage,햄버거 & 소시지
+423,beer,1187,chicken_sausage,햄버거 & 소시지
+423,beer,1247,chinese_sausage,햄버거 & 소시지
+423,beer,1345,chorizo_sausage,햄버거 & 소시지
+423,beer,1536,cooked_italian_sausage,햄버거 & 소시지
+423,beer,1557,cooked_sausage,햄버거 & 소시지
+423,beer,1637,country_sausage,햄버거 & 소시지
+423,beer,2817,garlic_sausage,햄버거 & 소시지
+423,beer,3104,ground_pork_breakfast_sausage,햄버거 & 소시지
+423,beer,3112,ground_sausage,햄버거 & 소시지
+423,beer,3341,hot_italian_sausage,햄버거 & 소시지
+423,beer,3342,hot_italian_sausage_link,햄버거 & 소시지
+423,beer,3343,hot_italian_turkey_sausage,햄버거 & 소시지
+423,beer,3354,hot_pork_sausage,햄버거 & 소시지
+423,beer,3363,hot_sausage,햄버거 & 소시지
+423,beer,3455,italian_chicken_sausage,햄버거 & 소시지
+423,beer,3463,italian_pork_sausage,햄버거 & 소시지
+423,beer,3468,italian_sausage,햄버거 & 소시지
+423,beer,3481,italian_sweet_sausage,햄버거 & 소시지
+423,beer,3484,italian_turkey_sausage,햄버거 & 소시지
+423,beer,3485,italian_turkey_sausage_link,햄버거 & 소시지
+423,beer,3531,jimmy_dean_sausage,햄버거 & 소시지
+423,beer,3650,lamb_sausage,햄버거 & 소시지
+423,beer,3863,linguica_sausage,햄버거 & 소시지
+423,beer,3865,link_sausage,햄버거 & 소시지
+423,beer,3890,little_smokies_sausage,햄버거 & 소시지
+423,beer,3896,liver_sausage,햄버거 & 소시지
+423,beer,4069,maple_sausage,햄버거 & 소시지
+423,beer,4199,mild_italian_sausage,햄버거 & 소시지
+423,beer,4202,mild_sausage,햄버거 & 소시지
+423,beer,4944,polish_sausage,햄버거 & 소시지
+423,beer,4999,pork_sausage,햄버거 & 소시지
+423,beer,5000,pork_sausage_casing,햄버거 & 소시지
+423,beer,5001,pork_sausage_link,햄버거 & 소시지
+423,beer,5506,roll_of_pork_sausage,햄버거 & 소시지
+423,beer,5584,sage_sausage,햄버거 & 소시지
+423,beer,5653,sausage,햄버거 & 소시지
+423,beer,5654,sausage_link,햄버거 & 소시지
+423,beer,5655,sausage_meat,햄버거 & 소시지
+423,beer,5656,sausage_patty,햄버거 & 소시지
+423,beer,5884,smoked_beef_sausage,햄버거 & 소시지
+423,beer,5894,smoked_link_sausage,햄버거 & 소시지
+423,beer,5903,smoked_pork_sausage,햄버거 & 소시지
+423,beer,5906,smoked_sausage,햄버거 & 소시지
+423,beer,5914,smoked_turkey_sausage,햄버거 & 소시지
+423,beer,6043,spicy_bulk_sausage,햄버거 & 소시지
+423,beer,6046,spicy_pork_sausage,햄버거 & 소시지
+423,beer,6047,spicy_sausage,햄버거 & 소시지
+423,beer,6211,summer_sausage,햄버거 & 소시지
+423,beer,6252,sweet_italian_sausage,햄버거 & 소시지
+423,beer,6253,sweet_italian_sausage_link,햄버거 & 소시지
+423,beer,6254,sweet_italian_turkey_sausage,햄버거 & 소시지
+423,beer,6274,sweet_sausage,햄버거 & 소시지
+423,beer,6510,turkey_breakfast_sausage,햄버거 & 소시지
+423,beer,6535,turkey_sausage,햄버거 & 소시지
+423,beer,6731,vegetarian_sausage,햄버거 & 소시지
+423,beer,6752,vienna_sausage,햄버거 & 소시지
+423,beer,665,bratwurst,햄버거 & 소시지
+423,beer,11,2%_cheddar_cheese,짭짤한 치즈
+423,beer,64,aged_cheddar_cheese,짭짤한 치즈
+423,beer,65,aged_white_cheddar_cheese,짭짤한 치즈
+423,beer,858,campbell's_cheddar_cheese_soup,짭짤한 치즈
+423,beer,1083,cheddar_cheese,짭짤한 치즈
+423,beer,1084,cheddar_cheese_cube,짭짤한 치즈
+423,beer,1086,cheddar_cheese_soup,짭짤한 치즈
+423,beer,1087,cheddar_cheese_spread,짭짤한 치즈
+423,beer,1493,condensed_cheddar_cheese_soup,짭짤한 치즈
+423,beer,1660,cracker_barrel_sharp_cheddar_cheese,짭짤한 치즈
+423,beer,2251,extra_sharp_cheddar_cheese,짭짤한 치즈
+423,beer,2269,fat_free_cheddar_cheese,짭짤한 치즈
+423,beer,3621,kraft_shredded_mild_cheddar_cheese,짭짤한 치즈
+423,beer,3628,kraft_shredded_triple_cheddar_cheese_with_a_touch_of_philadelphia,짭짤한 치즈
+423,beer,3796,light_cheddar_cheese,짭짤한 치즈
+423,beer,3963,low_fat_sharp_cheddar_cheese,짭짤한 치즈
+423,beer,4108,mature_cheddar_cheese,짭짤한 치즈
+423,beer,4135,medium_cheddar,짭짤한 치즈
+423,beer,4189,mild_cheddar_cheese,짭짤한 치즈
+423,beer,4296,monterey_jack_and_cheddar_cheese_blend,짭짤한 치즈
+423,beer,4463,old_cheddar_cheese,짭짤한 치즈
+423,beer,5763,sharp_cheddar_cheese,짭짤한 치즈
+423,beer,5764,sharp_white_cheddar_cheese,짭짤한 치즈
+423,beer,5803,shredded_cheddar_cheese,짭짤한 치즈
+423,beer,5885,smoked_cheddar_cheese,짭짤한 치즈
+423,beer,5985,soy_cheddar_cheese,짭짤한 치즈
+423,beer,6692,vegan_cheddar_cheese,짭짤한 치즈
+423,beer,6848,white_cheddar_cheese,짭짤한 치즈
+423,beer,2916,gouda_cheese,짭짤한 치즈
+423,beer,2127,dry_parmesan_cheese,짭짤한 치즈
+423,beer,2292,fat_free_parmesan_cheese,짭짤한 치즈
+423,beer,3958,low_fat_parmesan_cheese,짭짤한 치즈
+423,beer,4001,lowfat_parmesan_cheese,짭짤한 치즈
+423,beer,4615,parmesan_cheese,짭짤한 치즈
+423,beer,4616,parmesan_rind,짭짤한 치즈
+423,beer,4617,parmesan_romano_cheese_mix,짭짤한 치즈
+423,beer,5378,reduced_fat_parmesan_cheese,짭짤한 치즈
+423,beer,6698,vegan_parmesan_cheese,짭짤한 치즈
+423,beer,6729,vegetarian_parmesan_cheese,짭짤한 치즈
+423,beer,7,12_inch_pizza_crust,토마토 요리
+423,beer,327,basic_pizza_dough,토마토 요리
+423,beer,559,boboli_pizza_crust,토마토 요리
+423,beer,2708,frozen_pizza_dough,토마토 요리
+423,beer,4829,pillsbury_refrigerated_classic_pizza_crust,토마토 요리
+423,beer,4900,pizza_cheese,토마토 요리
+423,beer,4901,pizza_crust,토마토 요리
+423,beer,4902,pizza_crust_mix,토마토 요리
+423,beer,4903,pizza_dough,토마토 요리
+423,beer,4904,pizza_sauce,토마토 요리
+423,beer,4905,pizza_seasoning,토마토 요리
+423,beer,4906,pizza_topping,토마토 요리
+423,beer,5077,prepared_pizza_crust,토마토 요리
+423,beer,5078,prepared_pizza_sauce,토마토 요리
+423,beer,5185,ragu_pizza_sauce,토마토 요리
+423,beer,5253,ready_to_use_baked_pizza_crust,토마토 요리
+423,beer,5261,recipe_pizza_dough,토마토 요리
+423,beer,6405,thin_pizza_crust,토마토 요리
+423,beer,6999,whole_wheat_pizza_crust,토마토 요리
+423,beer,7000,whole_wheat_pizza_dough,토마토 요리
+423,beer,4754,pepperoni,토마토 요리
+423,beer,4755,pepperoni_slice,토마토 요리
+423,beer,6534,turkey_pepperoni,토마토 요리
+423,beer,259,baby_tomato,토마토 요리
+423,beer,280,baked_beans_in_tomato_sauce,토마토 요리
+423,beer,422,beefsteak_tomato,토마토 요리
+423,beer,837,cajun_style_stewed_tomato,토마토 요리
+423,beer,860,campbell's_condensed_tomato_soup,토마토 요리
+423,beer,865,campbell's_tomato_soup,토마토 요리
+423,beer,917,canned_italian_tomato,토마토 요리
+423,beer,936,canned_plum_tomato,토마토 요리
+423,beer,945,canned_stewed_tomato,토마토 요리
+423,beer,947,canned_tomato,토마토 요리
+423,beer,948,canned_tomato_sauce,토마토 요리
+423,beer,954,canned_whole_tomato,토마토 요리
+423,beer,1125,cherry_tomato,토마토 요리
+423,beer,1344,chopped_tomato,토마토 요리
+423,beer,1402,classico_tomato_and_basil_pasta_sauce,토마토 요리
+423,beer,1501,condensed_cream_of_tomato_soup,토마토 요리
+423,beer,1506,condensed_tomato_soup,토마토 요리
+423,beer,1702,cream_of_tomato_soup,토마토 요리
+423,beer,1753,crushed_plum_tomato,토마토 요리
+423,beer,1756,crushed_tomato,토마토 요리
+423,beer,1757,crushed_tomatoes_in_puree,토마토 요리
+423,beer,1872,diced_fire_roasted_tomato,토마토 요리
+423,beer,1877,diced_tomato,토마토 요리
+423,beer,1878,diced_tomatoes_in_tomato_puree,토마토 요리
+423,beer,1879,diced_tomatoes_with_basil_oregano_and_garlic,토마토 요리
+423,beer,1880,diced_tomatoes_with_garlic_and_olive_oil,토마토 요리
+423,beer,1881,diced_tomatoes_with_green_chilies,토마토 요리
+423,beer,1882,diced_tomatoes_with_green_pepper_and_onion,토마토 요리
+423,beer,1883,diced_tomatoes_with_jalapeno,토마토 요리
+423,beer,1884,diced_tomatoes_with_juice,토마토 요리
+423,beer,1885,diced_tomatoes_with_mild_green_chilies,토마토 요리
+423,beer,2087,dried_tomato,토마토 요리
+423,beer,2321,feta_cheese_with_dried_basil_and_tomato,토마토 요리
+423,beer,2355,fire_roasted_tomato,토마토 요리
+423,beer,2360,firm_ripe_tomato,토마토 요리
+423,beer,2591,fresh_tomato,토마토 요리
+423,beer,2954,grape_tomato,토마토 요리
+423,beer,3040,green_tomato,토마토 요리
+423,beer,3231,heirloom_tomato,토마토 요리
+423,beer,3372,hunts_tomato_paste,토마토 요리
+423,beer,3373,hunts_tomato_sauce,토마토 요리
+423,beer,3462,italian_plum_tomato,토마토 요리
+423,beer,3473,italian_stewed_tomato,토마토 요리
+423,beer,3475,italian_style_crushed_tomato,토마토 요리
+423,beer,3477,italian_style_stewed_tomato,토마토 요리
+423,beer,3478,italian_style_tomato,토마토 요리
+423,beer,3479,italian_style_tomato_paste,토마토 요리
+423,beer,3480,italian_style_tomato_sauce,토마토 요리
+423,beer,3482,italian_tomato,토마토 요리
+423,beer,3483,italian_tomato_paste,토마토 요리
+423,beer,3992,low_sodium_tomato,토마토 요리
+423,beer,3993,low_sodium_tomato_juice,토마토 요리
+423,beer,3994,low_sodium_tomato_paste,토마토 요리
+423,beer,3995,low_sodium_tomato_sauce,토마토 요리
+423,beer,4176,mexican_style_diced_tomato,토마토 요리
+423,beer,4177,mexican_style_stewed_tomato,토마토 요리
+423,beer,4178,mexican_style_tomato,토마토 요리
+423,beer,4179,mexican_tomato,토마토 요리
+423,beer,4180,mexican_tomato_sauce,토마토 요리
+423,beer,4384,no_added_salt_tomato_paste,토마토 요리
+423,beer,4392,no_salt_added_diced_tomato,토마토 요리
+423,beer,4396,no_salt_added_stewed_tomato,토마토 요리
+423,beer,4397,no_salt_added_tomato_sauce,토마토 요리
+423,beer,4398,no_salt_added_whole_tomato,토마토 요리
+423,beer,4935,plum_tomato,토마토 요리
+423,beer,4936,plum_tomatoes_in_puree,토마토 요리
+423,beer,4969,pork_and_beans_in_tomato_sauce,토마토 요리
+423,beer,5186,ragu_tomato_sauce,토마토 요리
+423,beer,5315,red_pear_tomato,토마토 요리
+423,beer,5331,red_ripe_tomato,토마토 요리
+423,beer,5398,reduced_sodium_tomato_sauce,토마토 요리
+423,beer,5463,ro_tel_diced_tomatoes_with_pepper,토마토 요리
+423,beer,5464,ro_tel_tomato,토마토 요리
+423,beer,5490,roasted_tomato_salsa,토마토 요리
+423,beer,5513,roma_tomato,토마토 요리
+423,beer,5539,rotel_diced_tomato,토마토 요리
+423,beer,5540,rotel_tomato,토마토 요리
+423,beer,5541,rotel_tomatoes_&_chilies,토마토 요리
+423,beer,5618,salt_free_tomato_sauce,토마토 요리
+423,beer,5642,san_marzano_tomato,토마토 요리
+423,beer,6048,spicy_tomato_sauce,토마토 요리
+423,beer,6110,stewed_tomato,토마토 요리
+423,beer,6214,sun_dried_tomato,토마토 요리
+423,beer,6215,sun_dried_tomato_dressing,토마토 요리
+423,beer,6216,sun_dried_tomato_packed_in_oil,토마토 요리
+423,beer,6217,sun_dried_tomato_paste,토마토 요리
+423,beer,6218,sun_dried_tomato_pesto,토마토 요리
+423,beer,6219,sun_dried_tomatoes_packed_in_oil,토마토 요리
+423,beer,6441,tomato,토마토 요리
+423,beer,6442,tomato_and_basil_pasta_sauce,토마토 요리
+423,beer,6443,tomato_bouillon,토마토 요리
+423,beer,6445,tomato_chutney,토마토 요리
+423,beer,6446,tomato_cocktail_juice,토마토 요리
+423,beer,6447,tomato_jam,토마토 요리
+423,beer,6448,tomato_juice,토마토 요리
+423,beer,6449,tomato_ketchup,토마토 요리
+423,beer,6450,tomato_paste,토마토 요리
+423,beer,6451,tomato_puree,토마토 요리
+423,beer,6452,tomato_relish,토마토 요리
+423,beer,6453,tomato_sauce,토마토 요리
+423,beer,6454,tomato_soup,토마토 요리
+423,beer,6455,tomato_with_juice,토마토 요리
+423,beer,6456,tomatoes_and_green_chilies,토마토 요리
+423,beer,6457,tomatoes_in_puree,토마토 요리
+423,beer,6458,tomatoes_seasoned_with_basil_garlic_&_oregano,토마토 요리
+423,beer,6459,tomatoes_with_basil,토마토 요리
+423,beer,6460,tomatoes_with_garlic,토마토 요리
+423,beer,6461,tomatoes_with_juice,토마토 요리
+423,beer,6462,tomatoes_with_onion_and_garlic,토마토 요리
+423,beer,6930,whole_canned_tomato,토마토 요리
+423,beer,6968,whole_tomato,토마토 요리
+423,beer,7056,yellow_cherry_tomato,토마토 요리
+423,beer,7070,yellow_pear_tomato,토마토 요리
+423,beer,7081,yellow_tomato,토마토 요리
+423,beer,1290,chocolate_covered_peanut,안주류
+423,beer,1356,chunky_peanut_butter,안주류
+423,beer,1715,creamy_peanut_butter,안주류
+423,beer,1749,crunchy_peanut_butter,안주류
+423,beer,2137,dry_roasted_salted_peanut,안주류
+423,beer,2139,dry_roasted_unsalted_peanut,안주류
+423,beer,3303,honey_roasted_peanut,안주류
+423,beer,4009,m_&_m's_peanut_chocolate_candy,안주류
+423,beer,4238,miniature_peanut_butter_cup,안주류
+423,beer,4366,natural_style_peanut_butter,안주류
+423,beer,4400,no_sugar_added_peanut_butter,안주류
+423,beer,4687,peanut,안주류
+423,beer,4688,peanut_brittle,안주류
+423,beer,4689,peanut_butter,안주류
+423,beer,4690,peanut_butter_and_milk_chocolate_chip,안주류
+423,beer,4691,peanut_butter_chip,안주류
+423,beer,4692,peanut_butter_cookie_dough,안주류
+423,beer,4693,peanut_butter_cookie_mix,안주류
+423,beer,4694,peanut_butter_cooky,안주류
+423,beer,4695,peanut_butter_cup,안주류
+423,beer,4696,peanut_butter_morsel,안주류
+423,beer,4697,peanut_butter_sandwich_cooky,안주류
+423,beer,4698,peanut_flour,안주류
+423,beer,4699,peanut_oil,안주류
+423,beer,4700,peanut_sauce,안주류
+423,beer,5054,powdered_peanut_butter,안주류
+423,beer,5241,raw_peanut,안주류
+423,beer,5366,reduced_fat_creamy_peanut_butter,안주류
+423,beer,5379,reduced_fat_peanut_butter,안주류
+423,beer,5401,reese's_peanut_butter_cup,안주류
+423,beer,5479,roasted_peanut,안주류
+423,beer,5492,roasted_unsalted_peanut,안주류
+423,beer,5630,salted_peanut,안주류
+423,beer,5918,smooth_peanut_butter,안주류
+423,beer,6023,spanish_peanut,안주류
+423,beer,6578,unsalted_dry_roasted_peanut,안주류
+423,beer,6582,unsalted_peanut,안주류
+423,beer,4240,miniature_pretzel,안주류
+423,beer,4241,miniature_pretzel_twist,안주류
+423,beer,5089,pretzel,안주류
+423,beer,5090,pretzel_crumb,안주류
+423,beer,5092,pretzel_rod,안주류
+423,beer,5093,pretzel_roll,안주류
+423,beer,5094,pretzel_stick,안주류
+423,beer,5095,pretzel_twist,안주류
+423,beer,5868,small_pretzel,안주류
+423,beer,1011,cashew,안주류
+423,beer,1012,cashew_half,안주류
+423,beer,1013,cashew_milk,안주류
+423,beer,1014,cashew_nut,안주류
+423,beer,1015,cashew_piece,안주류
+423,beer,5233,raw_cashew,안주류
+423,beer,5234,raw_cashew_nut,안주류
+423,beer,5469,roasted_cashew,안주류
+423,beer,5470,roasted_cashew_nut,안주류
+423,beer,5626,salted_cashew,안주류
+423,beer,5917,smooth_cashew_butter,안주류
+423,beer,6575,unsalted_cashew,안주류
+423,beer,6577,unsalted_dry_roasted_cashew,안주류
+423,beer,445,betty_crocker_fudge_brownie_mix,초콜릿/커피 디저트
+423,beer,751,brownie,초콜릿/커피 디저트
+423,beer,2775,fudge_brownie_mix,초콜릿/커피 디저트
+423,beer,283,baker's_semi_sweet_baking_chocolate,초콜릿/커피 디저트
+423,beer,284,baker's_unsweetened_chocolate_square,초콜릿/커피 디저트
+423,beer,286,baking_chocolate,초콜릿/커피 디저트
+423,beer,287,baking_chocolate_square,초콜릿/커피 디저트
+423,beer,462,bitter_chocolate,초콜릿/커피 디저트
+423,beer,464,bittersweet_baking_chocolate,초콜릿/커피 디저트
+423,beer,465,bittersweet_chocolate,초콜릿/커피 디저트
+423,beer,466,bittersweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,467,bittersweet_chocolate_piece,초콜릿/커피 디저트
+423,beer,468,bittersweet_chocolate_square,초콜릿/커피 디저트
+423,beer,890,candy_covered_plain_chocolate_candy,초콜릿/커피 디저트
+423,beer,1266,chocolate,초콜릿/커피 디저트
+423,beer,1267,chocolate_almond_bark,초콜릿/커피 디저트
+423,beer,1268,chocolate_bar,초콜릿/커피 디저트
+423,beer,1269,chocolate_bark,초콜릿/커피 디저트
+423,beer,1270,chocolate_bars_with_almond,초콜릿/커피 디저트
+423,beer,1271,chocolate_biscuit,초콜릿/커피 디저트
+423,beer,1272,chocolate_cake,초콜릿/커피 디저트
+423,beer,1274,chocolate_cake_mix,초콜릿/커피 디저트
+423,beer,1275,chocolate_candy_bar,초콜릿/커피 디저트
+423,beer,1276,chocolate_chip,초콜릿/커피 디저트
+423,beer,1277,chocolate_chip_cookie,초콜릿/커피 디저트
+423,beer,1278,chocolate_chip_cookie_mix,초콜릿/커피 디저트
+423,beer,1279,chocolate_chip_cooky,초콜릿/커피 디저트
+423,beer,1281,chocolate_cookie_crumb,초콜릿/커피 디저트
+423,beer,1282,chocolate_cookie_pie_crust,초콜릿/커피 디저트
+423,beer,1283,chocolate_cooky,초콜릿/커피 디저트
+423,beer,1284,chocolate_covered_caramel_candy,초콜릿/커피 디저트
+423,beer,1285,chocolate_covered_coffee_bean,초콜릿/커피 디저트
+423,beer,1286,chocolate_covered_english_toffee_bar,초콜릿/커피 디저트
+423,beer,1287,chocolate_covered_espresso_bean,초콜릿/커피 디저트
+423,beer,1288,chocolate_covered_graham_cracker_cooky,초콜릿/커피 디저트
+423,beer,1289,chocolate_covered_mint_candy,초콜릿/커피 디저트
+423,beer,1290,chocolate_covered_peanut,초콜릿/커피 디저트
+423,beer,1291,chocolate_covered_raisin,초콜릿/커피 디저트
+423,beer,1292,chocolate_covered_toffee_bit,초콜릿/커피 디저트
+423,beer,1293,chocolate_crumb_crust,초콜릿/커피 디저트
+423,beer,1296,chocolate_extract,초콜릿/커피 디저트
+423,beer,1297,chocolate_flavor_instant_pudding_and_pie_filling_mix,초콜릿/커피 디저트
+423,beer,1298,chocolate_flavor_nestle_nesquik_powder,초콜릿/커피 디저트
+423,beer,1299,chocolate_flavored_candy_coating,초콜릿/커피 디저트
+423,beer,1301,chocolate_flavored_syrup,초콜릿/커피 디저트
+423,beer,1302,chocolate_flavoring,초콜릿/커피 디저트
+423,beer,1303,chocolate_frosting,초콜릿/커피 디저트
+423,beer,1304,chocolate_fudge_frosting,초콜릿/커피 디저트
+423,beer,1305,chocolate_fudge_instant_pudding_mix,초콜릿/커피 디저트
+423,beer,1306,chocolate_fudge_topping,초콜릿/커피 디저트
+423,beer,1307,chocolate_glaze,초콜릿/커피 디저트
+423,beer,1308,chocolate_graham_cracker,초콜릿/커피 디저트
+423,beer,1309,chocolate_graham_cracker_crumb,초콜릿/커피 디저트
+423,beer,1310,chocolate_graham_wafer_pie_crust,초콜릿/커피 디저트
+423,beer,1311,chocolate_hazelnut_spread,초콜릿/커피 디저트
+423,beer,1312,chocolate_ice_cream,초콜릿/커피 디저트
+423,beer,1313,chocolate_ice_cream_topping,초콜릿/커피 디저트
+423,beer,1314,chocolate_icing,초콜릿/커피 디저트
+423,beer,1315,chocolate_instant_pudding,초콜릿/커피 디저트
+423,beer,1316,chocolate_leaf,초콜릿/커피 디저트
+423,beer,1318,chocolate_milk,초콜릿/커피 디저트
+423,beer,1319,chocolate_mousse_mix,초콜릿/커피 디저트
+423,beer,1320,chocolate_piece,초콜릿/커피 디저트
+423,beer,1321,chocolate_protein_powder,초콜릿/커피 디저트
+423,beer,1322,chocolate_pudding,초콜릿/커피 디저트
+423,beer,1323,chocolate_pudding_mix,초콜릿/커피 디저트
+423,beer,1324,chocolate_sandwich_style_cooky,초콜릿/커피 디저트
+423,beer,1325,chocolate_shaving,초콜릿/커피 디저트
+423,beer,1326,chocolate_sorbet,초콜릿/커피 디저트
+423,beer,1327,chocolate_soymilk,초콜릿/커피 디저트
+423,beer,1328,chocolate_spread,초콜릿/커피 디저트
+423,beer,1329,chocolate_sprinkle,초콜릿/커피 디저트
+423,beer,1330,chocolate_square,초콜릿/커피 디저트
+423,beer,1331,chocolate_syrup,초콜릿/커피 디저트
+423,beer,1332,chocolate_truffle,초콜릿/커피 디저트
+423,beer,1334,chocolate_wafer,초콜릿/커피 디저트
+423,beer,1335,chocolate_wafer_cookie,초콜릿/커피 디저트
+423,beer,1336,chocolate_wafer_cooky,초콜릿/커피 디저트
+423,beer,1337,chocolate_wafer_crumb,초콜릿/커피 디저트
+423,beer,1338,chocolate_wafer_pie_crust,초콜릿/커피 디저트
+423,beer,1339,chocolate_whey_protein_powder,초콜릿/커피 디저트
+423,beer,1340,chocolate_whipped_cream,초콜릿/커피 디저트
+423,beer,1690,cream_filled_chocolate_sandwich_cooky,초콜릿/커피 디저트
+423,beer,1804,dark_baking_chocolate,초콜릿/커피 디저트
+423,beer,1810,dark_chocolate,초콜릿/커피 디저트
+423,beer,1811,dark_chocolate_bar,초콜릿/커피 디저트
+423,beer,1812,dark_chocolate_cake_mix,초콜릿/커피 디저트
+423,beer,1813,dark_chocolate_chip,초콜릿/커피 디저트
+423,beer,1814,dark_chocolate_frosting,초콜릿/커피 디저트
+423,beer,1815,dark_chocolate_melt,초콜릿/커피 디저트
+423,beer,1816,dark_chocolate_shaving,초콜릿/커피 디저트
+423,beer,1818,dark_cooking_chocolate,초콜릿/커피 디저트
+423,beer,1834,dark_semi_sweet_chocolate,초콜릿/커피 디저트
+423,beer,1909,dipping_chocolate,초콜릿/커피 디저트
+423,beer,2093,drinking_chocolate,초콜릿/커피 디저트
+423,beer,2272,fat_free_chocolate_syrup,초콜릿/커피 디저트
+423,beer,2828,german_chocolate,초콜릿/커피 디저트
+423,beer,2829,german_chocolate_cake_mix,초콜릿/커피 디저트
+423,beer,2831,german_sweet_chocolate,초콜릿/커피 디저트
+423,beer,2834,ghirardelli_semi_sweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,2876,gluten_free_chocolate_chip,초콜릿/커피 디저트
+423,beer,3253,hershey's_hugs_chocolate,초콜릿/커피 디저트
+423,beer,3254,hershey's_semi_sweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,3257,hershey_chocolate_candy_bar,초콜릿/커피 디저트
+423,beer,3258,hershey_chocolate_kiss,초콜릿/커피 디저트
+423,beer,3259,hersheys_chocolate_syrup,초콜릿/커피 디저트
+423,beer,3330,hot_chocolate_powder,초콜릿/커피 디저트
+423,beer,3396,imported_white_chocolate,초콜릿/커피 디저트
+423,beer,3406,instant_chocolate_drink_mix,초콜릿/커피 디저트
+423,beer,3407,instant_chocolate_pudding_mix,초콜릿/커피 디저트
+423,beer,3443,instant_white_chocolate_pudding_and_pie_filling_mix,초콜릿/커피 디저트
+423,beer,3515,jell_o_chocolate_instant_pudding,초콜릿/커피 디저트
+423,beer,3516,jell_o_chocolate_pudding_and_pie_filling,초콜릿/커피 디저트
+423,beer,3799,light_chocolate_syrup,초콜릿/커피 디저트
+423,beer,4009,m_&_m's_peanut_chocolate_candy,초콜릿/커피 디저트
+423,beer,4010,m_&_m's_plain_chocolate_candy,초콜릿/커피 디저트
+423,beer,4168,mexican_chocolate,초콜릿/커피 디저트
+423,beer,4205,milk_chocolate,초콜릿/커피 디저트
+423,beer,4206,milk_chocolate_candy_bar,초콜릿/커피 디저트
+423,beer,4207,milk_chocolate_chip,초콜릿/커피 디저트
+423,beer,4208,milk_chocolate_frosting,초콜릿/커피 디저트
+423,beer,4209,milk_chocolate_kiss,초콜릿/커피 디저트
+423,beer,4210,milk_chocolate_melt,초콜릿/커피 디저트
+423,beer,4211,milk_chocolate_piece,초콜릿/커피 디저트
+423,beer,4226,mini_chocolate_chip,초콜릿/커피 디저트
+423,beer,4232,miniature_chocolate_chip,초콜릿/커피 디저트
+423,beer,4234,miniature_m_&_m's_chocolate_candy,초콜릿/커피 디저트
+423,beer,4245,mint_chocolate_chip,초콜릿/커피 디저트
+423,beer,4246,mint_chocolate_chip_ice_cream,초콜릿/커피 디저트
+423,beer,4403,non_dairy_chocolate_chip,초콜릿/커피 디저트
+423,beer,4690,peanut_butter_and_milk_chocolate_chip,초콜릿/커피 디저트
+423,beer,5043,powdered_chocolate_milk_mix,초콜릿/커피 디저트
+423,beer,5067,premium_white_baking_chocolate,초콜릿/커피 디저트
+423,beer,5410,refrigerated_chocolate_chip_cookie_dough,초콜릿/커피 디저트
+423,beer,5511,rolo_chocolate,초콜릿/커피 디저트
+423,beer,5723,semi_sweet_chocolate_baking_square,초콜릿/커피 디저트
+423,beer,5724,semi_sweet_chocolate_bit,초콜릿/커피 디저트
+423,beer,5725,semi_sweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,5726,semisweet_baking_chocolate,초콜릿/커피 디저트
+423,beer,5727,semisweet_chocolate,초콜릿/커피 디저트
+423,beer,5728,semisweet_chocolate_bar,초콜릿/커피 디저트
+423,beer,5729,semisweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,5732,semisweet_chocolate_piece,초콜릿/커피 디저트
+423,beer,5733,semisweet_mini_chocolate_chip,초콜릿/커피 디저트
+423,beer,5734,semisweet_vegan_chocolate_chip,초콜릿/커피 디저트
+423,beer,6178,sugar_free_chocolate_syrup,초콜릿/커피 디저트
+423,beer,6182,sugar_free_instant_chocolate_pudding_mix,초콜릿/커피 디저트
+423,beer,6235,sweet_baking_chocolate,초콜릿/커피 디저트
+423,beer,6242,sweet_chocolate,초콜릿/커피 디저트
+423,beer,6432,toblerone_chocolate_bar,초콜릿/커피 디저트
+423,beer,6599,unsweetened_baking_chocolate,초콜릿/커피 디저트
+423,beer,6601,unsweetened_chocolate,초콜릿/커피 디저트
+423,beer,6602,unsweetened_chocolate_square,초콜릿/커피 디저트
+423,beer,6610,unsweetened_dark_chocolate,초콜릿/커피 디저트
+423,beer,6835,white_baking_chocolate,초콜릿/커피 디저트
+423,beer,6852,white_chocolate,초콜릿/커피 디저트
+423,beer,6853,white_chocolate_baking_bar,초콜릿/커피 디저트
+423,beer,6854,white_chocolate_baking_square,초콜릿/커피 디저트
+423,beer,6855,white_chocolate_chip,초콜릿/커피 디저트
+423,beer,6856,white_chocolate_chunk,초콜릿/커피 디저트
+423,beer,6857,white_chocolate_curl,초콜릿/커피 디저트
+423,beer,6859,white_chocolate_pudding_mix,초콜릿/커피 디저트
+423,beer,6860,white_chocolate_sauce,초콜릿/커피 디저트
 519,blackberry_brandy,550,blueberry_muffin_mix,베리 디저트
 519,blackberry_brandy,1332,chocolate_truffle,다크 초콜릿
 519,blackberry_brandy,596,boneless_duck_breast,가금류

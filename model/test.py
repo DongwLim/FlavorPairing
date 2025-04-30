@@ -27,6 +27,13 @@ edge_type_map ={
 
 edges_indexes, edges_weights, edge_type = edges_index(edge_type_map)
 
+liquor = input("술을 입력 : ")
+
+"""for i in iid_to_idx.keys():
+    score = predict(lid_to_idx[int(liquor)], iid_to_idx[i], edges_indexes, edges_weights, edge_type)
+    if score > -2.0:
+        print(f"{i} : {score}")"""
+        
 while True:
     liquqor, ingredient = input("술과 재료를 입력 : ").split()
     print(predict(lid_to_idx[int(liquqor)], iid_to_idx[int(ingredient)], edges_indexes, edges_weights, edge_type))

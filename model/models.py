@@ -13,7 +13,7 @@ loss.backward()
 """
 
 class NeuralCF(nn.Module):
-    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[256,128, 64, 32], emb_init = None):
+    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[256, 128, 64, 32], emb_init = None):
         super(NeuralCF, self).__init__()
         """
             num_users       :   술 노드의 개수
@@ -57,7 +57,7 @@ class NeuralCF(nn.Module):
         # 최종 결과 출력층 
         self.output_layer = nn.Linear(hidden_layers[-1] + emb_size, 1)
 
-    def forward(self, user_indices, item_indices, edge_index, edge_type, edge_weight=None):
+    def forward(self, user_indices, item_indices, edge_index, edge_type, edge_weight=None, is_embbed=False):
         """
             user_indices :   술 노드의 인덱스
             item_indices :   음식 노드의 인덱스
@@ -76,6 +76,9 @@ class NeuralCF(nn.Module):
         x = F.dropout(x, p=0.2, training=self.training)
         x = self.norm2(x)
         x = self.wrgcn3(x, edge_index, edge_type, edge_weight)
+        
+        if is_embbed:
+            return x
 
         # GNN 결과 슬라이싱
         gmf_user_emb = x[user_indices]

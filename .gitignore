@@ -2,5 +2,5 @@ __pycache__/
 model/checkpoint
 model/utils.py
 preprocessing.py
-utils.py
 figure/
+test_dataset.pt

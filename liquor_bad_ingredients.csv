@@ -869,13 +869,236 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,origin
 311,banana_liqueur,5248,razor_clam,해산물
 311,banana_liqueur,5860,small_clam,해산물
 311,banana_liqueur,6103,steamer_clam,해산물
-423,beer,5649,sashimi_grade_tuna,섬세한 해산물
-423,beer,537,blue_cheese,숙성 치즈
-423,beer,538,blue_cheese_dressing,숙성 치즈
-423,beer,1802,danish_blue_cheese,숙성 치즈
-423,beer,3617,kraft_natural_blue_cheese_crumbles,숙성 치즈
-423,beer,4117,maytag_blue_cheese,숙성 치즈
-423,beer,825,cabbage_kimchi,발효 음식
+423,beer,4086,marmalade,매운 음식
+423,beer,4483,onion_marmalade,매운 음식
+423,beer,4520,orange_marmalade,매운 음식
+423,beer,6042,spicy_brown_mustard,매운 음식
+423,beer,6043,spicy_bulk_sausage,매운 음식
+423,beer,6044,spicy_hot_v8,매운 음식
+423,beer,6045,spicy_mustard,매운 음식
+423,beer,6046,spicy_pork_sausage,매운 음식
+423,beer,6047,spicy_sausage,매운 음식
+423,beer,6048,spicy_tomato_sauce,매운 음식
+423,beer,6049,spicy_vegetable_juice,매운 음식
+423,beer,825,cabbage_kimchi,강한 발효 음식
+423,beer,644,bottled_lemon_juice,산미 디저트
+423,beer,874,candied_lemon_peel,산미 디저트
+423,beer,989,carbonated_lemon_lime_beverage,산미 디저트
+423,beer,2015,dried_lemon_peel,산미 디저트
+423,beer,2016,dried_lemongrass,산미 디저트
+423,beer,2284,fat_free_lemon_yogurt,산미 디저트
+423,beer,2516,fresh_lemon,산미 디저트
+423,beer,2517,fresh_lemon_juice,산미 디저트
+423,beer,2518,fresh_lemon_rind,산미 디저트
+423,beer,2520,fresh_lemongrass,산미 디저트
+423,beer,2530,fresh_meyer_lemon_juice,산미 디저트
+423,beer,2679,frozen_lemonade,산미 디저트
+423,beer,2680,frozen_lemonade_concentrate,산미 디저트
+423,beer,2707,frozen_pink_lemonade_concentrate,산미 디저트
+423,beer,3421,instant_lemon_pudding,산미 디저트
+423,beer,3422,instant_lemon_pudding_mix,산미 디저트
+423,beer,3720,lemon,산미 디저트
+423,beer,3722,"lemon,_juice_and_zest_of",산미 디저트
+423,beer,3723,"lemon,_juice_of",산미 디저트
+423,beer,3724,"lemon,_rind_of",산미 디저트
+423,beer,3725,"lemon,_zest_of",산미 디저트
+423,beer,3727,lemon_balm,산미 디저트
+423,beer,3728,lemon_balm_leaf,산미 디저트
+423,beer,3729,lemon_basil,산미 디저트
+423,beer,3730,lemon_butter,산미 디저트
+423,beer,3731,lemon_cake_mix,산미 디저트
+423,beer,3732,lemon_curd,산미 디저트
+423,beer,3733,lemon_essence,산미 디저트
+423,beer,3734,lemon_extract,산미 디저트
+423,beer,3735,lemon_flavor_instant_pudding_and_pie_filling,산미 디저트
+423,beer,3737,lemon_flavoring,산미 디저트
+423,beer,3738,lemon_frosting,산미 디저트
+423,beer,3739,lemon_gelatin,산미 디저트
+423,beer,3741,lemon_jell_o_gelatin,산미 디저트
+423,beer,3742,lemon_jelly_powder,산미 디저트
+423,beer,3743,lemon_juice,산미 디저트
+423,beer,3744,lemon_juice_concentrate,산미 디저트
+423,beer,3745,lemon_leaf,산미 디저트
+423,beer,3746,lemon_lime_flavored_soda,산미 디저트
+423,beer,3747,lemon_low_fat_yogurt,산미 디저트
+423,beer,3748,lemon_oil,산미 디저트
+423,beer,3750,lemon_peel,산미 디저트
+423,beer,3751,lemon_peel_strip,산미 디저트
+423,beer,3752,lemon_pepper,산미 디저트
+423,beer,3753,lemon_pepper_seasoning,산미 디저트
+423,beer,3754,lemon_pie_filling,산미 디저트
+423,beer,3755,lemon_pudding_mix,산미 디저트
+423,beer,3756,lemon_rind,산미 디저트
+423,beer,3757,lemon_sherbet,산미 디저트
+423,beer,3758,lemon_slice,산미 디저트
+423,beer,3760,lemon_sorbet,산미 디저트
+423,beer,3761,lemon_supreme_cake_mix,산미 디저트
+423,beer,3762,lemon_syrup,산미 디저트
+423,beer,3763,lemon_thyme,산미 디저트
+423,beer,3764,lemon_thyme_leaf,산미 디저트
+423,beer,3765,lemon_twist,산미 디저트
+423,beer,3766,lemon_verbena,산미 디저트
+423,beer,3767,lemon_verbena_leaf,산미 디저트
+423,beer,3768,lemon_vinaigrette,산미 디저트
+423,beer,3769,lemon_wedge,산미 디저트
+423,beer,3770,lemon_yogurt,산미 디저트
+423,beer,3771,lemon_zest,산미 디저트
+423,beer,3772,lemonade,산미 디저트
+423,beer,3773,lemonade_concentrate,산미 디저트
+423,beer,3774,lemonade_mix,산미 디저트
+423,beer,3775,lemongrass,산미 디저트
+423,beer,3776,lemongrass_paste,산미 디저트
+423,beer,3777,"lemons,_juice_and_zest_of",산미 디저트
+423,beer,3778,"lemons,_juice_of",산미 디저트
+423,beer,3779,"lemons,_rind_of",산미 디저트
+423,beer,3780,"lemons,_zest_of",산미 디저트
+423,beer,4184,meyer_lemon,산미 디저트
+423,beer,4185,meyer_lemon_zest,산미 디저트
+423,beer,4873,pink_lemonade,산미 디저트
+423,beer,5088,preserved_lemon,산미 디저트
+423,beer,5258,realemon_juice,산미 디저트
+423,beer,6293,sweetened_lemonade_drink_mix,산미 디저트
+423,beer,2955,grapefruit,산미 디저트
+423,beer,2956,grapefruit_juice,산미 디저트
+423,beer,2957,grapefruit_peel,산미 디저트
+423,beer,2958,grapefruit_section,산미 디저트
+423,beer,2960,grapefruit_zest,산미 디저트
+423,beer,4871,pink_grapefruit,산미 디저트
+423,beer,4872,pink_grapefruit_juice,산미 디저트
+423,beer,5296,red_grapefruit,산미 디저트
+423,beer,5557,ruby_red_grapefruit_juice,산미 디저트
+423,beer,6881,white_grapefruit,산미 디저트
+423,beer,7095,yuzu,산미 디저트
+423,beer,7096,yuzu_juice,산미 디저트
+423,beer,5649,sashimi_grade_tuna,생해산물
+423,beer,3578,king_oyster_mushroom,생해산물
+423,beer,4572,oyster,생해산물
+423,beer,4573,oyster_cracker,생해산물
+423,beer,4574,oyster_liquor,생해산물
+423,beer,4575,oyster_mushroom,생해산물
+423,beer,4576,oyster_sauce,생해산물
+423,beer,5898,smoked_oyster,생해산물
+423,beer,6728,vegetarian_oyster_sauce,생해산물
+423,beer,237,baby_clam,생해산물
+423,beer,641,bottled_clam_juice,생해산물
+423,beer,907,canned_clam,생해산물
+423,beer,1127,cherrystone_clam,생해산물
+423,beer,1342,chopped_clams_with_juice,생해산물
+423,beer,1395,clam,생해산물
+423,beer,1396,clam_base,생해산물
+423,beer,1397,clam_broth,생해산물
+423,beer,1398,clam_juice,생해산물
+423,beer,1399,clamato_juice,생해산물
+423,beer,1400,clams_in_shell,생해산물
+423,beer,3186,hard_shelled_clam,생해산물
+423,beer,3891,littleneck_clam,생해산물
+423,beer,4063,manila_clam,생해산물
+423,beer,4218,minced_clam,생해산물
+423,beer,4219,minced_clams_with_juice,생해산물
+423,beer,5248,razor_clam,생해산물
+423,beer,5860,small_clam,생해산물
+423,beer,6103,steamer_clam,생해산물
+423,beer,67,ahi_tuna_steak,붉은 육류
+423,beer,377,beef_cube_steak,붉은 육류
+423,beer,396,beef_round_steak,붉은 육류
+423,beer,397,beef_round_tip_steak,붉은 육류
+423,beer,404,beef_sirloin_steak,붉은 육류
+423,beer,406,beef_steak,붉은 육류
+423,beer,414,beef_t_bone_steak,붉은 육류
+423,beer,418,beef_tenderloin_steak,붉은 육류
+423,beer,421,beef_top_round_steak,붉은 육류
+423,beer,422,beefsteak_tomato,붉은 육류
+423,beer,527,blade_steak,붉은 육류
+423,beer,577,boneless_beef_chuck_steak,붉은 육류
+423,beer,580,boneless_beef_round_steak,붉은 육류
+423,beer,585,boneless_beef_top_loin_steak,붉은 육류
+423,beer,586,boneless_beef_top_round_steak,붉은 육류
+423,beer,613,boneless_rib_eye_steak,붉은 육류
+423,beer,614,boneless_round_steak,붉은 육류
+423,beer,618,boneless_sirloin_steak,붉은 육류
+423,beer,631,boneless_veal_steak,붉은 육류
+423,beer,647,bottom_round_steak,붉은 육류
+423,beer,1350,chuck_steak,붉은 육류
+423,beer,1457,cod_steak,붉은 육류
+423,beer,1766,cube_steak,붉은 육류
+423,beer,2338,filet_mignon_steak,붉은 육류
+423,beer,2373,fish_steak,붉은 육류
+423,beer,2381,flank_steak,붉은 육류
+423,beer,2383,flat_iron_steak,붉은 육류
+423,beer,3158,halibut_steak,붉은 육류
+423,beer,3167,ham_steak,붉은 육류
+423,beer,3175,hanger_steak,붉은 육류
+423,beer,3227,heinz_57_steak_sauce,붉은 육류
+423,beer,3366,hp_steak_sauce,붉은 육류
+423,beer,3653,lamb_steak,붉은 육류
+423,beer,3692,lean_flank_steak,붉은 육류
+423,beer,3708,lean_round_steak,붉은 육류
+423,beer,3710,lean_sirloin_steak,붉은 육류
+423,beer,3711,lean_steak,붉은 육류
+423,beer,4118,mccormick's_montreal_brand_steak_seasoning,붉은 육류
+423,beer,4255,minute_steak,붉은 육류
+423,beer,4381,new_york_strip_steak,붉은 육류
+423,beer,4973,pork_blade_steak,붉은 육류
+423,beer,5010,pork_steak,붉은 육류
+423,beer,5020,porterhouse_steak,붉은 육류
+423,beer,5427,rib_eye_steak,붉은 육류
+423,beer,5551,round_steak,붉은 육류
+423,beer,5562,rump_steak,붉은 육류
+423,beer,5602,salmon_steak,붉은 육류
+423,beer,5761,shark_steak,붉은 육류
+423,beer,5769,shell_steak,붉은 육류
+423,beer,5827,sirloin_steak,붉은 육류
+423,beer,5829,sirloin_tip_steak,붉은 육류
+423,beer,5846,skirt_steak,붉은 육류
+423,beer,6095,steak,붉은 육류
+423,beer,6096,steak_fillet,붉은 육류
+423,beer,6097,steak_sauce,붉은 육류
+423,beer,6098,steak_seasoning,붉은 육류
+423,beer,6099,steak_spice,붉은 육류
+423,beer,6101,steak_ums,붉은 육류
+423,beer,6158,strip_steak,붉은 육류
+423,beer,6302,swordfish_steak,붉은 육류
+423,beer,6471,top_round_steak,붉은 육류
+423,beer,6472,top_sirloin_steak,붉은 육류
+423,beer,6484,tri_tip_steak,붉은 육류
+423,beer,6505,tuna_steak,붉은 육류
+423,beer,6685,veal_steak,붉은 육류
+423,beer,6742,venison_steak,붉은 육류
+423,beer,7085,yellowfin_tuna_steak,붉은 육류
+423,beer,599,boneless_lamb,붉은 육류
+423,beer,600,boneless_lamb_shoulder,붉은 육류
+423,beer,602,boneless_leg_of_lamb,붉은 육류
+423,beer,803,butterflied_leg_of_lamb,붉은 육류
+423,beer,1538,cooked_lamb,붉은 육류
+423,beer,3088,ground_lamb,붉은 육류
+423,beer,3636,lamb,붉은 육류
+423,beer,3638,lamb_bone,붉은 육류
+423,beer,3639,lamb_breast,붉은 육류
+423,beer,3640,lamb_chop,붉은 육류
+423,beer,3641,lamb_cutlet,붉은 육류
+423,beer,3642,lamb_fillet,붉은 육류
+423,beer,3644,lamb_liver,붉은 육류
+423,beer,3645,lamb_loin_chop,붉은 육류
+423,beer,3646,lamb_neck,붉은 육류
+423,beer,3647,lamb_rack,붉은 육류
+423,beer,3648,lamb_rib,붉은 육류
+423,beer,3649,lamb_rib_chop,붉은 육류
+423,beer,3650,lamb_sausage,붉은 육류
+423,beer,3651,lamb_shank,붉은 육류
+423,beer,3652,lamb_shoulder,붉은 육류
+423,beer,3653,lamb_steak,붉은 육류
+423,beer,3654,lamb_stew_meat,붉은 육류
+423,beer,3655,lamb_stock,붉은 육류
+423,beer,3657,lambs_kidney,붉은 육류
+423,beer,3688,lean_boneless_lamb,붉은 육류
+423,beer,3696,lean_ground_lamb,붉은 육류
+423,beer,3703,lean_lamb,붉은 육류
+423,beer,3719,leg_of_lamb,붉은 육류
+423,beer,3906,loin_lamb,붉은 육류
+423,beer,5177,rack_of_lamb,붉은 육류
+423,beer,5179,racks_of_lamb,붉은 육류
+423,beer,5801,shoulder_lamb_chop,붉은 육류
+423,beer,6113,stewing_lamb,붉은 육류
 519,blackberry_brandy,237,baby_clam,해산물
 519,blackberry_brandy,641,bottled_clam_juice,해산물
 519,blackberry_brandy,907,canned_clam,해산물
