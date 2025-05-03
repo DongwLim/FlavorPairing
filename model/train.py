@@ -213,7 +213,7 @@ if __name__ == "__main__":
     model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
 
     print("Training model...")
-    train_model(model=model, train_loader=train_loader, val_loader=val_loader, edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+    #train_model(model=model, train_loader=train_loader, val_loader=val_loader, edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
 
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     test_visualization(model, test_loader,edges_indexes, edges_weights, edges_type)

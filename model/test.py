@@ -1,6 +1,7 @@
 from dataset import map_graph_nodes, edges_index
 import torch
 from models import NeuralCF
+from utils import smoothed_scaled_score
 
 def predict(user_ids, item_ids, edges_indexes, edges_weights, edge_type):
     model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
@@ -27,7 +28,7 @@ edge_type_map ={
 
 edges_indexes, edges_weights, edge_type = edges_index(edge_type_map)
 
-liquor = input("술을 입력 : ")
+#liquor = input("술을 입력 : ")
 
 """for i in iid_to_idx.keys():
     score = predict(lid_to_idx[int(liquor)], iid_to_idx[i], edges_indexes, edges_weights, edge_type)
@@ -36,4 +37,4 @@ liquor = input("술을 입력 : ")
         
 while True:
     liquqor, ingredient = input("술과 재료를 입력 : ").split()
-    print(predict(lid_to_idx[int(liquqor)], iid_to_idx[int(ingredient)], edges_indexes, edges_weights, edge_type))
+    print(smoothed_scaled_score(predict(lid_to_idx[int(liquqor)], iid_to_idx[int(ingredient)], edges_indexes, edges_weights, edge_type)))

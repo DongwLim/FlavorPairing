@@ -7,6 +7,7 @@ from sklearn.decomposition import PCA
 import random
 from models import NeuralCF
 from dataset import map_graph_nodes
+from utils import smoothed_scaled_score
 
 def plot_score_distribution(pos_score, neg_score, title="Score Distribution"):
     """
@@ -52,8 +53,8 @@ def test_visualization(model, test_loader, edges_index, edges_weights, edges_typ
 
             user, pos, neg = user.to(device), pos.to(device), neg.to(device)
 
-            pos_output = model(user, pos, edges_index, edges_type, edges_weights)
-            neg_output = model(user, neg, edges_index, edges_type, edges_weights)
+            pos_output = smoothed_scaled_score(model(user, pos, edges_index, edges_type, edges_weights))
+            neg_output = smoothed_scaled_score(model(user, neg, edges_index, edges_type, edges_weights))
             
             pos_scores.extend(pos_output.cpu().numpy())
             neg_scores.extend(neg_output.cpu().numpy())
@@ -89,7 +90,7 @@ def all_score_visualization(edges_index, edges_weights, edges_type):
     with torch.no_grad():
         for i in tqdm(sample_iid, desc="Processing ingredients"):
             for l in sample_lid:
-                preds = model(l, i, edges_index, edges_type, edges_weights)
+                preds = smoothed_scaled_score(model(l, i, edges_index, edges_type, edges_weights))
                 all_scores.append(preds.item())
             
     plt.figure(figsize=(10, 6))
