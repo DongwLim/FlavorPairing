@@ -81,19 +81,17 @@ class NeuralCF(nn.Module):
             return x
 
         # GNN 결과 슬라이싱
-        gmf_user_emb = x[user_indices]
-        gmf_item_emb = x[item_indices]
-        mlp_user_emb = x[user_indices]
-        mlp_item_emb = x[item_indices]
+        user_emb = x[user_indices]
+        item_emb = x[item_indices]
 
-        gmf_user_emb = F.normalize(gmf_user_emb, dim=-1)
-        gmf_item_emb = F.normalize(gmf_item_emb, dim=-1)
+        gmf_user_emb = F.normalize(user_emb, dim=-1)
+        gmf_item_emb = F.normalize(item_emb, dim=-1)
 
         # GMF
         gmf_output = gmf_user_emb * gmf_item_emb
 
         # MLP
-        mlp_input = torch.cat([mlp_user_emb, mlp_item_emb], dim=-1)
+        mlp_input = torch.cat([user_emb, item_emb], dim=-1)
         mlp_output = self.mlp(mlp_input)
 
         # GMF + MLP
@@ -103,7 +101,7 @@ class NeuralCF(nn.Module):
         """
         final_input = torch.cat([gmf_output, mlp_output], dim=-1)
         logits = self.output_layer(final_input)
-        score = self.output_layer(final_input).squeeze() 
+        score = logits.squeeze() 
         
         #return torch.sigmoid(logits).squeeze()
         #score = torch.tanh(score)
