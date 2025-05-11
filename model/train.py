@@ -1,5 +1,6 @@
 import torch
 from torch.utils.data import DataLoader
+from torch.amp import autocast, GradScaler
 import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
@@ -9,8 +10,11 @@ import numpy as np
 import random
 
 from dataset import map_graph_nodes, edges_index, BPRDataset
+from cython_dataset import cython_map_graph_nodes, cython_edges_index
 from plot import test_visualization, all_score_visualization
 from models import NeuralCF
+
+import time
 
 def set_seed(seed=123):
     random.seed(seed)
@@ -62,6 +66,8 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
 
     topk = 5
 
+    scaler = GradScaler()
+
     print(f"Training on {device}")
     for epoch in range(num_epochs):
         total_loss = 0
@@ -77,6 +83,7 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
 
             optimizer.zero_grad()
 
+            # with autocast(device_type='cuda', dtype=torch.float16):
             pos_output = model(user, pos, edges_index, edges_type, edges_weights)
 
             num_neg_candidates = 10
@@ -100,6 +107,9 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
 
             loss.backward()
             optimizer.step()
+            # scaler.scale(loss).backward()
+            # scaler.step(optimizer)
+            # scaler.update()
 
             total_loss += loss.item() * pos.size(0)
             # Calculate ranking accuracy for BPR
@@ -155,9 +165,10 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
 
 if __name__ == "__main__":
     #set_seed()
+    start = time.time()
 
     print("Loading data...")
-    mapping = map_graph_nodes()
+    mapping = cython_map_graph_nodes()
     
     lid_to_idx = mapping['liquor']
     iid_to_idx = mapping['ingredient']
@@ -173,7 +184,7 @@ if __name__ == "__main__":
         'ingr-dcomp': 2
     }
     
-    edges_indexes, edges_weights, edges_type = edges_index(edge_type_map)
+    edges_indexes, edges_weights, edges_type = cython_edges_index(edge_type_map)
     
     print("Loading dataset...")
     positive_pairs = pd.read_csv("./liquor_good_ingredients.csv")
@@ -213,9 +224,11 @@ if __name__ == "__main__":
     model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
 
     print("Training model...")
-    #train_model(model=model, train_loader=train_loader, val_loader=val_loader, edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+    train_model(model=model, train_loader=train_loader, val_loader=val_loader, edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
 
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
-    test_visualization(model, test_loader,edges_indexes, edges_weights, edges_type)
+    test_visualization(model, test_loader, edges_indexes, edges_weights, edges_type)
 
     #all_score_visualization(edges_indexes, edges_weights, edges_type)
+
+    print(f'total elapsed time: {time.time() - start}')
