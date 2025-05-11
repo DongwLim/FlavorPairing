@@ -83,33 +83,33 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
 
             optimizer.zero_grad()
 
-            # with autocast(device_type='cuda', dtype=torch.float16):
-            pos_output = model(user, pos, edges_index, edges_type, edges_weights)
+            with autocast(device_type='cuda', dtype=torch.float16):
+                pos_output = model(user, pos, edges_index, edges_type, edges_weights)
 
-            num_neg_candidates = 10
-            neg_candidates = torch.randint(0, 6498, (user.size(0), num_neg_candidates), device=device)
+                num_neg_candidates = 10
+                neg_candidates = torch.randint(0, 6498, (user.size(0), num_neg_candidates), device=device)
 
-            user_expand = user.unsqueeze(1).expand_as(neg_candidates)
-            user_flat = user_expand.reshape(-1)
-            neg_flat = neg_candidates.reshape(-1)
+                user_expand = user.unsqueeze(1).expand_as(neg_candidates)
+                user_flat = user_expand.reshape(-1)
+                neg_flat = neg_candidates.reshape(-1)
 
-            neg_scores = model(user_flat, neg_flat, edges_index, edges_type, edges_weights)
-            neg_scores = neg_scores.view(user.size(0), num_neg_candidates)
+                neg_scores = model(user_flat, neg_flat, edges_index, edges_type, edges_weights)
+                neg_scores = neg_scores.view(user.size(0), num_neg_candidates)
 
-            hard_neg_scores, hard_neg_indices = torch.topk(neg_scores, k=topk, dim=1)
+                hard_neg_scores, hard_neg_indices = torch.topk(neg_scores, k=topk, dim=1)
 
-            random_idx = torch.randint(0, topk, (user.size(0),), device=device)
-            hard_neg = neg_candidates[torch.arange(user.size(0)), hard_neg_indices[torch.arange(user.size(0)), random_idx]]
+                random_idx = torch.randint(0, topk, (user.size(0),), device=device)
+                hard_neg = neg_candidates[torch.arange(user.size(0)), hard_neg_indices[torch.arange(user.size(0)), random_idx]]
 
-            neg_output = model(user, hard_neg, edges_index, edges_type, edges_weights)
-            loss = bpr_loss(pos_output, neg_output)
-            #loss = criterion(output, label)
+                neg_output = model(user, hard_neg, edges_index, edges_type, edges_weights)
+                loss = bpr_loss(pos_output, neg_output)
+                #loss = criterion(output, label)
 
-            loss.backward()
-            optimizer.step()
-            # scaler.scale(loss).backward()
-            # scaler.step(optimizer)
-            # scaler.update()
+            # loss.backward()
+            # optimizer.step()
+            scaler.scale(loss).backward()
+            scaler.step(optimizer)
+            scaler.update()
 
             total_loss += loss.item() * pos.size(0)
             # Calculate ranking accuracy for BPR
