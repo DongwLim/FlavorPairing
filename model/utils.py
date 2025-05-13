@@ -1,27 +1,57 @@
-def create_score_normalizer(pos_scores, neg_scores):
+import torch
+
+def precision_recall_at_k_torch(pred_scores, ground_truth_ids, k):
     """
-    주어진 Positive / Negative 점수 리스트를 기반으로
-    정규화 함수 (입력 점수 → [-1, 1]로 변환) 를 반환
+    pred_scores: 1D torch tensor of predicted scores for all items (e.g. [6498])
+    ground_truth_ids: list or set of ground truth item indices (e.g. [3, 20, 401])
+    k: top-k value
     """
-    import numpy as np
 
-    # 1. 히스토그램 겹침 기반 기준점 찾기
-    hist_range = (min(np.min(pos_scores), np.min(neg_scores)),
-                  max(np.max(pos_scores), np.max(neg_scores)))
-    bins = 200
-    pos_hist, bin_edges = np.histogram(pos_scores, bins=bins, range=hist_range)
-    neg_hist, _ = np.histogram(neg_scores, bins=bins, range=hist_range)
-    overlap = np.minimum(pos_hist, neg_hist)
-    overlap_peak_index = np.argmax(overlap)
-    overlap_peak = (bin_edges[overlap_peak_index] + bin_edges[overlap_peak_index + 1]) / 2
+    # 상위 k개 인덱스 추출 (예측 점수 기준)
+    topk_scores, topk_indices = torch.topk(pred_scores, k)
+    
+    topk_set = set(topk_indices.tolist())
+    ground_truth_set = set(ground_truth_ids)
 
-    # 2. 전체 범위 기준으로 최대 절댓값 계산
-    all_scores = np.concatenate([pos_scores, neg_scores])
-    shifted = all_scores - overlap_peak
-    max_abs = np.max(np.abs(shifted))
+    num_relevant_in_top_k = len(topk_set & ground_truth_set)
 
-    # 3. 정규화 함수 반환
-    def normalize_fn(score):
-        return (score - overlap_peak) / max_abs
+    precision = num_relevant_in_top_k / k
+    recall = num_relevant_in_top_k / len(ground_truth_set) if ground_truth_set else 0.0
 
-    return normalize_fn
+    return precision, recall
+
+def evaluate_precision_recall_k(model, test_loader, edges_index, edges_type, edges_weights, num_items, k=5):
+    model.eval()
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    
+    edges_index = edges_index.to(device)
+    edges_weights = edges_weights.to(device)
+    edges_type = edges_type.to(device).long()
+
+    precision_list = []
+    recall_list = []
+
+    with torch.no_grad():
+        for user, pos, _ in test_loader:
+            user = user.to(device)
+            pos = pos.to(device)
+
+            # 전체 아이템에 대한 점수 예측
+            all_items = torch.arange(num_items).to(device)
+            for u in user:
+                u_repeat = u.repeat(num_items)
+                scores = model(u_repeat, all_items, edges_index, edges_type, edges_weights)
+
+                # 정답 아이템 ID 목록
+                gt_items = pos[user == u].tolist()
+
+                # precision@k, recall@k 계산
+                prec, rec = precision_recall_at_k_torch(scores, gt_items, k)
+                precision_list.append(prec)
+                recall_list.append(rec)
+
+    avg_precision = sum(precision_list) / len(precision_list)
+    avg_recall = sum(recall_list) / len(recall_list)
+    
+    print(f"Precision@{k}: {avg_precision:.4f}")
+    print(f"Recall@{k}: {avg_recall:.4f}")
