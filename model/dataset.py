@@ -66,7 +66,7 @@ def edges_index(edge_type_map):
     return edge_index, edge_weights, edges_type
 
 class InteractionDataset(Dataset):
-    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=5.0):
+    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=0.5):
         self.samples = []
         self.num_users = num_users
         self.num_items = num_items

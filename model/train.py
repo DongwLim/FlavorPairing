@@ -11,6 +11,7 @@ import random
 from dataset import map_graph_nodes, edges_index, BPRDataset
 from plot import test_visualization, all_score_visualization
 from models import NeuralCF
+from utils import evaluate_precision_recall_k
 
 def set_seed(seed=123):
     random.seed(seed)
@@ -213,9 +214,16 @@ if __name__ == "__main__":
     model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
 
     print("Training model...")
-    #train_model(model=model, train_loader=train_loader, val_loader=val_loader, edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+    train_model(model=model, train_loader=train_loader, val_loader=val_loader, edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
 
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     test_visualization(model, test_loader,edges_indexes, edges_weights, edges_type)
+    
+    dataset = BPRDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=155, num_items=6498)
+    loader = DataLoader(dataset, batch_size=64, shuffle=False)
+    
+    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=10)
+    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=20)
+    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=50)
 
     #all_score_visualization(edges_indexes, edges_weights, edges_type)
