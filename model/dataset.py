@@ -65,35 +65,6 @@ def edges_index(edge_type_map):
 
     return edge_index, edge_weights, edges_type
 
-class InteractionDataset(Dataset):
-    def __init__(self, positive_pairs, hard_negatives, num_users, num_items, negative_ratio=0.5):
-        self.samples = []
-        self.num_users = num_users
-        self.num_items = num_items
-
-        # Positive samples
-        for _, row in positive_pairs.iterrows():
-            self.samples.append((row['liquor_id'], row['ingredient_id'], 1))
-
-        # Hard negatives
-        for _, row in hard_negatives.iterrows():
-            self.samples.append((row['liquor_id'], row['ingredient_id'], 0))  
-
-        # Negative samples
-        num_neg = int(len(positive_pairs) * negative_ratio)
-        for _ in range(num_neg):
-            u = random.randint(0, num_users - 1)
-            i = random.randint(0, num_items - 1)
-            if (u, i) not in positive_pairs:
-                self.samples.append((u, i, 0))
-
-    def __len__(self):
-        return len(self.samples)
-
-    def __getitem__(self, idx):
-        user, item, label = self.samples[idx]
-        return torch.tensor(user), torch.tensor(item), torch.tensor(label, dtype=torch.float32)
-
 def preprocess():
     nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
     edges_df = pd.read_csv("./dataset/flavor diffusion/edges_191120.csv")
@@ -145,7 +116,7 @@ def preprocess():
     edges_df.to_csv("./dataset/edges_191120_updated.csv", index=False)
     
 class BPRDataset(Dataset):
-    def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=5.0):
+    def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=0.5):
         self.BPR_samples = []
         self.positive_pairs = []
         self.negative_pairs = []

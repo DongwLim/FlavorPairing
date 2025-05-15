@@ -13,7 +13,7 @@ loss.backward()
 """
 
 class NeuralCF(nn.Module):
-    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[256, 128, 64, 32], emb_init = None):
+    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[128, 64, 32], emb_init = None):
         super(NeuralCF, self).__init__()
         """
             num_users       :   술 노드의 개수
@@ -25,10 +25,6 @@ class NeuralCF(nn.Module):
             user_init       :   술 초기 임베딩
             item_init       :   음식 초기 임베딩
         """
-        """
-            GNN 구현 완료 
-            CSP_Aggregation 미구현
-        """
         self.num_nodes = num_nodes
         
         self.embedding = nn.Embedding(num_nodes, emb_size) # GNN에서 사용될 노드 임베딩
@@ -38,12 +34,10 @@ class NeuralCF(nn.Module):
                 self.embedding.weight.data[node_idx] = torch.tensor(init_vector, dtype=torch.float32)
 
         self.norm1 = nn.LayerNorm(emb_size)
-        self.norm2 = nn.LayerNorm(emb_size)
         
         # RGNN
         self.wrgcn = WeightedRGCNConv(emb_size, emb_size, num_relations) # GNN layer
         self.wrgcn2 = WeightedRGCNConv(emb_size, emb_size, num_relations)
-        self.wrgcn3 = WeightedRGCNConv(emb_size, emb_size, num_relations)
 
         layers = []
         input_size = emb_size * 2
@@ -72,10 +66,6 @@ class NeuralCF(nn.Module):
         x = F.dropout(x, p=0.2, training=self.training)
         x = self.norm1(x)
         x = self.wrgcn2(x, edge_index, edge_type, edge_weight)
-        x = F.relu(x)
-        x = F.dropout(x, p=0.2, training=self.training)
-        x = self.norm2(x)
-        x = self.wrgcn3(x, edge_index, edge_type, edge_weight)
         
         if is_embbed:
             return x
