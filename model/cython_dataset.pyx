@@ -49,18 +49,16 @@ def cython_edges_index(dict edge_type_map):
     edges_df = pd.read_csv("./dataset/edges_191120_updated.csv")
     nodes_map = cython_map_graph_nodes()
 
-    cdef int num_rows = edges_df.shape[0]
-    cdef np.ndarray[np.int64_t, ndim=2] edges_index = np.zeros((num_rows, 2), dtype=np.int64)
-    cdef np.ndarray[np.float32_t, ndim=1] edges_weights = np.zeros(num_rows, dtype=np.float32)
-    cdef np.ndarray[np.int64_t, ndim=1] edges_types = np.zeros(num_rows, dtype=np.int64)
-
     cdef int edge_idx = 0
-    cdef int comp_idx = 0
     cdef int offset = 0
 
     cdef int df_len = len(edges_df)
     cdef int src, tgt
     cdef bytes typ
+
+    cdef np.ndarray[np.int64_t, ndim=2] edges_index = np.zeros((df_len, 2), dtype=np.int64)
+    cdef np.ndarray[np.float32_t, ndim=1] edges_weights = np.zeros(df_len, dtype=np.float32)
+    cdef np.ndarray[np.int64_t, ndim=1] edges_types = np.zeros(df_len, dtype=np.int64)
 
     edges_id_1 = edges_df['id_1'].to_numpy()
     edges_id_2 = edges_df['id_2'].to_numpy()
@@ -72,17 +70,12 @@ def cython_edges_index(dict edge_type_map):
         tgt = edges_id_2[edge_idx - offset]
         typ = edges_type[edge_idx - offset].encode("utf-8")
 
-        src_idx = nodes_map[src]
-        tgt_idx = nodes_map[tgt]
-        edges_index[edge_idx, 1] = tgt
-
         if strcmp(typ, b'ingr-fcomp') == 0 or strcmp(typ, b'ingr-dcomp') == 0:
-            comp_idx = comp_idx + 1
             offset = offset + 1     # 이번 루프는 edge_idx와 관계없음
             continue
         
-        edges_index[edge_idx - offset, 0] = src_idx
-        edges_index[edge_idx - offset, 1] = tgt_idx
+        edges_index[edge_idx - offset, 0] = nodes_map[src]
+        edges_index[edge_idx - offset, 1] = nodes_map[tgt]
 
         if not pd.isna(edges_score[edge_idx - offset]):
             edges_weights[edge_idx - offset] = edges_score[edge_idx - offset]
