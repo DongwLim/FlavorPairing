@@ -998,107 +998,169 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,origin
 423,beer,5248,razor_clam,생해산물
 423,beer,5860,small_clam,생해산물
 423,beer,6103,steamer_clam,생해산물
-423,beer,67,ahi_tuna_steak,붉은 육류
-423,beer,377,beef_cube_steak,붉은 육류
-423,beer,396,beef_round_steak,붉은 육류
-423,beer,397,beef_round_tip_steak,붉은 육류
-423,beer,404,beef_sirloin_steak,붉은 육류
-423,beer,406,beef_steak,붉은 육류
-423,beer,414,beef_t_bone_steak,붉은 육류
-423,beer,418,beef_tenderloin_steak,붉은 육류
-423,beer,421,beef_top_round_steak,붉은 육류
-423,beer,422,beefsteak_tomato,붉은 육류
-423,beer,527,blade_steak,붉은 육류
-423,beer,577,boneless_beef_chuck_steak,붉은 육류
-423,beer,580,boneless_beef_round_steak,붉은 육류
-423,beer,585,boneless_beef_top_loin_steak,붉은 육류
-423,beer,586,boneless_beef_top_round_steak,붉은 육류
-423,beer,613,boneless_rib_eye_steak,붉은 육류
-423,beer,614,boneless_round_steak,붉은 육류
-423,beer,618,boneless_sirloin_steak,붉은 육류
-423,beer,631,boneless_veal_steak,붉은 육류
-423,beer,647,bottom_round_steak,붉은 육류
-423,beer,1350,chuck_steak,붉은 육류
-423,beer,1457,cod_steak,붉은 육류
-423,beer,1766,cube_steak,붉은 육류
-423,beer,2338,filet_mignon_steak,붉은 육류
-423,beer,2373,fish_steak,붉은 육류
-423,beer,2381,flank_steak,붉은 육류
-423,beer,2383,flat_iron_steak,붉은 육류
-423,beer,3158,halibut_steak,붉은 육류
-423,beer,3167,ham_steak,붉은 육류
-423,beer,3175,hanger_steak,붉은 육류
-423,beer,3227,heinz_57_steak_sauce,붉은 육류
-423,beer,3366,hp_steak_sauce,붉은 육류
-423,beer,3653,lamb_steak,붉은 육류
-423,beer,3692,lean_flank_steak,붉은 육류
-423,beer,3708,lean_round_steak,붉은 육류
-423,beer,3710,lean_sirloin_steak,붉은 육류
-423,beer,3711,lean_steak,붉은 육류
-423,beer,4118,mccormick's_montreal_brand_steak_seasoning,붉은 육류
-423,beer,4255,minute_steak,붉은 육류
-423,beer,4381,new_york_strip_steak,붉은 육류
-423,beer,4973,pork_blade_steak,붉은 육류
-423,beer,5010,pork_steak,붉은 육류
-423,beer,5020,porterhouse_steak,붉은 육류
-423,beer,5427,rib_eye_steak,붉은 육류
-423,beer,5551,round_steak,붉은 육류
-423,beer,5562,rump_steak,붉은 육류
-423,beer,5602,salmon_steak,붉은 육류
-423,beer,5761,shark_steak,붉은 육류
-423,beer,5769,shell_steak,붉은 육류
-423,beer,5827,sirloin_steak,붉은 육류
-423,beer,5829,sirloin_tip_steak,붉은 육류
-423,beer,5846,skirt_steak,붉은 육류
-423,beer,6095,steak,붉은 육류
-423,beer,6096,steak_fillet,붉은 육류
-423,beer,6097,steak_sauce,붉은 육류
-423,beer,6098,steak_seasoning,붉은 육류
-423,beer,6099,steak_spice,붉은 육류
-423,beer,6101,steak_ums,붉은 육류
-423,beer,6158,strip_steak,붉은 육류
-423,beer,6302,swordfish_steak,붉은 육류
-423,beer,6471,top_round_steak,붉은 육류
-423,beer,6472,top_sirloin_steak,붉은 육류
-423,beer,6484,tri_tip_steak,붉은 육류
-423,beer,6505,tuna_steak,붉은 육류
-423,beer,6685,veal_steak,붉은 육류
-423,beer,6742,venison_steak,붉은 육류
-423,beer,7085,yellowfin_tuna_steak,붉은 육류
-423,beer,599,boneless_lamb,붉은 육류
-423,beer,600,boneless_lamb_shoulder,붉은 육류
-423,beer,602,boneless_leg_of_lamb,붉은 육류
-423,beer,803,butterflied_leg_of_lamb,붉은 육류
-423,beer,1538,cooked_lamb,붉은 육류
-423,beer,3088,ground_lamb,붉은 육류
-423,beer,3636,lamb,붉은 육류
-423,beer,3638,lamb_bone,붉은 육류
-423,beer,3639,lamb_breast,붉은 육류
-423,beer,3640,lamb_chop,붉은 육류
-423,beer,3641,lamb_cutlet,붉은 육류
-423,beer,3642,lamb_fillet,붉은 육류
-423,beer,3644,lamb_liver,붉은 육류
-423,beer,3645,lamb_loin_chop,붉은 육류
-423,beer,3646,lamb_neck,붉은 육류
-423,beer,3647,lamb_rack,붉은 육류
-423,beer,3648,lamb_rib,붉은 육류
-423,beer,3649,lamb_rib_chop,붉은 육류
-423,beer,3650,lamb_sausage,붉은 육류
-423,beer,3651,lamb_shank,붉은 육류
-423,beer,3652,lamb_shoulder,붉은 육류
-423,beer,3653,lamb_steak,붉은 육류
-423,beer,3654,lamb_stew_meat,붉은 육류
-423,beer,3655,lamb_stock,붉은 육류
-423,beer,3657,lambs_kidney,붉은 육류
-423,beer,3688,lean_boneless_lamb,붉은 육류
-423,beer,3696,lean_ground_lamb,붉은 육류
-423,beer,3703,lean_lamb,붉은 육류
-423,beer,3719,leg_of_lamb,붉은 육류
-423,beer,3906,loin_lamb,붉은 육류
-423,beer,5177,rack_of_lamb,붉은 육류
-423,beer,5179,racks_of_lamb,붉은 육류
-423,beer,5801,shoulder_lamb_chop,붉은 육류
-423,beer,6113,stewing_lamb,붉은 육류
+423,beer,445,betty_crocker_fudge_brownie_mix,초콜릿/커피 디저트
+423,beer,751,brownie,초콜릿/커피 디저트
+423,beer,2775,fudge_brownie_mix,초콜릿/커피 디저트
+423,beer,283,baker's_semi_sweet_baking_chocolate,초콜릿/커피 디저트
+423,beer,284,baker's_unsweetened_chocolate_square,초콜릿/커피 디저트
+423,beer,286,baking_chocolate,초콜릿/커피 디저트
+423,beer,287,baking_chocolate_square,초콜릿/커피 디저트
+423,beer,462,bitter_chocolate,초콜릿/커피 디저트
+423,beer,464,bittersweet_baking_chocolate,초콜릿/커피 디저트
+423,beer,465,bittersweet_chocolate,초콜릿/커피 디저트
+423,beer,466,bittersweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,467,bittersweet_chocolate_piece,초콜릿/커피 디저트
+423,beer,468,bittersweet_chocolate_square,초콜릿/커피 디저트
+423,beer,890,candy_covered_plain_chocolate_candy,초콜릿/커피 디저트
+423,beer,1266,chocolate,초콜릿/커피 디저트
+423,beer,1267,chocolate_almond_bark,초콜릿/커피 디저트
+423,beer,1268,chocolate_bar,초콜릿/커피 디저트
+423,beer,1269,chocolate_bark,초콜릿/커피 디저트
+423,beer,1270,chocolate_bars_with_almond,초콜릿/커피 디저트
+423,beer,1271,chocolate_biscuit,초콜릿/커피 디저트
+423,beer,1272,chocolate_cake,초콜릿/커피 디저트
+423,beer,1274,chocolate_cake_mix,초콜릿/커피 디저트
+423,beer,1275,chocolate_candy_bar,초콜릿/커피 디저트
+423,beer,1276,chocolate_chip,초콜릿/커피 디저트
+423,beer,1277,chocolate_chip_cookie,초콜릿/커피 디저트
+423,beer,1278,chocolate_chip_cookie_mix,초콜릿/커피 디저트
+423,beer,1279,chocolate_chip_cooky,초콜릿/커피 디저트
+423,beer,1281,chocolate_cookie_crumb,초콜릿/커피 디저트
+423,beer,1282,chocolate_cookie_pie_crust,초콜릿/커피 디저트
+423,beer,1283,chocolate_cooky,초콜릿/커피 디저트
+423,beer,1284,chocolate_covered_caramel_candy,초콜릿/커피 디저트
+423,beer,1285,chocolate_covered_coffee_bean,초콜릿/커피 디저트
+423,beer,1286,chocolate_covered_english_toffee_bar,초콜릿/커피 디저트
+423,beer,1287,chocolate_covered_espresso_bean,초콜릿/커피 디저트
+423,beer,1288,chocolate_covered_graham_cracker_cooky,초콜릿/커피 디저트
+423,beer,1289,chocolate_covered_mint_candy,초콜릿/커피 디저트
+423,beer,1290,chocolate_covered_peanut,초콜릿/커피 디저트
+423,beer,1291,chocolate_covered_raisin,초콜릿/커피 디저트
+423,beer,1292,chocolate_covered_toffee_bit,초콜릿/커피 디저트
+423,beer,1293,chocolate_crumb_crust,초콜릿/커피 디저트
+423,beer,1296,chocolate_extract,초콜릿/커피 디저트
+423,beer,1297,chocolate_flavor_instant_pudding_and_pie_filling_mix,초콜릿/커피 디저트
+423,beer,1298,chocolate_flavor_nestle_nesquik_powder,초콜릿/커피 디저트
+423,beer,1299,chocolate_flavored_candy_coating,초콜릿/커피 디저트
+423,beer,1301,chocolate_flavored_syrup,초콜릿/커피 디저트
+423,beer,1302,chocolate_flavoring,초콜릿/커피 디저트
+423,beer,1303,chocolate_frosting,초콜릿/커피 디저트
+423,beer,1304,chocolate_fudge_frosting,초콜릿/커피 디저트
+423,beer,1305,chocolate_fudge_instant_pudding_mix,초콜릿/커피 디저트
+423,beer,1306,chocolate_fudge_topping,초콜릿/커피 디저트
+423,beer,1307,chocolate_glaze,초콜릿/커피 디저트
+423,beer,1308,chocolate_graham_cracker,초콜릿/커피 디저트
+423,beer,1309,chocolate_graham_cracker_crumb,초콜릿/커피 디저트
+423,beer,1310,chocolate_graham_wafer_pie_crust,초콜릿/커피 디저트
+423,beer,1311,chocolate_hazelnut_spread,초콜릿/커피 디저트
+423,beer,1312,chocolate_ice_cream,초콜릿/커피 디저트
+423,beer,1313,chocolate_ice_cream_topping,초콜릿/커피 디저트
+423,beer,1314,chocolate_icing,초콜릿/커피 디저트
+423,beer,1315,chocolate_instant_pudding,초콜릿/커피 디저트
+423,beer,1316,chocolate_leaf,초콜릿/커피 디저트
+423,beer,1318,chocolate_milk,초콜릿/커피 디저트
+423,beer,1319,chocolate_mousse_mix,초콜릿/커피 디저트
+423,beer,1320,chocolate_piece,초콜릿/커피 디저트
+423,beer,1321,chocolate_protein_powder,초콜릿/커피 디저트
+423,beer,1322,chocolate_pudding,초콜릿/커피 디저트
+423,beer,1323,chocolate_pudding_mix,초콜릿/커피 디저트
+423,beer,1324,chocolate_sandwich_style_cooky,초콜릿/커피 디저트
+423,beer,1325,chocolate_shaving,초콜릿/커피 디저트
+423,beer,1326,chocolate_sorbet,초콜릿/커피 디저트
+423,beer,1327,chocolate_soymilk,초콜릿/커피 디저트
+423,beer,1328,chocolate_spread,초콜릿/커피 디저트
+423,beer,1329,chocolate_sprinkle,초콜릿/커피 디저트
+423,beer,1330,chocolate_square,초콜릿/커피 디저트
+423,beer,1331,chocolate_syrup,초콜릿/커피 디저트
+423,beer,1332,chocolate_truffle,초콜릿/커피 디저트
+423,beer,1334,chocolate_wafer,초콜릿/커피 디저트
+423,beer,1335,chocolate_wafer_cookie,초콜릿/커피 디저트
+423,beer,1336,chocolate_wafer_cooky,초콜릿/커피 디저트
+423,beer,1337,chocolate_wafer_crumb,초콜릿/커피 디저트
+423,beer,1338,chocolate_wafer_pie_crust,초콜릿/커피 디저트
+423,beer,1339,chocolate_whey_protein_powder,초콜릿/커피 디저트
+423,beer,1340,chocolate_whipped_cream,초콜릿/커피 디저트
+423,beer,1690,cream_filled_chocolate_sandwich_cooky,초콜릿/커피 디저트
+423,beer,1804,dark_baking_chocolate,초콜릿/커피 디저트
+423,beer,1810,dark_chocolate,초콜릿/커피 디저트
+423,beer,1811,dark_chocolate_bar,초콜릿/커피 디저트
+423,beer,1812,dark_chocolate_cake_mix,초콜릿/커피 디저트
+423,beer,1813,dark_chocolate_chip,초콜릿/커피 디저트
+423,beer,1814,dark_chocolate_frosting,초콜릿/커피 디저트
+423,beer,1815,dark_chocolate_melt,초콜릿/커피 디저트
+423,beer,1816,dark_chocolate_shaving,초콜릿/커피 디저트
+423,beer,1818,dark_cooking_chocolate,초콜릿/커피 디저트
+423,beer,1834,dark_semi_sweet_chocolate,초콜릿/커피 디저트
+423,beer,1909,dipping_chocolate,초콜릿/커피 디저트
+423,beer,2093,drinking_chocolate,초콜릿/커피 디저트
+423,beer,2272,fat_free_chocolate_syrup,초콜릿/커피 디저트
+423,beer,2828,german_chocolate,초콜릿/커피 디저트
+423,beer,2829,german_chocolate_cake_mix,초콜릿/커피 디저트
+423,beer,2831,german_sweet_chocolate,초콜릿/커피 디저트
+423,beer,2834,ghirardelli_semi_sweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,2876,gluten_free_chocolate_chip,초콜릿/커피 디저트
+423,beer,3253,hershey's_hugs_chocolate,초콜릿/커피 디저트
+423,beer,3254,hershey's_semi_sweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,3257,hershey_chocolate_candy_bar,초콜릿/커피 디저트
+423,beer,3258,hershey_chocolate_kiss,초콜릿/커피 디저트
+423,beer,3259,hersheys_chocolate_syrup,초콜릿/커피 디저트
+423,beer,3330,hot_chocolate_powder,초콜릿/커피 디저트
+423,beer,3396,imported_white_chocolate,초콜릿/커피 디저트
+423,beer,3406,instant_chocolate_drink_mix,초콜릿/커피 디저트
+423,beer,3407,instant_chocolate_pudding_mix,초콜릿/커피 디저트
+423,beer,3443,instant_white_chocolate_pudding_and_pie_filling_mix,초콜릿/커피 디저트
+423,beer,3515,jell_o_chocolate_instant_pudding,초콜릿/커피 디저트
+423,beer,3516,jell_o_chocolate_pudding_and_pie_filling,초콜릿/커피 디저트
+423,beer,3799,light_chocolate_syrup,초콜릿/커피 디저트
+423,beer,4009,m_&_m's_peanut_chocolate_candy,초콜릿/커피 디저트
+423,beer,4010,m_&_m's_plain_chocolate_candy,초콜릿/커피 디저트
+423,beer,4168,mexican_chocolate,초콜릿/커피 디저트
+423,beer,4205,milk_chocolate,초콜릿/커피 디저트
+423,beer,4206,milk_chocolate_candy_bar,초콜릿/커피 디저트
+423,beer,4207,milk_chocolate_chip,초콜릿/커피 디저트
+423,beer,4208,milk_chocolate_frosting,초콜릿/커피 디저트
+423,beer,4209,milk_chocolate_kiss,초콜릿/커피 디저트
+423,beer,4210,milk_chocolate_melt,초콜릿/커피 디저트
+423,beer,4211,milk_chocolate_piece,초콜릿/커피 디저트
+423,beer,4226,mini_chocolate_chip,초콜릿/커피 디저트
+423,beer,4232,miniature_chocolate_chip,초콜릿/커피 디저트
+423,beer,4234,miniature_m_&_m's_chocolate_candy,초콜릿/커피 디저트
+423,beer,4245,mint_chocolate_chip,초콜릿/커피 디저트
+423,beer,4246,mint_chocolate_chip_ice_cream,초콜릿/커피 디저트
+423,beer,4403,non_dairy_chocolate_chip,초콜릿/커피 디저트
+423,beer,4690,peanut_butter_and_milk_chocolate_chip,초콜릿/커피 디저트
+423,beer,5043,powdered_chocolate_milk_mix,초콜릿/커피 디저트
+423,beer,5067,premium_white_baking_chocolate,초콜릿/커피 디저트
+423,beer,5410,refrigerated_chocolate_chip_cookie_dough,초콜릿/커피 디저트
+423,beer,5511,rolo_chocolate,초콜릿/커피 디저트
+423,beer,5723,semi_sweet_chocolate_baking_square,초콜릿/커피 디저트
+423,beer,5724,semi_sweet_chocolate_bit,초콜릿/커피 디저트
+423,beer,5725,semi_sweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,5726,semisweet_baking_chocolate,초콜릿/커피 디저트
+423,beer,5727,semisweet_chocolate,초콜릿/커피 디저트
+423,beer,5728,semisweet_chocolate_bar,초콜릿/커피 디저트
+423,beer,5729,semisweet_chocolate_chip,초콜릿/커피 디저트
+423,beer,5732,semisweet_chocolate_piece,초콜릿/커피 디저트
+423,beer,5733,semisweet_mini_chocolate_chip,초콜릿/커피 디저트
+423,beer,5734,semisweet_vegan_chocolate_chip,초콜릿/커피 디저트
+423,beer,6178,sugar_free_chocolate_syrup,초콜릿/커피 디저트
+423,beer,6182,sugar_free_instant_chocolate_pudding_mix,초콜릿/커피 디저트
+423,beer,6235,sweet_baking_chocolate,초콜릿/커피 디저트
+423,beer,6242,sweet_chocolate,초콜릿/커피 디저트
+423,beer,6432,toblerone_chocolate_bar,초콜릿/커피 디저트
+423,beer,6599,unsweetened_baking_chocolate,초콜릿/커피 디저트
+423,beer,6601,unsweetened_chocolate,초콜릿/커피 디저트
+423,beer,6602,unsweetened_chocolate_square,초콜릿/커피 디저트
+423,beer,6610,unsweetened_dark_chocolate,초콜릿/커피 디저트
+423,beer,6835,white_baking_chocolate,초콜릿/커피 디저트
+423,beer,6852,white_chocolate,초콜릿/커피 디저트
+423,beer,6853,white_chocolate_baking_bar,초콜릿/커피 디저트
+423,beer,6854,white_chocolate_baking_square,초콜릿/커피 디저트
+423,beer,6855,white_chocolate_chip,초콜릿/커피 디저트
+423,beer,6856,white_chocolate_chunk,초콜릿/커피 디저트
+423,beer,6857,white_chocolate_curl,초콜릿/커피 디저트
+423,beer,6859,white_chocolate_pudding_mix,초콜릿/커피 디저트
+423,beer,6860,white_chocolate_sauce,초콜릿/커피 디저트
 519,blackberry_brandy,237,baby_clam,해산물
 519,blackberry_brandy,641,bottled_clam_juice,해산물
 519,blackberry_brandy,907,canned_clam,해산물
@@ -16931,107 +16993,6 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,origin
 6763,vodka,4483,onion_marmalade,매운 음식
 6763,vodka,4520,orange_marmalade,매운 음식
 6763,vodka,825,cabbage_kimchi,발효 음식
-6804,wheat_beer,67,ahi_tuna_steak,붉은 육류
-6804,wheat_beer,377,beef_cube_steak,붉은 육류
-6804,wheat_beer,396,beef_round_steak,붉은 육류
-6804,wheat_beer,397,beef_round_tip_steak,붉은 육류
-6804,wheat_beer,404,beef_sirloin_steak,붉은 육류
-6804,wheat_beer,406,beef_steak,붉은 육류
-6804,wheat_beer,414,beef_t_bone_steak,붉은 육류
-6804,wheat_beer,418,beef_tenderloin_steak,붉은 육류
-6804,wheat_beer,421,beef_top_round_steak,붉은 육류
-6804,wheat_beer,422,beefsteak_tomato,붉은 육류
-6804,wheat_beer,527,blade_steak,붉은 육류
-6804,wheat_beer,577,boneless_beef_chuck_steak,붉은 육류
-6804,wheat_beer,580,boneless_beef_round_steak,붉은 육류
-6804,wheat_beer,585,boneless_beef_top_loin_steak,붉은 육류
-6804,wheat_beer,586,boneless_beef_top_round_steak,붉은 육류
-6804,wheat_beer,613,boneless_rib_eye_steak,붉은 육류
-6804,wheat_beer,614,boneless_round_steak,붉은 육류
-6804,wheat_beer,618,boneless_sirloin_steak,붉은 육류
-6804,wheat_beer,631,boneless_veal_steak,붉은 육류
-6804,wheat_beer,647,bottom_round_steak,붉은 육류
-6804,wheat_beer,1350,chuck_steak,붉은 육류
-6804,wheat_beer,1457,cod_steak,붉은 육류
-6804,wheat_beer,1766,cube_steak,붉은 육류
-6804,wheat_beer,2338,filet_mignon_steak,붉은 육류
-6804,wheat_beer,2373,fish_steak,붉은 육류
-6804,wheat_beer,2381,flank_steak,붉은 육류
-6804,wheat_beer,2383,flat_iron_steak,붉은 육류
-6804,wheat_beer,3158,halibut_steak,붉은 육류
-6804,wheat_beer,3167,ham_steak,붉은 육류
-6804,wheat_beer,3175,hanger_steak,붉은 육류
-6804,wheat_beer,3227,heinz_57_steak_sauce,붉은 육류
-6804,wheat_beer,3366,hp_steak_sauce,붉은 육류
-6804,wheat_beer,3653,lamb_steak,붉은 육류
-6804,wheat_beer,3692,lean_flank_steak,붉은 육류
-6804,wheat_beer,3708,lean_round_steak,붉은 육류
-6804,wheat_beer,3710,lean_sirloin_steak,붉은 육류
-6804,wheat_beer,3711,lean_steak,붉은 육류
-6804,wheat_beer,4118,mccormick's_montreal_brand_steak_seasoning,붉은 육류
-6804,wheat_beer,4255,minute_steak,붉은 육류
-6804,wheat_beer,4381,new_york_strip_steak,붉은 육류
-6804,wheat_beer,4973,pork_blade_steak,붉은 육류
-6804,wheat_beer,5010,pork_steak,붉은 육류
-6804,wheat_beer,5020,porterhouse_steak,붉은 육류
-6804,wheat_beer,5427,rib_eye_steak,붉은 육류
-6804,wheat_beer,5551,round_steak,붉은 육류
-6804,wheat_beer,5562,rump_steak,붉은 육류
-6804,wheat_beer,5602,salmon_steak,붉은 육류
-6804,wheat_beer,5761,shark_steak,붉은 육류
-6804,wheat_beer,5769,shell_steak,붉은 육류
-6804,wheat_beer,5827,sirloin_steak,붉은 육류
-6804,wheat_beer,5829,sirloin_tip_steak,붉은 육류
-6804,wheat_beer,5846,skirt_steak,붉은 육류
-6804,wheat_beer,6095,steak,붉은 육류
-6804,wheat_beer,6096,steak_fillet,붉은 육류
-6804,wheat_beer,6097,steak_sauce,붉은 육류
-6804,wheat_beer,6098,steak_seasoning,붉은 육류
-6804,wheat_beer,6099,steak_spice,붉은 육류
-6804,wheat_beer,6101,steak_ums,붉은 육류
-6804,wheat_beer,6158,strip_steak,붉은 육류
-6804,wheat_beer,6302,swordfish_steak,붉은 육류
-6804,wheat_beer,6471,top_round_steak,붉은 육류
-6804,wheat_beer,6472,top_sirloin_steak,붉은 육류
-6804,wheat_beer,6484,tri_tip_steak,붉은 육류
-6804,wheat_beer,6505,tuna_steak,붉은 육류
-6804,wheat_beer,6685,veal_steak,붉은 육류
-6804,wheat_beer,6742,venison_steak,붉은 육류
-6804,wheat_beer,7085,yellowfin_tuna_steak,붉은 육류
-6804,wheat_beer,599,boneless_lamb,붉은 육류
-6804,wheat_beer,600,boneless_lamb_shoulder,붉은 육류
-6804,wheat_beer,602,boneless_leg_of_lamb,붉은 육류
-6804,wheat_beer,803,butterflied_leg_of_lamb,붉은 육류
-6804,wheat_beer,1538,cooked_lamb,붉은 육류
-6804,wheat_beer,3088,ground_lamb,붉은 육류
-6804,wheat_beer,3636,lamb,붉은 육류
-6804,wheat_beer,3638,lamb_bone,붉은 육류
-6804,wheat_beer,3639,lamb_breast,붉은 육류
-6804,wheat_beer,3640,lamb_chop,붉은 육류
-6804,wheat_beer,3641,lamb_cutlet,붉은 육류
-6804,wheat_beer,3642,lamb_fillet,붉은 육류
-6804,wheat_beer,3644,lamb_liver,붉은 육류
-6804,wheat_beer,3645,lamb_loin_chop,붉은 육류
-6804,wheat_beer,3646,lamb_neck,붉은 육류
-6804,wheat_beer,3647,lamb_rack,붉은 육류
-6804,wheat_beer,3648,lamb_rib,붉은 육류
-6804,wheat_beer,3649,lamb_rib_chop,붉은 육류
-6804,wheat_beer,3650,lamb_sausage,붉은 육류
-6804,wheat_beer,3651,lamb_shank,붉은 육류
-6804,wheat_beer,3652,lamb_shoulder,붉은 육류
-6804,wheat_beer,3653,lamb_steak,붉은 육류
-6804,wheat_beer,3654,lamb_stew_meat,붉은 육류
-6804,wheat_beer,3655,lamb_stock,붉은 육류
-6804,wheat_beer,3657,lambs_kidney,붉은 육류
-6804,wheat_beer,3688,lean_boneless_lamb,붉은 육류
-6804,wheat_beer,3696,lean_ground_lamb,붉은 육류
-6804,wheat_beer,3703,lean_lamb,붉은 육류
-6804,wheat_beer,3719,leg_of_lamb,붉은 육류
-6804,wheat_beer,3906,loin_lamb,붉은 육류
-6804,wheat_beer,5177,rack_of_lamb,붉은 육류
-6804,wheat_beer,5179,racks_of_lamb,붉은 육류
-6804,wheat_beer,5801,shoulder_lamb_chop,붉은 육류
-6804,wheat_beer,6113,stewing_lamb,붉은 육류
 6804,wheat_beer,4086,marmalade,매운 음식
 6804,wheat_beer,4483,onion_marmalade,매운 음식
 6804,wheat_beer,4520,orange_marmalade,매운 음식
@@ -17123,3 +17084,260 @@ liquor_id,liquor_name,ingredient_id,ingredient_name,origin
 6804,wheat_beer,5296,red_grapefruit,산미 디저트
 6804,wheat_beer,5557,ruby_red_grapefruit_juice,산미 디저트
 6804,wheat_beer,6881,white_grapefruit,산미 디저트
+40,absolut_citron_vodka,6301,swordfish_fillet
+40,absolut_citron_vodka,5504,rockfish_fillet
+40,absolut_citron_vodka,626,boneless_skinless_salmon_fillet
+40,absolut_citron_vodka,5598,salmon
+40,absolut_citron_vodka,5631,salted_salmon
+40,absolut_citron_vodka,5332,red_salmon
+40,absolut_citron_vodka,625,boneless_skinless_pink_salmon
+40,absolut_citron_vodka,4875,pink_salmon
+40,absolut_citron_vodka,1679,crayfish
+40,absolut_citron_vodka,1556,cooked_salmon
+40,absolut_citron_vodka,1677,crawfish_tail
+75,ale,1332,chocolate_truffle
+75,ale,2775,fudge_brownie_mix
+75,ale,1308,chocolate_graham_cracker
+75,ale,794,butter_pecan_ice_cream
+96,almond_flavored_liqueur,5969,sour_dill_pickle
+96,almond_flavored_liqueur,1900,dill_pickle_spear
+120,amaretto_liqueur,1900,dill_pickle_spear
+120,amaretto_liqueur,5969,sour_dill_pickle
+121,amarula_cream_liqueur,377,beef_cube_steak
+122,amber_beer,1332,chocolate_truffle
+122,amber_beer,2775,fudge_brownie_mix
+122,amber_beer,1319,chocolate_mousse_mix
+122,amber_beer,794,butter_pecan_ice_cream
+122,amber_beer,1308,chocolate_graham_cracker
+122,amber_beer,4692,peanut_butter_cookie_dough
+122,amber_beer,2301,fat_free_sugar_free_instant_vanilla_pudding_mix
+122,amber_beer,1309,chocolate_graham_cracker_crumb
+122,amber_beer,1327,chocolate_soymilk
+122,amber_beer,2219,english_toffee_flavored_candy_bar
+122,amber_beer,1292,chocolate_covered_toffee_bit
+150,anise_flavored_liqueur,1694,cream_of_chicken_and_mushroom_soup
+150,anise_flavored_liqueur,1904,dill_sprig
+167,apple_liqueur,5969,sour_dill_pickle
+167,apple_liqueur,5365,reduced_fat_cream_of_mushroom_soup
+184,apricot_liqueur,6888,white_mushroom
+184,apricot_liqueur,2329,field_mushroom
+184,apricot_liqueur,4336,mushroom_soup
+184,apricot_liqueur,1072,champignon_mushroom
+184,apricot_liqueur,5000,pork_sausage_casing
+184,apricot_liqueur,4997,pork_rind
+184,apricot_liqueur,1499,condensed_cream_of_mushroom_soup
+311,banana_liqueur,5365,reduced_fat_cream_of_mushroom_soup
+311,banana_liqueur,862,campbell's_cream_of_mushroom_soup
+423,beer,4246,mint_chocolate_chip_ice_cream
+423,beer,5726,semisweet_baking_chocolate
+423,beer,4234,miniature_m_&_m's_chocolate_candy
+423,beer,6857,white_chocolate_curl
+423,beer,6599,unsweetened_baking_chocolate
+423,beer,4210,milk_chocolate_melt
+423,beer,3330,hot_chocolate_powder
+423,beer,1281,chocolate_cookie_crumb
+423,beer,1282,chocolate_cookie_pie_crust
+423,beer,1276,chocolate_chip
+423,beer,890,candy_covered_plain_chocolate_candy
+423,beer,1302,chocolate_flavoring
+423,beer,4232,miniature_chocolate_chip
+423,beer,1310,chocolate_graham_wafer_pie_crust
+423,beer,1811,dark_chocolate_bar
+423,beer,1909,dipping_chocolate
+423,beer,3254,hershey's_semi_sweet_chocolate_chip
+423,beer,4226,mini_chocolate_chip
+423,beer,1272,chocolate_cake
+423,beer,1303,chocolate_frosting
+423,beer,1324,chocolate_sandwich_style_cooky
+423,beer,6835,white_baking_chocolate
+423,beer,1279,chocolate_chip_cooky
+423,beer,2775,fudge_brownie_mix
+423,beer,4209,milk_chocolate_kiss
+423,beer,1304,chocolate_fudge_frosting
+423,beer,4690,peanut_butter_and_milk_chocolate_chip
+423,beer,1323,chocolate_pudding_mix
+423,beer,1275,chocolate_candy_bar
+423,beer,1334,chocolate_wafer
+423,beer,1266,chocolate
+423,beer,4245,mint_chocolate_chip
+423,beer,1339,chocolate_whey_protein_powder
+423,beer,4207,milk_chocolate_chip
+423,beer,1315,chocolate_instant_pudding
+423,beer,1314,chocolate_icing
+423,beer,1569,cookie
+423,beer,3406,instant_chocolate_drink_mix
+423,beer,4010,m_&_m's_plain_chocolate_candy
+423,beer,1312,chocolate_ice_cream
+423,beer,1297,chocolate_flavor_instant_pudding_and_pie_filling_mix
+423,beer,1338,chocolate_wafer_pie_crust
+423,beer,5732,semisweet_chocolate_piece
+423,beer,1284,chocolate_covered_caramel_candy
+423,beer,1307,chocolate_glaze
+423,beer,1331,chocolate_syrup
+423,beer,1327,chocolate_soymilk
+423,beer,6242,sweet_chocolate
+423,beer,4692,peanut_butter_cookie_dough
+423,beer,1320,chocolate_piece
+423,beer,1316,chocolate_leaf
+423,beer,1288,chocolate_covered_graham_cracker_cooky
+423,beer,1285,chocolate_covered_coffee_bean
+562,bock_beer,2775,fudge_brownie_mix
+562,bock_beer,4246,mint_chocolate_chip_ice_cream
+562,bock_beer,1327,chocolate_soymilk
+562,bock_beer,1286,chocolate_covered_english_toffee_bar
+562,bock_beer,1332,chocolate_truffle
+562,bock_beer,1309,chocolate_graham_cracker_crumb
+562,bock_beer,794,butter_pecan_ice_cream
+562,bock_beer,1288,chocolate_covered_graham_cracker_cooky
+562,bock_beer,1335,chocolate_wafer_cookie
+562,bock_beer,4245,mint_chocolate_chip
+562,bock_beer,1308,chocolate_graham_cracker
+562,bock_beer,1319,chocolate_mousse_mix
+562,bock_beer,3799,light_chocolate_syrup
+562,bock_beer,3830,light_vanilla_ice_cream
+562,bock_beer,1292,chocolate_covered_toffee_bit
+562,bock_beer,306,banana_cream_instant_pudding
+562,bock_beer,1310,chocolate_graham_wafer_pie_crust
+562,bock_beer,3520,jello_instant_vanilla_pudding_mix
+562,bock_beer,1814,dark_chocolate_frosting
+562,bock_beer,6404,thin_mint_cooky
+653,bourbon_whiskey,555,blueberry_yogurt
+653,bourbon_whiskey,794,butter_pecan_ice_cream
+653,bourbon_whiskey,2769,fruit_yogurt
+761,budweiser_beer,2775,fudge_brownie_mix
+761,budweiser_beer,1332,chocolate_truffle
+761,budweiser_beer,4748,peppermint_oil
+761,budweiser_beer,4246,mint_chocolate_chip_ice_cream
+761,budweiser_beer,1327,chocolate_soymilk
+761,budweiser_beer,794,butter_pecan_ice_cream
+1115,cherry_flavored_liqueur,4338,mushroom_soy_sauce
+1115,cherry_flavored_liqueur,6888,white_mushroom
+1391,citrus_infused_vodka,5332,red_salmon
+1627,corona_beer,4248,mint_jelly
+1627,corona_beer,4251,mint_sprig
+1627,corona_beer,2531,fresh_mint_leaf
+1627,corona_beer,4249,mint_leaf
+1627,corona_beer,4750,peppermint_schnapps
+1627,corona_beer,4245,mint_chocolate_chip
+1627,corona_beer,2025,dried_mint_flake
+1823,dark_mexican_beer,4452,of_fresh_mint
+2844,ginger_liqueur,1694,cream_of_chicken_and_mushroom_soup
+2844,ginger_liqueur,4977,pork_chop
+2905,golden_rum,3266,hickory_smoked_bacon
+3204,hazelnut_flavored_liqueur,4332,mushroom_cap
+3204,hazelnut_flavored_liqueur,4341,mushroom_stock
+3204,hazelnut_flavored_liqueur,4965,porcini_mushroom
+3204,hazelnut_flavored_liqueur,6888,white_mushroom
+3204,hazelnut_flavored_liqueur,4978,pork_cutlet
+3204,hazelnut_flavored_liqueur,4331,mushroom_broth
+3449,irish_whiskey,2284,fat_free_lemon_yogurt
+3449,irish_whiskey,3830,light_vanilla_ice_cream
+3449,irish_whiskey,2442,french_vanilla_ice_cream
+3449,irish_whiskey,4246,mint_chocolate_chip_ice_cream
+3449,irish_whiskey,4508,orange_flavored_yogurt
+3449,irish_whiskey,4412,non_fat_vanilla_frozen_yogurt
+3449,irish_whiskey,3520,jello_instant_vanilla_pudding_mix
+3449,irish_whiskey,1439,coconut_ice_cream
+3449,irish_whiskey,4668,peach_ice_cream
+3449,irish_whiskey,3973,low_fat_vanilla_yogurt
+3449,irish_whiskey,6609,unsweetened_crushed_canned_pineapple
+3449,irish_whiskey,3972,low_fat_vanilla_ice_cream
+3449,irish_whiskey,3832,light_vanilla_yogurt
+3449,irish_whiskey,4868,pineapple_yogurt
+3449,irish_whiskey,1313,chocolate_ice_cream_topping
+3449,irish_whiskey,2281,fat_free_greek_yogurt
+3449,irish_whiskey,6595,unsweetened_apple_cider
+3449,irish_whiskey,6620,unsweetened_pineapple_chunk
+3583,kirsch_liqueur,4792,pickled_hot_cherry_pepper
+3635,lager_beer,6857,white_chocolate_curl
+3635,lager_beer,890,candy_covered_plain_chocolate_candy
+3635,lager_beer,1281,chocolate_cookie_crumb
+3635,lager_beer,1278,chocolate_chip_cookie_mix
+3635,lager_beer,1310,chocolate_graham_wafer_pie_crust
+3635,lager_beer,4246,mint_chocolate_chip_ice_cream
+3736,lemon_flavored_vodka,5332,red_salmon
+3736,lemon_flavored_vodka,1556,cooked_salmon
+3736,lemon_flavored_vodka,5598,salmon
+3736,lemon_flavored_vodka,6301,swordfish_fillet
+3736,lemon_flavored_vodka,626,boneless_skinless_salmon_fillet
+3736,lemon_flavored_vodka,5929,sockeye_salmon
+3736,lemon_flavored_vodka,625,boneless_skinless_pink_salmon
+3736,lemon_flavored_vodka,5599,salmon_caviar
+3736,lemon_flavored_vodka,5631,salted_salmon
+3791,light_beer,6151,strawberry_sorbet
+3791,light_beer,6857,white_chocolate_curl
+3791,light_beer,4452,of_fresh_mint
+4152,melon_liqueur,5969,sour_dill_pickle
+4152,melon_liqueur,6888,white_mushroom
+4183,meyer's_dark_rum,867,canadian_bacon
+4183,meyer's_dark_rum,172,apple_smoked_bacon
+4183,meyer's_dark_rum,5882,smoked_back_bacon
+4183,meyer's_dark_rum,858,campbell's_cheddar_cheese_soup
+4183,meyer's_dark_rum,1086,cheddar_cheese_soup
+4507,orange_flavored_liqueur,5969,sour_dill_pickle
+4519,orange_liqueur,5969,sour_dill_pickle
+4672,peach_liqueur,6888,white_mushroom
+4706,pear_liqueur,1900,dill_pickle_spear
+4708,pear_vodka,5598,salmon
+4708,pear_vodka,5845,skinless_salmon_fillet
+4708,pear_vodka,6301,swordfish_fillet
+4708,pear_vodka,5929,sockeye_salmon
+4708,pear_vodka,5332,red_salmon
+4834,pilsner_beer,1327,chocolate_soymilk
+5226,raspberry_vodka,2567,fresh_salmon
+5226,raspberry_vodka,625,boneless_skinless_pink_salmon
+5226,raspberry_vodka,5599,salmon_caviar
+5226,raspberry_vodka,5332,red_salmon
+5226,raspberry_vodka,5598,salmon
+5558,rum,5907,smoked_streaky_bacon
+5558,rum,3266,hickory_smoked_bacon
+5576,rye_whiskey,6615,unsweetened_frozen_blueberry
+5965,sour_apple_liqueur,4785,pickle_spear
+5965,sour_apple_liqueur,1694,cream_of_chicken_and_mushroom_soup
+6040,spiced_rum,172,apple_smoked_bacon
+6040,spiced_rum,5907,smoked_streaky_bacon
+6040,spiced_rum,5882,smoked_back_bacon
+6088,st._germain_elderflower_liqueur,5969,sour_dill_pickle
+6088,st._germain_elderflower_liqueur,1900,dill_pickle_spear
+6128,stout_beer,6857,white_chocolate_curl
+6128,stout_beer,1302,chocolate_flavoring
+6128,stout_beer,4210,milk_chocolate_melt
+6128,stout_beer,3406,instant_chocolate_drink_mix
+6128,stout_beer,6599,unsweetened_baking_chocolate
+6128,stout_beer,5726,semisweet_baking_chocolate
+6128,stout_beer,1303,chocolate_frosting
+6128,stout_beer,1811,dark_chocolate_bar
+6128,stout_beer,6835,white_baking_chocolate
+6128,stout_beer,1297,chocolate_flavor_instant_pudding_and_pie_filling_mix
+6128,stout_beer,1310,chocolate_graham_wafer_pie_crust
+6128,stout_beer,6432,toblerone_chocolate_bar
+6128,stout_beer,1304,chocolate_fudge_frosting
+6128,stout_beer,1332,chocolate_truffle
+6128,stout_beer,1287,chocolate_covered_espresso_bean
+6128,stout_beer,3330,hot_chocolate_powder
+6128,stout_beer,1268,chocolate_bar
+6128,stout_beer,1328,chocolate_spread
+6128,stout_beer,1324,chocolate_sandwich_style_cooky
+6128,stout_beer,1275,chocolate_candy_bar
+6128,stout_beer,1322,chocolate_pudding
+6128,stout_beer,1296,chocolate_extract
+6128,stout_beer,890,candy_covered_plain_chocolate_candy
+6128,stout_beer,4009,m_&_m's_peanut_chocolate_candy
+6128,stout_beer,1818,dark_cooking_chocolate
+6128,stout_beer,1293,chocolate_crumb_crust
+6128,stout_beer,1804,dark_baking_chocolate
+6128,stout_beer,1281,chocolate_cookie_crumb
+6656,vanilla_liqueur,862,campbell's_cream_of_mushroom_soup
+6763,vodka,5598,salmon
+6763,vodka,5615,salt_cod_fish
+6763,vodka,1556,cooked_salmon
+6763,vodka,625,boneless_skinless_pink_salmon
+6763,vodka,4875,pink_salmon
+6763,vodka,5631,salted_salmon
+6763,vodka,626,boneless_skinless_salmon_fillet
+6763,vodka,5332,red_salmon
+6763,vodka,5599,salmon_caviar
+6763,vodka,6301,swordfish_fillet
+6763,vodka,5929,sockeye_salmon
+6804,wheat_beer,4248,mint_jelly
+6804,wheat_beer,4251,mint_sprig

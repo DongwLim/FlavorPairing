@@ -52,15 +52,7 @@ edges_indexes, edges_weights, edge_type = edges_index(edge_type_map)
 
 df = pd.read_csv("./dataset/nodes_191120_updated.csv")
 
-"""liquor = int(input("술을 입력 : "))
-topk = int(input("topk : "))
-
-topk_items = topk_predict(lid_to_idx[liquor], edges_indexes, edges_weights, edge_type, topk)
-
-items_id = [idx_to_id[i] for i in topk_items]
-print(items_id)
-print(f"추천된 재료들 : {df[df['node_id'].isin(items_id)]['name'].values.tolist()}")"""
-topk = 100
+topk = 10
 # 결과 저장 딕셔너리
 all_recommendations = {}
 
@@ -86,17 +78,7 @@ for liquor_id in tqdm(liquor_ids, desc="Generating top-k recommendations"):
         continue
 
 # JSON 파일로 저장
-with open("liquor_topk_recommendations_with_name.json", "w", encoding="utf-8") as f:
+with open("liquor_top10_recommendations.json", "w", encoding="utf-8") as f:
     json.dump(all_recommendations, f, ensure_ascii=False, indent=1)
 
 print("저장 완료: liquor_topk_recommendations.json")
-
-
-"""for i in iid_to_idx.keys():
-    score = predict(lid_to_idx[int(liquor)], iid_to_idx[i], edges_indexes, edges_weights, edge_type)
-    if score > -2.0:
-        print(f"{i} : {score}")"""
-        
-"""while True:
-    liquqor, ingredient = input("술과 재료를 입력 : ").split()
-    print(smoothed_scaled_score(predict(lid_to_idx[int(liquqor)], iid_to_idx[int(ingredient)], edges_indexes, edges_weights, edge_type)))"""

@@ -11,7 +11,7 @@ import random
 from dataset import map_graph_nodes, edges_index, BPRDataset
 from plot import test_visualization, all_score_visualization
 from models import NeuralCF
-from utils import evaluate_precision_recall_k
+from utils import evaluate_precision_recall_k_multi
 
 def set_seed(seed=123):
     random.seed(seed)
@@ -223,8 +223,6 @@ if __name__ == "__main__":
     dataset = BPRDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=155, num_items=6498)
     loader = DataLoader(dataset, batch_size=64, shuffle=False)
     
-    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=10)
-    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=20)
-    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=50)
+    evaluate_precision_recall_k_multi(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498)
 
     #all_score_visualization(edges_indexes, edges_weights, edges_type)

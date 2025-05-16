@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.nn import MessagePassing
+import pickle
 
 """
 all_node_emb = GNN(edge_index)
@@ -13,7 +14,7 @@ loss.backward()
 """
 
 class NeuralCF(nn.Module):
-    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[128, 64, 32], emb_init = None):
+    def __init__(self, num_users, num_items, num_nodes=8298, num_relations=2, emb_size=128, hidden_layers=[128, 64, 32], emb_init_path = None):
         super(NeuralCF, self).__init__()
         """
             num_users       :   술 노드의 개수
@@ -27,11 +28,15 @@ class NeuralCF(nn.Module):
         """
         self.num_nodes = num_nodes
         
-        self.embedding = nn.Embedding(num_nodes, emb_size) # GNN에서 사용될 노드 임베딩
+        self.embedding = nn.Embedding(num_nodes, emb_size) 
         
-        if emb_init is not None:
-            for node_idx, init_vector in emb_init.items():
-                self.embedding.weight.data[node_idx] = torch.tensor(init_vector, dtype=torch.float32)
+        if emb_init_path is not None:
+            with open(emb_init_path, "rb") as f:
+                emb_init = pickle.load(f)
+
+            with torch.no_grad():  
+                for idx, (node_idx, init_vector) in enumerate(emb_init.items()): 
+                    self.embedding.weight[idx] = torch.tensor(init_vector, dtype=torch.float32)
 
         self.norm1 = nn.LayerNorm(emb_size)
         
