@@ -79,7 +79,6 @@ class NeuralCF(nn.Module):
         
         if is_embbed:
             return x
-
         # GNN 결과 슬라이싱
         user_emb = x[user_indices]
         item_emb = x[item_indices]
@@ -122,7 +121,8 @@ class WeightedRGCNConv(MessagePassing):
 
         self.root = nn.Linear(in_channels, out_channels, bias=False)  # 자기 자신
         self.bias = nn.Parameter(torch.Tensor(out_channels)) if bias else None
-        self.reset_parameters()
+
+        # self.reset_parameters()
 
     def reset_parameters(self):
         for lin in self.rel_lins:
@@ -138,7 +138,6 @@ class WeightedRGCNConv(MessagePassing):
         edge_type: [num_edges]
         edge_weight: [num_edges] or None
         """
-        
         if edge_weight is None:
             edge_weight = torch.ones(edge_index.size(1), device=edge_index.device)
 
@@ -155,10 +154,12 @@ class WeightedRGCNConv(MessagePassing):
         out = torch.zeros(x_j.size(0), self.out_channels, device=x_j.device)
 
         for r in range(self.num_relations):
-            mask = edge_type == r
-            if mask.sum() > 0:
-                transformed = self.rel_lins[r](x_j[mask])
-                out[mask] = edge_weight[mask].unsqueeze(-1) * transformed
+            idx = (edge_type == r).nonzero(as_tuple=True)[0]
+            if idx.numel() == 0:
+                continue
+            x_rel = x_j[idx]
+            transformed = self.rel_lins[r](x_rel)
+            out[idx] = edge_weight[idx].unsqueeze(-1) * transformed
 
         return out
 
