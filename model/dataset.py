@@ -8,6 +8,8 @@ from tqdm import tqdm
 import torch
 from torch.utils.data import Dataset
 
+from collections import defaultdict
+
 def map_graph_nodes():
     nodes_df = pd.read_csv("./dataset/nodes_191120_updated.csv")
 
@@ -146,40 +148,12 @@ def preprocess():
     
 class BPRDataset(Dataset):
     def __init__(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=5.0):
-        self.BPR_samples = []
-        self.positive_pairs = []
-        self.negative_pairs = []
-        self.positive_set = set()
-        self.num_users = num_users
-        self.num_items = num_items
-        
-        # Positive samples
-        for _, row in positive_pairs.iterrows():
-            self.positive_pairs.append((row['liquor_id'], row['ingredient_id']))
-            self.positive_set.add((row['liquor_id'], row['ingredient_id']))
-
-        # Hard negatives
-        for _, row in hard_negatives.iterrows():
-            self.negative_pairs.append((row['liquor_id'], row['ingredient_id']))  
-        
-        for pair in self.positive_pairs:
-            u = pair[0]
-            i = pair[1]
-            for _ in range(int(negative_ratio)):
-                while True:
-                    j = random.randint(0, num_items - 1)
-                    if (u, j) not in self.positive_set:
-                        self.BPR_samples.append((u, i, j))
-                        break
-        
+        positive_pairs = positive_pairs[['liquor_id', 'ingredient_id']].to_numpy(dtype=np.int64)
         if hard_negatives is not None:
-            for pair in self.negative_pairs:
-                u = pair[0]
-                j = pair[1]
-                positives_for_u = [i for x, i in self.positive_pairs if x == u]
-                if positives_for_u:
-                    i = random.choice(positives_for_u)
-                    self.BPR_samples.append((u, i, j))
+            hard_negatives = hard_negatives[['liquor_id', 'ingredient_id']].to_numpy(dtype=np.int64)
+
+        samples = self.generate_bpr_samples(positive_pairs, hard_negatives, num_users, num_items, int(negative_ratio))
+        self.BPR_samples = samples
                         
     def __len__(self):
         return len(self.BPR_samples)
@@ -187,3 +161,46 @@ class BPRDataset(Dataset):
     def __getitem__(self, idx):
         u, pos, neg = self.BPR_samples[idx]
         return torch.tensor(u, dtype=torch.long), torch.tensor(pos, dtype=torch.long), torch.tensor(neg, dtype=torch.long)
+    
+    def generate_bpr_samples(self, positive_pairs, hard_negatives=None, num_users=None, num_items=None, negative_ratio=5):
+        pos_u = positive_pairs[:, 0]
+        pos_i = positive_pairs[:, 1]
+
+        pos_set = set(map(tuple, positive_pairs.tolist()))
+
+        total_pos = len(pos_u)
+        target_size = total_pos * negative_ratio
+
+        u_repeat = np.repeat(pos_u, negative_ratio)
+        i_repeat = np.repeat(pos_i, negative_ratio)
+
+        neg_j = np.random.randint(0, num_items, size=target_size)
+        mask = np.array([(u, j) not in pos_set for u, j in zip(u_repeat, neg_j)])
+
+        # Run loop until there are no more remaining positives
+        while not np.all(mask):
+            n_redraw = (~mask).sum()
+            new_j = np.random.randint(0, num_items, size=n_redraw)
+            neg_j[~mask] = new_j
+            mask = np.array([(u, j) not in pos_set for u, j in zip(u_repeat, neg_j)])
+
+        bpr_samples = np.stack([u_repeat, i_repeat, neg_j], axis=1)
+
+        if hard_negatives is not None:
+            hard_u = hard_negatives[:, 0]
+            hard_j = hard_negatives[:, 1]
+
+            user_to_pos = defaultdict(list)
+            for u, i in zip(pos_u, pos_i):
+                user_to_pos[u].append(i)
+
+            hard_samples = []
+            for u, j in zip(hard_u, hard_j):
+                if user_to_pos[u]:
+                    i = np.random.choice(user_to_pos[u])
+                    hard_samples.append([u, i, j])
+            hard_samples = np.array(hard_samples, dtype=np.int64)
+
+            bpr_samples = np.vstack([bpr_samples, hard_samples])
+
+        return bpr_samples
