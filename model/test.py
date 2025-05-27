@@ -60,7 +60,7 @@ topk_items = topk_predict(lid_to_idx[liquor], edges_indexes, edges_weights, edge
 items_id = [idx_to_id[i] for i in topk_items]
 print(items_id)
 print(f"추천된 재료들 : {df[df['node_id'].isin(items_id)]['name'].values.tolist()}")"""
-topk = 100
+topk = 10
 # 결과 저장 딕셔너리
 all_recommendations = {}
 
@@ -86,7 +86,7 @@ for liquor_id in tqdm(liquor_ids, desc="Generating top-k recommendations"):
         continue
 
 # JSON 파일로 저장
-with open("liquor_topk_recommendations_with_name.json", "w", encoding="utf-8") as f:
+with open("liquor_topk_recommendations_percentage_data.json", "w", encoding="utf-8") as f:
     json.dump(all_recommendations, f, ensure_ascii=False, indent=1)
 
 print("저장 완료: liquor_topk_recommendations.json")

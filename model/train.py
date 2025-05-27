@@ -178,10 +178,10 @@ if __name__ == "__main__":
     edges_indexes, edges_weights, edges_type = edges_index(edge_type_map)
     
     print("Loading dataset...")
-    positive_pairs = pd.read_csv("./liquor_good_ingredients.csv")
+    positive_pairs = pd.read_csv("./liquor_good_ingredient_similarity.csv")
     positive_pairs = positive_pairs[['liquor_id', 'ingredient_id']]
 
-    negative_pairs = pd.read_csv("./liquor_bad_ingredients.csv")
+    negative_pairs = pd.read_csv("./liquor_bad_ingredient_similarity.csv")
     negative_pairs = negative_pairs[['liquor_id', 'ingredient_id']]
 
     print("Mapping liquor and ingredient IDs to indices...")

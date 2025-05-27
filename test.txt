@@ -1,0 +1,54 @@
+Negative Mining 
+GPT data
+
+2 Layered
+val loss: 0.4400
+ROC AUC Score: 0.7824
+Precision@10: 0.1978
+Recall@10: 0.0677
+Precision@20: 0.1857
+Recall@20: 0.1160
+Precision@50: 0.1613
+Recall@50: 0.2212
+
+0.5
+val loss: 0.0487
+ROC AUC Score: 0.8061
+Precision@10: 0.2047
+Recall@10: 0.0683
+Precision@20: 0.1916
+Recall@20: 0.1155
+Precision@50: 0.1695
+Recall@50: 0.2274
+
+3 Layered
+val loss: 0.4051
+ROC AUC Score: 0.8254
+Precision@10: 0.1915
+Recall@10: 0.0679
+Precision@20: 0.1748
+Recall@20: 0.1095
+Precision@50: 0.1543
+Recall@50: 0.2108
+
+===========================
+
+FlavorGraph cos sim data :: percentage filtered
+val loss: 0.1273
+ROC AUC Score: 0.9334
+Precision@10: 0.2923
+Recall@10: 0.1085
+Precision@20: 0.2690
+Recall@20: 0.1899
+Precision@50: 0.2191
+Recall@50: 0.3477
+
+threshold filtered 
+val loss: 0.1949
+ROC AUC Score: 0.9065
+Precision@10: 0.2495
+Recall@10: 0.0934
+Precision@20: 0.2326
+Recall@20: 0.1590
+Precision@50: 0.1959
+Recall@50: 0.3104
