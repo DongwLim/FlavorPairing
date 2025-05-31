@@ -11,7 +11,7 @@ import random
 from dataset import map_graph_nodes, edges_index, BPRDataset
 from plot import test_visualization, all_score_visualization
 from models import NeuralCF
-from utils import evaluate_precision_recall_k
+from utils import evaluate_precision_recall_k_multi
 
 def set_seed(seed=123):
     random.seed(seed)
@@ -43,24 +43,18 @@ class EarlyStopping:
 def bpr_loss(pos_scores, neg_scores):
     return -torch.mean(torch.log(torch.sigmoid(pos_scores - neg_scores) + 1e-10))
 
-def train_model(model, train_loader, val_loader, edges_index, edges_weights, edges_type, num_epochs=10, lr=0.0005, weight_decay=1e-5):
+def train_model(model, train_loader, val_loader, num_epochs=10, lr=0.0005, weight_decay=1e-5):
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     torch.manual_seed(123)
     
     model.to(device)
-    
-    edges_index = edges_index.to(device)
-    edges_weights = edges_weights.to(device)
-    edges_type = edges_type.to(device).long()
     model.train()
 
-    #criterion = bpr_loss()
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
     early_stopping = EarlyStopping(patience=5, delta=0.001)
 
     best_model = None
     best_val_loss = float('inf')
-
     topk = 5
 
     print(f"Training on {device}")
@@ -70,15 +64,13 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
         total = 0
 
         for user, pos, neg in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs}"):
-            user = user.long()   
-            pos = pos.long()   
-            neg = neg.long()
-
-            user, pos, neg = user.to(device), pos.to(device), neg.to(device)
+            user = user.to(device).long()
+            pos = pos.to(device).long()
+            neg = neg.to(device).long()
 
             optimizer.zero_grad()
 
-            pos_output = model(user, pos, edges_index, edges_type, edges_weights)
+            pos_output = model(user, pos)
 
             num_neg_candidates = 10
             neg_candidates = torch.randint(0, 6498, (user.size(0), num_neg_candidates), device=device)
@@ -87,68 +79,57 @@ def train_model(model, train_loader, val_loader, edges_index, edges_weights, edg
             user_flat = user_expand.reshape(-1)
             neg_flat = neg_candidates.reshape(-1)
 
-            neg_scores = model(user_flat, neg_flat, edges_index, edges_type, edges_weights)
+            neg_scores = model(user_flat, neg_flat)
             neg_scores = neg_scores.view(user.size(0), num_neg_candidates)
 
             hard_neg_scores, hard_neg_indices = torch.topk(neg_scores, k=topk, dim=1)
-
             random_idx = torch.randint(0, topk, (user.size(0),), device=device)
             hard_neg = neg_candidates[torch.arange(user.size(0)), hard_neg_indices[torch.arange(user.size(0)), random_idx]]
 
-            neg_output = model(user, hard_neg, edges_index, edges_type, edges_weights)
+            neg_output = model(user, hard_neg)
             
             loss = bpr_loss(pos_output, neg_output)
-            #loss = criterion(output, label)
-
             loss.backward()
             optimizer.step()
 
             total_loss += loss.item() * pos.size(0)
-            # Calculate ranking accuracy for BPR
-            correct += (pos_output > neg_output).sum().item()  # Count correct rankings
-            total += pos.size(0)  # Total number of positive samples
+            correct += (pos_output > neg_output).sum().item()
+            total += pos.size(0)
 
         avg_loss = total_loss / total
         acc = correct / total
         print(f"[Epoch {epoch+1}] Loss: {avg_loss:.4f} | Accuracy: {acc:.4f}")
-        
+
         # Validation
         model.eval()
         val_loss = 0
         val_correct = 0
         val_total = 0
-        
+
         with torch.no_grad():
             for user, pos, neg in val_loader:
-                user = user.long()
-                pos = pos.long()
-                neg = neg.long()
+                user = user.to(device).long()
+                pos = pos.to(device).long()
+                neg = neg.to(device).long()
 
-                user, pos, neg = user.to(device), pos.to(device), neg.to(device)
-
-                pos_output = model(user, pos, edges_index, edges_type, edges_weights)
-                neg_output = model(user, neg, edges_index, edges_type, edges_weights)
+                pos_output = model(user, pos)
+                neg_output = model(user, neg)
                 loss = bpr_loss(pos_output, neg_output)
-                
-                # loss = criterion(output, label)
-                
+
                 val_loss += loss.item() * pos.size(0)
-                # Calculate ranking accuracy for BPR
-                val_correct += (pos_output > neg_output).sum().item()  # Count correct rankings
-                val_total += pos.size(0)  # Total number of positive samples
-        
+                val_correct += (pos_output > neg_output).sum().item()
+                val_total += pos.size(0)
+
         avg_val_loss = val_loss / val_total
         val_acc = val_correct / val_total
-        
+
         print(f"[Validation] Loss: {avg_val_loss:.4f} | Accuracy: {val_acc:.4f}")
-        #torch.save(model.state_dict(), f"./model/checkpoint/epoch_{epoch}.pth")
-        
+
         if avg_val_loss < best_val_loss:
             best_val_loss = avg_val_loss
             best_model = model.state_dict()
             print(f"Best model saved at epoch {epoch+1} with validation loss {best_val_loss:.4f}")
-            
-        # Check Early Stopping
+
         early_stopping(avg_val_loss)
         if early_stopping.early_stop:
             print("Early stopping triggered.")
@@ -178,10 +159,10 @@ if __name__ == "__main__":
     edges_indexes, edges_weights, edges_type = edges_index(edge_type_map)
     
     print("Loading dataset...")
-    positive_pairs = pd.read_csv("./liquor_good_ingredient_similarity.csv")
+    positive_pairs = pd.read_csv("./liquor_good_ingredient_similarity_percentage.csv")
     positive_pairs = positive_pairs[['liquor_id', 'ingredient_id']]
 
-    negative_pairs = pd.read_csv("./liquor_bad_ingredient_similarity.csv")
+    negative_pairs = pd.read_csv("./liquor_bad_ingredient_similarity_percentage.csv")
     negative_pairs = negative_pairs[['liquor_id', 'ingredient_id']]
 
     print("Mapping liquor and ingredient IDs to indices...")
@@ -212,10 +193,23 @@ if __name__ == "__main__":
     torch.save(test_dataset, "test_dataset.pt")
 
     print("Creating model...")
-    model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
+    model = NeuralCF(
+        num_users=155,
+        num_items=6498,
+        emb_size=128,
+        edge_index=edges_indexes,
+        edge_type=edges_type,
+        edge_weight=edges_weights
+    )
+
 
     print("Training model...")
-    train_model(model=model, train_loader=train_loader, val_loader=val_loader, edges_type=edges_type, edges_index=edges_indexes, edges_weights=edges_weights, num_epochs=200)
+    """train_model(
+        model=model,
+        train_loader=train_loader,
+        val_loader=val_loader,
+        num_epochs=200
+    )"""
 
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     test_visualization(model, test_loader,edges_indexes, edges_weights, edges_type)
@@ -223,8 +217,6 @@ if __name__ == "__main__":
     dataset = BPRDataset(positive_pairs=positive_pairs, hard_negatives=negative_pairs, num_users=155, num_items=6498)
     loader = DataLoader(dataset, batch_size=64, shuffle=False)
     
-    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=10)
-    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=20)
-    evaluate_precision_recall_k(model, loader, edges_indexes, edges_type, edges_weights, num_items=6498, k=50)
+    evaluate_precision_recall_k_multi(model, loader, num_items=6498, ks=[10, 20, 50])
 
     #all_score_visualization(edges_indexes, edges_weights, edges_type)

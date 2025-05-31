@@ -53,8 +53,8 @@ def test_visualization(model, test_loader, edges_index, edges_weights, edges_typ
 
             user, pos, neg = user.to(device), pos.to(device), neg.to(device)
 
-            pos_output = model(user, pos, edges_index, edges_type, edges_weights)
-            neg_output = model(user, neg, edges_index, edges_type, edges_weights)
+            pos_output = model(user, pos)
+            neg_output = model(user, neg)
             
             pos_scores.extend(pos_output.cpu().numpy())
             neg_scores.extend(neg_output.cpu().numpy())
@@ -64,7 +64,14 @@ def test_visualization(model, test_loader, edges_index, edges_weights, edges_typ
 def all_score_visualization(edges_index, edges_weights, edges_type):
     all_scores = []
     
-    model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
+    model = NeuralCF(
+        num_users=155,
+        num_items=6498,
+        emb_size=128,
+        edge_index=edges_index,
+        edge_type=edges_type,
+        edge_weight=edges_weights
+    )
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     model.eval()
 

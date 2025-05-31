@@ -29,39 +29,37 @@ def precision_recall_at_k_torch(pred_scores, ground_truth_ids, k):
     return precision, recall
 
 
-def evaluate_precision_recall_k(model, test_loader, edges_index, edges_type, edges_weights, num_items, k=5):
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    model.to(device)
+def evaluate_precision_recall_k_multi(model, test_loader,num_items, ks=[10, 20, 50]):
     model.eval()
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    edges_index = edges_index.to(device)
-    edges_weights = edges_weights.to(device)
-    edges_type = edges_type.to(device).long()
+    all_items = torch.arange(num_items, device=device)
 
-    precision_list = []
-    recall_list = []
+    precision_dict = {k: [] for k in ks}
+    recall_dict = {k: [] for k in ks}
 
     with torch.no_grad():
-        for user, pos, _ in test_loader:
-            user = user.to(device)
-            pos = pos.to(device)
+        for users, pos_items, _ in test_loader:
+            users = users.to(device)
+            pos_items = pos_items.to(device)
 
-            # 전체 아이템에 대한 점수 예측
-            all_items = torch.arange(num_items).to(device)
-            for u in user:
+            for u in users.unique():
+                u_idx = (users == u)
+                gt_items = pos_items[u_idx].tolist()
+
+                if not gt_items:
+                    continue
+
                 u_repeat = u.repeat(num_items)
-                scores = model(u_repeat, all_items, edges_index, edges_type, edges_weights)
+                scores = model(u_repeat, all_items)
 
-                # 정답 아이템 ID 목록
-                gt_items = pos[user == u].tolist()
+                for k in ks:
+                    prec, rec = precision_recall_at_k_torch(scores, gt_items, k)
+                    precision_dict[k].append(prec)
+                    recall_dict[k].append(rec)
 
-                # precision@k, recall@k 계산
-                prec, rec = precision_recall_at_k_torch(scores, gt_items, k)
-                precision_list.append(prec)
-                recall_list.append(rec)
-
-    avg_precision = sum(precision_list) / len(precision_list)
-    avg_recall = sum(recall_list) / len(recall_list)
-    
-    print(f"Precision@{k}: {avg_precision:.4f}")
-    print(f"Recall@{k}: {avg_recall:.4f}")
+    for k in ks:
+        avg_prec = float(torch.tensor(precision_dict[k]).mean()) if precision_dict[k] else 0.0
+        avg_rec = float(torch.tensor(recall_dict[k]).mean()) if recall_dict[k] else 0.0
+        print(f"Precision@{k}: {avg_prec:.4f}")
+        print(f"Recall@{k}: {avg_rec:.4f}")

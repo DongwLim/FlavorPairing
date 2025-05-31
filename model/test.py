@@ -7,17 +7,31 @@ import json
 from tqdm import tqdm
 
 def predict(user_ids, item_ids, edges_indexes, edges_weights, edge_type):
-    model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
+    model = NeuralCF(
+        num_users=155,
+        num_items=6498,
+        emb_size=128,
+        edge_index=edges_indexes,
+        edge_type=edge_type,
+        edge_weight=edges_weights
+    )
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth"))
     model.eval()
 
     with torch.no_grad():
-        output = model(torch.tensor(user_ids), torch.tensor(item_ids), edges_indexes, edge_type, edges_weights)
+        output = model(torch.tensor(user_ids), torch.tensor(item_ids))
         #print(output)
         return output
     
 def topk_predict(user_id, edges_index, edges_weights, edge_type, topk, device='cpu'):
-    model = NeuralCF(num_users=155, num_items=6498, emb_size=128)
+    model = NeuralCF(
+        num_users=155,
+        num_items=6498,
+        emb_size=128,
+        edge_index=edges_indexes,
+        edge_type=edge_type,
+        edge_weight=edges_weights
+    )
     model.load_state_dict(torch.load("./model/checkpoint/best_model.pth", map_location=device))
     model.to(device)
     model.eval()
@@ -27,7 +41,7 @@ def topk_predict(user_id, edges_index, edges_weights, edge_type, topk, device='c
     item_tensor = torch.arange(num_items, device=device)
 
     with torch.no_grad():
-        scores = model(user_tensor, item_tensor, edges_index, edge_type, edges_weights)
+        scores = model(user_tensor, item_tensor)
         topk_scores, topk_indices = torch.topk(scores, k=topk)
 
     return topk_indices.cpu().tolist()  # 추천 item ID 리스트
