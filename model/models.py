@@ -57,7 +57,7 @@ class NeuralCF(nn.Module):
         # 최종 결과 출력층 
         self.output_layer = nn.Linear(hidden_layers[-1] + emb_size, 1)
 
-    def forward(self, user_indices, item_indices, edge_index, edge_type, edge_weight=None, is_embbed=False):
+    def forward(self, user_indices, item_indices, edge_index=None, edge_type=None, edge_weight=None, is_embbed=False, all_node_emb=None):
         """
             user_indices :   술 노드의 인덱스
             item_indices :   음식 노드의 인덱스
@@ -65,20 +65,24 @@ class NeuralCF(nn.Module):
             edge_weight  :   GNN에서 사용할 edge_weight (default: None)
         """
         # RGCN 기반 임베딩
-        x = self.embedding(torch.arange(self.num_nodes, device=edge_index.device))
-        
-        x = self.wrgcn(x, edge_index, edge_type, edge_weight)
-        x = F.relu(x)
-        x = F.dropout(x, p=0.2, training=self.training)
-        x = self.norm1(x)
-        x = self.wrgcn2(x, edge_index, edge_type, edge_weight)
-        x = F.relu(x)
-        x = F.dropout(x, p=0.2, training=self.training)
-        x = self.norm2(x)
-        x = self.wrgcn3(x, edge_index, edge_type, edge_weight)
+        if all_node_emb is None:
+            x = self.embedding(torch.arange(self.num_nodes, device=edge_index.device))
+            
+            x = self.wrgcn(x, edge_index, edge_type, edge_weight)
+            x = F.relu(x)
+            x = F.dropout(x, p=0.2, training=self.training)
+            x = self.norm1(x)
+            x = self.wrgcn2(x, edge_index, edge_type, edge_weight)
+            x = F.relu(x)
+            x = F.dropout(x, p=0.2, training=self.training)
+            x = self.norm2(x)
+            x = self.wrgcn3(x, edge_index, edge_type, edge_weight)
+        else:
+            x = all_node_emb
         
         if is_embbed:
             return x
+        
         # GNN 결과 슬라이싱
         user_emb = x[user_indices]
         item_emb = x[item_indices]
@@ -154,12 +158,10 @@ class WeightedRGCNConv(MessagePassing):
         out = torch.zeros(x_j.size(0), self.out_channels, device=x_j.device)
 
         for r in range(self.num_relations):
-            idx = (edge_type == r).nonzero(as_tuple=True)[0]
-            if idx.numel() == 0:
-                continue
-            x_rel = x_j[idx]
-            transformed = self.rel_lins[r](x_rel)
-            out[idx] = edge_weight[idx].unsqueeze(-1) * transformed
+            mask = edge_type == r
+            if mask.sum() > 0:
+                transformed = self.rel_lins[r](x_j[mask])
+                out[mask] = edge_weight[mask].unsqueeze(-1) * transformed
 
         return out
 
